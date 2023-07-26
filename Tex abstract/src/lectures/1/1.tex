@@ -1,0 +1,119 @@
+    \subsection{Комплексные многообразия}
+
+    \begin{definition}
+        \emph{Комплексным многообразием} $M$ называется гладкое многообразие, допускающее
+        такое открытое покрытие $\{ U_{\alpha} \}_{\alpha \in I}$ и такие координатные отображения
+        $\varphi_{\alpha}\colon U_{\alpha} \to \C^n$, что все функции перехода $\varphi_{\alpha} \circ \varphi_{\beta}^{-1}$
+        голоморфны на $\varphi_{\beta}(U_{\alpha} \cap U_{\beta})$.
+
+        Функция $f$ на открытом подмножестве $U \subset M$ называется \emph{голоморфной}, если $\forall \alpha \in I$
+        функция $f \circ \varphi^{-1}_{\alpha}$ голоморфна в $\varphi_{\alpha}(U_{\alpha} \cap U)$.
+
+        Набор $z = (z_1, \ldots, z_n)$ функций на $U \subset M$ называется \emph{голоморфной системой координат}, если $\varphi_{\alpha} \circ z^{-1}$ и $z \circ \varphi^{-1}_{\alpha}$ голоморфны на $z(U \cap U_{\alpha})$ и $\varphi_{\alpha}(U \cap U_{\alpha})$
+        для всех $\alpha$.
+
+        Отображение $f\colon M \to N$, где $M$ и $N$~--- комплексные многообразия, называется \emph{голоморфным}, если в голоморфных локальных координатах оно
+        задаётся голоморфными функциями.
+    \end{definition}
+
+    \begin{example}[Примеры комплексных многообразий]
+        Приведём какие-нибудь примеры комплексных многообразий:
+
+        \begin{enumerate}
+            \item Одномерное комплексное многообразие называют \bf{римановой поверхностью}.
+
+            \item $P\mathbb{C}^n  = (\C^{n + 1}\setminus \{ 0 \})/\{ z \sim \lambda z \} = \mathbb{P}^n$~--- комплексное проективное пространство.
+            Это пространство компактно, так как есть непрерывное сюръективное отображение $S^n \subset \C^{n + 1} \to \mathbb{P}^n$.
+
+            \item Пусть $\Lambda = \Z^{k} \subset \mathbb{C}^n$~--- дискретная решётка. Факторгруппа $\C^n/\Lambda$ обладает структурой
+            комплексного многообразия, которую индуцирует проекция $\pi\colon \C^n \to \C^n/\Lambda$.
+            Это многообразие компактно тогда и только тогда, когда $k = 2n$ и в этом случае $\C^n / \Lambda$ называется \bf{комплексным тором}.
+
+            \item \textcolor{magenta}{Тут был еще пример, что при неразветвлённом накрытии структура комплексного многообразия наследуется, но я хз, что такое разветвлённое накрытие.}
+        \end{enumerate}
+    \end{example}
+
+    \noindent\bf{Касательное пространство к комплексному многообразию.}
+
+        Пусть $M$~--- комплексное многообразие, $p \in M$, а $z = (z_{1}, \ldots, z_n)$~--- система голоморфных координат в окрестности $p$.
+        В случае комплексного многообразия имеются три различных понятия \emph{касательного пространства} к $M$ в точке $p \in M$.
+
+        \begin{enumerate}
+            \item Рассмотрим $M$, как вещественное $2n$-многообразие. Тогда $T_{\R, p}M$~--- пространство
+            $\R$-линейных дифференцирований кольца $C^{\infty}(M, \R)$ (с носителем в окрестности $p$).
+            Если мы представим голоморфные координаты в виде $z_j = x_j + i y_j$, то $T_{\R, p}M$ будет иметь базис
+            $\{ \frac{\partial }{\partial x_j}, \ \frac{\partial}{\partial y_j}\}$, как векторное пространство над $\R$.
+
+            \item Пространство  $T_{\R, p}M$ можно комплексифицировать при помощи расширения скаляров, то есть рассмотреть
+            \[ T_{\C, p}M \eqdef T_{\R, p}M \otimes_{\R} \C. \]
+            $T_{\C, p}M$ называют \emph{комплексифицированным касательным пространством} к $M$ в точке $p$.
+            Его можно реализовать, как пространство $\C$-линейных дифференцирований кольца $C^{\infty}(M, \C)$ (опять же, фукнции с носителем в окрестности $p$).
+            Соотвественно, там можно выбрать базис $\{ \frac{\partial}{\partial x_j}, \frac{\partial}{\partial y_j}\}$, а при замене базиса на комлпексные обозначения
+            \[ \frac{\partial}{\partial z_j} = \frac{1}{2} \lr*{\frac{\partial}{\partial x_j} - i \frac{\partial}{\partial y_j}}, \ \frac{\partial}{\partial\overline{z_j}} = \frac{1}{2}\lr*{\frac{\partial}{\partial x_j} + i \frac{\partial}{\partial y_j}}. \]
+            <<более стандартный>> базис $\{ \frac{\partial}{\partial z_j}, \ \frac{\partial}{\partial \overline{z_j}}\}$.
+
+            \item Подпространство $T'_{p}M = \Span\{ \frac{\partial }{\partial z_j} \} \le T_{\C, p}M$ называется  \emph{голоморфным касательным пространством} к $M$
+            в точке $p$. Оно может быть реализовано, как подпространство в $T_{\C, p}M$, состоящее из дифференцирований, обращающихся в ноль на антиголоморфных функциях (таких $f$, что $\overline{f}$~--- голоморфна).
+            Соответственно, подпространство $T''_{p}M = \Span \{ \frac{\partial }{\partial \overline{z_j}}\}$ называется \emph{антиголоморфным касательным пространством} к $M$ в точке $p$.
+            Ясно, что
+            \[ T_{\C, p}M = T'_{p}M \oplus T''_{p}M. \]
+        \end{enumerate}
+
+        Заметим, что для  комплексных многообразий $M, N$ любое $f \in C^{\infty}(M, N)$ индуцирует линейное отображение
+        \[ f_{*}\colon T_{\R, p}M \to T_{\R, f(p)}N \]
+        а значит и линейное отображение
+        \[ f_{*}\colon T_{\C, p}M \to T_{\C, f(p)}N, \]
+        но не отображение $T'_{p}M \to T'_{f'(p)}N$ для всех $p \in M$.
+
+    На самом деле, отображение $f\colon M \to N$ голоморфно тогда и только тогда, когда
+    \[ f_{*}(T'_{p}M) \subset T'_{f(p)}N \quad \forall p \in M. \]
+    То есть, когда голоморфное касательное пространство отображается в голоморфное.
+
+    Заметим, что также, поскольку $T_{\C, p}M = T_{\R, p}M \otimes \C$, операция сопряжения, переводящая
+    \[ \frac{\partial}{\partial z_j} \mapsto \frac{\partial}{\partial \overline{z_j}} \]
+    корректно определена на $T_{\C, p}M$ и, как нетрудно заметить, $T''_{p}M = \overline{T'_{p}M}$. Отсюда следует, что проекция
+    \[ T_{\R, p}M \to T_{\C, p}M \to T'_{p}M \]
+    есть $\R$-линейный изоморфизм.
+    
+    Это обстоятельство позволяет заниматься геометрией исключительно в голоморфном касательном пространстве.
+    
+    \begin{example}
+        Пусть $z(t) \colon [0, 1] \to \C$~--- гладкая кривая.  Тогда $z(t) = x(t) + iy(t)$ и в качестве касательной мы можем взять
+        \[ x'(t) \frac{\partial}{\partial x} + y'(t) \frac{\partial}{\partial y} \text{ в } T_{\R}\C \text{, либо } z'(t) \frac{\partial}{\partial z} \text{ в } T'\C. \]
+    \end{example}
+
+
+    \begin{definition}
+        Пусть теперь $M, N$~--- комплексные многообразия, $z = (z_1, \ldots, z_n)$~--- голомрфные координаты в окрестности
+    точки $p \in M$, а $(w_1, \ldots, w_n)$~--- голоморфные координаты в окрестности точки $q = f(p)$, где $f\colon M \to N$~--- голоморфное отображение.
+    В связи с различными понятиями касательных пространств, мы имеем и различные понятия \emph{якобиана} $f$.
+
+    \begin{enumerate}
+        \item Пусть $z_j = x_j + i y_j, \ w_{k} = u_{k} + i v_{k}$. Тогда в базисах
+        $\{ \frac{\partial}{\partial x_j}, \frac{\partial}{\partial y_j}\}$ и $\{ \frac{\partial}{\partial u_k}, \frac{\partial}{\partial v_k}\}$ пространств
+        $T_{\R, p}M$ и $T_{\R, q}N$ линейное отображение $f_{*}$ задаётся $2m \times 2n$-матрицей
+        \[ \cJ_{\R}(f) = \begin{pmatrix} \frac{\partial u_k}{\partial x_j} & \frac{\partial u_k}{\partial y_j} \\ \frac{\partial v_k}{\partial x_j} & \frac{\partial v_k}{\partial y_j} \end{pmatrix}. \]
+
+        В базисах $\{ \frac{\partial}{\partial z_j}, \frac{\partial}{\partial \overline{z_j}}\}$ и $\{ \frac{\partial}{\partial w_j}, \frac{\partial}{\partial \overline{w_k}}\}$ пространств
+        $T_{\C, p}M$ и $T_{\C, q}N$ отображение $f_{*}$ задаётся матрицей
+        \[ \cJ_{\C}(f) = \begin{pmatrix} \cJ(f) & 0 \\ 0 & \overline{\cJ(f)} \end{pmatrix}, \text{ где } \cJ(f) = \lr*{ \frac{\partial w_k}{\partial z_j} }_{k, j}. \]
+    \end{enumerate}
+
+    \end{definition}
+
+    \begin{remark}\label{rem1}
+       В частности, отметим, что $\rank \cJ_{\R}(f) = 2 \rank \cJ(f)$ и в случае $m = n$
+       \[ \det\cJ_{\R}(f) = \det \cJ(f) \det \overline{\cJ(f)} = \left\lvert \det{\cJ(f)}\right\rvert^2 \ge 0, \]
+        то есть голоморфные отображения \bf{сохраняют ориентацию}.
+    \end{remark}
+
+    Мы будем считать, что пространство $\C^n$ естественно ориентированно $2n$-формой
+    \[ \lr*{\frac{i}{2}}^n (\mathrm{d}z_{1} \wedge \mathrm{d}\overline{z_1}) \wedge (\mathrm{d}z_{2} \wedge \mathrm{d}\overline{z_2}) \wedge \ldots \wedge (\mathrm{d}z_n \wedge \mathrm{d}\overline{z_n}) = \mathrm{d}x_1 \wedge \mathrm{d}y_1 \wedge \ldots \wedge \mathrm{d}x_n \wedge \mathrm{d}y_n. \]
+
+    Ясно, что если $\varphi_{\alpha}\colon U_{\alpha} \to \C^n$ и $\varphi_{\beta}\colon U_{\beta} \to \C^n$~--- голоморфные координатные отображения на
+    комплексном многообразии $M$, то прообразы при $\varphi_{\alpha}$ и $\varphi_{\beta}$
+    естественной ориентации на  $\C^n$ согласованы на $U_{\alpha} \cap U_{\beta}$.
+
+    Соотвественно, любое комплексное многообразие \bf{имеет естественную ориентацию}, которая сохраняется
+    при голоморфных отображениях.
+

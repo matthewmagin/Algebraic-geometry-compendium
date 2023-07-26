@@ -1,0 +1,1397 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.10)  19 JUN 2023 23:51
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**2.tex
+(./2.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+./2.tex:1: Undefined control sequence.
+l.1     \subsection
+                   {Подмногообразия и аналитическ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./2.tex:1: Package inputenc Error: Unicode character П (U+041F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{П
+                      одмногообразия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{По
+                        дмногообразия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character д (U+0434)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Под
+                          многообразия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character м (U+043C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подм
+                            ногообразия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character н (U+043D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмн
+                              огообразия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмно
+                                гообразия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character г (U+0433)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмног
+                                  ообразия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмного
+                                    образия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмногоо
+                                      бразия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character б (U+0431)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмногооб
+                                        разия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character р (U+0440)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмногообр
+                                          азия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character а (U+0430)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмногообра
+                                            зия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character з (U+0437)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмногообраз
+                                              ия и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character и (U+0438)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмногообрази
+                                                я и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character я (U+044F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1     \subsection{Подмногообразия
+                                                   и аналитическ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character и (U+0438)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ubsection{Подмногообразия и
+                                                   аналитически�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character а (U+0430)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ection{Подмногообразия и а
+                                                  налитические �...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character н (U+043D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...tion{Подмногообразия и ан
+                                                  алитические п�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character а (U+0430)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...on{Подмногообразия и ана
+                                                  литические по�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character л (U+043B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...{Подмногообразия и анал
+                                                  итические под�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character и (U+0438)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�одмногообразия и анали
+                                                  тические подм�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character т (U+0442)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�дмногообразия и аналит
+                                                  ические подмн�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character и (U+0438)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�многообразия и аналити
+                                                  ческие подмно�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character ч (U+0447)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�ногообразия и аналитич
+                                                  еские подмнож�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�огообразия и аналитиче
+                                                  ские подмноже�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character с (U+0441)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�гообразия и аналитичес
+                                                  кие подмножес�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character к (U+043A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�ообразия и аналитическ
+                                                  ие подмножест�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character и (U+0438)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�образия и аналитически
+                                                  е подмножества}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...�бразия и аналитические
+                                                   подмножества}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character п (U+043F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...разия и аналитические п
+                                                  одмножества}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...азия и аналитические по
+                                                  дмножества}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character д (U+0434)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...зия и аналитические под
+                                                  множества}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character м (U+043C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...ия и аналитические подм
+                                                  ножества}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character н (U+043D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...я и аналитические подмн
+                                                  ожества}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ... и аналитические подмно
+                                                  жества}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character ж (U+0436)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...� аналитические подмнож
+                                                  ества}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...аналитические подмноже
+                                                  ства}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character с (U+0441)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...налитические подмножес
+                                                  тва}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character т (U+0442)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...алитические подмножест
+                                                  ва}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character в (U+0432)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...литические подмножеств
+                                                  а}
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:1: Package inputenc Error: Unicode character а (U+0430)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...итические подмножества
+                                                  }
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character Д (U+0414)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Д
+          окажем теперь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     До
+            кажем теперь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character к (U+043A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Док
+              ажем теперь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character а (U+0430)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Дока
+                жем теперь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character ж (U+0436)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докаж
+                  ем теперь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докаже
+                    м теперь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character м (U+043C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем
+                       теперь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character т (U+0442)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем т
+                         еперь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем те
+                           перь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character п (U+043F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем теп
+                             ерь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем тепе
+                               рь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character р (U+0440)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем тепер
+                                 ь несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character ь (U+044C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем теперь
+                                    несколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character н (U+043D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем теперь н
+                                      есколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем теперь не
+                                        сколько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character с (U+0441)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем теперь нес
+                                          колько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character к (U+043A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем теперь неск
+                                            олько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем теперь неско
+                                              лько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character л (U+043B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем теперь нескол
+                                                ько классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character ь (U+044C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3     Докажем теперь несколь
+                                                  ко классическ�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character к (U+043A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�окажем теперь нескольк
+                                                  о классически�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�кажем теперь несколько
+                                                   классических ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character к (U+043A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...ажем теперь несколько к
+                                                  лассических т�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character л (U+043B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...жем теперь несколько кл
+                                                  ассических те�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character а (U+0430)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...ем теперь несколько кла
+                                                  ссических тео�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character с (U+0441)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...м теперь несколько клас
+                                                  сических теор�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character с (U+0441)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ... теперь несколько класс
+                                                  ических теоре�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character и (U+0438)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�еперь несколько класси
+                                                  ческих теорем ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character ч (U+0447)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�перь несколько классич
+                                                  еских теорем д...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�ерь несколько классиче
+                                                  ских теорем дл...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character с (U+0441)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�рь несколько классичес
+                                                  ких теорем для...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character к (U+043A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�ь несколько классическ
+                                                  их теорем для �...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character и (U+0438)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...� несколько классически
+                                                  х теорем для с�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character х (U+0445)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...несколько классических
+                                                   теорем для сл�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character т (U+0442)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�сколько классических т
+                                                  еорем для случ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�колько классических те
+                                                  орем для случа...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�олько классических тео
+                                                  рем для случая...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character р (U+0440)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�лько классических теор
+                                                  ем для случая �...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�ько классических теоре
+                                                  м для случая к�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character м (U+043C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�ко классических теорем
+                                                   для случая ко�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character д (U+0434)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...о классических теорем д
+                                                  ля случая комп...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character л (U+043B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ... классических теорем дл
+                                                  я случая компл...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character я (U+044F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�лассических теорем для
+                                                   случая компле...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character с (U+0441)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...ассических теорем для с
+                                                  лучая комплек�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character л (U+043B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...ссических теорем для сл
+                                                  учая комплекс�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character у (U+0443)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...сических теорем для слу
+                                                  чая комплексн�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character ч (U+0447)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...ических теорем для случ
+                                                  ая комплексны�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character а (U+0430)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...ческих теорем для случа
+                                                  я комплексных ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character я (U+044F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...еских теорем для случая
+                                                   комплексных м...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character к (U+043A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�ких теорем для случая к
+                                                  омплексных мн�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character о (U+043E)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�их теорем для случая ко
+                                                  мплексных мно�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character м (U+043C)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...�х теорем для случая ком
+                                                  плексных мног�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character п (U+043F)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...� теорем для случая комп
+                                                  лексных много�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character л (U+043B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...теорем для случая компл
+                                                  ексных многоо�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character е (U+0435)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...еорем для случая компле
+                                                  ксных многооб�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character к (U+043A)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...орем для случая комплек
+                                                  сных многообр�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character с (U+0441)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...рем для случая комплекс
+                                                  ных многообра�...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+./2.tex:3: Package inputenc Error: Unicode character н (U+043D)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...ем для случая комплексн
+                                                  ых многообраз�...
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 43 strings out of 480608
+ 841 string characters out of 5903630
+ 239610 words of memory out of 5000000
+ 16034 multiletter control sequences out of 15000+600000
+ 532338 words of font info for 24 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 12i,0n,15p,171b,37s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+./2.tex:3:  ==> Fatal error occurred, no output PDF file produced!

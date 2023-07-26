@@ -1,0 +1,14 @@
+	\draw[opacity=0.7] \foreach \x in {-4,...,5} {
+	   (\x cm, 0.1) -- (\x cm, -0.1) node[below]{\tiny \x}
+	   (\x cm - 0.5cm, 0.08) -- (\x cm - 0.5cm, -0.08)
+	   \foreach \t in {1,2,3,4,6,7,8,9} {
+	      (\x cm - 0.1 * \t cm, 0.055) -- (\x cm - 0.1 * \t cm, -0.055)
+	   }
+	};
+	\draw[opacity=0.7,rotate=90] \foreach \x in {-3,-2,-1,1,2,3,4} {
+	   (\x cm, 0.1) -- (\x cm, -0.1) node[right]{\tiny \x}
+	   (\x cm - 0.5cm, 0.08) -- (\x cm - 0.5cm, -0.08)
+	   \foreach \t in {1,2,3,4,6,7,8,9} {
+	      (\x cm - 0.1 * \t cm, 0.055) -- (\x cm - 0.1 * \t cm, -0.055)
+	   }
+	};

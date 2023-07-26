@@ -1,0 +1,30 @@
+    \subsection{Подмногообразия и аналитические подмножества}
+    
+    Докажем теперь несколько классических теорем для случая комплексных многообразий. 
+    
+    \begin{theorem}[Об обратном отображении]
+        Пусть $U, V$~--- открытые подмножества в $\C^n$, $0 \in U$ и $f\colon U \to V$~---
+        такое голоморфное отображение, что матрица $\cJ(f) = \lr*{\partial f_i / \partial z_{j}}$ невырождена в $0$.
+        
+        Тогда отображение $f$ взаимно однозначно в окрестности точки $0$ и обратное отображение $f^{-1}$
+        голоморфно в некоторой окрестности $f(0)$.
+    \end{theorem}
+    
+    \begin{proof}
+        Как мы уже отмечали в~\ref{rem1}, $\left\lvert \det \cJ_{\R}(f) \right\rvert = |\det{\cJ(f)}|^2 \neq 0$ в точке $0$, а
+        значит, по обычной теореме об обратном отображении, функция $f$ имеет в окрестности точки $0$
+        обратную $C^{\infty}(U, V)$ функцию $f^{-1}$. Заметим, что $f^{-1}(f(z)) = z$, так что,
+        дифференцируя это равенство в нуле мы имеем
+        \[ 0 = \frac{\partial}{\partial \overline{z_j}}(f^{-1}(f(z)))_{j} = \sum_{k} \frac{\partial f^{-1}_{j}}{\partial z_k}\frac{\partial f_k}{\partial \overline{z_i}} + \sum_{k} \frac{\partial f^{-1}_{j}}{\partial \overline{z_k}}\lr*{\frac{\partial \overline{f_k}}{\partial\overline{z_i}}} = \sum_{k} \frac{\partial f_{j}^{-1}}{\partial \overline{z_k}} \lr*{\frac{\partial \overline{f_k}}{\partial z_i}} \quad \forall i, j. \]
+        Так как матрица $(\partial f_k / \partial z_j)$ была невырождена, отсюда следует, что
+        $\partial f_j^{-1} / \partial \overline{z_k} = 0 \ \forall j, k$, что и означает голоморфность функции $f$.
+    \end{proof}
+
+    \begin{theorem}[О неявной функции]
+        Пусть заданы функции $f_1, \ldots, f_k \in \cO_n$, удовлетворяющие условию
+        \[ \det{\lr*{\frac{\partial f_i}{\partial z_j}(0)}}_{1 \le i, \ j \le k} \neq 0. \]
+
+        Тогда существуют такие функции $w_1, \ldots, w_k \in \cO_{n - k}$, что в окрестности точки $0 \in \C^n$
+        \[ f_1(z) = \ldots f_k(z) = 0 \Leftrightarrow z_i = w_i(z_{k + 1}, \ldots, z_n), \ 1 \le i \le k.  \]
+
+    \end{theorem}

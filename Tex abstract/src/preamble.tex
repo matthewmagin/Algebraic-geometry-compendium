@@ -1,0 +1,247 @@
+
+
+%вставка изображений и картинок всяких
+
+\usepackage{graphicx}
+\newcommand{\incfig}[1]{%
+    \def\svgscale{1.5}
+    \import{./figures/}{#1.pdf_tex}
+}
+\graphicspath{{pictures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg, .jpeg, .tex}
+
+\usepackage{booktabs} % для таблиц
+\usepackage{enumitem} % для списков
+
+
+% Шрифты
+
+\usepackage[english,russian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+
+
+\usepackage{titling} % для \maketitle
+\usepackage{textcomp}% специальные символы в тексте
+
+\usepackage{mathtext}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % математика
+\usepackage{icomma} % умная запятая
+\usepackage{import} %  импортирование
+
+
+\usepackage{pdfpages} % мультри-пдф страницы
+\usepackage{transparent} % что-то про цвета
+
+
+\usepackage{caption} % комментарии к figure
+\usepackage{epigraph} % эпиграфы
+
+\usepackage{comment} % удобные комментарии
+\usepackage{xfrac} % дроби
+\usepackage{moresize} % все размеры шрифтов
+\usepackage{dsfont} % mathbb для всего
+
+
+% Окружения для математики:
+
+\newtheorem{statement}{Утверждение}
+\newtheorem{corollary}{Следствие}
+\newtheorem{theorem}{Теорема}
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}
+
+\newtheorem{example}{Пример}
+\newtheorem{antiexample}{Антиример}
+\newtheorem{lemma}{Лемма}
+\theoremstyle{remark}
+\newtheorem*{remark}{Замечание}
+\newtheorem*{exercise}{Упражнение}
+
+% Настройки счетчиков:
+
+%\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+%\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+%\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+% Геометрия файла:
+
+\usepackage{geometry}
+
+\setlist{noitemsep} % No spacing between list items
+
+\geometry{left=1.5cm,right=1.5cm,top=2.5cm,bottom=2cm, a4paper}
+
+% Счётчики разделов:
+
+
+%\sectionfont{\vspace{6pt}\centering\normalfont\scshape} % \section{} styling
+%\subsectionfont{\normalfont\bfseries} % \subsection{} styling
+%\subsubsectionfont{\normalfont\itshape} % \subsubsection{} styling
+%\paragraphfont{\normalfont\scshape} % \paragraph{} styling
+
+\newcommand{\RNumb}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
+\renewcommand\thesection{\arabic{section}.}
+\renewcommand\thesubsection{\thesection\arabic{subsection}}
+\renewcommand\thesubsubsection{\RNumb{\arabic{subsubsection}}}
+\renewcommand{\bf}{\textbf}
+
+% Колонтитулы
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all fields
+\fancyhead[L]{\rightmark}
+\fancyhead[R]{\thepage}
+
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}}%
+\setlength{\headheight}{17.0pt}
+\addtolength{\topmargin}{-2.49998pt}
+
+
+
+% Операторы:
+
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\ld}{ld}
+\DeclareMathOperator{\exi}{exi}
+\DeclareMathOperator{\osc}{osc}
+\DeclareMathOperator{\num}{num}
+\DeclareMathOperator{\card}{Card}
+\DeclareMathOperator{\sk}{sk}
+\DeclareMathOperator{\den}{den}
+\DeclareMathOperator{\essup}{essup}
+\DeclareMathOperator{\ran}{ran}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\rad}{rad}
+\DeclareMathOperator{\supp}{supp}
+
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Int}{Int}
+\DeclareMathOperator{\RelInt}{RelInt}
+\DeclareMathOperator{\Cl}{Cl}
+\DeclareMathOperator{\CW}{CW}
+\DeclareMathOperator{\pr}{pr}
+\DeclareMathOperator{\Af}{Aff}
+\DeclareMathOperator{\Aut}{Aut}
+\renewcommand{\Im}{\mathop{\mathrm{Im}}\nolimits}
+\DeclareMathOperator{\Conv}{conv}
+\DeclareMathOperator{\Fr}{Fr}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\Map}{Map}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\area}{area}
+\DeclarePairedDelimiter\lr{(}{)}
+\DeclareRobustCommand{\divby}{%
+     \mathrel{\text{\vbox{\baselineskip.65ex\lineskiplimit0pt\hbox{.}\hbox{.}\hbox{.}}}}%
+}
+\newcommand{\eqdef}{\stackrel{\mathrm{def}}{=}}
+\DeclareRobustCommand{\notdivby}{%
+     \!\!\not\;\divby%
+}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+
+
+%%%% гиперссылки
+\usepackage{xcolor} % цвета
+\usepackage[unicode, pdftex]{hyperref}
+\hypersetup{%
+  colorlinks=false,
+  linkbordercolor=cyan
+}
+
+% Буковы
+
+\newcommand{\N}{\mathbb{N}}			 		
+\newcommand{\Z}{\mathbb{Z}}			
+\newcommand{\Q}{\mathbb{Q}}		
+\newcommand{\R}{\mathbb{R}}	
+\let\oldC\C
+\renewcommand{\C}{\mathbb{C}} 				
+\newcommand{\F}{\mathbb{F}}	
+ 
+\let\oldAA\AA
+\renewcommand{\AA}{\mathbb{A}}				
+\newcommand{\DD}{\mathbb{D}} 						
+\newcommand{\EE}{\mathbb{E}} 			
+\newcommand{\HH}{\mathbb{H}}					
+\newcommand{\KK}{\mathbb{K}} 					
+\newcommand{\OO}{\mathbb{O}} 		
+\newcommand{\PP}{\mathbb{P}}			
+\let\oldSS\SS		
+\renewcommand{\SS}{\mathbb{S}}						
+\newcommand{\TT}{\mathbb{T}} 			
+
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
+			
+\newcommand{\rD}{\mathrm{D}}
+\newcommand{\rK}{\mathrm{K}}			
+\newcommand{\rP}{\mathrm{P}}
+\newcommand{\rT}{\mathrm{T}}			
+
+\newcommand{\fA}{\mathfrak{A}}
+\newcommand{\fB}{\mathfrak{B}}
+\newcommand{\fT}{\mathfrak{T}}
+\newcommand{\fK}{\mathfrak{K}}
+\newcommand{\fM}{\mathfrak{M}}
+\newcommand{\fL}{\mathfrak{L}}
+\newcommand{\fR}{\mathfrak{R}}
+\newcommand{\fP}{\mathfrak{P}}
+\newcommand{\fC}{\mathfrak{C}}
+\newcommand{\fX}{\mathfrak{X}}
+\newcommand{\fS}{\mathfrak{S}}
+
+\newcommand{\fm}{\mathfrak{m}}
+\newcommand{\fb}{\mathfrak{b}}
+\newcommand{\fp}{\mathfrak{p}}
+\newcommand{\fh}{\mathfrak{h}}
+\newcommand{\fo}{\mathfrak{o}}
+\newcommand{\fd}{\mathfrak{d}}
+
+\usepackage{esint}
+
+% Tikz и графика:
+
+
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{3d,perspective}
+\usetikzlibrary{animations}
+\usepackage{tikz-cd}
+\usepackage{mathtools}
+\pgfplotsset{width=6cm,compat=newest}
+
+
+
