@@ -156,7 +156,7 @@
     Кроме того, из всего этого дела есть еще одно замечательное следствие:
 
     \begin{corollary}
-        Если $f\colong C_{\bullet} \to C_{\bullet}'$ индуцирует изоморфизм всех групп гомологий $H_{k}(C_{\bullet}) \cong H_{k}\lr*{C_{\bullet}'}$.
+        Если $f\colon C_{\bullet} \to C_{\bullet}'$ индуцирует изоморфизм всех групп гомологий $H_{k}(C_{\bullet}) \cong H_{k}\lr*{C_{\bullet}'}$.
         Тогда отображения $f^{*}\colon H^{k}\lr*{C_{\bullet}; G} \cong H^{k}\lr*{C_{\bullet}'; G}$.
     \end{corollary}
     \begin{proof}
@@ -168,4 +168,47 @@
     \end{proof}
 
     \subsection{Умножение в когомологиях}
+
+    Пусть $R$~--- коммутативное и ассоциативное кольцо.
+
+    Пусть $\varphi \in C^{k}\lr*{X; R}, \ \psi \in C^{\ell}\lr*{X; R}$. Тогда их произведением определяется таким образом:
+    \[ \varphi \smile \psi \in C^{k + \ell}, \quad (\varphi \smile \psi)(\sigma) = \varphi(\sigma\vert_{[v_0 \ldots v_k]}) \cdot \psi(\sigma\vert_{[v_k \ldots v_{k + \ell}]}), \]
+    где $\sigma\colon \Delta^{k + \ell} \to X$~--- сингулярный симплекс.
+
+    \begin{lemma}
+        Для кограницы $\smile$-произвения справедлива следующая формула:
+        \[ \delta(\varphi \smile \psi) = \delta \varphi \smile \psi + (-1)^k \varphi \smile \delta \psi. \]
+    \end{lemma}
+
+    \begin{proof}
+        Пусть $\sigma\colon \Delta^{k + \ell} \to X$~--- сингулярный симплекс. Тогда
+        \[ (\delta \varphi \smile \psi)(\sigma) = \sum_{i = 0}^{k + 1} (-1)^{i} \varphi(\sigma\vert_{[v_0, \ldots, \hat{v_i}, \ldots, v_{k + 1}]}) \psi(\sigma\vert_{[v_{k + 1} \ldots v_{k + \ell + 1}]})\]
+        Распишем теперь второй кусок:
+        \[ (-1)^k (\varphi \smile \delta \psi) = \sum_{i = k}^{k + \ell + 1} (-1)^i \varphi(\sigma\vert_{[v_0 \ldots v_k]}) \psi(\sigma\vert_{[v_{k}, \ldots, \hat{v_i}, \ldots, v_{k + \ell + 1}]}) \]
+        Когда мы сложим эти две суммы, последнее слагаемое первой суммы сократится с первым слагаемым второй, а всё, что останется~--- как раз $\delta(\varphi \smile \psi)(\sigma) = (\varphi \smile \psi)(\partial \sigma)$.
+    \end{proof}
+    
+    \begin{remark}
+       Таким образом, $\delta (\varphi \smile \psi) = \delta \varphi \smile \psi \pm \delta \psi \smile \varphi$. Из этого следует, что произведение коциклов~--- коцикл.
+       Также это сразу даёт нам, что произведение коцикла и кограницы (в любом порядке)~--- кограница:
+        \[ \varphi \smile \delta \psi = \pm \delta(\varphi \smile \psi)\]
+
+        Это даёт нам ассоциативное дистрибутивное умножение
+        \[ \smile \colon H^{k}\lr*{X; R} \times H^{\ell} \to H^{k + \ell} \lr*{X; R}. \]
+        Таким образом, при помощи $\smile$-произведения, мы наделили \[ H^{*}\lr*{X; R} = \bigoplus_{n = 0}^{\infty} H^{n}\lr*{X; R} \] структурой кольца (а на самом деле, градуированной алгебры).
+
+        Если в кольце $R$ есть единица, то единицей относительно $\smile$-произведения будет нольмерный коцикл $1 \in H^{0}\lr*{X; R}$, принимающий значение 1 на любом нульмерном сингулярном симплексе.
+        
+    \end{remark}
+    
+    \begin{remark}
+       Это показывает нам отдельную пользу когомологий: например, у $\C \mathrm{P}^2$ и $S^4 \vee S^2$  все группы гомологий и группы когомлогий совпадают, а кольца когомологий отличаются.
+    \end{remark}   
+    
+
+
+
+
+
+
 
