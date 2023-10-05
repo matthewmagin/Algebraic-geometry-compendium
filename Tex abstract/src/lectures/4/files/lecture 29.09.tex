@@ -1,0 +1,154 @@
+
+	\subsection{Дискриминант}
+
+	\begin{definition}\label{discriminant} 
+		Пусть $K/F$~--- конечное сепарабельное расширение, $[K : F] = n$ и $\alpha_1, \ldots, \alpha_n \in K$.
+		Тогда \emph{дискриминант} набора $\alpha_1, \ldots, \alpha_n$~--- это 
+		\[
+			\disc(\alpha_1, \ldots, \alpha_n) \eqdef \det\lr*{\Tr_{K/F}(\alpha_i \alpha_j)}.
+		\]
+
+		Так как расширение $K/F$ сепарабельно, у нас есть ровно $n = [K : F]$ вложений $\sigma_1, \ldots, \sigma_n\colon K \to \C$ (на самом деле, мы знаем, что в  $\Q^{alg}$).
+
+		\begin{statement}\label{disc_prop_1} 
+			$\disc(\alpha_1, \ldots, \alpha_n) = \lr*{\det(\sigma_{i}(\alpha_j)}^{2}$.	
+		\end{statement}
+		\begin{proof}
+			Положим $\sigma_{i}(\alpha_j) = A$ и рассмотрим $A^{t} A$, тогда 
+			\[
+				(A^{t} A)_{i j} = \sum_{k = 1}^{n} \sigma(\alpha_i) \sigma_k(\alpha_j) = \sum_{k = 1}^{n} \sigma_{k}(\alpha_i \alpha_j) = \Tr_{K/F}(\alpha_i \alpha_j).
+			\]
+		\end{proof}
+
+		Посмотрим теперь, как след меняется при линейном преобразовании. Пусть $(\beta_1, \ldots, \beta_n) = (\alpha_1, \ldots, \alpha_n)M, \ M \in M_{n}(F)$.
+
+		\begin{statement}\label{disc_prop_2} 
+			$\disc(\alpha_1, \ldots, \alpha_n) = \disc(\beta_1, \ldots, \beta_n) \cdot \lr*{\det{M}}^{2}$.
+		\end{statement}
+		\begin{proof}
+			Действительно, это напрямую следует из предложения~\ref{disc_prop_1}:
+			\[
+			 	\disc(\beta_1, \ldots, \beta_n) = \det\lr*{\sigma_{i}(\alpha_{j})}^{2} = \det{\lr*{\sigma_{i}(\alpha_{j})}M}^2 = \disc(\beta_1, \ldots, \beta_n) \cdot \lr*{\det{M}}^{2}. 
+			 \] 
+		\end{proof}
+
+		\begin{statement} 
+			$\disc(\alpha_1, \ldots, \alpha_n) = 0 \Leftrightarrow \alpha_1, \ldots, \alpha_n$~--- линейно зависимы. 
+		\end{statement}
+		\begin{proof}
+			Пусть $\alpha_1, \ldots, \alpha_n$~--- линейно зависимы, $e_1, \ldots, e_n$~--- базис $K/F$.
+			\[
+				(\alpha_1, \ldots, \alpha_n) = (e_1, \ldots, e_n)M, \quad \det{M} = 0.
+			\]
+			Значит, по предложению~\ref{disc_prop_2} мы имеем $\disc(\alpha_1, \ldots, \alpha_n) = 0$. Теперь докажем в обратную сторону. 
+			Предположим, что $\alpha_1, \ldots, \alpha_n$~--- линейно независимы, но $\disc(\alpha_1, \ldots, \alpha_n) = \det\lr*{\Tr_{K/F}(\alpha_i \alpha_j)} = 0$. Рассмотрим систему линейных уравнений 
+			\[
+				\Tr_{K/F}\lr*{(x_1 \alpha_1 + \ldots + x_n \alpha_n)\alpha_j} = 0, \ldots 1 \le j \le n.
+			\]
+			Так как матрица коэффициентов этой системы~--- $\Tr_{K/F}(\alpha_i \alpha_j)$, а она вырождена, система имеет нетривиальное решение $(x_1, \ldots, x_n)$. Так как $\alpha_1, \ldots, \alpha_n$~--- линейно независимы, 
+			\[
+				y = x_1 \alpha_1 + \ldots +  x_n \alpha_n \neq 0.
+			\]
+
+			С другой стороны, $\Tr_{K/F}(y \alpha_{j}) = 0 \ \forall j$. Так как $\alpha_i$ образуют базис $K/F$, по линейности мы получаем, что $\Tr_{K/F}(y u) = 0 \ \forall u \in K$. Но, так как расширение $K/F$ сепарабельно, $\Tr_{K/F}$ должен быть невырожденной формой\footnote{Этим утверждением из теорией полей мы пользуемся без доказательств. Доказательство этого утверждения можно прочитать в S. Lang ``Algebra''. }.
+			
+
+		\end{proof}
+
+		\begin{lemma}\label{free_abelian_groups_prop} 
+			Пусть $B \subset A$~--- свободные абелевы группы ранга $n$. Пусть $\omega_1, \ldots, \omega_n$~--- базис $A$, а $\left\{\sum_{j = 1}^{n} a_{i j} w_{j}\right\}$~--- базис $B$, $a_{i j} \in \Z$. Тогда $|A / B| = |\det(a_{i j})|$.
+		\end{lemma}
+		\begin{proof}
+			Приведём матрицу $(a_{i j})$ нормальной форме Смита. Перечислим теперь элементы $A/B$: это в точности элементы $x_1 \omega_1 + \ldots + x_n \omega_n, \ 0 \le x_i \le a_{ii} - 1$. Если мы докажем, что это в точности все попарно-различные элементы группы $A/B$, то утверждение будет ясно. 
+
+			Пусть $\sum_{i = 1}^{n} x_i \omega_i = \sum_{i = 1}^{n} y_i \omega_i$, тогда $\sum_{i = 1}^{n}(x_i - y_i) \omega_i \in B$. Посмотрим на коэффициент при $\omega_{11}$, он может получаться только из первой строки матрицы (так как матрица верхнетреугольная), тогда   $\ell a_{11} = x_{1} - y_{1}$, но это равенство возможно только в случае, когда $x_1 = y_1$ (так как есть ограничения на $x_i$ и $y_i$). Далее мы проделаем аналогичное рассуждение $\sum_{i = 2}^{n} (x_i - y_i) \omega_i \in B$ и в итоге получим, что все такие элементы разлчины. 
+
+			Теперь рассмотрим $a = x_1 \omega_1 + \ldots + x_n \omega_n, \ x_i \in \Z$. Поделим с остатком: $x_1 = a_{11}q + r, \ 0 \le r  < a_{11}$, и рассмотрим $x_{1} \omega_{1} + \ldots + x_n \omega_n - q(a_{11}\omega_1 + \ldots + a_{1n}\omega_n) = r\omega_1 + x_{2}'\omega_{2} + \ldots$.  Так как мы вычли из $a$ элемент из $B$, класс $\overline{a} \in A/B$ не изменился, а старшим коэффициентом стал $r$, лежащий в нужном диапазоне. Продолжая в том же духе, мы полчми, что все коэффициенты лежат в нужном диапазоне. 
+		\end{proof}
+
+		Как мы помним, $\cO_{K}$~--- свободная абелева группа ранга $n = [K : \Q]$ и $\cO_{K} = \bigoplus_{i = 1}^{n} \Z \omega_{i}$, а  базис $(\omega_{1}, \ldots, \omega_{n})$ мы называем \emph{целым базисом}.
+
+		\begin{definition} 
+			Пусть $K/\Q$~--- расширение степени $n$,  $\cO_{K} = \bigoplus_{i = 1}^{n} \Z \omega_{i}$. Тогда 
+			\[
+				\disc(K) \eqdef \disc\lr*{\omega_{1}, \ldots, \omega_{k}}.
+			\]
+		\end{definition}
+	
+		\begin{remark}
+			Дискриминант поля не зависит от выбора целого базиса. Действительно, если у нас есть какой-то другой целый базис $(u_1, \ldots, u_n)$, то 
+			\[
+				(\omega_{1}, \ldots, \omega_{n})M = (u_1, \ldots, u_n), \quad M \in \mathrm{SL}_{n}(\Z).
+			\]
+			\[
+				 (u_1, \ldots, u_n)M^{-1} = (\omega_{1}, \ldots, \omega_{n}) 
+			\]
+			\[
+				\disc(u_1, \ldots, u_n) = \disc(\omega_1, \ldots, \omega_n) \cdot \underbrace{\lr*{\det{M}}^{2}}_{= 1}
+			\]
+		\end{remark}
+
+		Пусть $K = \cO(\theta)$, $\theta \in \cO_{K}$, положим $\ind(\theta) = [\cO_{K} : \Z[\theta]] = \left\lvert \cO_{K}/\Z[\theta] \right\rvert$. 
+
+		\begin{statement}\label{dic_and_ind} 
+			В описанной выше сиутации $\disc(1, \theta, \ldots, \theta^{n - 1}) = \ind(\theta)^{2} \cdot \disc(K)$.
+		\end{statement}
+		\begin{proof}
+			Пусть $\omega_{1}, \ldots, \omega_{n}$~--- целый базис. Тогда 
+			\[
+				(1, \theta, \ldots, \theta^{n - 1}) = (\omega_{1}, \ldots, \omega_{n})M \implies \disc(1, \ldots, \theta^{n - 1}) = \disc(K) \lr*{\det{M}}^{2}.
+			\]
+			Нетрудно заметить, что по лемме~\ref{free_abelian_groups_prop} мы имеем $\left\lvert \det{M} \right\rvert = \ind(\theta)$.
+			
+		\end{proof}
+
+		\begin{example}
+			Пусть $K = \Q(\theta)$, где $\theta^3 - \theta - 1 = 0$. Как мы помним из домашнего задания, $\disc(1, \theta, \theta^2) = -23$.  Пользуясь предложением~\ref{dic_and_ind} мы получаем, что $-23 = (\ind(\theta))^2 \cdot \disc{K} \implies \ind{\theta} = 1$, из чего следует, что $\cO_{K} = \Z[\theta]$.
+		\end{example}
+
+		\begin{example}
+			Пусть $K = \Q(\theta)$, где $\theta^3 - \theta - 4 = 0$. Как мы помним, $\disc(1, \theta, \theta^2) = -4 \cdot 107 = (\ind{\theta})^2 \cdot \disc{K}$, Тогда $\ind{\theta} = 1$ или $\ind{\theta} = 2$. С другой стороны, так как $\frac{\theta + \theta^2}{2} \in \cO_{K}, \notin \Z[\theta]$, $\ind(\theta) \neq 1$. Значит, $\ind{\theta} = 2$,  из чего мы имеем разложение 
+			\[
+				\cO_{K} = \Z \oplus \Z\theta \oplus \Z \frac{\theta + \theta^2}{2}.
+			\]
+		\end{example}
+
+		\begin{homework}
+			Задачи:
+			\begin{enumerate}
+				\item Предположим, что $K/F$~--- расширение Галуа, $[K : F]$~--- нечётна. Докажите, что тогда 
+				для любого базиса $e_1, \ldots, e_n$ расширения $K/F$ будет выполнено $\disc(e_1, \ldots, e_n) \in F^{*^{2}}$.
+
+				\item Рассмотрим $K = \Q(\sqrt[p]{1})$. Тогда $\zeta, \zeta^2, \ldots \zeta^{p - 1}$ образуют базис $K/\Q$. Докажите, что $|\disc(\zeta, \zeta^2, \ldots, \zeta^{p - 1})| = p^{p - 2}$.
+				\emph{Hint:} тут можно действовать строго согласно определению~\ref{discriminant}.
+
+				\item Пусть $K/\Q$~--- расширение степени $n$, $K = \Q(\theta)$, где $\theta^n + a_{n - 1}\theta^{n - 1} + \ldots + a_0 = 0$ и пусть $p$~--- такое простое число, что $\vp(a_0) = 1$ и $\vp(a_i) \ge 1$. Докажите, что тогда $p \not \ \mid \ind(\theta)$.
+
+				\item Докажите, что если $K = \Q(\sqrt[p]{1})$, где $p$~--- простое, то $\cO_{K} = \Z[\zeta]$, где $\zeta^p = 1$.
+
+				\item Пусть $\fp_{1}, \ldots, \fp_{k}$~--- максимальные идеалы кольца $\cO_{K}$, $n_{1}, \ldots, n_{k} \in \Z$. Докажите, что существует $\alpha \in K^{*}\colon \upsilon_{\fp_{i}}(\alpha) = n_{i} \ \forall 1 \le i \le n_{k}$.
+
+				\item Пусть $I \subset \cO_{K}$~--- идеал, $J$~--- дробный идеал. Докажите, что $\exists x \in K^{*}\colon x J + I = \cO_{K}$.
+
+				\item Докажите, что любой дробный идеалпорождается двумя элементами. 
+			\end{enumerate}
+
+			Приведём сейчас другое, конструктивное доказательство того, что $\cO_{K}$~--- конечнопорожденная абелева группа. 
+
+			Возьмем $\omega_{1}, \omega_{2}, \ldots, \omega_{n} \in \cO_{K}$, где $\omega_{1}, \ldots, \omega_{n}$~--- базис $K$ на $\Q$.
+			Тогда $\disc(\omega_{1}, \ldots, \omega_{n}) \in \Z$, возьмем набор $(\omega_1, \ldots, \omega_n)$ с минимальным модулем дискриминанта. Докажем, что тогда он и будет целым базисом. 
+
+			Возьмем $x \in \cO_{K}, \ x = \sum a_i \omega_i, \ a_i \in \Q$ и покажем, что $a_i \in \Z$. Предположим противное, не умаляя общности $a_{1} \notin \Z$. 
+
+
+			\[
+				x \in \cO_{K} \implies \sum \{ a_i \}\omega_{i} = x - \sum [a_i] \omega_i \in \cO_{K}.
+			\]
+
+			Перейдём к набору $(\sum \{ a_i \}\omega_{i}, \omega_{2}, \ldots, \omega_{n})$. Покажем, что модуль его дискриминанта уменьшился. Действительно, 
+			\[
+				(\sum \{ a_i \}\omega_{i}, \omega_{2}, \ldots, \omega_{n}) = (\omega_{1}, \ldots, \omega_{n}) \cdot \begin{pmatrix} \{ a_{1}\} & \ldots & \ldots & \ldots \\ \{ a_{2}\} & 1 & \ldots & \ldots \\ \vdots & \vdots & \ddots & \vdots \\ \{ a_n\} & \ldots & \ldots & 1 \end{pmatrix}.
+			\]
+			а определитель матрицы, написаной справа равен $\{ a_1 \} \le 1$.
+		\end{homework}
+	\end{definition}
