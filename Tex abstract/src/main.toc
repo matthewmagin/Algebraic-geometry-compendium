@@ -7,32 +7,34 @@
 \contentsline {section}{\numberline {2.}Алгебраическая теория чисел}{5}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Разложение идеалов в произведение простых в кольцах целых числовых полей}{5}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Дискриминант}{7}{subsection.2.2}%
-\contentsline {section}{\numberline {3.}Основы теории гомологий}{10}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Симплициальные гомологии}{10}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Сигнулярные гомологии}{12}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Немного гомологической алгеры}{13}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Гомотопическая инвариантность гомологий}{14}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Относительные гомологии и гомологически точная последовательность пары}{16}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Пары Боруска}{18}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Относительные гомологии как абсолютные (факторизация)}{19}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Вырезание}{22}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Точная последовательность Майера-Вьеториса}{23}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Гомологии сфер}{23}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}Гомологии букета и надстройки}{24}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}Гомологии с коэффициентами}{25}{subsection.3.12}%
-\contentsline {subsection}{\numberline {3.13}Приложения теории гомологий}{25}{subsection.3.13}%
-\contentsline {subsection}{\numberline {3.14}Симплициальные комплексы}{26}{subsection.3.14}%
-\contentsline {subsection}{\numberline {3.15}Эквивалентность симплициальных и сингулярных гомологий}{26}{subsection.3.15}%
-\contentsline {subsection}{\numberline {3.16}Степень отображения}{27}{subsection.3.16}%
-\contentsline {subsection}{\numberline {3.17}Клеточные гомологии}{29}{subsection.3.17}%
-\contentsline {subsection}{\numberline {3.18}Гомологии поверхностей}{32}{subsection.3.18}%
-\contentsline {subsection}{\numberline {3.19}Пространства Мура}{33}{subsection.3.19}%
-\contentsline {subsection}{\numberline {3.20}Теорема о вложении дисков и сфер}{33}{subsection.3.20}%
-\contentsline {subsection}{\numberline {3.21}Когомологии}{34}{subsection.3.21}%
-\contentsline {subsection}{\numberline {3.22}Формула универсальных коэффициентов для когомологий}{35}{subsection.3.22}%
-\contentsline {subsection}{\numberline {3.23}Умножение в когомологиях}{37}{subsection.3.23}%
-\contentsline {section}{\numberline {4.}Комплексная алгебраическая геометрия}{39}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Комплексные многообразия}{39}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Векторные рассоления}{41}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Подмногообразия и аналитические подмножества}{43}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Когомологии де Рама и Дольбо}{44}{subsection.4.4}%
+\contentsline {subsection}{\numberline {2.3}Норма идеала}{10}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Индекс ветвления и степень инерции}{11}{subsection.2.4}%
+\contentsline {section}{\numberline {3.}Основы теории гомологий}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Симплициальные гомологии}{14}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Сигнулярные гомологии}{16}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Немного гомологической алгеры}{17}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Гомотопическая инвариантность гомологий}{18}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Относительные гомологии и гомологически точная последовательность пары}{20}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Пары Боруска}{22}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Относительные гомологии как абсолютные (факторизация)}{23}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Вырезание}{26}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Точная последовательность Майера-Вьеториса}{27}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Гомологии сфер}{27}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Гомологии букета и надстройки}{28}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Гомологии с коэффициентами}{29}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Приложения теории гомологий}{29}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Симплициальные комплексы}{30}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Эквивалентность симплициальных и сингулярных гомологий}{30}{subsection.3.15}%
+\contentsline {subsection}{\numberline {3.16}Степень отображения}{31}{subsection.3.16}%
+\contentsline {subsection}{\numberline {3.17}Клеточные гомологии}{33}{subsection.3.17}%
+\contentsline {subsection}{\numberline {3.18}Гомологии поверхностей}{36}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}Пространства Мура}{37}{subsection.3.19}%
+\contentsline {subsection}{\numberline {3.20}Теорема о вложении дисков и сфер}{37}{subsection.3.20}%
+\contentsline {subsection}{\numberline {3.21}Когомологии}{38}{subsection.3.21}%
+\contentsline {subsection}{\numberline {3.22}Формула универсальных коэффициентов для когомологий}{39}{subsection.3.22}%
+\contentsline {subsection}{\numberline {3.23}Умножение в когомологиях}{41}{subsection.3.23}%
+\contentsline {section}{\numberline {4.}Комплексная алгебраическая геометрия}{43}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Комплексные многообразия}{43}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Векторные рассоления}{45}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Подмногообразия и аналитические подмножества}{47}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Когомологии де Рама и Дольбо}{48}{subsection.4.4}%

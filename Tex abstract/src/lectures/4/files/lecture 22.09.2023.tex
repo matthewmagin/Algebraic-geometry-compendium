@@ -152,6 +152,31 @@
 		Для кольца $\Z$ дробные идеалы соотвествуют рациональным числам. 
 	\end{example}
 
+	\begin{homework}
+		Задачи: 
+		\begin{enumerate}
+			\item Докажите, что кольцо $\cO_{K}$ факториально тогда и только тогда, когда $\cO_{K}$~--- кольцо главных идеалов. 
+
+			\item  Разложите число $33 + 11\sqrt{-7}$ на неприводимые в кольце $\cO_{K}$, где $K = \Q(\sqrt{-7})$.
+
+			\item Пусть $\fp \in \Specm{\cO_{K}}$. Введём на группе дробных идеалов \emph{нормирование} следующим образом: $\upsilon_{\fp}\lr*{I} =$ степень, с которой $\fp$ входит в разложение дробного идеала $I$. Иными словами, 
+			\[
+				I = \fp^{\upsilon_{\fp(I)}} \cdot \fq_{1} \cdot  \fq_{2} \cdot \ldots \cdot \fq_{m}.
+			\]
+			Для $a \in K^{*}$ определим $\upsilon_{\fp}(a) \eqdef \upsilon_{\fp}((a))$. Так вот, докажите, что:
+			\begin{itemize}
+				\item $\upsilon_{\fp}(I + J) = \min\lr*{\upsilon_{p}(I), \upsilon_{\fp}(J)}$.
+				\item $\upsilon_{\fp}(I \cap J) = \max\lr*{\upsilon_{p}(I),\upsilon_{\fp}(J)}$.
+				\item $\upsilon_{\fp}(a + b) \ge \min\lr*{\upsilon_{\fp}(a), \upsilon_{\fp}(b)}$ и равенство достигается в случае $\upsilon_{\fp}(a) \neq \upsilon_{\fp}(b)$.
+				\item $\upsilon_{\fp}(IJ) = \upsilon_{\fp}(I) + \upsilon_{\fp}(J)$.
+				\item $\upsilon_{\fp}(ab) = \upsilon_{\fp}(a) + \upsilon_{\fp}(b)$.
+
+			\end{itemize}
+			Таким образом, $\upsilon_{\fp}$~--- гомоморфизм $K^{*} \to \Z$. Этот гомоморфизм называют \emph{дисретным нормированием, соотвествующим идеалу $\fp$}.
+
+		\end{enumerate}
+	\end{homework}
+
 
 	
 
