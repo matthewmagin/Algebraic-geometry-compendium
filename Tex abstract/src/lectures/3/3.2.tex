@@ -1,0 +1,37 @@
+	\subsection{Локализация. Поведение спектра при локализации. Локальный принцип.}
+
+	Напомним основные примеры локализаций:
+
+	\begin{enumerate}
+		\item Для $s \in R$ можно рассмотреть мультипликативное подмножество $\langle s \rangle = \{ s^n \ \vert \ n \in \N \}$.  Локализация $\langle s \rangle^{-1}R$ называется \emph{главной локализацией} и обозначается $R_{s}$.
+
+		\item Если $\fp$~--- простой идеал кольца $R$, то $R \setminus \fp$~--- мультипликативное подмножество. В этом случае локализация $R_{\fp} \eqdef (R\setminus \fp)^{-1}R$ называется локализацией кольца $R$ в простом идеале $\fp$.
+
+	\end{enumerate}
+
+	\begin{definition} 
+		Кольцо называется \emph{локальным}, если оно имеет ровно один максимальный идеал и \emph{полулокальным}, если максимальных идеалов конечное число. 
+	\end{definition}
+
+	Если $\fp$~--- прсотой идеал, то $R_{\fp}$~--- локальное кольцо с единственным максимальным идеалом $\fp R_{\fp}$. 
+
+	Пусть теперь $\varphi\colon R \to A$~--- гомоморфизм коолец, тогда он индуцирует следующие отображения на идеалах: 
+	\begin{itemize}
+		\item $\varphi^{*}\colon \Ideals{A} \to \Ideals{R}, \ \varphi^{*}(J) \eqdef \varphi^{-1}(J)$.
+		\item $\varphi_{*}\colon \Ideals{R} \to \Ideals{A}, \ \varphi_{*}(I) \eqdef  \varphi(I)A$.
+	\end{itemize}
+
+	Заметим, что так как прообраз простоого идеала прост, $\varphi^{*}$ можно сузить до отображения $\Spec{A} \to \Spec{R}$.
+
+	\begin{lemma} 
+		Если $I \in \Im{\varphi^{*}}$, то $I = \varphi^{*}(\varphi_{*}(I))$.
+	\end{lemma}
+	\begin{proof}
+		Пусть $I = \varphi^{*}(J) = \varphi^{-1}(J)$, тогда $\varphi(I) \subseteq J \implies  \varphi_{*}(I) = \varphi(I)A \subseteq JA \subseteq J$. Но тогда $\varphi^{*}(\varphi_{*}(I)) \subseteq \varphi^{-1}(J) = I$. С другой стороны, $I \subseteq \varphi^{-1}(\varphi(I)) \subseteq \varphi^{*}(\varphi_{*}(I))$.
+	\end{proof}
+
+	\begin{lemma} 
+		Пусть $\varphi\colon R \to A$~--- произвольный гомоморфизм колец. Тогда $\fp \in \varphi^{*}\lr*{\Spec{A}}$ тогда и только тогда, когда $\fp = \varphi^{*}(\varphi_{*}(\fp))$.
+	\end{lemma}
+
+

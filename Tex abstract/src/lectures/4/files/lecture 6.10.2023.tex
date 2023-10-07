@@ -194,6 +194,15 @@
 		\begin{enumerate}
 			\item Разобрать случай $p = 2$ в выкладках выше. 
 			\item Пусть $K/\Q$~--- расширение степени $n$, $K = \Q(\theta)$, где $\theta^n + a_{n - 1}\theta^{n - 1} + \ldots + a_0 = 0$ и пусть $p$~--- такое простое число, что $\vp(a_0) = 1$ и $\vp(a_i) \ge 1$. Докажите, что тогда $p \not \ \mid \ind(\theta)$.
+			\emph{Hint 1:} рассмотрите $x \in \cO_{K}\colon px \in \Z[\theta]$. Покажите, что достаточно доказать, что в этом случае $x \in \Z[\theta]$. \emph{Hint 2:} докажите, что если $\fp \mid (p)$~, то $\upsilon_{\fp}(\theta) = 1$ и индекс ветвления числа $p$ равен $n$. \emph{Hint 3:} $px = b_0 + b_1 \theta + \ldots + b_{n - 1}\theta^{n - 1}$. Предположите, что не все $b_i$ делятся на $p$ и прийдите к противоречию. 
+			\item Исследуйте разложение идеала $2\cO_{K}$, где $K = \Q(\sqrt{d})$.
+			\item Пусть $K/F$~--- конечное сепарабельное расширение, $K = F(\theta)$, $[K : F] = n$. Докажите, что 
+			\[
+				\disc(1, \theta, \theta^2, \ldots, \theta^{n - 1}) = \prod_{i \neq j} (\sigma_{i}(\theta) - \sigma_{j}(\theta)) = \Nm_{K/F}(f'(\theta)), \text{ где }
+			\]
+			$f$~--- минимальный многочлен $\theta$.
+			\item Докажите, что для $\zeta = \sqrt[p^n]{1}$ и $K = \Q(\zeta)$ будет справедлив результат, аналогичный~\ref{hw_4}, то есть $\cO_{K} = \Z[\zeta]$.
+			\item Пусть $f, g \in \cO_{K}[x]$, то $\cont(fg) = \cont(f) \cdot \cont(g)$. \emph{Hint:} применить локальный принцип. 
 		\end{enumerate}
 		
 	\end{homework}

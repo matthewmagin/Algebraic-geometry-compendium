@@ -464,6 +464,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/3/3.2.tex
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/3/3.2.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files/lecture 22.09.2023.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files/lecture 22.09.2023.tex
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.fd
