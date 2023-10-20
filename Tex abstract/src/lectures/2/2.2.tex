@@ -1,0 +1,111 @@
+   \subsection{Когомологии де Рама и Дольбо}
+
+    Пусть $M$~--- гладкое многообразие. Обозначим за $A^{p}(M; \R)$
+    пространство дифференциальных форм степени $p$ на $M$, а через $Z^{p}(M; \R)$
+    подпространство замкнутых $p$-форм.
+
+    Так как $d^2 = 0$, у нас есть (ко)цепной комплекс
+    \[ A^{0}(M; \R) \to \ldots \to A^{p}(M; \R) \to A^{p + 1}(M; \R) \to \ldots \]
+    а его группы когомологий называются группами \emph{когомологий де Рама} многообразия $M$.
+
+    Иными словами, группы когомологий де Рама~--- это факторгруппы замкнутых форм по модулю точных
+    \[ H_{\textrm{DR}}^{p}(M; \R)  = Z^{p}(M; \R) / d A^{p - 1}(M). \]
+
+    Совершенно также мы можем рассматривать комплекснозначные формы и давать все соотвествующие определения (используя обозначения $ A^{p}(M)$ и аналогичные, то
+    есть без коэффициентов):
+    \[ H_{\mathrm{DR}}^{p}(M) = Z^{p}(M)/d A^{p - 1}(M) \]
+
+    \begin{remark}
+       Нетрудно заметить, что как и всегда с коэффициентами,
+        \[ H^{p}_{\mathrm{DR}}(M) = H_{\mathrm{DR}}^{p}(M; \R) \otimes \C. \]
+    \end{remark}
+
+    Как мы заметили в самом первом параграфе, комплексифицированное кокасательное пространство раскладывается в голоморфную и антиголоморфную часть:
+    \[ T^{*}_{\C, z}M = T_{z}^{*'} M \oplus T_{z}^{*''} M,  \]
+    что дает нам разложение
+    \[ \Lambda^n T^{*}_{\C, z}M = \bigoplus_{p + q = n}\lr*{ \Lambda^{p} T^{*'}_{z}(M) \otimes \Lambda^{q} T_{z}^{*''}(M)}, \]
+    а это (по определению внешних форм) даёт нам
+    \[ A^{n}(M) = \bigoplus_{p + q = n} A^{p, q}(M), \text{где }\]
+    \[ A^{p, q}(M) = \{ \varphi \in A^{n}(M) \ \vert \ \varphi(z) \in \Lambda^{p}T_{z}^{*'}(M) \otimes \Lambda^q T_{z}^{*''}(M) \ \forall z \in M \}. \]
+
+    Соотвественно, форму $\varphi \in A^{p, q}$ называют формой типа $(p, q)$. Обозначим за $\pi^{(p, q)}$ проекцию
+    \[ A^{*}(M) \to A^{p, q}(M), \]
+    так что для $\varphi \in A^{*}(M)$ имеем $\varphi = \sum \pi^{(p, q)}\varphi$.
+
+    Если $\varphi A^{p, q}(M)$, то для любого $z \in M$
+    \[ \mathrm{d}\varphi(z) \in \lr*{\Lambda^{p} T_{z}^{*'}M \otimes \Lambda^{q} T^{*''}_{z}M} \wedge T^{*}_{\C, z}M, \]
+    \[ \mathrm{d}\varphi \in A^{p + 1, q}(M) \oplus A^{p, q + 1}(M). \]
+    Определоим теперь для этих замечательных дифференциальных форма операторы
+    \[ \overline{\partial}\colon A^{p, q}(M) \to A^{p, q + 1}, \quad \partial \colon A^{p, q}(M) \to A^{p + 1, q}(M) \]
+    \[ \overline{\partial} = \pi^{(p, q + 1)} \circ \mathrm{d}, \quad \partial = \pi^{(p + 1, q)} \circ \mathrm{d}, \text{ то есть } d = \partial + \overline{\partial}. \]
+
+    В локальных координатах $z = (z_{1}, \ldots, z_{n})$ форма $\varphi \in A^{n}(M)$ имеет тип  $(p, q)$, если она имеет
+    представление в виде
+    \[ \varphi(z) = \sum_{I, J} \varphi_{I, J}(z) \mathrm{d}z_{I} \wedge \mathrm{d}\overline{z}_{J} \]
+
+    \begin{remark}
+       Короче говоря, вся эта страшная белиберда была, чтоб сказать, что бывают не только голоморфные дифференциальные формы, но и такие, где
+        один кусок голоморфный, а другой антиголоморфный.
+    \end{remark}
+
+   Дифференцировать эти формы можно вполне естественным образом:
+    \[ \overline{\partial}\varphi(z) = \sum_{I, J, j} \frac{\partial}{\partial \overline{z_{j}}} \varphi_{I J}(z) \mathrm{d}\overline{z}_{j} \wedge \mathrm{d}z_{I} \wedge \mathrm{d}\overline{z}_{J}, \quad \partial \varphi(z) = \sum_{I, J, i} \frac{\partial \varphi}{\partial z_i} \varphi_{I J}(z) \mathrm{d}z_{i} \wedge \mathrm{d}z_{I} \wedge \mathrm{d}\overline{z}_{J}.  \]
+
+    В частности, форма типа $(q, 0)$ называется \emph{голоморфной}, если $\overline{\partial}\varphi = 0$. Ясно, что это имеет место тогда и только тогда, когда 
+    \[
+       \varphi(z) = \sum_{I\colon |I| = q} \varphi_{I}(z) \mathrm{d}z_{I}, \text{ где }
+    \]
+    функции $\varphi_{I}(z)$ голоморфны. 
+
+    Отметим, что поскольку разложение $T^{*}_{\C, z} = T^{*'}_{z} \oplus T_{z}^{*''}$ сохраняется при голоморфных отображениях, тоже самое будет верно и для $A^{\bullet} = \bigoplus_{(p, q)} A^{(p, q)}$. Действительно, если $f\colon M \to N$~--- голоморфное отображение комплексных многообразий, то $f^{*}\lr*{A^{p, q}(N)} \subset A^{p, q}(M)$ и $\overline{\partial} \circ f^{*} = f^{*} \circ \overline{\partial}$.
+
+    Пусть $Z^{p, q}_{\overline{\partial}}(M)$~--- пространство $\partial$-замкнутых форм типа $(p, q)$. Тогда, так как
+    \[
+       \frac{\partial^2}{\partial\overline{z_i}\partial\overline{z_j}} = \frac{\partial^2}{\partial\overline{z_j}\partial\overline{z_i}}
+    \]
+    мы будем иметь $\overline{\partial}^2 = 0$ на $A^{(p, q)}$, откуда мы получим 
+    \[
+        \overline{\partial}\lr*{A^{p, q}(M)} \subset Z^{p, q + 1}_{\overline{\partial}}(M),
+     \] 
+     что позволяет определить \emph{группы когомологий Дольбо} как 
+     \[
+        H^{p, q}_{\overline{\partial}}(M) = Z^{p, q}_{\overline{\partial}}(M)/\overline{\partial}\lr*{A^{p, q - 1}(M)}
+     \]
+
+     \begin{theorem}[$\overline{\partial}$-лемма Пуанкаре] 
+        Для полидиска $\Delta = \Delta(r) \subset \C^n$ имеет место равенство 
+        \[
+           H_{\overline{\partial}}^{p, q}(\Delta) = 0, q \ge 1.
+        \]
+     \end{theorem}
+     \begin{proof}
+        \textcolor{Emerald}{Какое-то очень уж неприятное. Лучше сначала узнать, как обычная лемма Пуанкаре про то, что в односвзяной области замкнутая форма точна, доказыватся.}
+     \end{proof}
+
+     \subsection{Пучки и когомологии}
+
+     \begin{definition} 
+        Пусть $X$~--- топологическое пространство. \emph{Пучок $\cF$} на $X$ сопоставляет каждому открытому множеству $U \subset X$ группу (или кольцо) $\cF(U)$ (которое мы будем называть группой \emph{сечений} $\cF$ над $U$) и каждой паре $U \subset V$ открытых подмножеств $X$ гомоморфизм $r_{VU}\colon \cF(V) \to \cF(U)$\footnote{тут буква $r$ от слова \emph{restriction}.}, называемый \emph{гомоморфизмом ограничения}, причём так, что
+
+        \begin{enumerate}
+           \item Для любой тройки $U \subset V \subset W$ открытых множеств выполняется
+           \[
+              r_{WU} = r_{WV} \circ r_{VU}.
+           \]
+           В силу этого соотношения по аналогии с ограничениями функций принято писать $r_{WU}(\sigma) = \sigma\vert_{U}$ (в общем $r_{WU}$~--- гомомрфизм сужения с $V$ на $U$).
+
+           \item $r_{UU} = \id, \ \cF(\varnothing) = 0$.
+
+           \item Для любой пары открытых множеств $U, V \subset M$ и сечений $\sigma \in \cF(U)$, $\tau \in \cF(V)$, таких что $\sigma\vert_{U \cap V} = \tau\vert_{U \cap V}$ найдётся такое сечение $\rho \in \cF(U \cup V)$, что 
+           \[
+              \rho\vert_{U} = \sigma, \quad \rho\vert_{V} = \tau.
+           \]
+           \item Если $\sigma \in \cF(U \cup V)$ и $\sigma\vert_{U} = \sigma\vert_{V} = 0$, то $\sigma = 0$.
+        \end{enumerate}
+     \end{definition}
+
+     \noindent\bf{Очень хорошие пучки, которые мы будем часто встречать:}
+
+     \begin{enumerate}
+        \item 
+     \end{enumerate}

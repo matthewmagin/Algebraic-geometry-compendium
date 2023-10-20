@@ -1,0 +1,258 @@
+
+	\subsection{Дифферента и ветвление}
+
+	\begin{definition} 
+		Пусть $K/\Q$~--- конечное расширение. Простое число $p$ называется \emph{неразветвлённым} в числовом поле $K$, если 
+		\[
+			p\cO_{k} = \fp_{1} \cdot \fp_{2} \cdot \ldots \cdot  \fp_{k}, \ \fp_{i} \neq \fp_{j} \text{~--- максимальные.}
+		\]
+		Кроме того, пусть 
+		\[
+			p\cO_{K} = \fp_{1} \cdot \fp_{2}^{e_2} \cdot \ldots 
+		\]
+
+		Если $e_1 > 1$, то идеал $\fp_{1}$ называется \emph{разветвлённым}. 
+
+	\end{definition}
+
+	\textcolor{red}{Этот микрокусок надо переписать!!!}
+
+	Как мы помним из домашней задачи, $\cO_{K}^{*} = \{ x \in K \ \vert \ \Tr_{K/\Q}(xy) \in \Z \ \forall y \in \cO_{K} \}$~--- дробный идеал. 
+
+	Пусть $\omega_1, \ldots, \omega_n$~--- целый базис, а $\omega_1^*, \ldots, \omega_n^*$~--- взаимный базис. Тогда 
+	\[
+		\Tr(\omega_i \omega_j^*) = \begin{cases} 1, i = j \\ 0, i \neq j \end{cases}
+	\]
+
+	Разложим $x \in \cO_{K}^{*}$ по взаимному базису:
+	\[
+		x = a_1 \omega_1^* + \ldots + a_n \omega_n^*, \ a_i \in \Q.
+	\]
+
+	Тогда $\Tr(x \omega_i) = a_i \in \Z$ по определению $\cO_{K}^*$. По линейности мы получаем, что $\forall y \in \cO_{K} \ \Tr(xy) \in \Z $ из чего следует, что $x \in \cO^{*}_{K}$. 
+
+	 Таким образом, $\cO_{K}^{*}$~--- просто свободная абелева группа, порожденная взаимным базисом. 
+
+	 \begin{definition} 
+	 	\emph{Дифферентой} числового поля $K$ называют идеал $\cD = \cO_{K}^{{*}^{-1}}$.
+	 \end{definition}
+
+	 Как мы помним, дискриминант числового поля $K$~--- это 
+	 
+	 \[
+	 		\disc(K) = \disc(\cO_{K}) = \det\lr*{\Tr(\omega_i \omega_j)}, \text{ где } \{ \omega_i \} - \text{ целый базис. }
+	 \]
+
+	 \begin{statement} 
+	 	$\Nm(\cD) = \left\lvert \disc(K) \right\rvert$.
+	 \end{statement}
+
+	 \begin{proof}
+	 	Будем действовать строго по определению: 
+	 	\[
+	 		\Nm(\cD) = \left\lvert \cO_{K}/\cD \right\rvert = \left\lvert \cO_{K} / \cO_{K}^{*^{-1}}\right\rvert = \left\lvert \cO_{K}^{*}/\cO_{K} \right\rvert
+	 	\]
+
+	 	$\cO_{K} = \bigoplus \omega_i \Z \subset \bigoplus \Z \omega_i^{*} = \cO_{K}^*$. Разложим элемент целого базиса по взаимному базису: 
+
+	 	\[
+	 		\omega_i = \sum_{j} a_{i j} \omega_j^*,
+	 	\]
+	 	домножая это равенство и применяя след, мы получаем, что $a_{i j} = \Tr(\omega_i \omega_j)$, а значит, применяя лемму о вычислении индекса подгруппы, мы получаем, что 
+
+	 	\[
+	 		\left\lvert \cO_{K}^{*}/\cO_{K} \right\rvert = \left\lvert \disc(K)\right\rvert. 
+	 	\]
+	 \end{proof}
+
+	 \begin{theorem} 
+	 	Максимальный идеал $\fp \subset \cO_{K}$ разветвлён тогда и только тогда, когда $\cD \subset \fp$.
+	 \end{theorem}
+	 \begin{proof} В процессе доказательства нам понадобиться несколько лемм.  Докажем сначала импликацию $(\mathbf{\Rightarrow})$:
+
+	 	\begin{lemma}[Задача 3 ДЗ~\ref{hw_6}]
+	 		Пусть $V$~--- конечномерное векторное пространство над полем $F$, $A \in \mathrm{End}(V)$, причём $A$~--- нильпотентный. Докажите, что тогда $\Tr(A) = 0$.
+	 	\end{lemma}
+	 	\begin{proof}[Доказательство леммы]
+	 	Приведём, например, доказательство без Жордановой формы. Ясно, что достаточно показать, что характеристический многочлен является чистой степенью переменной $t$.
+
+	 	\[
+	 		t^m E - A^m = (tE - A)((tE)^{m - 1} + (tE)^{m - 2} A + \ldots) = (tE - A) \cdot B.
+	 	\]
+
+	 	Применим к этом равенству $\det$:
+	 	\[ 
+	 		t^{mn} = \det{\lr*{t^m E - A^m}} = \det\lr*{tE - A}\det\lr*{B} \implies \det\lr*{tE - A} = t^n. 
+		\]
+
+		Пусть $p$~--- простое число. Факторгруппа $\cO_{K}/p\cO_{K}$~--- векторное пространство над $\F_{p}$. Возьмем $x \in \cO_{K}$, рассмотрим его образ $\overline{x}$ в факторгруппе и рассмотрим линейный оператор умножения на него:
+
+		\[
+			\cO_{K}/p \xrightarrow{\cdot x} \cO_{L}, \ y \mapsto xy. 
+		\]
+
+		След этого оператора~--- элемент $\F_{p}$. С другой стороны, мы можем рассмотреть $\Tr_{K/\Q}(x)$, который является целым числом.  Нетрудно заметить, что $\overline{\Tr_{K/\Q}}(x) = \Tr(\overline{x})$. 
+
+		Предположим, что элемент $x$ делится на какую-то степень $p$, т.е. лежит в $p\cO_{K}$. Тогда мы получаем такое следствие из леммы:
+
+		\begin{corollary}\label{TraceCor}
+			Пусть $x \in \cO_{K}$, $x^m \in p\cO_{K}$. Тогда $\Tr_{K/\Q}(x) \in p\Z$. 
+		\end{corollary}	
+	 	\end{proof}
+
+	 	Перейдём теперь к доказательству теоремы. Пусть $\fp$ разветвлён,  то есть 
+
+	 	\[
+	 		p\cO_{K} = \fp_1^{e_1} \cdot \fp_{2}^{e_2} \cdot \ldots \cdot \fp_{k}^{e_k}, e_1 > 1.
+	 	\]
+
+	 	Докажем, что $\forall x \in \fp_{1}^{-1}$ выполнено $\Tr(x) \in \Z$. Если мы покажем это, то всё будет доказано. Действительно, это так, потому что 
+	 	\[
+	 		y \in \cO_{K} \implies xy \in \fp_{1}^{-1} \implies \Tr(xy) \in \Z \implies x \in \cO_{K}^{*} \implies \fp_{1}^{-1} \subset \cO_{K}^{*} = \cD^{-1}.    
+	 	\]
+
+	 	Докажем теперь само утвердждение. Заметим, что $px \in \fp_{1}^{e_1 - 1} \fp_{2}^{e_2} \cdot \ldots \cdot \fp_{k}^{e_k}$. Тогда 
+	 	\[
+	 		(px)^2 \in \fp_1^{2(e_1 - 1)} \fp_{2}^{2e_2} \cdot \ldots \cdot \fp_{k}^{2e_k}
+	 	\]
+
+	 	Так как $2(e_1 - 1) \ge e_1$, мы получаем, что 
+
+	 	\[
+	 		(px)^2 \in \fp_1^{2(e_1 - 1)} \fp_{2}^{2e_2} \cdot \ldots \cdot \fp_{k}^{2e_k} \subset p\cO_{K}.
+	 	\]
+
+	 	Тогда, по следствию~\ref{TraceCor} мы получаем, что $\Tr(px) \in p\Z \implies \Tr(x) \in \Z$.
+
+	 	Докажем теперь импликацию $(\mathbf{\Leftarrow})$. Вспомним для начала такое утверждение:
+
+	 	\begin{statement}\label{Trace of finite extension of finite fileds} 
+	 		Если $F$~--- конечное поле, а $L/F$~--- конечное расширение, то $\Tr_{L/F} \neq 0$.
+	 	\end{statement}
+
+	 	\begin{remark}
+	 		В случае характеристики 0 это утверждение очевидно,  так как можно рассматривать след единицы. 
+	 	\end{remark}
+
+	 	\begin{proof}[Доказательство утверждения~\ref{Trace of finite extension of finite fileds}]
+	 		Если $|F| = q$, то $\Gal(L/F) = \langle \sigma \rangle$~--- циклическая и она порождена автоморфизмом Фробениуса $\sigma(x) = x^q$ (множество неподвижных элементов~--- как раз поле). Предположим, что $[L \colon F] = m$. Тогда Группа Галуа будет иметь вид 
+	 		\[
+	 			\Gal(L/F) = \langle \id, \sigma, \sigma^2, \ldots, \sigma^{m - 1} \rangle,
+	 		\]
+	 		а значит, след будет иметь вид 
+	 		\[
+	 			\Tr(x) = x + \sigma x + \sigma^2 x = \ldots + \sigma^{m - 1}x = x + x^q + x^{q^2} + \ldots + x^{q^{m - 1}}.
+	 		\]
+
+	 		Заметим, что многочлен выше не может быть тождественно нулём. Действительно, он имеет не больше, чем $q^{m - 1}$ корней, а $|L| = q^m > q^{m - 1}$.
+	 	\end{proof}
+
+	 	Итак,  вернёмся к доказательству теоремы. 
+	 	\[
+	 		p\cO_{K} = \fp_{1} \fp_{2}^{e_{2}} \cdot \ldots \cdot \fp_{k}^{e_k}.
+	 	\]
+
+	 	По китайской теореме об остатках:
+	 	\[
+	 		\cO_{K}/p\cO_{K} \cong \cO_{K}/\fp_{1} \oplus \cO_{K}/\fp_{2}^{e_2} \oplus \cdot \ldots \cdot \oplus \cO_{K}/\fp_{k}^{e_k}.
+	 	\]
+
+	 	Пусть $x \in \fp_{2}^{e_2} \cdot \fp_{3}^{e_3} \cdot \ldots \fp_{k}^{e_k} \setminus \fp_{2}$. Тогда в разложении в прямую сумму такой $x$ будет иметь лишь одну ненулевую координату (первую). Значит, достаточно посчитать след в первом прямом слагаемом, которое является полем (так как мы факторизуем по максимальному в первой степени), причём, конечным расширением конечного поля. По утверждению~\ref{Trace of finite extension of finite fileds} мы можем выбрать $x$ так, что $\Tr(\overline{x}) \neq 0 \in \F_{p} \implies \Tr(x) \notin p\Z$. Тогда $\Tr(\frac{x}{p}) \notin \Z$, но 
+	 	\[
+	 		\frac{x}{p} \in \fp_{1}^{-1}, \ \Tr\lr*{\frac{x}{p}} \notin \Z \implies \frac{x}{p} \notin \cO_{K}^{*} \implies \fp_{1}^{-1} \not\subset \cO_{K}^{*} \implies \cD \not\subset \fp_{1},
+	 	\]
+	 	что мы и хотели доказать. 
+	 \end{proof}
+
+	 \begin{theorem} 
+	 	Простое число $p$ разветвлено тогда и только тогда, когда $p \mid \disc(K)$.
+	 \end{theorem}
+	 \begin{proof}
+	 	Так как $p$ разветвлено, по определению 
+	 	\[
+	 		p \cO_{K} = \fp_{1}^{e_1} \cdot \fp_{2}^{e_2} \cdot \ldots \cdot \fp_{k}^{e_k}, e_1 > 1.
+	 	\]
+	 	Тогда $\cD \subset \fp_{1} \implies (\Nm(\cD)) = (\disc(K)) \subset (\Nm(\fp_{1})) = (p^{f_1}) \subset (p)$, где $f_1$~--- степень инерции. 
+
+	 	Теперь пусть $p$ неравзеветвлено, то есть 
+	 	\[
+	 		p\cO_{K} = \fp_{1} \fp_{2} \cdot \ldots \cdot \fp_{k}, \ \cD \not\subset \fp_{1}.
+	 	\]
+
+	 	В то же время, дифферента то же раскладывается в произведение простых 
+	 	\[
+	 		\cD = \fq_{1} \cdot \fq_{2} \cdot \ldots \cdot \fq_{m}, \ p \notin \fq_{i}
+	 	\]
+
+	 	Тогда, применим норму мы получим, что 
+	 	\[
+	 		\left \lvert \disc(K) \right\rvert = \Nm(\cD) = \Nm(\fq_1) \cdot \Nm(\fq_2) \cdot \ldots \cdot \Nm(\fq_m) = p_1^{f_1} \cdot p_2^{f_2} \cdot \ldots \cdot p_m^{f_m}, \ p_i \neq p \text{~--- простые.}
+	 	\]
+	 \end{proof}
+
+	 Отсюда ясно, что для каджого расщирение разветвлённых простых чисел только конечное число~--- простые делители дискриминанта. 
+
+	 \subsection{Кольцо целых композита расширений}
+
+	 В общем случае о вычислении кольца целых композита расширений сказать что-то сложно. Мы будем рассматривать один из частых  случаев, который также весьма полезен при вычислении колец целых числовых полей. 
+
+	 А именно, рассмотрим композит расщирений $K_1/\Q$ степени $m$ и $K_2/\Q$ степени $n$, причем таких, что $[K_1 K_2 \colon \Q] = mn$, а также $(\disc(K_1), \disc(K_2)) = 1$. 
+
+	 Пусть $\{u_i \}$~--- целый базис $\cO_{K_1}$, а $\{ v_i \}$~--- целый базис $\cO_{K_2}$.
+
+	 \begin{center}
+	 	\begin{tikzpicture}
+
+		    \node (Q1) at (0,0) {$\mathbb{Q}$};
+		    \node (Q2) at (2,2) {$K_2$};
+		    \node (Q3) at (0,4) {$K_1  K_2$};
+		    \node (Q4) at (-2,2) {$K_1$};
+
+		    \draw (Q1)--(Q2) node [pos=0.7, below,inner sep=0.25cm] {\( n \)};
+		    \draw (Q1)--(Q4) node [pos=0.7, below,inner sep=0.25cm] {\( m \)};
+		    \draw (Q3)--(Q4);
+		    \draw (Q2)--(Q3);
+		    \draw (Q1)--(Q3);
+
+	    \end{tikzpicture}
+	\end{center}
+
+	Как мы помним из курса теории полей, в этом случае 
+	\[
+		K_1 \otimes_{\Q} K_2 \cong K_1 K_2
+	\]
+
+	Пусть $\tau_i, \ 1 \le i \le m$~--- вложения $K_1$  в $\Q^{alg}$, а $\sigma_i, \ 1 \le i \le n$~--- вложения $K_2$ в $\Q^{alg}. $ Во-первых, заметим, что $\{ u_i v_{j} \}$~--- базис композита $K_1 K_2$ над $\Q$. Тогда элементы 
+	\[
+		\tau_i \otimes \sigma_j  (u_k v_{\ell}) = \sigma_j(u_k) \tau_i(v_{\ell})
+	\]
+	будут попапрно различными, а $\tau_i \otimes \sigma_j$ будут давать все вложения $K_1 K_2 \to \Q^{alg}$. Рассмотрим $\alpha \in \cO_{K_1 K_2}$, разложим его по базису:
+
+	\[
+		\alpha = \sum a_{i j} u_i v_j \in \cO_{K_1 K_2}, \ a_{i j} \in \Q.
+	\]
+	Рассмотрим $\beta_j = \sum_{i = 1}^{m} a_{i j } u_j$. Тогда выполняется следующее матричное тождество (которое мы преобразовываем далее, домножая на транспонированную, а после на взаимную к $A^{t}A$):
+	\[
+		\underbrace{(\sigma_i v_j)}_{A} \cdot \begin{pmatrix} \beta_1 \\ \beta_2 \\ \vdots \\ \beta_n \end{pmatrix} = \begin{pmatrix} (1 \otimes \sigma_1)(\alpha) \\ (1 \otimes \sigma_2)(\alpha) \\ \vdots \\ (1 \otimes \sigma_n)(\alpha) \end{pmatrix} \implies A^t A \begin{pmatrix} \beta_1 \\ \beta_2 \\ \vdots \\ \beta_n \end{pmatrix} = A^t \cdot \begin{pmatrix} (1 \otimes \sigma_1)(\alpha) \\ (1 \otimes \sigma_2)(\alpha) \\ \vdots \\ (1 \otimes \sigma_n)(\alpha) \end{pmatrix} \implies \disc(K_2) \cdot \begin{pmatrix} \beta_1 \\ \beta_2 \\ \vdots \\ \beta_n \end{pmatrix} = \begin{pmatrix} \gamma_1 \\ \gamma_2 \\ \vdots \\ \gamma_n \end{pmatrix},
+	\]
+
+	где $\gamma_i \in \cO_{K_1}$. Тогда $\disc(K_1) \cdot a_{i j} \in \Z$. Заметим, что такое же рассуждение мы могли проделать, заменив $u_i$ на $v_j$ в определении $\beta_j$, и получить, что $\disc(K_1) a_{i j} \in \Z$. Тогда, так как $(\disc(K_1), \disc(K_2)) = 1$, мы имеем $a_{i j} \in \Z$.
+
+	Таким образом, мы только что доказали такое утверждение: 
+
+	\begin{statement} 
+		А именно, рассмотрим композит расщирений $K_1/\Q$ степени $m$ и $K_2/\Q$ степени $n$, причем таких, что $[K_1 K_2 \colon \Q] = mn$, а также $(\disc(K_1), \disc(K_2)) = 1$. 
+
+	 Пусть $\{u_i \}$~--- целый базис $\cO_{K_1}$, а $\{ v_i \}$~--- целый базис $\cO_{K_2}$. Тогда $\{ u_i v_j \}$~--- целый базис для $\cO_{K_1 K_2}$.
+	\end{statement}
+
+	\begin{homework}\label{hw_7}
+		Задачи:
+		\begin{enumerate}
+			\item Пусть $K/\Q$~--- расширение степени $n$, $K = \Q(\theta)$, где $\theta^n + a_{n - 1}\theta^{n - 1} + \ldots + a_0 = 0$ и пусть $p$~--- такое простое число, что $\vp(a_0) = 1$ и $\vp(a_i) \ge 1$. Докажите, что тогда $p \not \ \mid \ind(\theta)$.
+			\emph{Hint 1:} рассмотрите $x \in \cO_{K}\colon px \in \Z[\theta]$. Покажите, что достаточно доказать, что в этом случае $x \in \Z[\theta]$. \emph{Hint 2:} докажите, что если $\fp \mid (p)$~, то $\upsilon_{\fp}(\theta) = 1$ и индекс ветвления числа $p$ равен $n$. \emph{Hint 3:} $px = b_0 + b_1 \theta + \ldots + b_{n - 1}\theta^{n - 1}$. Предположите, что не все $b_i$ делятся на $p$ и прийдите к противоречию. 
+		\end{enumerate}
+	\end{homework}
+
+
+
