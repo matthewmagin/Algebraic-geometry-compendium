@@ -1,0 +1,288 @@
+	
+	\subsection{Первый случай Last Fermat's theorem}
+
+	Мы можем полагать, что показатель $n$~--- простое число, а также рассматривать уравнение в виде 
+	\begin{equation}
+		x^p + y^p + z^p = 0, \quad (x, y = z) = 1. \label{1_st_Last_Fermat's_Theorem}
+	\end{equation}
+	
+
+	\begin{theorem}[Первый случай Большой теоремы Ферма]
+		Уравнение~\ref{1_st_Last_Fermat's_Theorem} не имеет целых решений, если $p \not \mid xyz$.
+	\end{theorem}
+
+	\begin{theorem}[Софи Жермен] 
+		Если простое число $p$ таково, что $2p + 1 = q$~--- простое число, то имеет место первый случай Большой теоремы Ферма. 
+	\end{theorem}
+	\begin{proof}
+		Перепишем уравнение в виде 
+		\[ 
+			y^p + z^p = (-x)^p \Leftrightarrow (y + z)(y^{p - 1} + y^{p - 2}z + \ldots + z^{p - 1}) = (-x)^{p}.
+		\]
+
+		Покажем, что $(y + z, y^{p - 1} + y^{p - 2}z + \ldots + z^{p - 1}) = 1$. Пусть $r$~--- простое ($r \neq p$) и такое, что $r \mid y + z, \ r \mid y^{p - 1} + y^{p - 2}z + \ldots + z^{p - 1}$. Тогда 
+		\[
+			y \equiv -z \pmod{r}, \quad py^{p - 1} \equiv 0 \pmod{r} \implies py^{p - 1}\equiv 0 \pmod{r},
+		\]
+		что противоречит взаимной простоте. Тогда мы имеем 
+		\[
+			\begin{cases} 
+				y + z = A^p \\
+				y^{p - 1} + y^{p - 2}z + \ldots + z^{p - 1} = T^p
+			\end{cases}
+		\]
+
+		Так как наше условие симметрично относительно переменных, $x + y = B^p, \ x + z = C^p$, откуда 
+		\begin{equation}
+				x^{\frac{q - 1}{2}} + y^{\frac{q - 1}{2}} + z^{\frac{q - 1}{2}} = 0. \label{ferm_2}
+		\end{equation}
+
+		Заметим, что если $q \not \mid x$,  то по малой теореме Ферма:
+		\[
+				x^{q - 1} \equiv 1 \pmod{q} \implies x^{\frac{q - 1}{2}} \equiv \pm 1 \pmod{q}.
+			\]	
+		Ясно, что отсюдо следует протвиоерчие~\eqref{ferm_2}. Значит, $q \mid xyz$.  Не умаляя общности, $q \ \mid x$. Тогда 
+		\[
+			2x = B^p + C^p - A^p = B^{\frac{q - 1}{2}} + C^{\frac{q - 1}{2}} - A^{\frac{q - 1}{2}} \ \vdots \ q.
+		\]
+
+		Заметим, что $q \not \ \mid B, \ q \not\  \mid C$, значит $q \not \ \mid BC \implies q \mid A$. Тогда $q \mid y + z$.  
+
+		Заметим, что  $T^p \equiv py^{p - 1} \pmod{q}$. Так как $(A, T) = 1$, $q \not\  \mid T$. Тогда $T^{\frac{q - 1}{2}} \equiv py^{p - 1} \pmod{q}$, тогда по малой теореме Ферма $\pm 1 = p y^{p - 1} \pmod{q}$.  Так как $q \mid x$,  $B^p = x + y \equiv y \pmod{q}$. Значит, 
+		\[
+			y \equiv B^{\frac{q - 1}{2}} \equiv \pm 1 \pmod {1}, \text{ так как } q \not \ \mid B.
+		\]
+
+		Знчит, $\pm 1 \equiv \pm p \pmod{q}$, а этого быть не может, так как $q = 2p + 1$.
+
+	\end{proof}
+
+	\begin{homework}
+		Получите элементарное доказательство случая $p = 5$ в первом случае большой теоремы Ферма. 
+	\end{homework}
+
+	Как мы знаем, если мы рассматриваем расширение $K = \Q(\zeta_m)$ над $\Q$ и простое число $q \not \mid m$, число $q$ не равзетвлено. 
+
+	В частности для $m = p$~--- простого, $q \neq p \implies q$ неразветвлено в $\Q(\zeta_p)$.
+
+	\begin{statement}\label{stm:11} 
+		Простое число $p$ полностью разветвлено в $\Q(\zeta_{p})$.
+	\end{statement}
+	\begin{proof}
+		\[
+	 	x^p - 1 = (x - 1)(x - \zeta)(x - \zeta^2)\ldots(x - \zeta^{p - 1})
+	 \] 
+	 \[
+	 	x^{p - 1} + \ldots + x + 1 = (x - \zeta)(x - \zeta^2)\ldots(x - \zeta^{p - 1})
+ 	 \]
+
+ 	 Подставим $x = 1$ и от числового равенства перейдём к равенству идеалов: 
+ 	 \[
+ 	 	p = ((1 - \zeta))((1 - \zeta^2))\ldots((1 - \zeta^{p - 1})),
+ 	 \]
+ 	 отсюда, так как $\zeta = \lr*{\zeta^i}^j$, все идеалы в правой части совпадают, а значит, $(p) = ((1 - \zeta))^{p - 1}$, а это означает, что $p$ полностью разветвлено. Действительно, пусть 
+ 	 \[
+ 	 	1 - \zeta = \fp_{1}\fp_{2} \ldots \fp_{k} \implies (1 - \zeta)^{p - 1} = \fp_{1}^{p - 1}\fp_{2}^{p - 1} \ldots \fp_{k}^{p - 1},
+ 	 \]
+ 	 из чего следует, что степень ветвления каждого $\fp_i$ хотя бы $p - 1$. С другой стороны, $\sum e_j f_j = p - 1$, то есть $(p) = \fp^{p - 1}$.
+	\end{proof}
+
+	\begin{lemma} 
+		Пусть $p$~--- простое число, не равное двум. Множество корней из единицы\footnote{не обязательно степени $p$} в поле $\Q(\zeta_{p})$ равно $\{ \pm \zeta_{p}^{i} \}.$
+	\end{lemma}
+	\begin{proof}
+		Возьмем $\zeta_n \in \Q(\zeta_{p})$. Предположим, что $n \equiv 0 \pmod{4}$. Тогда $i = \zeta_{4} \in \Q(\zeta_{p})$. Заметим, что $2i = (1 + i)^2$ а значит, $(2) = ((1 + i))^2$. Значит, двойка разветвлена в $\Q(\zeta_{p})$ (а это противоречит предыдущему утверждению). Значит $n \not\equiv 0 \pmod{4}$. 
+
+		Теперь рассмотрим случай  $n = 2n_{0}$, $n \equiv 1 \pmod{2}$. Тогда $\{\zeta^{i}_{n}\} = \{ \pm \zeta_{n_0}^{i}\}$ и нам достаточно рассматривать $n_0$. Предположим, что существует простое $p' \neq p \colon p \ \mid \ n_0$. Тогда $\zeta_{p'} \in \Q(\zeta_{p})$, но $\zeta_{p'} \in \Q(\zeta_{p'})$, а так как $p' \mid n_0$, $\Q(\zeta_{p'}) \subset \Q(\zeta_{n_0}) \subset \Q(\zeta_{p})$. Простое число $p'$ будет полностью разветвлено в $\Q(\zeta_{p'})$, а значит, оно будет полностью разветвлено и $\Q(\zeta_{p})$, но это противоречит утверждению~\ref{stm:11}.
+		
+
+		Значит, $n_0 = p^a$, а тогда $\zeta_{p^{a}} \in \Q(\zeta_{p})$. Но это приводит нас к тому, что $n_0 = p$, ведь 
+		\[
+			[\Q(\zeta_{p^{a}}) : \Q] = p^{a} - p^{a - 1} \le [\Q(\zeta_{p}) : \Q] = p - 1 \implies a - 1 \implies n_0 = p 
+		\]
+	\end{proof}
+
+	\begin{lemma}\label{lemma:14}
+		Пусть $K/\Q$~--- конечное расширение, $\sigma_i \colon K \to \Q^{alg}$~--- все вложения ($1 \le i \le n$, $n = [K : \Q]$). Предположим, что $\alpha \in \cO_{K}$ и $\forall i \ |\sigma_{i}\alpha| = 1$. Тогда $\alpha$ является корнем из единицы какой-то степени. \footnote{Обратное утверждение очевидно.}
+ 	\end{lemma}
+ 	\begin{proof}
+ 		Выпишем многочлен с целыми коэффициентами, корнем которого является $\alpha$:
+ 		\[
+ 			\prod_{i} (x - \sigma_{i} \alpha) \in \Z[x].
+ 		\]
+ 		В силу предположения теоремы, его коэффиценты ограничены, так как они являются симметрическими функциями от $\sigma_{i}\alpha$. Заметим теперь, что из условия следует, что $|\sigma_{i}(\alpha^k)| \le 1$, а значит, для $\alpha^k$ мы также получим многочлен с ограниченными коэффициентами. Заметим, что $k$~--- произвольное натуральное, а значит, мы получаем бесконечное число $\alpha^k$, которые являются корнями коненого набора многочленов над $\Z$ (так как коэффициенты  каждого мы можем ограничить одной и той же константой).  Значит, $\exists m, n \colon \alpha^m = \alpha^n$, что и даёт нам, что $\alpha$~--- корень из 1. 
+ 	\end{proof}
+
+ 	\begin{lemma} 
+ 		Пусть $u \in \cO_{K}^{*} = \Z[\zeta_{p}]$ для $K = \Q(\zeta_{p})$. Тогда $\exists s \colon u \zeta^{s} \in \R$.
+
+ 		\begin{proof}
+ 			Рассомтрим $v = u / \overline{u}$ и возьмем $\rho \in \Gal\lr*{\Q(\zeta_{p})/\Q} \cong (\Z/p\Z)^{*}$. Тогда по лемме~\ref{lemma:14}:
+ 			\[
+ 				\rho(v) = \frac{\rho(u)}{\rho(\overline{u})}  = \frac{\rho(u)}{\overline{\rho(u)}}	 \implies |\rho(v)| = 1 \implies v = \pm \zeta_{p}^{n}.
+		 	\] 	
+
+		 	Рассмотрим $\lambda = 1 - \zeta$, тогда 
+		 	\[
+		 		\rho(\zeta) \equiv \zeta^k \equiv \zeta \pmod{\lambda} \implies \rho(\zeta^i) \equiv \zeta^i \pmod{\lambda},
+		 	\]
+		 	а так как $\cO_{K} = \Z[\zeta_{p}]$, мы имеем такое сравнение для всеё элементов $\cO_{K}$. В частности, из этого следует, что $\rho(u) \equiv u \pmod{\lambda}$. В частности, мы можем положить $\rho(\cdot) = \overline{\cdot}$ и отсюда получить, что $\overline{u} \equiv u \pmod{\lambda}$. Из этого следует, что 
+		 	\begin{multline*}
+		 		\pm \zeta^{n}_{p} \overline{u} \equiv u \equiv \overline{u} \pmod{\lambda}, \text{пусть } -\zeta^{n}_{p}u \equiv u \pmod{\lambda}, \\ -\zeta^{n}_{p}\overline{u} \equiv \overline{u} \pmod{\lambda} \implies -u \equiv u \pmod{\lambda} \implies 2u \equiv 0 \pmod{\lambda},
+		 	\end{multline*}
+		 	но если $2u \ \vdots \  (1 - \zeta)$, то так как $u$ обратим, $2 \ \vdots \ (1 - \zeta)$.  Но, если $2 \in (1 - \zeta)$, то $2^{p - 1} \in ((1 - \zeta))^{p - 1} = (p)$. Значит, знак минус невозможен и реализуется случай 
+		 	\[
+		 		\zeta^n_{p} \overline{u} \equiv \overline{u} \equiv u \pmod{\lambda}. 
+		 	\]
+		 	Так как $u - v \overline{u}$, $u = \zeta^{n}_{p} \overline{u}$, тогда $u \zeta_{p}^{s} = \zeta_{p}^{n + s}\overline{u}$. Найдём такое $s$, что $\overline{\zeta_{p}^{n + s} \overline{u}} = u$. То есть, такое $s$, что $\overline{\zeta^{n + s}} = \zeta^{s} \implies 2s + n \equiv 0 \pmod{p}$, что вполне возможно реализовать. 
+ 		\end{proof}
+ 	\end{lemma}
+
+ 	\begin{lemma}\label{lemma:15}
+ 		Пусть $x^p + y^p = z^p, \ p \not \ \mid xyz, \ (x, y, z) = 1$, разложим левую часть в линейные множители:
+ 	\[
+ 		(x + y)(x + \zeta y)\ldots(x + \zeta^{p - 1}y)
+ 	\]
+ 	Тогда  эти сомножители взаимнопросты. 	
+ 	\end{lemma}
+ 	
+
+ 	\begin{proof}
+ 		Предположим противное, тогда $x + \zeta^i y, \ x + \zeta^{j} y \in \fq$ для некоторых $i, j$. Тогда $\zeta^i(1 - \zeta^{j - i}) y \in \fq$, но $((1 - \zeta^{j - i}))^{p - 1} = (p)$ и если $\fq \neq (1 - \zeta)$, мы получаем, что $y \in \fq$, но тогда и $x \in \fq$, а это противоречит взаимной простоте $x$ и $y$. Если же $\fq = (1 - \zeta)$, мы получаем, что $x + y = x + \zeta^{i}y + (y - \zeta^{i})y \in \fq$, откуда следует, что $z \in \fq$, а значит, $z^{p - 1} \ \vdots p$, а этого не может быть по предположению. 
+ 	\end{proof}
+
+
+ 	\begin{theorem} 
+ 		Пусть $p \not \ \mid |\Cl(\Q_{\zeta_{p}})|$\footnote{такие простые числа называются регуярными}. Тогда имеет место первый случай Великой теоремы Ферма.  
+ 	\end{theorem}
+ 	\begin{proof}
+ 		Пусть $x^p + y^p = z^p$, разложим левую часть на множители: 
+ 		\[
+ 			\prod_{i = 0}^{p - 1} (x + \zeta^{i}y) = z^p,
+ 		\]
+ 		а так как все сомножители в левой части равенства взаимнопросты по лемме~\ref{lemma:15}. Значит, все они являются $p$-ми степенями, в частности для $i = 1$. То есть 
+ 		\[
+ 			(x + \zeta y) = I^{p},
+ 		\]
+ 		значит $I$ находится в $p$-кручении $\Cl(\Q_{\zeta_{p}})$, но так как $p$ не делит порядок группы классов, оно тривиально, значит  $I$--- главный, то есть  $I = (\alpha)$.  Значит,
+
+ 		\[
+ 			(x + \zeta y) = (\alpha^p) \implies x + \zeta y = \varepsilon \alpha^p, \ \varepsilon \in \Z[\zeta]^{*}, \ \varepsilon = \zeta^s u \implies x + \zeta y = \zeta^s u \alpha^p.
+ 		\]
+
+ 		С другой стороны, $\alpha = a_0 + a_1 \zeta_{p} + \ldots + a_{p - 2}\zeta^{p - 2}$. Тогда 
+ 		\[
+ 		 	\alpha^p \equiv \underbrace{a_0^p + a_1^p + \ldots + a_{p - 2}^{p}}_{\eqdef n} \pmod{p}.
+ 		 \] 
+
+ 		 Тогда $x + \zeta y \equiv \zeta^s u n \pmod{p}$. Переходя в этом сравнении к сопряженным, мы получаем 
+ 		 \[
+ 		 	x + \zeta y \equiv \zeta^s u n \pmod{p}, \quad x + \zeta^{-1}y \equiv \zeta^{-s} \overline{u} n = \zeta^{-s} u n \pmod{p}, \text{ так как } u \in \R.
+ 		 \]
+
+ 		 Отсюда мы получаем, что $\zeta^{-s}(x + \zeta y) \equiv \zeta^{s} (x + \zeta^{-1}y)\pmod{p}$. Значит, $x + \zeta y - \zeta^{2s} x - \zeta^{2s - 1}y \in p\Z[\zeta]$. Теперь рассмотрим несколько случаев: 
+
+ 		 \begin{enumerate}
+ 		 	\item Элементы $S = \{ 1, \zeta, \zeta^{2s}, \zeta^{2s - 1}\}$~--- попарно различны. 
+ 		 	\begin{enumerate}
+ 		 		\item Если $\zeta^{p - 1} \notin S$, то $p \mid x, p \mid y$. 
+
+ 		 		\item Если $\zeta^{p - 1} \in S$, то $p = 2s - 1$ и тогда $s \ \vdots p $, а значит $(\zeta - \zeta^{-1})y \in p\Z[\zeta]$ откуда следует, что $p \mid 1 - \zeta^2$, что даёт нам противоречие. 
+
+ 		 		\item Если $\zeta^{p - 1} = -(1 + \zeta + \ldots + \zeta^{p - 2})= \zeta^{2s}$, то $x + \zeta y - \zeta^{-1}x - \zeta^{-2}y \in \Z[\zeta]$, а тогда 
+ 		 		\[
+ 		 			x + \zeta y + ((1 + \zeta + \ldots + \zeta^{p - 2}))x - \zeta^{p - 2}y \ \vdots \ p \implies x + y \ \vdots \  p \implies z \ \vdots \ p,
+ 		 		\]
+ 		 		что даёт нам противоречие. 
+ 		 	\end{enumerate}
+
+ 		 	\item Некоторые из этих степеней совпадают. 
+ 		 		\begin{enumerate}
+ 		 			\item $\zeta^{2s} = 1$. В этом случае $(\zeta - \zeta^{-1})y \ \vdots \ p$,  а мы уже видели, что это невозможно. 
+
+ 		 			\item $\zeta^{2s - 1} = 1$.  В этом случае $x - y + \zeta y - \zeta x \ \vdots \ p \implies (x - y)(1 - \zeta) \ \vdots \ p \implies x - y \ \vdots \ p$, то есть $x \equiv y \pmod{p}$. Исходное уравнение мы можем записать в виде 
+ 		 			\[
+ 		 				z^p + (-y)^p = x^p,
+ 		 			\]
+ 		 			и рассуждая аналогично, мы можем получить, что $z \equiv - y \pmod{p}$. Тогда 
+ 		 			\[
+ 		 				x^p + x^p \equiv (-x)^{p} \pmod{p} \implies 3x^{-} \equiv 0 \pmod{p}.
+ 		 			\]
+ 		 			Значит, либо $p = 3$ (в этом случае мы полностью разобрали вообще всю теорему Ферма), либо $p \mid x$, что даёт нам противоречие. 
+ 		 			
+
+ 		 			\item $\zeta = \zeta^{2s - 2}$. Тогда $x - \zeta^2 x \ \vdots \ p$, откуда следует, что $1 - \zeta^2 \ \vdots \ p$, а это, как мы уже видели, противоречие. 
+ 		 		\end{enumerate}
+ 		 \end{enumerate}
+
+ 		 Дадим теперь хороший критерий для проверки условия теоремы. Этот критерий мы дадим без доказательства, так как он доказывается методами аналитической теории чисел. 
+
+ 		 Как мы помним, числа Бернулли можно начинать через экспоненциальную производящую функцию: 
+ 		 \[
+ 		 	\frac{t}{e^t - 1} = \sum_{m = 0}^{\infty} B_{m} \frac{t^m}{m!}.
+ 		 \]
+ 		 Подставим $-t$:
+ 		 \[
+ 		 	\frac{-t}{\frac{1}{e^{t}} - 1} = \frac{t e^{t}}{e^{t} - 1} = \frac{t(e^t - 1) + t}{e^t - 1} = t + \frac{t}{e^t - 1}.
+ 		 \]
+
+ 		 Отсюда мы можем понять, чему равны коэффициенты: 
+ 		 \[
+ 		 	m > 1, \ m \equiv_{2} 1 \implies B_m = -B_m \implies B_m = 0.
+ 		 \]
+ 		 \[
+ 		 	-(n + 1)B_n = \binom{n + 1}{n - 1} B_{n - 1} + \ldots + \binom{n + 1}{k}B_{k} + \ldots + \binom{n + 1}{1} B_{1} + 1. 
+ 		 \]
+ 		 Так как все нечётные коэффициенты равны нулю, авторы часто используют обозначение $B_n$ для $2n$-го числа Бернулли. Например, известно, что 
+ 		 \[
+ 		 	B_{n} = -n \zeta(1 - n), n > 1.
+ 		 \]
+
+ 		 \begin{theorem} 
+ 		 	Простое число $p$~--- регулярно тогда и только тогда, когда числители всех чисел Бернулли $B_{2}, B_{3}, \ldots, B_{p - 3}$ не делятся на $p$.
+ 		 \end{theorem}
+
+ 		 Из этого рекуррентного соотношения следует, что знаменатели $B_n$ не делятся на $p$ при $n \le p - 3$ , так как 
+ 		 \[
+ 		 	\upsilon_{p}((n + 1)B_n) \ge 0 \implies \upsilon_{p}(B_n) \ge 0.
+ 		 \]
+
+ 		 \begin{example}
+ 		 	Например, таким образом нетрудно показать, что число 7 является регулярным. 
+ 		 \end{example}
+
+ 	\end{proof}
+
+ 	Теперь, немного отвлечёмся и приведём алгоритм построение целого базиса.
+
+ 	\subsection{Алгоритм построения целого базиса}
+
+ 	Итак, для $d = \disc(1, \alpha, \alpha^2, \ldots, \alpha^{n - 1})$ мы наем, что 
+ 	$d \cO_{k} \subset \Z[\alpha] \subset \cO_{k}$, откуда 
+ 	\[
+ 		\Z[\alpha] \subset \cO_{K} \subset d^{-1}\Z[\alpha].
+ 	\]
+
+ 	Тогда, как мы помним, $\bigcup (\omega_i + \Z[\alpha]) = d^{-1}\Z[\alpha]$, причем, каждый класс, либо вообще не содержит целых алгебраических чисел, либо целиком из них состоит. То есть, отсюда мы имеем 
+ 	\[
+ 		\cO_{K} = \bigcup_{i \in I} (\omega_{i} + \Z[\alpha]),
+ 	\]
+ 	откуда следует, что $\cO_{K}$ порождена $\omega_{i}$ и $\alpha^s$ при $0 \le s \le n - 1$. Значит, $d \cO_{K}$ будет порождена  $d\omega_{i}$ и $d \alpha^s$. С другой стороны, $d\cO_{K}$~--- подгруппа свободной абелевой группы $\Z[\alpha]$, значит мы попадаем в контекст \hyperlink{smith_normal_form}{нормальной формы Смита}.
+
+ 	\begin{homework}
+
+ 	\begin{enumerate}
+ 		\item \begin{theorem}[Штикельберг] 
+ 			Дискриминант конечного расширения $K/\Q$ сравним с нулём или единицей по модулю 4. 
+ 		\end{theorem}
+ 		\emph{Hint:} Можно действовать так: $\disc(K) = \lr*{\det(\sigma_i)}^2$, и раскрывая определитель, мы получаем $\det(\sigma_{j}\omega_{j}) = P - N$, где $P$~--- сумма произведений со знаком +, а $N$~--- сумма произведений со знаком минус. Тогда $\disc(K) = (P - N)^2 = (P + N)^2 - 4 PN$. Значит, достаточно показать, что числа $P + N$ и $PN$~--- целые.  \emph{Hint:} Целое число~--- это рациональное число, которое еще и целое алгебраическое. 
+ 		\item
+ 	\end{enumerate}
+ 		
+ 	\end{homework}
+
+
+
+
+
+	

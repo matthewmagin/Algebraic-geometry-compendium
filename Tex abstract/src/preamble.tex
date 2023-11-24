@@ -45,7 +45,7 @@
 
 % Окружения для математики:
 
-\newtheorem{statement}{Утверждение}
+\newtheorem{statement}{Предложение}
 \newtheorem{corollary}{Следствие}
 \newtheorem{theorem}{Теорема}
 \theoremstyle{definition}
@@ -150,6 +150,9 @@
 \DeclareMathOperator{\Gal}{Gal}
 \DeclareMathOperator{\Specm}{Specm}
 \DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Rad}{Rad}
+\DeclareMathOperator{\Vol}{Vol}
 \DeclareMathOperator{\res}{res}
 \DeclareMathOperator{\mult}{mult}
 \DeclareMathOperator{\cont}{cont}
@@ -257,7 +260,8 @@
 \newcommand{\Alg}{\fA\fl\fg}
 \newcommand{\Set}{\fS\fe\ft}
 \usepackage{esint}
-\newcommand{\vp}{\upsilon_{p}}
+\renewcommand{\v}{\upsilon}
+\newcommand{\vp}{\v_{p}}
 
 % Tikz и графика:
 
@@ -266,7 +270,7 @@
 \usepackage{tikz}
 \usetikzlibrary{3d,perspective}
 \usetikzlibrary{animations}
-\usepackage{tikz-cd}
+\usetikzlibrary{cd}
 \usepackage{mathtools}
 \pgfplotsset{width=6cm,compat=newest}
 

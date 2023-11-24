@@ -1,0 +1,67 @@
+	
+	\subsection{Мультипликативная группа кольца целых числового поля}
+
+	Пусть числа $s$ и $t$, связанные с количеством вложений числового поля $K \to \Q^{alg}$ определены как в \hyperlink{real_and_complex_inclusions}{}. Сегодня мы докажем, что мультипликативная группа кольца целых числового поля имеет вид 
+	\[
+		\cO_{K}^{*} \cong \mu \oplus \Z^{s + t - 1},
+	\]
+	Этот факт обычно называют \emph{сильной формой теоремы Дирихле о единицах}.
+	где $\mu$~--- группа корней из единицы. Этот факт будет иметь множество приложений. 
+
+	\begin{example}
+		Рассмотрим квадратичное расширение $K = \Q(\sqrt{d})$. Если $\Q(\zeta_n) \subset \in \Q(\sqrt{d})$, то $[\Q(\zeta_n) : \Q] \le 2$, но с другой стороны $[\Q(\zeta_n) : \Q] = \varphi(n)$, откуда $n = 1, 2, 3, 4, 6$.  Если $n = 3$, то $d = -3$, если $n = 4$, то $d = -1$, если $n = 6$, то $d = -3$, но $\Q(\zeta_6) = \Q(\zeta_3)$, так как $\zeta_6 = -\zeta_3$, а в остальных случаях нетривиальных корней из единицы в этом поле нет. 
+
+		Пусть $s$ и $t$ опредедлены как \hyperlink{real_and_complex_inclusions}{тут}. Соотвественно, если $d > 0$, то $s = 2, t = 0 \implies s + t - 1 = 1 \implies \cO_{K}^{*} = \{ \pm \theta \ \vert \ m \in \Z\}$.
+
+		Если $d > 0$ и $d \not\equiv 1 \pmod{4} \implies \cO_{K} = \Z[\sqrt{d}]$. Как мы помним, $u \in \cO_{K}^{*} \Leftrightarrow \Nm_{K/\Q}(u) = \pm 1$. В нашем случае 
+		\begin{equation}
+			\Nm(x + y\sqrt{d}) = x^2 - dy^2 = \pm 1 \label{Pell_equation}
+		\end{equation}
+		и из другого описания $\cO_{K}^{*}$ мы получаем, что все решения уравнения~\eqref{Pell_equation} имеют вид $\{ \pm \theta^{m} \ \vert \ m \in \Z \}$. Из этого, например, следует, что решений уравнения~\eqref{Pell_equation} бесконечно много. 
+
+		Вообще говоря, этот самый элемент $\theta = \theta_{d}$ может иметь очень неприятный вид. Например, $\theta_2 = 1 + \sqrt{2}, \ \theta_3 = 2 + \sqrt{3}, \ \theta_{94} = 2143295 + 221064\sqrt{94}$.
+
+		Если же $d < 0$, то вполне ясно, что $s = 0, \ t = 1 \implies s + t - 1 = 0$, откуда следует, что $\cO_{K}^{*} = \mu$, откуда, в частности, следует, что уравнение~\eqref{Pell_equation} имеет конечно число решение.
+	\end{example}
+
+	\begin{theorem}[Дирихле, о единицах, \emph{слабая форма}] 
+		Мультипликативная группа кольца целых $\cO_{K}$ числового поля $K$ имеет вид 
+		\[
+			\cO_{K}^* \cong \mu \oplus \Z^m, \text{ где } m \le s + t - 1.
+		\]
+	\end{theorem}
+	\begin{proof}
+		Рассмотрим отображение $\ell\colon K^* \to \R^{s + t}$, действующее следующим  образом 
+		\[
+			\ell(\alpha) = \lr*{\log|\sigma_1\alpha|, \log|\sigma_2\alpha|, \ldots, \log|\sigma_s\alpha|, \log|\sigma_{s + 1}\alpha|^2, \ldots, \log|\sigma_{s + t}\alpha|^2}.
+		\]
+		Заметим, что это гомомомрфизм групп, $\ell(\alpha\beta) = \ell(\alpha) + \ell(\beta)$.
+		Рассмотрим сужение $\ell\colon \cO_{K}^* \to \R^{s + t}$. Посчитаем ядро этого отображения: 
+		\[
+			\alpha \in \Ker{\ell} \Leftrightarrow |\sigma_i \alpha| = 1 \implies \Ker{\ell} = \mu.
+		\]
+		Для $\alpha \in \cO_{K}$ мы знаем, что $\Nm(\alpha) = \pm 1$, откуда
+		\[
+			\log|\sigma_1\alpha| + \ldots + \log{|\sigma_{s + 1}\alpha|} + \log{|\overline{\sigma}_{s + 1}\alpha|} + \ldots = \log{|\Nm(\alpha)|} = 0,
+		\]
+		что даёт нам, что образы всех обратимых элементов лежат в гиперплоскости 
+		\[
+			x_1 + x_2 + \ldots + x_{s + t} = 0.
+		\]
+
+		\begin{lemma} 
+			$\Im{\ell}$~--- решётка в $\R^{s + t}$\footnote{ранга $s + t - 1$.}
+		\end{lemma}
+		\begin{proof}
+			Надо проверить, что $\Im{\ell}$~--- это дискретная подгруппа в $\R^{s +t}$ (то, что это подгруппа~--- очевидно). 
+
+			Возмём 
+		\end{proof}
+
+
+
+	\end{proof}
+
+
+
+

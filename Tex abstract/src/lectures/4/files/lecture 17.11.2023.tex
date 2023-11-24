@@ -1,0 +1,254 @@
+
+\subsection{Геометрия чисел}
+
+	Рассмотрим евклидово пространство $\R^n$ и выберем в нём набор из $k$ линейно независимых векторов $e_1, \ldots, e_k$ и рассмотрим порожденную ими свободную абелеву группу:
+	\[ L = \bigoplus_{i = 1}^{k} \Z e_i \]
+	Тогда $L$ мы будем называть \emph{решёткой}, натянутой на вектора $e_1, \ldots, e_k$. В случае $k = n$ решётка $L$ называется \emph{полной}. 
+
+	\begin{example}
+		Картинка для $L \subset \R^2$.
+	\end{example}
+
+	\begin{statement} 
+		В любом ограниченном подмножестве $\R^n$ лежит конечное число точек решётки. 
+	\end{statement}
+
+	\begin{proof}
+		Очевидно.
+	\end{proof}
+
+	Оказывается, верно и обратное утверждение. 
+
+	\begin{statement} 
+		Пусть $A \le \R^n$~--- подгруппа (как абелевой группы), причем такая, что в любом ограниченном подмножестве $\R^n$ лежит конечное число элементов из $A$. Тогда $A$~--- решётка. 
+	\end{statement}
+
+	\begin{proof}
+		Рассмотрим подпространство $\Span(A)$ в $\R^n$. Оно прождено некоторым линейно независимым набором векторов: 
+		\[
+			\Span(A) = \langle e_1, \ldots, e_m \rangle, \ e_i \in A \text{~--- линейно независимы}.
+		\]
+		Рассмотрим свободную абелеву группу, порожденную этими векторами: 
+		\[
+			A_0  = \Z e_1 + \ldots + \Z e_m.
+		\]
+		Покажем, что $A/A_0$ конечна. Расммотрим \emph{фундаментальную область}
+		\[
+			\Delta = \left\{  \sum_{i = 1}^{m} x_i e_i \ \bigg\vert \ 0 \le x_i < 1 \right\}
+		\]
+		Ясно, что $\forall a \in A \ \exists a_0 \in A_0\colon a - a_0 \in \Delta$. Но так как $\Delta$ ограничено, в нём может лежать только конечное число элементов решётки, значит количество значений, которые может принимать $a - a_0$ конечно и $A/A_0$ конечна. 
+
+		Значит, $\exists s \in \Z \setminus \{ 0 \}\colon sA \subset A_0$.  Тогда $A \subset \frac{1}{s}A_0 = \Z \frac{e_1}{s} \oplus \Z \frac{e_2}{s} \oplus \ldots \oplus \Z \frac{e_m}{s} = A'$. Значит, $A_0 \subset A \subset A'$ и $A_0$ и $A'$~--- свободные абелевы группы одного и того же ранга. Значит и $A$~--- свободная абелева группа, 
+		\[
+		 	A = \Z u_1 \oplus \Z u_2 \oplus \ldots \oplus \Z u_m.
+		 \] 
+
+		 Кроме того, $\dim\langle u_1, \ldots, u_m \rangle \ge m$, откуда следует, что $u_1, \ldots, u_m$~--- линейно незавимы над $\R$, откуда $A$~--- решётка. 
+	\end{proof}
+
+	Это предложение даёт хороший критерий для проверки, является ли какое-то подпространство решёткой. 
+
+	\begin{definition} 
+		Если $L \le \R^n$~--- решётка с порождающим набором $e_1, \ldots, e_m$, то множество 
+		\[
+			\Delta = \left\{  \sum_{i = 1}^{m} x_i e_i \ \bigg\vert \ 0 \le x_i < 1 \right\}
+		\]
+		называют \emph{основным параллелипипедом} решётки или же \emph{фундаментальной областью} решётки. 
+	\end{definition}
+
+	Если $e_1, \ldots, e_m$~--- порождающий набор решётки $L$, то $\R^m = \Span\{ e_1, \ldots, e_m \}$ и тогда 
+	мы можем вычислить объем фундаментальной области, как
+	\[
+		\Vol(\Delta) = \det\left\lvert (a_{i j})\right\rvert,  
+	\]
+	где $e_i = (a_{i 1}, a_{i 2}, \ldots, a_{i n})$.
+
+	\begin{lemma}\label{lattice_prop_volume}
+		Пусть $T$~--- ограниченное измеримое множество в $\R^m$, $L$~--- решётка ранга $m$ в $\R^m$, $\Delta$~--- её фундаментальная область. Предположим, что $\forall \ell_1, \ell_2 \in L $ множества $T + \ell_1$ и $T + \ell_2$ не пересекаются.  Тогда 
+		\[
+			\Vol(T) \le \Vol(\Delta).
+		\]
+	\end{lemma}
+	\begin{proof}
+		В самом деле, так как множества  $T + \ell$ дизъюнктны, 
+		\[
+			\Vol(\Delta) \ge \sum_{\ell \in L} \Vol(\Delta \cap T_{\ell}) = \sum_{\ell \in L} \Vol(\Delta_{-\ell} \cap T) = \Vol\lr*{\ \bigcup_{\ell \in L} \Delta_{\ell} \cap T} = \Vol(\R^m \cap T) = \Vol(T).
+		\]
+	\end{proof}
+
+	\begin{lemma}[Г. Минковский, О выпуклом теле]\label{Mink_theorem}
+		Пусть $T$~--- ограниченное выпуклое центрально-симметричное (относительно нуля) измеримое подмножество $\R^n$, $L$~--- решётка ранга $n$ в $\R^n$, $\Delta$~--- её фундаментальная область. Предположим, что выполнена следующая оценка на объемы:
+		\[
+			\Vol(T) > 2^n \Vol(\Delta).
+		\]
+		Тогда $\exists 0 \neq \ell \in L\colon \ell \in T$. Кроме того, если $T$ компактно, то это будет верно и в случае нестрогого неравенства $\Vol(T) \ge 2^n \Vol(\Delta)$.
+	\end{lemma}
+	\begin{proof}
+		Рассмотрим тело $\frac{1}{2}T$, тогда $\Vol\lr*{\frac{1}{2}T} = \frac{1}{2^n} \Vol(T) > \Vol(\Delta)$. Тогда по предыдущей лемме~\ref{lattice_prop_volume}  $\exists \ell_1, \ell_2 \in L\colon \frac{1}{2}T_{\ell_1} \cap \frac{1}{2}T_{\ell_{2}} \neq \varnothing$. Это означает, что
+		 \[ \exists t_1, t_2 \in T\colon \frac{x_1}{2} + \ell_1 = \frac{x_2}{2} + \ell_2 \implies 0 \neq \frac{x_1 - x_2}{2} = \ell_1 - \ell_2 \in L \cap T.\]
+
+		 В последнем равенстве $\frac{x_1 - x_2}{2} \in T$ так как $T$~--- выпукло и центрально симметрично. 
+
+		 Теперь докажем вторую часть теоремы. Рассмотрим $T_{\varepsilon} = (1 + \varepsilon)T$, для него неравенство уже будет строгим и по первой части теоремы мы получим $0\neq \ell \in L \cap T_{\varepsilon}$. Понятно, что если $\ell \in T$, всё доказано. Пусть теперь $\ell \in T_{\varepsilon} \setminus T$. Вообще говоря, в $T_{\varepsilon} \setminus T$  лежит лишь конечное число точек из $L$. Так как $T_{\varepsilon}$ замкнуто, мы можем уменьшить $\varepsilon$ так, чтоб все точки из $\ell$, лежащие в $T_{\varepsilon}\setminus T$ уже не лежали там. 
+	\end{proof}
+
+	\hypertarget{real_and_complex_inclusions}{}
+	Рассмотрим теперь конечное расширение $K/\Q$, $[K : \Q] = n$. Тогда у нас есть $n$ вложений $\sigma_i \colon K \to \Q^{alg}$. Среди них есть \emph{вещественные} вложения, то есть такие, что $\Im(\sigma_i) \subset \R$. Остальные вложения  называют \emph{невещественными}. С каждым невещественным вложением $\sigma_i$ связано вложение $\overline{\sigma_i} \neq \sigma_i$. Пронумеруем наши вложения следующим образом: $\sigma_1, \ldots, \sigma_s$~--- вещественные вложения, $\sigma_{s + 1}, \overline{\sigma_{s + 1}}, \sigma_{s + 2}, \overline{\sigma_{s + 2}}, \ldots, \sigma_{s + t}, \overline{\sigma_{s + t}}$~--- невещественные вложения. Так как количество вложений равно степени расширения, $s + 2t = n$.
+
+	Рассмотрим отображение $\varphi\colon K \to \R^n$, которое действует так:
+	\[
+		\alpha \in K, \ \alpha \mapsto (\sigma_1(\alpha), \sigma_2(\alpha), \ldots, \sigma_s(\alpha), \Re(\sigma_{s + 1}(\alpha)), \Im(\sigma_{s + 1}(\alpha)),  \ldots, \Re(\sigma_{s + t}(\alpha)), \Im(\sigma_{s + t}(\alpha))) \in \R^n.
+	\]
+
+	Пусть $I$~--- ненулевой идеал в $\cO_{K}$. Возьмём его базис как абелевой группы~--- $\alpha_1, \ldots, \alpha_n$. Тогда $\varphi(I)$~--- решётка в $\R^n$ с базисом $\varphi(\alpha_1), \ldots, \varphi(\alpha_n)$. Нужно равзе что проверить линейную независимость. 
+
+	Пусть $\sigma_{s + 1}(\alpha) = a + bi$, будем делать слудеющие преобразование: $(a, b) \mapsto (a, bi) \mapsto (a + bi, bi) \mapsto (a + bi, 2bi) \mapsto (a + bi, -a + bi) \mapsto (a + bi, a - bi)$. Посмотрим, что будет происходить с определителем при проделывании этих операций. Нетрудно проследить, что по итогу определитель умножится на $-2i$. В итоге мы получим, что 
+	\[
+		\det\lr*{\begin{pmatrix} \varphi(\alpha_1) \\ \varphi(\alpha_2) \\ \vdots \\ \varphi(\alpha_n) \end{pmatrix}} = \frac{1}{(2i)^t} \det{\begin{pmatrix} \sigma_{1}(\alpha_1) & \ldots& \sigma_{s + 1}(\alpha) & \sigma_{s + 1}(\alpha_1) & \ldots \overline{\sigma_{s + t}(\alpha)} \\ \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\end{pmatrix}} = \pm \sqrt{\disc(\alpha_1, \ldots, \alpha_n)}.
+	\]
+
+	А теперь заметим, что 
+	\[
+		\Vol(\Delta) = \det(M)
+ = \frac{1}{2^t} \sqrt{\disc(\alpha_1, \ldots, \alpha_n)} = \frac{1}{2^t} \sqrt{\disc(K) \cdot [\cO_{K} : I]^2} = \frac{1}{2^t} \Nm(I) \sqrt{\disc(K)}.	\]
+
+ 	Рассмотрим теперь для некоторого фиксированного $a > 0$.
+ 	\[
+ 		T = \{ (x_1, x_2, \ldots, x_{s}, y_{1}, z_{1}, \ldots, y_{t}, z_{t}), \ |x_1| + \ldots + |x_1| + 2\sqrt{y_1^2 + z_1^2} + \ldots + 2\sqrt{y_t^2 + z_t^2} \le a \}. 
+ 	\]
+
+ 	$T$~--- выпуклое, центрально-симметричное и $\Vol(T) = 2^s \lr*{\frac{\pi}{2}}^t \frac{a^n}{n!}$.
+ 	Пусть $I$~--- ненулевой идеал в $\cO_{K}$. Подберём $a$ так, что будет выполнено неравенство 
+ 	\begin{equation}
+ 		2^s \lr*{\frac{\pi}{2}}^t \frac{a^n}{n!} > 2^n \frac{\sqrt{\disc(K)}}{2^t} \Nm(I). \label{calculating_a}
+ 	\end{equation}
+
+ 	Тогда по лемме Минковского~\label{Mink_theorem} $\exists 0 \neq \alpha \in I\colon$
+ 	\[
+ 	 	|\sigma_1(\alpha)| + \ldots + |\sigma_{s}(\alpha)| + 2 |\sigma_{s + 1}(\alpha)| + \ldots +  2|\sigma_{s + t}(\alpha)| \le a.
+ 	 \] 
+ 	 Это неравенство мы можем переписать в виде: 
+ 	 \[
+ 	 	|\sigma_1(\alpha)| + \ldots + |\sigma_{s}(\alpha)| + |\sigma_{s + 1}(\alpha)| + |\overline{\sigma_{s + 1}}(\alpha)| + \ldots +  |\sigma_{s + t}(\alpha)| + |\overline{\sigma_{s + t}}(\alpha)| \le a.
+ 	 \]
+
+ 	  Тогда по неравенству о среднем мы имеем 
+ 	  \[
+ 	  	\left\lvert \sigma_{1}(\alpha) \cdot \ldots \cdot \sigma_{s}(\alpha)\overline{\sigma_{s + 1}(\alpha)} \cdot \ldots \cdot \sigma_{s + t}(\alpha) \overline{\sigma_{s + t}}(\alpha) \right\rvert \le \lr*{\frac{a}{n}}^n \Leftrightarrow \Nm(\alpha) \le \lr*{\frac{a}{n}}^n
+ 	  \]
+
+ 	  Заметим, что в неравенстве~\eqref{calculating_a} равенство будет достигаться при 
+ 	  \[
+ 	  	a^n = \frac{2^n \sqrt{\disc(K)} \Nm(I) n!}{2^t 2^s} \cdot \lr*{\frac{2}{\pi}}^t = \lr*{\frac{4}{\pi}}^{t} n! \Nm(\alpha) \sqrt{\disc{K}}.
+ 	  \]
+ 	  В этом случае будет выполняться неравенство
+ 	  \[
+ 	  		\Nm(\alpha) \le \lr*{\frac{a}{n}}^n = \lr*{\frac{4}{\pi}}^t \frac{n!}{n^n} \Nm(I) \sqrt{\disc{K}}.
+ 	  \]
+
+ 	  Подставим в этом неравенство, например, единичный идеал. Тогда мы получим неравенство 
+ 	  \[
+ 	  	1 \le \lr*{\frac{4}{\pi}}^t \frac{n!}{n^n} \sqrt{\disc{K}}.
+ 	  \]
+
+ 	  Например, из этого неравенства следует, что $\disc(K) \neq 1$ (в случае нетривиального расширения).  
+
+ 	  \begin{theorem} 
+ 	  	Пусть $K/\Q$~--- конечное расширение, $[K : \Q] = n > 1$. Тогда $\disc(K) \neq 1$. Кроме того, 
+ 	  	\[
+ 	  	 	\lim\limits_{n \to \infty} \disc(K) = \infty.
+ 	  	 \] 
+ 	  \end{theorem}
+
+ 	  Получим теперь при помощи новых методов некоторые результаты, связанные с группой классов идеалов числового поля. 
+
+ 	  Мы доказали, что для ненулевого идеала $I$ в $\cO_{K}$ существует $\alpha \in I\colon$
+ 	  \[
+ 	  		\Nm(\alpha) \le \lr*{\frac{4}{\pi}}^t \frac{n!}{n^n} \Nm(I) \sqrt{\disc{K}}.
+ 	  \]
+
+ 	  Возьмём класс $[I^{-1}] \in \Cl(K)$ и представим его идеалом $I \subset \cO_{K}$. С одной стороны, $\alpha I^{-1}$ представляет тот же класс в группе классов, а с другой стороны, 
+ 	  \[
+ 	  	\Nm(\underbrace{\alpha I^{-1}}_{\text{целый}}) = \Nm(\alpha) \Nm\lr*{I^{-1}} \le \lr*{\frac{4}{\pi}}^{t} \frac{n!}{n^n} \sqrt{|\disc(K)|}.
+ 	  \]
+
+ 	  Но, как мы уже замечали, существует лишь конечное число целых идеалов с ограниченной нормой. 
+
+ 	  \begin{example}
+ 	  	Рассмотрим $K = \Q\lr*{\sqrt[3]{6}}$. Посмотрим сначала на количество вложений. Нетрудно убедиться в том, что $n = 3, t = 1$. Сосчитаем теперь дискриминант $K$. Для этого покажем, что $\cO_{K} = \Z[\sqrt[3]{6}]$. Обозначим $\theta = \sqrt[3]{6}$ и посчитаем $[\cO_{K} : \Z[\theta]]$.
+ 	  Заметим, что минимальный многочлен $\theta$~--- это $x^3 - 6$, а минимальный многочлен $\theta^2$~--- это $x^2 - 36$, а тогда 
+
+ 	  \[
+ 	  	\disc(K) \cdot \lr*{\ind(\theta)}^2 = \disc(1, \theta, \theta^2) = \det\begin{pmatrix} \Tr(1) & \Tr(\theta) & \Tr(\theta^2) \\ \Tr(\theta) & \Tr(\theta^2) & \Tr(\theta^3) \\ \Tr(\theta^2) & \Tr(\theta^3) & \Tr(\theta^4) \end{pmatrix} = \det\begin{pmatrix} 3 & 0 & 0 \\ 0 & 0 & 18 \\ 0 & 18 & 0 \end{pmatrix} = - 2^{2} 3^{5}.
+ 	  \]
+
+ 	  Заметим, что многочлен $x^3 - 6$ является многочленом Эйзенштейна относительно и двойки и тройки, а значит, $\ind(\theta)$ не может делиться на $2$ и $3$, откуда $\ind(\theta) = 1$. Значит, $\disc(K) = -2^5 \cdot 3^5$. Подставим это в неравенство выше: 
+ 	  \[
+ 	  	\Nm(\underbrace{\alpha I^{-1}}_{\text{целый}}) = \Nm(\alpha) \Nm\lr*{I^{-1}} \le \lr*{\frac{4}{\pi}}^{t} \frac{n!}{n^n} \sqrt{|\disc(K)|} = \frac{4}{\pi} \cdot \frac{6}{27} \cdot \sqrt{2^5 \cdot 3^5} < \frac{16}{\sqrt{3}} < 10. 
+ 	  \]
+
+ 	  То есть, в любом классе есть целый представитель, норма которого меньше 10.  Значит, чтоб показать, что группа классов тривиальна, нам достаточно показать, что любой идеал, висящий над 2, 3, 5, 7~--- главный. 
+
+ 	  Из теоремы Куммера~\ref{Kummer_theorem} легко понять, что 
+ 	  \[
+ 	    	2\cO_{K} = (2, \theta)^3 = \fp^3.
+ 	    \]  
+ 	    С другой стороны, $\Nm(\theta - 2) = -2$~--- простой и он тоже висит над двойкой, откуда 
+ 	    $(2, \theta) = (\theta - 2)$. 
+
+ 	  Аналогичное явление будет и с тройкой: 
+ 	  \[
+ 	    	3\cO_{K} = (3, \theta)^3
+ 	    \]  
+ 	    $\Nm(\theta) = 6, \ \Nm(\theta - 2) = -2$, откуда $\Nm\lr*{\frac{\theta}{\theta - 2}} = -3$ и по аналогичным соображениям, 
+ 	    \[
+ 	    	3\cO_{K} = (3, \theta)^3 = \lr*{\frac{\theta}{\theta - 2}}^3
+ 	    \]  
+
+ 	    Теперь, опять же из теооремы Куммера~\ref{Kummer_theorem}, мы получаем, что 
+ 	    \[
+ 	     	5 = (5, \theta - 1)(5, \theta^2 + \theta + 1)^2
+ 	     \] 
+ 	     и остается показать, что эти идеалы главные.$\Nm(\theta - 1) = 5$ и при этом 
+ 	     \[
+ 	     	\frac{5}{\theta - 1} = \theta^2 + \theta + 1, 
+ 	     \]
+ 	     откуда $(5, \theta^2 + \theta + 1) = (\theta^2 + \theta + 1)$, \ $(5, \theta - 1) = (\theta - 1)$.  Теперь, делаем то же самое над семёркой: 
+ 	     \[
+ 	     	x^3 - 6 = x^3 + 1 = (x + 1)(x^2 - x + 1) = (x + 1)(x - 3)(x - 5)
+ 	     \]
+ 	     Тогда семёрка будет раскладываться, как 
+ 	     \[
+ 	     	7\cO_{K} = (7, \theta + 1) (7, \theta - 3)(7, \theta - 5).
+ 	     \]
+
+ 	     Во-первых, заметим, что $\frac{7}{\theta + 1} = \frac{7(\theta^2 - \theta + 1)}{\theta^3 + 1}$, откуда перывй идеал порожден $\theta + 1$. С другой стороны, $\Nm(\theta - 3) = 21$, $\Nm\lr*{\frac{\theta}{\theta - 2}}$, откуда $\Nm\lr*{\frac{(\theta - 3)(\theta - 2)}{\theta}} = 7$. Этот элемент даёт нам максимальный главный идеал, висящий над семёркой. Нетрудно заметить, что $(7, \theta - 3) \subset \lr*{\frac{(\theta - 3)(\theta - 2)}{\theta}}$, а так как оба идеала максимальные, значит совпадают. Значит и третий идеал главный. 
+
+ 	     Таким образом, мы показали, что любой идеал кольца $\cO_{K}$ является главным, то есть, что $\Cl(\Q(\sqrt[3]{6})) = 0$.
+ 	  \end{example}
+
+ 	  \begin{homework}
+ 	  	Задачи: 
+ 	  	\begin{enumerate}
+ 	  		\item Докажите, что для любого простого $p$ уравнение  
+ 	  		\[
+ 	  			3x^2 + 4y^3 + 5z^3 = 0
+ 	  		\]
+ 	  		имеет ненулевое решение над $\F_{p}$.
+ 	  		\item Докажите, что $1 - 6\theta + 3\theta^2 \in \cO_{K}^{*}$, где $K = \Q(\sqrt[3]{6})$.
+
+ 	  		\item Докажите, что $\Cl(\Q(\sqrt{-23})) = \Z/3\Z$.
+ 	  	\end{enumerate}
+ 	  \end{homework}
+
+
+
+
+
+
+
+
+
+
+
+

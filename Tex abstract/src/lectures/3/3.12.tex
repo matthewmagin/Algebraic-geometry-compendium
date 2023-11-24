@@ -1,0 +1,120 @@
+
+	\subsection{Кольца нормирования, кольца дискретного нормирования и Дедекиндовы области}
+
+	\begin{definition} 
+		Пусть $R$~--- область целостности, $F$~--- её поле частных. $R$ называется \emph{кольцом нормирования}, если $R \cup (R \setminus 0)^{-1} = F$. То есть, $\forall x \in F$  либо $x \in R$, либо $x^{-1} \in R$.
+	\end{definition}
+
+	\begin{example}
+		Например, кольцами нормирования являются $\Z_{(p)}, \ \Z_{p}, \ F[[x]]$. 
+	\end{example}
+
+	\begin{definition} 
+		Пусть $F$~--- поле, а функция $\v\colon F^{*} \to \Gamma$, где $\Gamma$~--- линейно упорядоченная абелева группа, гомоморфизм, т.е. $\v(ab) = \v(a) + \v(b)$, причём выполнено 
+		$\v(a + b) \ge \min(\v(a), \v(b))$ называется \emph{нормированием}.
+
+		Если $\v$ действует в $\Z$ и сюръективна, то её называют \emph{дискретным нормированием} на $F$.
+	\end{definition}
+
+	Следующая теорема устанавливает связь между нормированием на поле и кольцами нормирования. 
+
+	\begin{theorem} 
+	\begin{enumerate}
+		\item Пусть $\v$~--- нормирование на $F$, тогда $R \eqdef \{ x \in F \ \vert \ \v(x) \ge 0 \}$~--- кольцо нормирования.  	
+
+		\item Если $R$~--- кольцо нормирования с полем частных $F$, то можно положить  $\Gamma = F^{*}/R^{*}$\footnote{в аддитивной записи\ldots} и задать на ней порядок следующим образом:
+		\[
+		 	aR^{*} \ge bR^{*} \Leftrightarrow ab^{-1} \in R.
+		 \] 
+
+		 и задать $\v\colon F^{*} \to F^{*}/R^{*}$. Тогда такое $\v$ будет нормированием. 
+
+		 \item Процедуры из пунктов $(1)$ и $(2)$ взаимнообратны с точностью до изоморфизма на $\Im{\v}$ (как упорядоченных групп). 
+	\end{enumerate}
+	\end{theorem}
+	\begin{proof}
+		Докажем сначала (1):
+		\[
+			\v(x) + \v(x^{-1}) = 0 \implies \v(x) \ge 0 \text{ или }  \v(x^{-1}) \ge 0 \Leftrightarrow x \in R \text{ или } x^{-1} \in R.
+		\]
+
+		Теперь докажем $(2)$. Действительно, если $R$~--- кольцо номрирования, то либо $ab^{-1} \in R$, откуда $\v(a) \ge \v(b)$, либо $a^{-1}b \in R$, откуда $\v(b) \ge \v(a)$, то есть на $\Gamma = F^{*}/R^{*}$ порядок будет линейным. Кроме того, 
+		\[
+			\begin{cases} \v(a) \ge \v(b) \\ \v(b) \ge \v(a) \end{cases} \Leftrightarrow a b^{-1} \in R^{*} \Leftrightarrow aR^{*} = bR^{*} \Leftrightarrow \v(a) = \v(b),		\]
+		что показывает антисимметричность. 
+
+		Кроме того, $\v(a + b) \ge \v(a)$, либо $\v(a + b) \ge \v(b)$, откуда 
+		\[
+			\frac{a + b}{a} = 1 + \frac{b}{a} \in R, \text{  либо  } \frac{a + b}{b} = 1 + \frac{a}{b} \in R.
+		\]
+
+		Доказательство взаимной обратности остается в качестве простого \bf{упражнения}.
+	\end{proof}
+
+	\begin{statement} 
+		Пусть $R$~--- кольцо нормирования, тогда $R$~---- локально и целозамкнуто. 
+	\end{statement}
+	\begin{proof}
+		Положим $\fm \eqdef \{ a \in R \ \vert \ \v(a) > 0 \}$. Ясно, что $\forall x \in R, a \in \fm \ \v(ax) = \v(a) + \v(x) \ge \v(a) > 0$ и $\forall a, b \in \fm \ \v(a + b) \ge \min(\v(a), \v(b)) > 0$, что показывает нам, что $\fm$~--- идеал. Все остальные элементы имеют нормирвоание, равное нулю, и поэтому они обратимы (просто по определению), значит $\fm$~---  единственный максимальный идеал кольца $R$.  
+
+		Теперь докажем целозамкнутость. Действительно, пусть $a \in F$
+		\begin{multline*}
+		  	a^n + r_{n - 1} a^{n - 1} + \ldots + r_0 = 0, \ r_i \in R \implies a^n = r_{n - 1}' a^{n - 1} + \ldots + r_0' \implies \v\lr*{\sum_{i = 1}^{n - 1} r_{i}' a^i} \ge \\ \ge \min\v\lr*{r_i' a^i} \ge \min{\v\lr*{a^i}} = \min(i \cdot \v(a)) \implies \v(a) \ge 0 \implies a \in R.
+		\end{multline*}  
+	\end{proof}
+
+	\begin{statement}\label{DVR_Spec} 
+		Пусть $R$~--- кольцо дискретного нормирования с нормированием $R$. Тогда 
+		\begin{enumerate}
+		 	\item $R \setminus \{ 0 \} \cong R^{*} \times \langle \pi \rangle$\footnote{тут имеется в виду изоморфизм моноидов. }
+
+		 	\item $\Ideals(R) = \{0, R, \pi^n R, \text{ где } n \in \N \}$. 
+
+		 	\item $\Spec{R} = \{ 0, \pi R\}$.
+
+		 	\item $\Specm{R} = \{ \pi R \}$. 
+		 \end{enumerate} 
+	\end{statement}
+
+	\begin{proof}
+		Докажем сначала (1). Возмём $\pi\colon \v(\pi) = 1$ (мы можем так сделать, так как дискретное нормирование сюръективно). Возьмём $a \in R$, $\v(a) = n \in \Z \implies \v(a \pi^{-n}) = 0 \Leftrightarrow a \pi^{-n} \in R^{*} \Leftrightarrow a \in \pi^nR$ (причем очевидно, что такое представление единственно. 
+
+		Рассмотрим $I \in \Ideals(R)$, возьмём $n = \min_{a \in I}{\v(a)} = \v(b) = \v(\pi^n \alpha)$, где $\alpha \in R^*$, а значит, $\forall c \in I\colon c = \pi^k \beta, \ k \ge n \implies c \in \pi^nR$. 
+	\end{proof} 
+
+	\begin{lemma}\label{Descanding_Filtration_By_Degrees_of_maximal_ideal} 
+		Пусть $R$~--- нётерова область целостности, $\fm \in \Specm{R}, \ \fm \neq 0$, тогда $\fm^k \neq \fm^{k + 1} \ \forall k \in \N$.
+	\end{lemma}
+	\begin{proof}
+		Рассмотрим $\fm^{k}/\fm^{k + 1}$~--- векторное пространство над $R/\fm$. Тогда 
+		\[
+			\fm^{k}/\fm^{k + 1} \otimes_{R} R_{\fm} \cong (\fm R_{\fm})^{k} / (\fm R_{\fm})^{k + 1} = 0 \implies \fm R_{\fm} (\fm^{k}R_{\rm}) = (\fm^{k}R_{\fm}) \implies \fm^k R_{\fm} = 0 \implies \fm = 0.
+		\]
+		В предпоследнем переходе мы используем лемму Накаямы (там конечнопорожденный модуль $\fm^{k} R_{\fm}$ умножается на $\fm R_{\fm} = \Rad(R_{\fm})$).
+	\end{proof}
+
+	\begin{theorem} 
+		Пусть $R$~--- область целостности. Тогда следующие условия эквивалентны: 
+		\begin{enumerate}
+			\item $R$~--- кольцо дискретного нормирования. 
+			\item $R$~--- нётерово локальное целозамкнутое кольцо размерности Крулля 1. 
+			\item $R$~--- локальное нётерово неполе, в котором максимальный идеал главный. 
+			\item $R$~--- факториальное кольцо с единственным (с точностью до ассоциированности) неприводимым элементом. 
+			\item Локальное неполе, идеалы которого имеют вид $\Ideals(R) = \{ 0, \fm^k \ \vert \ k \in \N_{0}\}$
+		\end{enumerate}
+	\end{theorem}
+	\begin{proof}
+		$(1) \implies (2)$ мы уже по сути доказали в утверждении~\ref{DVR_Spec}. Докажем теперь $(2) \implies (3)$. Мы знаем, что $\Specm{R} = \{ \fm \}$, возьмём $a \in \fm \setminus \fm^2$  по лемме~\ref{Descanding_Filtration_By_Degrees_of_maximal_ideal}. Рассмотрим $aR \subset \fm$. Из примарного разложения $aR$ следует, что $aR$~--- $\fm$-примарный. Тогда существует $k\colon \fm^{k} \subset aR \subset \fm$, выберем наименьшее из таких $k$. Теперь заметим, что 
+		\[
+			b \in \fm^{k - 1} \setminus aR \Leftrightarrow \frac{b}{a} \in \frac{\fm^{k - 1}}{a}
+		\]
+
+		\bf{\textcolor{red}{Дописать этот кусок.}}
+
+		$(3) \implies (4):$ Возьмём $\pi \in R$~--- неприводимый, тогда $\pi \in \fm = aR$,  а значит, $\pi$~--- ассоциирован с $a$.
+
+	\end{proof}
+
+
+
+	
