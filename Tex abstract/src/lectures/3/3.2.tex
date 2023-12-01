@@ -35,7 +35,71 @@
 		Пусть $\varphi\colon R \to A$~--- произвольный гомоморфизм колец. Тогда $\fp \in \varphi^{*}\lr*{\Spec{A}}$ тогда и только тогда, когда $\fp = \varphi^{*}(\varphi_{*}(\fp))$.
 	\end{lemma}
 
-	\texttt{Доказательство допишу в сессию.}
+	Теперь посмотрим на поведение спектра кольца при локализации. Пусть $\lambda\colon R \to S^{-1}R $~--- локализационный гомоморфизм. 
+
+	\begin{lemma} 
+		$\lambda_{*} \circ \lambda^{*} = \id$. Следовательно, $\lambda^*$ инъективно, а $\lambda_*$~--- сюръективно. 
+	\end{lemma}
+
+	\begin{proof}
+		Пусть $I \lei  S^{-1}R$, тогда ясно, что $\lambda_{*}\lr*{\lambda^{*}\lr*{I}} \subset I$. Действительно, 
+		\[
+			\lambda_{*}\lr*{\lambda^{*}(I)} = \lambda(\lambda^{-1}(I))S^{-1}R \subset I S^{-1}R  \subset I.
+		\]
+		Теперь докажем включение в другую сторону. Пусть $\frac{r}{s} \in I$, тогда $s \cdot \frac{r}{s}  = \frac{r}{1} \in I \supset \lambda(\lambda^{-1}(I)) \implies \frac{r}{1} \in \lambda(\lambda^{-1}(I)) \implies \frac{r}{1} \cdot \frac{1}{s} \in \lambda(\lambda^{-1}(I))S^{-1}R = \lambda_{*}(\lambda^{*}(I))$.
+	\end{proof}
+
+	\begin{corollary}
+		Локализация нётерова кольца нётерова.
+	\end{corollary}
+
+	\begin{proof}
+		Действительно, по предыдущей лемме $J = \lambda_{*}\lr*{\lambda^{*}(J)} = \lambda_{*}(I) = \lambda^(I)S^{-1}R$, а так как $I$~--- конечнопорождён, $\lambda^(I)S^{-1}R$~--- конечнопорождён. 
+	\end{proof}
+
+	\begin{lemma} 
+		Идеал $I \lei R$ лежит в образе $\lambda^*$ (т.е. является прообразом какого-то идеала из локализации) тогда и только тогда, когда образ $S$ в $R/I$ не содержит делителей нуля. 
+	\end{lemma}
+
+	\begin{proof}
+		Итак, как мы помни, $I \in \Im{\lambda^*} \Leftrightarrow I = \lambda^*(\lambda_*(I))$. Пусть $\rho$~--- гомоморфизм факторизации $R \to R/I$. Пусть для некоторых $r \in R, \ s \in S \ \rho(r)\rho(s) = 0$. Тогда $\rho(rs) = 0 \implies rs = j \in I$. Тогда $\frac{r}{1} = \frac{\lambda(j)}{s} \in \lambda_*(I) \implies r \in \lambda^*(\lambda_*(I)) = I \implies \rho(r) = 0$, то есть $\rho(s)$~--- не делитель нуля. 
+
+		Пусть $r \in \lambda^*(\lambda_*(I)) \setminus I$. Тогда мы можем его представить в виде $\lambda(r) = \lambda(j) \frac{t}{s}, t \in R, s \in S, j \in I$. Но тогда $\exists s' \in S\colon r s s' = j t s' \implies \rho(r)\rho(s s') = \rho(j) \rho(t s') = 0$, а так как $\rho(r) \neq 0$ по предположению, $\rho(s s')$~--- делитель нуля. 
+	\end{proof}
+
+	Отсюда мы получаем такое следствие. 
+
+	\begin{corollary}
+		Отображение $\lambda^*\colon \Spec{S^{-1}R} \to \Spec{R}$ инъективно, а его образ равен множеству простых идеалов, не пересекающихся с $S$. 
+
+		Сужение $\lambda_*$ на множество простых идеалов $R$, не пересекающихся с $S$, инъективно.
+
+		Таким образом, $\lambda^{*}$ и $\lambda^{*}$~--- взаимнообратные биекции между $\Spec{S^{-1}R}$ и множеством простых иедалов кольца $R$, не пересекающихся с $S$.
+	\end{corollary}
+
+	Применяя это к главной локализации $\langle s \rangle$, мы получаем, что $\Im{\lambda^{*}} = \Spec{R}\setminus V(s)$~--- отркытое подмножество, а  $\{ \Spec{R_{s}} \ \vert \ s \in R\}$~--- база топологиии Зарисского. 
+
+	\begin{definition} 
+		Пусть $I \lei R$~--- идеал в кольце $R$. Его \emph{радикалом} называется 
+		\[
+			\sqrt{I} \eqdef \{x \in I \ \vert \exists n \colon x^n \in I  \}.
+		\]
+		\emph{Нильпотентным радикалом} кольца $R$ называется $\NRad(R) = \sqrt{0}$~---  множество всех нильпотентных элементов кольца $R$. 
+	\end{definition}
+
+	\begin{theorem} 
+		Пусть $I \lei R$. Тогда $\sqrt{I}$ равен пересечению всех простых идеалов, содержащих $I$, то есть 
+		\[
+			\sqrt{I} = \bigcap_{\fp \in \Spec{R}, \ \fp \supset I} \fp. 
+		\]
+	\end{theorem}
+	\begin{proof}
+		Начнём с того, что если $\fp \supset I$, то $\fp \supset \sqrt{I}$, так как если $x \in \sqrt{I}$, то для некоторого $n$ мы имеем $x^n \in I \implies x^n = x \cdot \ldots \cdot x \in \fp \implies x \in \fp$.
+
+		
+	\end{proof}
+
+
 
 
 

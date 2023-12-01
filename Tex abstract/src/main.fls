@@ -475,6 +475,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm5.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/libertinegc/LinLibertineTI-t2a.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/libertinegc/LinLibertineTI-t2a.tfm
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/3/3.13.tex
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/3/3.13.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files/lecture 22.09.2023.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files/lecture 22.09.2023.tex
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/libertine/OT1LinuxLibertineT-TLF.fd
@@ -504,6 +506,8 @@ INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files/lecture 17.11.2023.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files/24.11.2023.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files/24.11.2023.tex
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/lecture 1.12.2023.tex
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/lecture 1.12.2023.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/0/0.1.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/0/0.1.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/0/pictures/pic_1.pdf
@@ -605,7 +609,6 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/libertinegc/LinLiberti
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/main.aux
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/main.out
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/main.out
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertinegc/lib-t2a2.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertinegc/lib-t2a1.enc
@@ -632,4 +635,3 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm1
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
