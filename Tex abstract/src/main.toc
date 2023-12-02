@@ -23,33 +23,33 @@
 \contentsline {subsection}{\numberline {2.11}Геометрия чисел}{32}{subsection.2.11}%
 \contentsline {subsection}{\numberline {2.12}Мультипликативная группа кольца целых числового поля}{36}{subsection.2.12}%
 \contentsline {subsection}{\numberline {2.13}Контпример к локально-глобальному принципу.}{39}{subsection.2.13}%
-\contentsline {section}{\numberline {3.}Основы теории гомологий}{41}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Симплициальные гомологии}{41}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Сигнулярные гомологии}{43}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Немного гомологической алгеры}{44}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Гомотопическая инвариантность гомологий}{45}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Относительные гомологии и гомологически точная последовательность пары}{47}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Пары Боруска}{49}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Относительные гомологии как абсолютные (факторизация)}{50}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Вырезание}{53}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Точная последовательность Майера-Вьеториса}{54}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Гомологии сфер}{54}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}Гомологии букета и надстройки}{55}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}Гомологии с коэффициентами}{56}{subsection.3.12}%
-\contentsline {subsection}{\numberline {3.13}Приложения теории гомологий}{56}{subsection.3.13}%
-\contentsline {subsection}{\numberline {3.14}Симплициальные комплексы}{57}{subsection.3.14}%
-\contentsline {subsection}{\numberline {3.15}Эквивалентность симплициальных и сингулярных гомологий}{57}{subsection.3.15}%
-\contentsline {subsection}{\numberline {3.16}Степень отображения}{58}{subsection.3.16}%
-\contentsline {subsection}{\numberline {3.17}Клеточные гомологии}{60}{subsection.3.17}%
-\contentsline {subsection}{\numberline {3.18}Гомологии поверхностей}{63}{subsection.3.18}%
-\contentsline {subsection}{\numberline {3.19}Пространства Мура}{64}{subsection.3.19}%
-\contentsline {subsection}{\numberline {3.20}Теорема о вложении дисков и сфер}{64}{subsection.3.20}%
-\contentsline {subsection}{\numberline {3.21}Когомологии}{65}{subsection.3.21}%
-\contentsline {subsection}{\numberline {3.22}Формула универсальных коэффициентов для когомологий}{66}{subsection.3.22}%
-\contentsline {subsection}{\numberline {3.23}Умножение в когомологиях}{68}{subsection.3.23}%
-\contentsline {section}{\numberline {4.}Комплексная алгебраическая геометрия}{70}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Комплексные многообразия}{70}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Векторные рассоления}{72}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Подмногообразия и аналитические подмножества}{74}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Когомологии де Рама и Дольбо}{75}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Пучки и когомологии}{77}{subsection.4.5}%
+\contentsline {section}{\numberline {3.}Основы теории гомологий}{42}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Симплициальные гомологии}{42}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Сигнулярные гомологии}{44}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Немного гомологической алгеры}{45}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Гомотопическая инвариантность гомологий}{46}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Относительные гомологии и гомологически точная последовательность пары}{48}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Пары Боруска}{50}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Относительные гомологии как абсолютные (факторизация)}{51}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Вырезание}{54}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Точная последовательность Майера-Вьеториса}{55}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Гомологии сфер}{55}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Гомологии букета и надстройки}{56}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Гомологии с коэффициентами}{57}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Приложения теории гомологий}{57}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Симплициальные комплексы}{58}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Эквивалентность симплициальных и сингулярных гомологий}{58}{subsection.3.15}%
+\contentsline {subsection}{\numberline {3.16}Степень отображения}{59}{subsection.3.16}%
+\contentsline {subsection}{\numberline {3.17}Клеточные гомологии}{61}{subsection.3.17}%
+\contentsline {subsection}{\numberline {3.18}Гомологии поверхностей}{64}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}Пространства Мура}{65}{subsection.3.19}%
+\contentsline {subsection}{\numberline {3.20}Теорема о вложении дисков и сфер}{65}{subsection.3.20}%
+\contentsline {subsection}{\numberline {3.21}Когомологии}{66}{subsection.3.21}%
+\contentsline {subsection}{\numberline {3.22}Формула универсальных коэффициентов для когомологий}{67}{subsection.3.22}%
+\contentsline {subsection}{\numberline {3.23}Умножение в когомологиях}{69}{subsection.3.23}%
+\contentsline {section}{\numberline {4.}Комплексная алгебраическая геометрия}{71}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Комплексные многообразия}{71}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Векторные рассоления}{73}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Подмногообразия и аналитические подмножества}{75}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Когомологии де Рама и Дольбо}{76}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Пучки и когомологии}{78}{subsection.4.5}%
