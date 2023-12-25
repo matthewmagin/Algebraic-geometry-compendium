@@ -45,3 +45,47 @@
 		\]
 	\end{proof}
 
+	\begin{corollary}
+		Если $\varphi \in \End(M)$ и $\varphi$~--- эпиморфизм, то $\varphi$~--- изоморфизм. 
+	\end{corollary}
+
+	\begin{proof}
+		Определим действие $R[t]$ на $M$ при помощи гомоморфизма $\theta$:
+		\[
+			\theta\colon R[t] \to \End(M) \quad \theta(t) = \varphi.
+		\]
+
+		Так как $\varphi$~--- эпиморфизм, $tR[t]M = M$. 
+
+		Тогда по лемме Накаямы существует $f \in (t) = t R[t]$ такой, что $fm = m \ \forall m \in M$. Запишем $f = tg$ для некоторого $g \in R[t]$ и спроектируем результат в $\End(M)$:
+		\[
+			t g(t) \cdot m = m \implies \varphi(g(\varphi)(m)) = m \Leftrightarrow \varphi \circ g(\varphi) = \id.
+		\]
+
+		Но, по определению, $g(\varphi) = \varphi(g)$, тогда 
+		\[
+			g(\varphi)(\varphi(m)) = m,
+		\]
+
+		$g(\varphi)$~--- обратный к $\varphi$.
+	\end{proof}
+
+	\subsection{Радикал Джекобсона}
+
+	Кольцо $R$, рассматриваемое, как модуль над собой, называется \emph{регулярным} $R$-модулем. 
+
+	\begin{definition} 
+		Аннулятором $R$-модуля $M$ называется множество $\{ r \in R \ \vert \ rM = 0 \}$.
+	\end{definition}
+
+	\begin{lemma} 
+		Ненулевой простой $R$-модуль $M$ изоморфен $R/\fm$ для некоторого $\fm \in \Specm{R}$. Таким образом, $\Ann{M}$ является максимальным идеалом кольца $R$. 
+	\end{lemma}
+
+	\begin{proof} \ 
+	\vspace{30mm}
+	\end{proof}
+
+
+
+

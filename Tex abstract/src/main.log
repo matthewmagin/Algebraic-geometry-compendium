@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.10)  1 DEC 2023 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.10)  25 DEC 2023 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -724,7 +724,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip77
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 178.
+Package hyperref Info: Option `colorlinks' set `false' on input line 182.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/esint/esint.sty
 Package: esint 
 \symlargesymbolsA=\mathgroup11
@@ -1403,30 +1403,32 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 114
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [3])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/3/3.2.tex [4])
+ctures/3/3.2.tex [4] [5])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/3/3.4.tex [5]
+ctures/3/3.3.tex [6])
+(/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
+ctures/3/3.4.tex [7]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/3/commutative diagramms/GK.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/3/commutative diagramms/GK.pdf, id=348, 88.92221pt x 63.9991pt>
+<lectures/3/commutative diagramms/GK.pdf, id=399, 88.92221pt x 63.9991pt>
 File: lectures/3/commutative diagramms/GK.pdf Graphic file (type pdf)
 <use lectures/3/commutative diagramms/GK.pdf>
 Package pdftex.def Info: lectures/3/commutative diagramms/GK.pdf  used on input
  line 25.
 (pdftex.def)             Requested size: 88.92198pt x 63.99893pt.
-)
+[8 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src
+/lectures/3/commutative diagramms/GK.pdf>])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/3/3.12.tex [6 </Users/user/Documents/GitHub/Algebraic-geometry-compendiu
-m/Tex abstract/src/lectures/3/commutative diagramms/GK.pdf>]
+ctures/3/3.12.tex [9]
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 8.0pt on input line 71.
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 6.0pt on input line 71.
-[7])
+)
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/3/3.13.tex
+ctures/3/3.13.tex [10]
 Overfull \hbox (22.29865pt too wide) detected at line 33
 \OML/LinuxLibertineT-TLF/m/up/10.95 [] \PU/LinuxLibertineT-TLF/m/up/10.95 + []
 \OML/LinuxLibertineT-TLF/m/up/10.95 [] \PU/LinuxLibertineT-TLF/m/up/10.95 + []
@@ -1443,7 +1445,22 @@ nuxLibertineT-TLF/m/up/10.95 )[] + [] + \OML/LinuxLibertineT-TLF/m/up/10.95 d[]
  \PU/LinuxLibertineT-TLF/m/up/10.95 = 0
  []
 
-[8]) [9]
+[11])
+(/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
+ctures/3/3.14.tex [12]
+
+pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
+compendium/Tex abstract/src/lectures/3/commutative diagramms/snake_2.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/3/commutative diagramms/snake_2.pdf, id=475, 307.82002pt x 145.6642pt
+>
+File: lectures/3/commutative diagramms/snake_2.pdf Graphic file (type pdf)
+<use lectures/3/commutative diagramms/snake_2.pdf>
+Package pdftex.def Info: lectures/3/commutative diagramms/snake_2.pdf  used on 
+input line 66.
+(pdftex.def)             Requested size: 307.81927pt x 145.66383pt.
+[13 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+c/lectures/3/commutative diagramms/snake_2.pdf>]) [14]
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
 ctures/4/files/lecture 22.09.2023.tex
 
@@ -1468,7 +1485,7 @@ LaTeX Warning: Command \O invalid in math mode on input line 81.
 
 LaTeX Warning: Command \O invalid in math mode on input line 81.
 
-[10] [11])
+[15] [16])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
 ctures/4/files/lecture 29.09.tex
 Overfull \hbox (33.33224pt too wide) in paragraph at lines 23--24
@@ -1480,7 +1497,7 @@ T-TLF/m/up/10.95 )\OML/LinuxLibertineT-TLF/m/up/10.95 M;  M \OMS/LinuxLibertine
 T-TLF/m/up/10.95 2
  []
 
-[12] [13]
+[17] [18]
 Overfull \hbox (11.38297pt too wide) in paragraph at lines 122--124
 []\T2A/LinuxLibertineT-TLF/m/n/10.95 Рассмотрим $\OML/LinuxLibertineT-TLF/m/up/
 10.95 K \PU/LinuxLibertineT-TLF/m/up/10.95 = \U/msb/m/n/10.95 Q\PU/LinuxLiberti
@@ -1495,7 +1512,7 @@ LibertineT-TLF/m/up/10.95 j \PU/LinuxLibertineT-TLF/m/up/10.95 =
 
 )
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/4/files/lecture 6.10.2023.tex [14] [15]
+ctures/4/files/lecture 6.10.2023.tex [19] [20]
 Overfull \hbox (9.11784pt too wide) in paragraph at lines 105--106
 []\T2A/LinuxLibertineT-TLF/m/n/10.95 Иными сло-ва-ми, над каж-дым про-стым чис-
 лом $\OML/LinuxLibertineT-TLF/m/up/10.95 p; q; [] \OMS/LinuxLibertineT-TLF/m/up
@@ -1506,7 +1523,7 @@ neT-TLF/m/up/10.95 ; [] ; \OMS/LinuxLibertineT-TLF/m/up/10.95 g$\T2A/LinuxLiber
 tineT-TLF/m/n/10.95 ,
  []
 
-[16]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
@@ -1516,9 +1533,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
-[17])
+[22])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/4/files/lecture 13.10.2023.tex [18] [19]
+ctures/4/files/lecture 13.10.2023.tex [23] [24]
 Overfull \hbox (20.83643pt too wide) detected at line 84
 \U/euf/m/n/10.95 p[] \PU/LinuxLibertineT-TLF/m/up/10.95 = (2)\OML/LinuxLibertin
 eT-TLF/m/up/10.95 ;  \U/euf/m/n/10.95 p[] \PU/LinuxLibertineT-TLF/m/up/10.95 = 
@@ -1534,24 +1551,24 @@ m/n/10.95 p[]\PU/LinuxLibertineT-TLF/m/up/10.95 ]\OML/LinuxLibertineT-TLF/m/up/
 10.95 :
  []
 
-[20])
+[25])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/4/files/lecture 20.10.2023.tex [21] [22] [23] [24])
+ctures/4/files/lecture 20.10.2023.tex [26] [27] [28] [29])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/4/files/lecture 3.11.2023.tex [25]
+ctures/4/files/lecture 3.11.2023.tex [30]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/4/pictures/cd_1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/4/pictures/cd_1.pdf, id=597, 145.00172pt x 62.85483pt>
+<lectures/4/pictures/cd_1.pdf, id=699, 145.00172pt x 62.85483pt>
 File: lectures/4/pictures/cd_1.pdf Graphic file (type pdf)
 <use lectures/4/pictures/cd_1.pdf>
 Package pdftex.def Info: lectures/4/pictures/cd_1.pdf  used on input line 100.
 (pdftex.def)             Requested size: 145.00136pt x 62.85466pt.
-[26 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[31 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/4/pictures/cd_1.pdf>])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/4/files/lecture 10.11.2023.tex [27] [28] [29] [30]
+ctures/4/files/lecture 10.11.2023.tex [32] [33] [34] [35]
 Overfull \hbox (8.34232pt too wide) in paragraph at lines 278--280
 []\T2A/LinuxLibertineT-TLF/m/it/10.95 Hint: \T2A/LinuxLibertineT-TLF/m/n/10.95 
 Мож-но дей-ство-вать так: $[]\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibe
@@ -1563,9 +1580,9 @@ U/LinuxLibertineT-TLF/m/up/10.95 ) =
 
 )
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/4/files/lecture 17.11.2023.tex [31] [32]
+ctures/4/files/lecture 17.11.2023.tex [36] [37]
 Overfull \hbox (1.4108pt too wide) in paragraph at lines 80--81
-[][]\T2A/LinuxLibertineT-TLF/b/n/10.95 Лемма 22 \T2A/LinuxLibertineT-TLF/m/n/10
+[][]\T2A/LinuxLibertineT-TLF/b/n/10.95 Лемма 27 \T2A/LinuxLibertineT-TLF/m/n/10
 .95 (Г. Мин-ков-ский, О вы-пук-лом те-ле)\T2A/LinuxLibertineT-TLF/b/n/10.95 . [
 ]\T2A/LinuxLibertineT-TLF/m/n/10.95 Пусть $\OML/LinuxLibertineT-TLF/m/up/10.95 
 T$ \T2A/LinuxLibertineT-TLF/m/n/10.95 --- огра-ни-чен-ное вы-пук-лое центрально
@@ -1580,35 +1597,51 @@ uxLibertineT-TLF/m/up/10.95 ^^[[]; [] ; ^^[[]$ \T2A/LinuxLibertineT-TLF/m/n/10.
 []; ^^[[]; []; [] ; ^^[[]; []$ \T2A/LinuxLibertineT-TLF/m/n/10.95 ---
  []
 
-[33] [34] [35])
+[38] [39] [40])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
 ctures/4/files/24.11.2023.tex
 
 Package hyperref Warning: Suppressing empty link on input line 4.
 
-[36])
+[41])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/4/lecture 1.12.2023.tex [37] [38]
+ctures/4/lecture 1.12.2023.tex [42] [43]
 
 Package hyperref Warning: Suppressing empty link on input line 95.
 
-[39] [40]) [41]
+[44] [45])
+(/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
+ctures/4/files/lecture 8.12.2023.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+[47]) [48]
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
 ctures/0/0.1.tex
-<lectures/0/pictures/pic_1.pdf, id=779, 115.02002pt x 93.97575pt>
+<lectures/0/pictures/pic_1.pdf, id=894, 115.02002pt x 93.97575pt>
 File: lectures/0/pictures/pic_1.pdf Graphic file (type pdf)
 <use lectures/0/pictures/pic_1.pdf>
 Package pdftex.def Info: lectures/0/pictures/pic_1.pdf  used on input line 53.
 (pdftex.def)             Requested size: 80.51346pt x 65.78256pt.
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 54.
-[42]
-<lectures/0/pictures/pic_2.pdf, id=790, 80.44365pt x 72.91553pt>
+[49]
+<lectures/0/pictures/pic_2.pdf, id=905, 80.44365pt x 72.91553pt>
 File: lectures/0/pictures/pic_2.pdf Graphic file (type pdf)
 <use lectures/0/pictures/pic_2.pdf>
 Package pdftex.def Info: lectures/0/pictures/pic_2.pdf  used on input line 91.
 (pdftex.def)             Requested size: 80.44344pt x 72.91533pt.
-[43 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[50 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/0/pictures/pic_1.pdf> </Users/user/Documents/GitHub/Algebraic-geomet
 ry-compendium/Tex abstract/src/lectures/0/pictures/pic_2.pdf
 
@@ -1617,12 +1650,12 @@ compendium/Tex abstract/src/lectures/0/pictures/pic_2.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/0/0.2.tex [44]
+ctures/0/0.2.tex [51]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_1.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_1.pdf, id=817, 250.47577pt x 71.11569pt>
+<lectures/0/pictures/cd_1.pdf, id=932, 250.47577pt x 71.11569pt>
 File: lectures/0/pictures/cd_1.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_1.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_1.pdf  used on input line 33.
@@ -1632,15 +1665,15 @@ Package pdftex.def Info: lectures/0/pictures/cd_1.pdf  used on input line 33.
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_2.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_2.pdf, id=818, 191.53558pt x 71.738pt>
+<lectures/0/pictures/cd_2.pdf, id=933, 191.53558pt x 71.738pt>
 File: lectures/0/pictures/cd_2.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_2.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_2.pdf  used on input line 54.
 (pdftex.def)             Requested size: 191.5351pt x 71.73782pt.
-[45 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[52 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/0/pictures/cd_1.pdf>]
 Overfull \hbox (33.32329pt too wide) in paragraph at lines 95--97
-[][]\T2A/LinuxLibertineT-TLF/b/n/10.95 Определение 30. []\T2A/LinuxLibertineT-T
+[][]\T2A/LinuxLibertineT-TLF/b/n/10.95 Определение 37. []\T2A/LinuxLibertineT-T
 LF/m/n/10.95 Пусть $\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TL
 F/m/up/10.95 C[]; @\PU/LinuxLibertineT-TLF/m/up/10.95 )\OML/LinuxLibertineT-TLF
 /m/up/10.95 ; \PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up
@@ -1658,12 +1691,12 @@ bertineT-TLF/m/up/10.95 D[]; ^^N\PU/LinuxLibertineT-TLF/m/up/10.95 ))$
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_3.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_3.pdf, id=850, 250.47577pt x 71.11569pt>
+<lectures/0/pictures/cd_3.pdf, id=961, 250.47577pt x 71.11569pt>
 File: lectures/0/pictures/cd_3.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_3.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_3.pdf  used on input line 99.
 (pdftex.def)             Requested size: 250.47514pt x 71.11551pt.
-[46 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[53 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/0/pictures/cd_2.pdf> </Users/user/Documents/GitHub/Algebraic-geometr
 y-compendium/Tex abstract/src/lectures/0/pictures/cd_3.pdf>])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
@@ -1672,17 +1705,17 @@ ctures/0/0.3.tex
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_4.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_4.pdf, id=887, 222.963pt x 71.738pt>
+<lectures/0/pictures/cd_4.pdf, id=998, 222.963pt x 71.738pt>
 File: lectures/0/pictures/cd_4.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_4.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_4.pdf  used on input line 6.
 (pdftex.def)             Requested size: 222.96245pt x 71.73782pt.
-[47]
+[54]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_5.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_5.pdf, id=897, 274.36502pt x 71.738pt>
+<lectures/0/pictures/cd_5.pdf, id=1008, 274.36502pt x 71.738pt>
 File: lectures/0/pictures/cd_5.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_5.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_5.pdf  used on input line 24.
@@ -1692,29 +1725,29 @@ Package pdftex.def Info: lectures/0/pictures/cd_5.pdf  used on input line 24.
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_6.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_6.pdf, id=898, 335.40306pt x 165.45815pt>
+<lectures/0/pictures/cd_6.pdf, id=1009, 335.40306pt x 165.45815pt>
 File: lectures/0/pictures/cd_6.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_6.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_6.pdf  used on input line 42.
 (pdftex.def)             Requested size: 335.40224pt x 165.45772pt.
-[48 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[55 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/0/pictures/cd_4.pdf> </Users/user/Documents/GitHub/Algebraic-geometr
 y-compendium/Tex abstract/src/lectures/0/pictures/cd_5.pdf>]
-<lectures/0/pictures/pic_3.pdf, id=937, 158.22755pt x 128.78412pt>
+<lectures/0/pictures/pic_3.pdf, id=1049, 158.22755pt x 128.78412pt>
 File: lectures/0/pictures/pic_3.pdf Graphic file (type pdf)
 <use lectures/0/pictures/pic_3.pdf>
 Package pdftex.def Info: lectures/0/pictures/pic_3.pdf  used on input line 70.
 (pdftex.def)             Requested size: 158.22716pt x 128.78378pt.
-[49 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[56 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/0/pictures/cd_6.pdf> </Users/user/Documents/GitHub/Algebraic-geometr
 y-compendium/Tex abstract/src/lectures/0/pictures/pic_3.pdf>]
-<lectures/0/pictures/pic_4.pdf, id=959, 212.78654pt x 156.64812pt>
+<lectures/0/pictures/pic_4.pdf, id=1070, 212.78654pt x 156.64812pt>
 File: lectures/0/pictures/pic_4.pdf Graphic file (type pdf)
 <use lectures/0/pictures/pic_4.pdf>
 Package pdftex.def Info: lectures/0/pictures/pic_4.pdf  used on input line 144.
 
 (pdftex.def)             Requested size: 148.94955pt x 109.65292pt.
-[50] [51 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstra
+[57] [58 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstra
 ct/src/lectures/0/pictures/pic_4.pdf>]
 Overfull \hbox (18.34819pt too wide) in paragraph at lines 217--220
 []\T2A/LinuxLibertineT-TLF/m/it/10.95 Барицентрическое под-раз-би-е-ние (под-ра
@@ -1727,12 +1760,12 @@ up/10.95 v[]; [] ; v[]\PU/LinuxLibertineT-TLF/m/up/10.95 ]$
 
 )
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/0/0.4.tex [52]
+ctures/0/0.4.tex [59]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_7.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_7.pdf, id=994, 222.76224pt x 61.64029pt>
+<lectures/0/pictures/cd_7.pdf, id=1105, 222.76224pt x 61.64029pt>
 File: lectures/0/pictures/cd_7.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_7.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_7.pdf  used on input line 69.
@@ -1742,26 +1775,26 @@ Package pdftex.def Info: lectures/0/pictures/cd_7.pdf  used on input line 69.
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_8.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_8.pdf, id=995, 357.74654pt x 67.64272pt>
+<lectures/0/pictures/cd_8.pdf, id=1106, 357.74654pt x 67.64272pt>
 File: lectures/0/pictures/cd_8.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_8.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_8.pdf  used on input line 86.
 (pdftex.def)             Requested size: 357.74567pt x 67.64253pt.
-[53 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[60 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/0/pictures/cd_7.pdf> </Users/user/Documents/GitHub/Algebraic-geometr
 y-compendium/Tex abstract/src/lectures/0/pictures/cd_8.pdf>])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/0/0.5.tex [54] [55]
-<lectures/0/pictures/pic_5.svg.png, id=1049, 1927.2pt x 1927.2pt>
+ctures/0/0.5.tex [61] [62]
+<lectures/0/pictures/pic_5.svg.png, id=1160, 1927.2pt x 1927.2pt>
 File: lectures/0/pictures/pic_5.svg.png Graphic file (type png)
 <use lectures/0/pictures/pic_5.svg.png>
 Package pdftex.def Info: lectures/0/pictures/pic_5.svg.png  used on input line 
 98.
 (pdftex.def)             Requested size: 96.36565pt x 96.36565pt.
-[56 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[63 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/0/pictures/pic_5.svg.png>])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/0/0.6.tex [57]
+ctures/0/0.6.tex [64]
 Overfull \hbox (17.01726pt too wide) in paragraph at lines 66--68
 \T2A/LinuxLibertineT-TLF/m/n/10.95 Теперь за-ме-тим, что ес-ли грань, ко-то-рую
  мы вы-ки-ну-ли, мы обо-зна-чим за $\PU/LinuxLibertineT-TLF/m/up/10.95 ^^A[]$\T
@@ -1769,31 +1802,31 @@ Overfull \hbox (17.01726pt too wide) in paragraph at lines 66--68
 ][] [] H[][][]$\T2A/LinuxLibertineT-TLF/m/n/10.95 . 
  []
 
-[58]
+[65]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_9.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_9.pdf, id=1077, 382.2782pt x 72.46071pt>
+<lectures/0/pictures/cd_9.pdf, id=1188, 382.2782pt x 72.46071pt>
 File: lectures/0/pictures/cd_9.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_9.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_9.pdf  used on input line 97.
 (pdftex.def)             Requested size: 382.27725pt x 72.46053pt.
-[59 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[66 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/0/pictures/cd_9.pdf>]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_10.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_10.pdf, id=1097, 360.80797pt x 111.06494pt>
+<lectures/0/pictures/cd_10.pdf, id=1206, 360.80797pt x 111.06494pt>
 File: lectures/0/pictures/cd_10.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_10.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_10.pdf  used on input line 158.
 
 (pdftex.def)             Requested size: 360.80708pt x 111.06467pt.
-[60]
+[67]
 Overfull \hbox (31.0769pt too wide) in paragraph at lines 174--177
-[]\T2A/LinuxLibertineT-TLF/m/n/10.95 По тео-ре-ме о вы-ра-зе-нии []36[], груп-п
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 По тео-ре-ме о вы-ра-зе-нии []38[], груп-п
 а $\OML/LinuxLibertineT-TLF/m/up/10.95 H[][][]$ \T2A/LinuxLibertineT-TLF/m/n/10
 .95 --- пря-мая сум-ма групп $\OML/LinuxLibertineT-TLF/m/up/10.95 H[][][]$\T2A/
 LinuxLibertineT-TLF/m/n/10.95 ,
@@ -1801,95 +1834,95 @@ LinuxLibertineT-TLF/m/n/10.95 ,
 
 )
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/0/0.7.tex [61 </Users/user/Documents/GitHub/Algebraic-geometry-compendiu
+ctures/0/0.7.tex [68 </Users/user/Documents/GitHub/Algebraic-geometry-compendiu
 m/Tex abstract/src/lectures/0/pictures/cd_10.pdf>]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_11.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_11.pdf, id=1143, 446.60852pt x 221.12613pt>
+<lectures/0/pictures/cd_11.pdf, id=1252, 446.60852pt x 221.12613pt>
 File: lectures/0/pictures/cd_11.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_11.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_11.pdf  used on input line 38.
 (pdftex.def)             Requested size: 446.60742pt x 221.12558pt.
-[62 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+[69 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 c/lectures/0/pictures/cd_11.pdf>]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_12.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_12.pdf, id=1175, 418.72435pt x 120.8214pt>
+<lectures/0/pictures/cd_12.pdf, id=1284, 418.72435pt x 120.8214pt>
 File: lectures/0/pictures/cd_12.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_12.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_12.pdf  used on input line 104.
 
 (pdftex.def)             Requested size: 418.72331pt x 120.82109pt.
-<lectures/0/pictures/pic_5.pdf, id=1176, 124.16022pt x 116.6397pt>
+<lectures/0/pictures/pic_5.pdf, id=1285, 124.16022pt x 116.6397pt>
 File: lectures/0/pictures/pic_5.pdf Graphic file (type pdf)
 <use lectures/0/pictures/pic_5.pdf>
 Package pdftex.def Info: lectures/0/pictures/pic_5.pdf  used on input line 135.
 
 (pdftex.def)             Requested size: 124.1599pt x 116.6394pt.
-[63 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
-c/lectures/0/pictures/cd_12.pdf>] [64 </Users/user/Documents/GitHub/Algebraic-g
-eometry-compendium/Tex abstract/src/lectures/0/pictures/pic_5.pdf>] [65])
+[70 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+c/lectures/0/pictures/cd_12.pdf>] [71 </Users/user/Documents/GitHub/Algebraic-g
+eometry-compendium/Tex abstract/src/lectures/0/pictures/pic_5.pdf>] [72])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/0/0.9.tex [66]
+ctures/0/0.9.tex [73]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_13.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_13.pdf, id=1223, 248.4984pt x 63.9991pt>
+<lectures/0/pictures/cd_13.pdf, id=1333, 248.4984pt x 63.9991pt>
 File: lectures/0/pictures/cd_13.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_13.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_13.pdf  used on input line 86.
 (pdftex.def)             Requested size: 248.49777pt x 63.99893pt.
-[67] [68 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstra
+[74] [75 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstra
 ct/src/lectures/0/pictures/cd_13.pdf>]
 
 pdfTeX warning: pdflatex (file /Users/user/Documents/GitHub/Algebraic-geometry-
 compendium/Tex abstract/src/lectures/0/pictures/cd_14.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_14.pdf, id=1253, 403.13612pt x 68.84721pt>
+<lectures/0/pictures/cd_14.pdf, id=1362, 403.13612pt x 68.84721pt>
 File: lectures/0/pictures/cd_14.pdf Graphic file (type pdf)
 <use lectures/0/pictures/cd_14.pdf>
 Package pdftex.def Info: lectures/0/pictures/cd_14.pdf  used on input line 165.
 
 (pdftex.def)             Requested size: 403.13513pt x 68.84703pt.
-[69 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
-c/lectures/0/pictures/cd_14.pdf>]) [70]
+[76 </Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
+c/lectures/0/pictures/cd_14.pdf>]) [77]
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/1/1.tex [71] [72] [73])
+ctures/1/1.tex [78] [79] [80])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/2/2.tex [74] [75])
+ctures/2/2.tex [81] [82])
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/le
-ctures/2/2.2.tex [76]
+ctures/2/2.2.tex [83]
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 88.
-[77]) [78]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
+[84]) [85]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
 
 (/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/ma
 in.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F9162F3203DFC4F98F5018C722E85CD9;16637.
+(rerunfilecheck)             Checksum: 6B1CDC2A9023A1222F8EFB6FC5FDA319;18595.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
  ) 
 Here is how much of TeX's memory you used:
- 40071 strings out of 480608
- 903324 string characters out of 5903630
- 1230151 words of memory out of 5000000
- 54619 multiletter control sequences out of 15000+600000
- 578280 words of font info for 109 fonts, out of 8000000 for 9000
+ 40164 strings out of 480608
+ 905179 string characters out of 5903630
+ 1230205 words of memory out of 5000000
+ 54655 multiletter control sequences out of 15000+600000
+ 580939 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,16n,138p,1348b,778s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
@@ -1901,28 +1934,29 @@ usr/local/texlive/2020/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.p
 fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/libertine/LinLibertin
 eTI.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
 10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
-pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+0.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12
+.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.p
+fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
+cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "/Users/user/Documents/GitHub/Algebraic-geometry-compendium/T
-ex abstract/src/main.pdf" (78 pages, 962798 bytes).
+ex abstract/src/main.pdf" (85 pages, 1003806 bytes).
 PDF statistics:
- 1522 PDF objects out of 1728 (max. 8388607)
- 1381 compressed objects within 14 object streams
- 481 named destinations out of 1000 (max. 500000)
- 555 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1643 PDF objects out of 1728 (max. 8388607)
+ 1490 compressed objects within 15 object streams
+ 525 named destinations out of 1000 (max. 500000)
+ 608 words of extra memory for PDF output out of 10000 (max. 10000000)
 

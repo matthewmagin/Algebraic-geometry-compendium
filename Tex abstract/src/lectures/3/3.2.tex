@@ -1,4 +1,4 @@
-	\subsection{Локализация. Поведение спектра при локализации. Локальный принцип.}
+	\subsection{Локализация. Поведение спектра при локализации.}
 
 	Напомним основные примеры локализаций:
 
@@ -82,7 +82,7 @@
 	\begin{definition} 
 		Пусть $I \lei R$~--- идеал в кольце $R$. Его \emph{радикалом} называется 
 		\[
-			\sqrt{I} \eqdef \{x \in I \ \vert \exists n \colon x^n \in I  \}.
+			\sqrt{I} \eqdef \{x \in R \ \vert \exists n \colon x^n \in I  \}.
 		\]
 		\emph{Нильпотентным радикалом} кольца $R$ называется $\NRad(R) = \sqrt{0}$~---  множество всех нильпотентных элементов кольца $R$. 
 	\end{definition}
@@ -92,10 +92,35 @@
 		\[
 			\sqrt{I} = \bigcap_{\fp \in \Spec{R}, \ \fp \supset I} \fp. 
 		\]
+		В частности, нильпотентный радикал равен пересечению всех простых идеалов кольца $R$.
+	
 	\end{theorem}
 	\begin{proof}
-		Начнём с того, что если $\fp \supset I$, то $\fp \supset \sqrt{I}$, так как если $x \in \sqrt{I}$, то для некоторого $n$ мы имеем $x^n \in I \implies x^n = x \cdot \ldots \cdot x \in \fp \implies x \in \fp$.
+		Начнём с того, что если $\fp \supset I$, то $\fp \supset \sqrt{I}$, так как если $x \in \sqrt{I}$, то для некоторого $n$ мы имеем $x^n \in I \implies x^n = x \cdot \ldots \cdot x \in \fp \implies x \in \fp$. То есть, радикал $\sqrt{I}$ идеала  $I$ содержится в любом простом идеале $\fp$, содержащем сам $I$.
+
+		Пусть сначала $I = 0$, т.е. Возьмём 
+
+		\[
+		 	f \in \bigcap_{\fp \in \Spec{R}} \fp 
+		 \]
+		  Тогда из предыдещего следствия $\Spec{R_{f}} = \varnothing$, так как с $\langle f \rangle $ пересекаются все простые идеалы.  Отсюда $R_{f} = 0$. Но тогда мы имеем равенство 
+		  \[
+		  	\frac{1}{1} = \frac{0}{1} \implies \exists n \colon f^n = 0. 
+		  \]
+
+		  Теперь рассмотрим для произвольного идеала $I$ каноническую проекцию $\rho \colon R \to R/I$. Заметим, что 
+		  \[
+		  	 \rho^{-1}\lr*{\NRad(R/I)} = \sqrt{I}.
+		  \]
+		  В самом деле, $\rho(y) = x \in \NRad(R/I) \Leftrightarrow \exists n \colon \rho(y^n) = x^n = 0$ в  $R/I \Leftrightarrow \rho^{-1}(y)^n \in I$.
+
+		  Теперь вспомним, что при эпиморфизме проораз простого идеала прост, то есть $\rho^{-1}(\fp)$~--- простой идеал $\forall \fp \in \Spec(R/I)$. Ну и кроме того, он содержит $I$ (так как содержит 0). Тогда мы имеем такую цепочку включений: 
+		  \[
+		   	\sqrt{I} \subset \bigcap_{I \subset \fq \in \Spec{R}} \fq \subset \bigcap_{\fp \in \Spec{R/I}} \rho^{-1}(\fp) = \rho^{-1}\lr*{\bigcap_{\fp \in \Spec{R/I}} \fp } = \rho^{-1}\lr*{\NRad\lr*{R/I}} = \sqrt{I}.
+		   \] 
 	\end{proof}
+
+	
 
 	
 

@@ -4,52 +4,58 @@
 \contentsline {subsection}{\numberline {1.2}Аффинные алгебраиические многообразия}{2}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Топология Зарисского на спектре кольца}{4}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}Словарик алгебраической геометрии}{4}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Локализация. Поведение спектра при локализации. Локальный принцип.}{4}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Лемма Накаямы}{5}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}Кольца нормирования, кольца дискретного нормирования и Дедекиндовы области}{6}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8}Дедекиндовы кольца}{8}{subsection.1.8}%
-\contentsline {subsection}{\numberline {1.9}Hauptidealsatz}{9}{subsection.1.9}%
-\contentsline {section}{\numberline {2.}Алгебраическая теория чисел}{10}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Разложение идеалов в произведение простых в кольцах целых числовых полей}{10}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Дискриминант}{12}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Норма идеала}{15}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Индекс ветвления и степень инерции}{16}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Группа классов идеалов и её элементарное вычисление}{18}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Дифферента и ветвление}{21}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Кольцо целых композита расширений}{24}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Теорема Куммера}{25}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Первый случай Last Fermat's theorem}{27}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}Алгоритм построения целого базиса}{31}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}Геометрия чисел}{32}{subsection.2.11}%
-\contentsline {subsection}{\numberline {2.12}Мультипликативная группа кольца целых числового поля}{36}{subsection.2.12}%
-\contentsline {subsection}{\numberline {2.13}Контпример к локально-глобальному принципу.}{39}{subsection.2.13}%
-\contentsline {section}{\numberline {3.}Основы теории гомологий}{42}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Симплициальные гомологии}{42}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Сигнулярные гомологии}{44}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Немного гомологической алгеры}{45}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Гомотопическая инвариантность гомологий}{46}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Относительные гомологии и гомологически точная последовательность пары}{48}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Пары Боруска}{50}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Относительные гомологии как абсолютные (факторизация)}{51}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Вырезание}{54}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Точная последовательность Майера-Вьеториса}{55}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Гомологии сфер}{55}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}Гомологии букета и надстройки}{56}{subsection.3.11}%
-\contentsline {subsection}{\numberline {3.12}Гомологии с коэффициентами}{57}{subsection.3.12}%
-\contentsline {subsection}{\numberline {3.13}Приложения теории гомологий}{57}{subsection.3.13}%
-\contentsline {subsection}{\numberline {3.14}Симплициальные комплексы}{58}{subsection.3.14}%
-\contentsline {subsection}{\numberline {3.15}Эквивалентность симплициальных и сингулярных гомологий}{58}{subsection.3.15}%
-\contentsline {subsection}{\numberline {3.16}Степень отображения}{59}{subsection.3.16}%
-\contentsline {subsection}{\numberline {3.17}Клеточные гомологии}{61}{subsection.3.17}%
-\contentsline {subsection}{\numberline {3.18}Гомологии поверхностей}{64}{subsection.3.18}%
-\contentsline {subsection}{\numberline {3.19}Пространства Мура}{65}{subsection.3.19}%
-\contentsline {subsection}{\numberline {3.20}Теорема о вложении дисков и сфер}{65}{subsection.3.20}%
-\contentsline {subsection}{\numberline {3.21}Когомологии}{66}{subsection.3.21}%
-\contentsline {subsection}{\numberline {3.22}Формула универсальных коэффициентов для когомологий}{67}{subsection.3.22}%
-\contentsline {subsection}{\numberline {3.23}Умножение в когомологиях}{69}{subsection.3.23}%
-\contentsline {section}{\numberline {4.}Комплексная алгебраическая геометрия}{71}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Комплексные многообразия}{71}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Векторные рассоления}{73}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Подмногообразия и аналитические подмножества}{75}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Когомологии де Рама и Дольбо}{76}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Пучки и когомологии}{78}{subsection.4.5}%
+\contentsline {subsection}{\numberline {1.5}Локализация. Поведение спектра при локализации.}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Локализация модуля и плоские модули. Локальный принцип.}{6}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Лемма Накаямы}{8}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Радикал Джекобсона}{9}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Кольца нормирования, кольца дискретного нормирования и Дедекиндовы области}{9}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Дедекиндовы кольца}{11}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Hauptidealsatz}{12}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}Пополнения}{12}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}Градуированные алгебры и модули}{14}{subsection.1.13}%
+\contentsline {section}{\numberline {2.}Алгебраическая теория чисел}{15}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Разложение идеалов в произведение простых в кольцах целых числовых полей}{15}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Дискриминант}{17}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Норма идеала}{20}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Индекс ветвления и степень инерции}{21}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Группа классов идеалов и её элементарное вычисление}{23}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Дифферента и ветвление}{26}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Кольцо целых композита расширений}{29}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Теорема Куммера}{30}{subsection.2.8}%
+\contentsline {subsection}{\numberline {2.9}Первый случай Last Fermat's theorem}{32}{subsection.2.9}%
+\contentsline {subsection}{\numberline {2.10}Алгоритм построения целого базиса}{36}{subsection.2.10}%
+\contentsline {subsection}{\numberline {2.11}Геометрия чисел}{37}{subsection.2.11}%
+\contentsline {subsection}{\numberline {2.12}Мультипликативная группа кольца целых числового поля}{41}{subsection.2.12}%
+\contentsline {subsection}{\numberline {2.13}Контпример к локально-глобальному принципу для кубических форм.}{44}{subsection.2.13}%
+\contentsline {subsection}{\numberline {2.14}Поле $p$-адических чисел и лемма Гензеля}{46}{subsection.2.14}%
+\contentsline {subsection}{\numberline {2.15}Локально-глобальный принцип для квадратичных форм}{48}{subsection.2.15}%
+\contentsline {section}{\numberline {3.}Основы теории гомологий}{49}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Симплициальные гомологии}{49}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Сигнулярные гомологии}{51}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Немного гомологической алгеры}{52}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Гомотопическая инвариантность гомологий}{53}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Относительные гомологии и гомологически точная последовательность пары}{55}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Пары Боруска}{57}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Относительные гомологии как абсолютные (факторизация)}{58}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Вырезание}{61}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Точная последовательность Майера-Вьеториса}{62}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Гомологии сфер}{62}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Гомологии букета и надстройки}{63}{subsection.3.11}%
+\contentsline {subsection}{\numberline {3.12}Гомологии с коэффициентами}{64}{subsection.3.12}%
+\contentsline {subsection}{\numberline {3.13}Приложения теории гомологий}{64}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.14}Симплициальные комплексы}{65}{subsection.3.14}%
+\contentsline {subsection}{\numberline {3.15}Эквивалентность симплициальных и сингулярных гомологий}{65}{subsection.3.15}%
+\contentsline {subsection}{\numberline {3.16}Степень отображения}{66}{subsection.3.16}%
+\contentsline {subsection}{\numberline {3.17}Клеточные гомологии}{68}{subsection.3.17}%
+\contentsline {subsection}{\numberline {3.18}Гомологии поверхностей}{71}{subsection.3.18}%
+\contentsline {subsection}{\numberline {3.19}Пространства Мура}{72}{subsection.3.19}%
+\contentsline {subsection}{\numberline {3.20}Теорема о вложении дисков и сфер}{72}{subsection.3.20}%
+\contentsline {subsection}{\numberline {3.21}Когомологии}{73}{subsection.3.21}%
+\contentsline {subsection}{\numberline {3.22}Формула универсальных коэффициентов для когомологий}{74}{subsection.3.22}%
+\contentsline {subsection}{\numberline {3.23}Умножение в когомологиях}{76}{subsection.3.23}%
+\contentsline {section}{\numberline {4.}Комплексная алгебраическая геометрия}{78}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Комплексные многообразия}{78}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Векторные рассоления}{80}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Подмногообразия и аналитические подмножества}{82}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Когомологии де Рама и Дольбо}{83}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Пучки и когомологии}{85}{subsection.4.5}%

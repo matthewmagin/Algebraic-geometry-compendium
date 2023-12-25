@@ -1,0 +1,129 @@
+	\subsection{Локализация модуля и плоские модули. Локальный принцип.}
+
+	Пусть $M$~--- $R$-модуль, а $S$~--- мультипликативное подмножество в $R$.
+
+	\begin{definition} 
+		Множество $M \times S / \sim$, где $(m, s) \sim (m', s') \Leftrightarrow \exists s'' \in S \colon m s' s'' = m' s s''$ с ествественно заданными операциями называется \emph{локализацией} модуля $M$ в $S$.
+	\end{definition}
+
+	\begin{lemma} 
+		$S^{-1}M \cong M \otimes_{R} S^{-1}R$.
+	\end{lemma}
+
+	\begin{proof}
+		Рассмотрим отображение $\varphi\colon S^{-1}M \to M \otimes_{R} S^{-1}R$, заданное как 
+		\[
+			\frac{m}{s} \mapsto m \otimes \frac{1}{s}.
+		\]
+
+		Ясно, что это сюръективный и инъективный гомоморфизм модулей. 
+	\end{proof}
+
+	\begin{definition} 
+		Модуль называется \emph{плоским}, если тензорное домножение на него~--- точный функтор. 
+	\end{definition}
+
+	\begin{statement} 
+		Локализация $S^{-1}R$ плоска, как $R$-модуль. 
+	\end{statement}
+
+	\begin{proof}
+		Ясно, что достаточно показать, что оно переводит мономорфизмы в мономорфизмы (т.к. точность справа есть всегда). 
+
+		Пусть $\varphi\colon M \to N$~--- мономорфизм $R$-модулей. Рассмотрим 
+		\[
+			\varphi_{S}\colon S^{-1}M = M \otimes S^{-1}R \to N \otimes S^{-1}R = S^{1}N.
+		\]
+
+		Тогда $\varphi_{S}\lr*{\frac{m}{s}} = 0 \Leftrightarrow \frac{\varphi(m)}{s} = 0 \Leftrightarrow \exists s' \in S\colon s'\varphi(m) = 0$. Тогда $\varphi(s' m) = 0$, а так как $\varphi$ инъективен, отсюда $s' m = 0 \implies \frac{m}{s} = 0$.  
+	\end{proof}
+
+	\begin{corollary}
+		Локализация модуля сохраняет ядра, коядря и конечные пересечения пдодмодулей. 
+	\end{corollary}
+
+	\begin{proof}
+		Тензорное умножение на $S^{-1}R$ является точным функтором, а точный функтор всегда сохраняет ядра и коядра. 
+
+		Рассмотрим пересечение $\bigcap_{i = 1}^{n} M_i \subset M$. Тогда 
+		\[
+			\bigcap_{i = 1}^{n} M_i = \Ker\lr*{M \to \bigoplus_{i = 1}^{n} M/M_i}, 
+		\]
+		а ядра, как мы уже убедились, локализация сохраняет. 
+	\end{proof}
+
+	\begin{lemma} 
+		Отображение 
+		\[
+			M \to \prod_{\fm \in \Specm{R}} M_{\fm}
+		\]
+
+		инъективно. 
+	\end{lemma}
+
+	\begin{proof}
+		 Пусть есть $m \in M$ такой, что $m \mapsto 0$. Это означает, что $\forall \fm \in \Specm{R} \ \exists s \in S = R \setminus \fm$ (т.е. $s \notin \fm)\colon sr = 0$. Напомним такое определение: 
+
+		 \begin{definition} 
+		 	Пусть $M$~--- $R$-модуль, $N \subset M$. Тогда \emph{аннулятор $N$} определяется как 
+		 	\[
+		 		\Ann(N) \eqdef \{ r \in R \ \vert \ rn = 0  \ \forall n \in N \}.
+		 	\]
+		 \end{definition}
+
+		 \begin{remark}
+		 	Если $N \le M$, то $\Ann(N)$~--- идеал в $R$.
+		 \end{remark}
+
+		 Так вот, предыдущее равенство означает, что $s \in \Ann(r) \setminus \fm$. Но так как $\Ann(r)$~--- идеал, а мы имеем такое для любого максимального идеала $\fm$, это означает, что $\Ann(r) = R$, откуда $r = 0$.
+	\end{proof}
+
+	Свойство $\fP$ для $R$-модулей называется \emph{локальным}, если 
+
+	\[
+		\fP(M) \Leftrightarrow \forall \fp \in \Spec{R} \quad \fP(M_{\fm}).
+	\]
+
+	\begin{theorem} 
+		Следующие свойства модулей и их гомоморфизмов являются локальными: 
+
+		\begin{enumerate}
+			\item $M = 0$.
+
+			\item $\varphi$~--- инъективен, $\varphi$~--- сюръективен. 
+
+			\item $M$~--- плоский. 
+
+			\item $M$~--- проективный. 
+		\end{enumerate}
+	\end{theorem}
+
+	\begin{proof}
+		Вообще говоря, во всех этих свойствах достаточно пользоваться $\Specm{R}$. 
+
+		\bf{(1.)} В одну сторону очевидно, докажем в другую. Пусть $M_{\fm} = 0 \ \forall \fm \in \Specm{R}$. Тогда нужно сделать примерно то же самое, что мы уже делали в доказательстве предыдущего утверждения. Условие выше означает, что $\forall x \in M \ \exists s \in R \setminus \fm\colon sx = 0$, откуда следует, что $\Ann(x) \not\subset \fm \ \forall \fm \in \Specm{R}$, а аннулятор элемента~--- идеал кольца $R$. Значит, $\Ann(x) = R \implies x = 0$. 
+
+		\bf{(2.)} В одну сторону это будет выполнено просто в силу того, что локализация плоская. Докажем теперь в другую сторону. Пусть $\forall \fm \in \Specm{R} \ \varphi_{\fm}\colon M_{\fm} \to N_{\fm}$ инъекьивен. Так как локализация сохраняет ядра, это означает, что 
+
+		\[
+			\forall \fm \in \Specm{R} \quad \Ker\lr*{\varphi_{\fm}} = \Ker\lr*{\varphi}_{\fm} = 0.
+		\]
+
+		Т.е. $\forall \fm \in \Specm{R} \ \Ker(\varphi)_{fm} = 0$. Тогда по пункту \bf{(1.)} мы имеем $\Ker\lr*{\varphi} = 0$. Для сюръектвности нужно совершенно аналогично доказать, что коядро будет нулевым. 
+
+		\bf{(3.)} Заметим, что если $M$~--- плоский, то так как $R_{\fm}$~--- плоскй, 
+		\[
+			M \otimes R_{\fm} = M_{\fm}
+		\]
+		тоже будет плоским. 
+
+		Теперь докажем в обратную сторону. Надо доказать, что если функтор $\_ \otimes M_{\fm}$ точен $\forall \fm \in \Specm{R}$, то функтор $\_ \otimes M$ будет точным. Так как достаточно проверять, что моно переходит в моно, можно просто воспользоваться пунктом \bf{(2)}. 
+	\end{proof}
+
+	\begin{lemma} 
+		Для любого $\fp \in \Spec{R} \ M_{\fp} \neq 0 \Leftrightarrow \Ann(M) \le \fp$.
+	\end{lemma}
+
+	
+
+	
