@@ -122,7 +122,12 @@
 	\]
 
 	\begin{remark}
-		Если $\alpha \in \cO_{K}$, то $\Tr_{K/\Q}(\alpha) \in \Z$, так как во-первых, $\sigma(\alpha) \in \cO_k \ \forall \sigma \in \Gal(K/\Q)$, откуда $\Tr_{K/\Q}(\alpha) \in \cO_{K}$.
+		Если $\alpha \in \cO_{K}$, то $\Tr_{K/\Q}(\alpha) \in \Z$. Действительно, во-первых, $\sigma(\alpha) \in \cO_k \ \forall \sigma \in \Gal(K/\Q)$, так как если $\alpha \in \cO_{K}$, то 
+		\[
+			\alpha^n + a_{n - 1} \alpha^{n - 1} + \ldots + a_0 = 0 \implies (\sigma\alpha)^n + a_{n - 1} (\sigma \alpha)^{n - 1} + a_0 = 0 \implies \sigma\alpha \in \cO_{K}
+		\]
+
+		, откуда $\Tr_{K/\Q}(\alpha) \in \cO_{K}$.
 
 		С другой стороны, по первому определению $\Tr_{K/\Q} \in \Q$, а $\cO_{K} \cap \Q = \Z$. 
 	\end{remark}
@@ -165,14 +170,173 @@
 	\]
 	Так как слева и справа конечнопорождённые абелевы группы ранга $n$, мы только что доказали такую теорему: 
 
-	\begin{theorem} 
-		Пусть $\cO_{K}$~--- кольцо целых числового поля $K/\Q$. Тогда, как абелева группа оно изоморфно конечнопорожденной абелевой группе ранга $n$:
+	\begin{theorem}\label{integral_basis_O_K} 
+		Пусть $\cO_{K}$~--- кольцо целых числового поля $K/\Q$, где $K/\Q$~--- расширение степени $n$. Тогда, как абелева группа оно изоморфно конечнопорожденной свободной абелевой группе ранга $n$:
 		\[
-			\cO_{K} \cong \bigoplus \Z u_i.
+			\cO_{K} \cong \bigoplus_{i = 1}^{n} \Z u_i.
 		\]
 
-		В данном контексте $\{ u_i \}$ называют \emph{целым базисом}. 
+		В данном контексте $\{ u_i \}_{i = 1}^{n}$ называют \emph{целым базисом}. 
 	\end{theorem}
+
+	Из этой теоремы сразу следует вот такой факт:
+
+	\begin{theorem} 
+		Кольцо $\cO_{K}$~--- нётерово. 
+	\end{theorem}
+	\begin{proof}
+		В самом деле, по теореме~\ref{integral_basis_O_K} кольцо $\cO_{K}$ конечно порождена, как абелева группа, а значит, любой его идеал $I \subset \cO_K$ тоже конечно порожден, как абелева группа, откуда следует, что он конечно порожден и как идеал. 
+	\end{proof}
+
+	\begin{example}\label{ring_of_integers_Q(sqrt(-3))}
+		Рассмотрим поле $K = \Q(\sqrt{-3})$. Чему равно его кольцо целых $\cO_{K}$?
+
+		Ясно, что $\Z[\sqrt{-3}] \subset \cO_{K}$, но вот равенства нет, так как можно рассмотреть 
+		\[
+			\alpha = \frac{1 + \sqrt{-3}}{2}, \quad 2\alpha - 1 = \sqrt{-3} \implies 4\alpha^2 - 4\alpha + 4 = 0 \implies \alpha^2 - \alpha + 1 = 0,		
+		\]
+		то есть $\alpha \in \cO_{K}$ и $\alpha \notin \Z[\sqrt{-3}]$. 
+	
+
+	Воспользуемся понятием \emph{нормы}:
+
+	\begin{definition} 
+		Пусть $L/K$~--- конечное расширение, $[L : K] = n$. Возьмём $\alpha \in L$, его можно рассматривать, как эндоморфизм понятным образом
+		\[
+			T_{\alpha}\colon L \to L, \quad x \mapsto \alpha x. 
+		\]
+		\emph{Нормой элемента $\alpha$ относительно расширения $L/K$} мы будем называть $\Nm_{L/K}(\alpha) = \Nm(\alpha) = \det(T_{\alpha})$. В случае, когда расширение сепарабельно, норму можно определять, как 
+		\[
+			\Nm(\alpha) = \prod_{\sigma \in \Gal(L/K)} \sigma(\alpha).
+		\]
+	\end{definition}
+
+	\begin{remark}
+		Как и в случае со следом, для $\alpha \in \cO_{K}$ $\Nm_{K/\Q}(\alpha) \in \cO_{K}$ (доказывается это так же, как для следа), а из определения через определитель ясно, что $\Nm_{K/\Q}(\alpha) \in \Q$, то есть $\Nm_{K/\Q}(\alpha) \in \Z$.
+	\end{remark}
+
+	Ясно, что в случае квадратичного расширения $\Q(\sqrt{d})$ норма $a + b\sqrt{d}$ норма элемента~--- произведение его на его сопряженный:
+	\[
+		\Nm(a + b\sqrt{d}) = (a + b\sqrt{d}))(a - b\sqrt{d}) = a^2 - d b^2
+	\]
+
+	Соотвественно, рассмотрим $a + b\sqrt{-3} \in \Q(\sqrt{-3})$ (т.е. $a, b \in \Q$) и пусть $\alpha = a + b\sqrt{-3} \in \cO_{K}$. Тогда 
+	\[
+		\Nm_{K/\Q}(a + b\sqrt{-3}) = (a + b\sqrt{-3})(a - b\sqrt{-3}) = a + 3b^3 \in \Z, \quad \Tr_{K/\Q}(a + b\sqrt{-3}) = (a + b \sqrt{-3}) + (a - b\sqrt{-3}) = 2a \in \Z. 
+	\]
+
+	Соответственно, $2a \in \Z$, то есть или $a = n/2$, где $n \in \Z$ и нечётное, или $a \in \Z$. 
+
+	\begin{enumerate}
+		\item Пусть $a \in \Z$, тогда так как $a^2 + 3b^2 \in \Z$, $3b^2 \in \Z \implies b \in \Z$. 
+
+		\item Пусть $2a = 2n + 1$, тогда $4(a^2 + 3b^2) = 4a^2 + 12b^2 \in 4\Z \implies 12b^2 \in 4\Z$, откуда $2b \in \Z$. 
+	\end{enumerate}
+
+	Значит, либо $a$ и $b$ одновременно целые, либо $a$ и $b$ одновременно полуцелые. То есть 
+	\[
+	 	\alpha = \frac{2n + 1}{2} + \frac{2m + 1}{2}\sqrt{-3} = (n + m\sqrt{-3}) + \frac{1 + \sqrt{-3}}{2} = (n - m) + (2m + 1)\frac{1 +\sqrt{-3}}{2},
+	 \] 
+	 откуда $\cO_{K} \cong \Z \oplus \Z \cdot \frac{1 + \sqrt{-3}}{2}$.
+
+	\end{example}
+
+	\begin{example}
+		Если $K = \Q(i)$, то $\cO_{K} = \Z[i]$.
+	\end{example}
+
+	\begin{homework}\label{hw_1}
+		Задачи:
+		\begin{enumerate}
+			\item Опишите $\cO_{K}$ для $K = \Q(\sqrt{d})$, где $d \in \Z$ и $d$ свободно от квадратов. 
+
+			\item Докажите, что любое конечное целостное кольцо является полем. 
+
+			\item Рассмотрим поле $K = \Q(\sqrt{-5})$, $\cO_{K} = \Z[\sqrt{-5}]$ и идеал $I = (2, 1 + \sqrt{-5})$. Покажите, что он не является главным. 
+
+			\item Докажите, что кольцо $\Z[\sqrt{-5}]$  не факториальное. А именно, рассмотрите
+			\[
+				21 = 3 \cdot 7 = (1 + 2\sqrt{-5})(1 - 2\sqrt{-5})
+			\]
+			и покажите: что это два существенно различных разложения в произвдение простых. 
+		\end{enumerate}
+	\end{homework}
+
+	\subsection{Размерность кольца целых $\cO_{K}$}
+
+	Докажем теперь, что для любого числового поля $K$ кольцо целых $\cO_{K}$ одномерно. 
+
+	\begin{lemma}\label{integer_in_ideal_of_O_K} 
+		Пусть $K/\Q$~--- конечное расширение и  $0 \neq I$~--- идеал кольца $\cO_{K}$. Тогда $I \cap \Z \neq 0$, то есть $I$ содержит целое число. 
+	\end{lemma}
+
+	\begin{proof}
+		Возьмём $\alpha \in I$, $\alpha \neq 0$. Тогда 
+		\[
+			\alpha^n + a_{n - 1} \alpha^{n - 1} + \ldots + a_{1}\alpha + a_0 = 0, \quad a_i \in \Z.
+		\]
+		Не умаляя общности, $a_0 \neq 0$. Но тогда 
+		\[
+			a_0 = - (\alpha^n + a_{n - 1} \alpha^{n - 1} + \ldots + a_{1}\alpha) \implies a_0 \in \Z \cap I.
+		\]
+	\end{proof}
+
+	\begin{corollary}\label{O_K/I}
+		Пусть $I$~--- ненулевой идеал в $\cO_{K}$. Тогда $\cO_{K}/I$ конечно. 
+	\end{corollary}
+	\begin{proof}
+		По лемме~\ref{integer_in_ideal_of_O_K} выберем $n \in I \cap \Z$, $n \neq 0$. Тогда 
+		$(n) = n\cO_{K} \lei I$, значит достаточно доказать, что $\cO_{K}/n\cO_{K}$ конечно. А это сразу же следует из того, что $\cO_{K}$~--- это конечнопорожденная свободная абелева группа ранга $n$. 
+	\end{proof}
+	
+	\begin{theorem} 
+		Кольцо $\cO_{K}$ одномерно, т.е. $\dim(\cO_{K}) = 1$. 
+	\end{theorem}
+
+	\begin{proof}
+		Пусть $\fp \in \Spec(\cO_{K})$. Тогда $\cO_{K}/\fp$~--- область целостности и конечно по  следствию~\ref{O_K/I}. Но тогда по задаче 2 в~\ref{hw_1} $\cO_{K}/\fp$~--- поле, что равносильно тому, что $\fp$~--- максимальынй. 
+	\end{proof}
+
+	\begin{remark}
+		Эквивалентная формулировка этой теоремы состоит в том, что любой ненулевой простой идеал  кольца $\cO_{K}$ является максимальным. 
+	\end{remark}
+
+	Поговорим теперь еще про строение идеалов в кольце $\cO_{K}$. Как мы уже убеждались в задаче 3 Д/З~\ref{hw_1}, кольцо $\cO_{K}$ далеко не всегда является областью главных идеалов. 
+
+	\begin{statement} 
+		Рассмотрим $K = \Q(\sqrt{-3})$. Тогда $\cO_{K}$~--- евклидово. 
+	\end{statement}
+
+	\begin{proof}
+		Как мы убедились в примере~\ref{ring_of_integers_Q(sqrt(-3))}, 
+		\[
+			\cO_{K} \cong \Z \oplus \Z \omega, \quad \omega = \frac{1 + \sqrt{-3}}{2}. 
+		\]
+		Рассмотрим $a + b \omega$, тогда  положим
+		\[
+			\Nm(\alpha) = (a + b\omega)(a + b\overline{\omega}) = a^2 + ab + b^2.
+		\]
+
+		Пусть $a, b, c, d \in \Z$, тогда
+		\[
+			\frac{a + b\omega}{c + d\omega} = \alpha + \beta \omega, \quad \alpha, \beta \in \Q.
+		\]
+
+		Тогда существуют $u, v \in \Z$ такие, что $|u - \alpha| \le \frac{1}{2}$, $|v - \beta| \le \frac{1}{2}$. Положим $\alpha - u = \alpha'$, $\beta - v = \beta'$.
+
+		\[
+			a + b\omega = (c + d\omega)(\alpha + \beta \omega) = (c + d\omega)(u + v\omega) + (c + d\omega)(\alpha' + \beta' \omega) = (c + d \omega)(u + v \omega)  + r.
+		\]
+		\[
+			\Nm(r) = \Nm((c + d\omega)(\alpha' + \beta' \omega)) = \Nm(c + d \omega)\Nm(\alpha' + \beta' \omega) = \Nm(c + d\omega)(\alpha'^2 + \alpha'\beta' + \beta'^2) < \Nm(c + d \omega),
+		\]
+		так как $\alpha'^2 + \alpha'\beta' + \beta'^2 \le \frac{1}{4} + \frac{1}{4} + \frac{1}{4} = \frac{3}{4}$, что и требовалось. 
+
+
+			
+	\end{proof}
+
+
 
 
 
