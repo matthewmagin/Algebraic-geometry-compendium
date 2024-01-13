@@ -15,7 +15,7 @@
 	\subsection{Норма идеала}
 
 	\begin{definition} 
-		Пусть $K/\Q$~--- конечное расширение, $0 \neq I \subset \cO_{K}$~--- идеал. Тогда, как мы знаем, $|\cO_{K}/I| < \infty$. \emph{Нормой идеала $I$} мы будем называть целое число
+		Пусть $K/\Q$~--- конечное расширение, $0 \neq I \subset \cO_{K}$~--- идеал. Тогда, как мы знаем из теоремы~\ref{O_K/I}, $|\cO_{K}/I| < \infty$. \emph{Нормой идеала $I$} мы будем называть целое число
 		\[
 			\mathrm{N}_{K/\Q}\lr*{I} \eqdef \left\lvert \cO_{K} / I \right\rvert
 		\]
@@ -27,10 +27,16 @@
 
 	Хотелось бы, чтоб норма главного идеала была равна норме порождающего его элемента (в смысле нормы для расширения полей). 
 	\begin{statement} 
-		Пусть $\omega_{1}, \ldots, \omega_{n}$~--- целый базис $\cO_{K}$. Тогда $\mathrm{N}((a)) = \left\lvert\mathrm{N}_{K/\Q}(a)\right\rvert$.
+		 Пусть $a \in \cO_{K}$, тогда $\mathrm{N}((a)) = \left\lvert\mathrm{N}_{K/\Q}(a)\right\rvert$.
 	\end{statement}
 	\begin{proof}
-		Пусть $a \omega_{i} = \sum\limits_{j = 1}^{n} b_{i j} \omega_{j}, \ b_{i j} \in \Z$. Тогда $\Nm(a) = \det{(b_{i j})}$. С другой стороны, мы доказали, что $|\det{(b_{i j})}| = \left\lvert \cO_{K}/a\cO_{K} \right\rvert$.
+		Пусть $\omega_{1}, \ldots, \omega_{n}$~--- целый базис $\cO_{K}$, а 
+		\[
+			a \omega_{i} = \sum\limits_{j = 1}^{n} b_{i j} \omega_{j}, \ b_{i j} \in \Z	
+		\]
+		Тогда с одной стороны мы посчитали оператор умножения на $a$ на базисных векторах, то есть по определению $\N_{K/\Q}(a) = \det((b_{i j}))$. 
+
+		 С другой стороны, по предложению~\ref{free_abelian_groups_prop} мы имеем $|\det{(b_{i j})}| = \left\lvert \cO_{K}/a\cO_{K} \right\rvert$, что и требовалось. 
 	\end{proof}
 
 	Заметим, что тогда мы получаем и мультипликативность для главных идеалов: 
@@ -40,13 +46,13 @@
 
 	Хотелось бы теперь обобщить это на произвольные идеалы. Для этого нам понадобятся задачи из ДЗ~\ref{hw_4}. 
 
-	\begin{lemma}[Задача 5 из ДЗ~\ref{hw_4}] 
+	\begin{lemma}[Задача 5 из ДЗ~\ref{hw_4}]\label{hw_4_task_3} 
 		 Пусть $\fp_{1}, \ldots, \fp_{k}$~--- максимальные идеалы кольца $\cO_{K}$, $n_{1}, \ldots, n_{k} \in \Z$. Докажите, что существует $\alpha \in K^{*}\colon \upsilon_{\fp_{i}}(\alpha) = n_{i} \ \forall 1 \le i \le n_{k}$.
 	\end{lemma}
 	\begin{proof}
 		Заметим, что идеалы $\fp_{i}^{n_{i}}$ попарно взаимнопросты. Выберем $x_{i} \in \fp_{i}^{n_i} \setminus \fp_{i}^{n_i + 1}$. Тогда по КТО существует $x \equiv x_{i} \pmod{\fp_{i}^{n_{i} + 1}}$. Тогда 
 		\[
-			\upsilon_{\fp_{i}}(x) = \upsilon_{\fp_{i}}((x - x_{i}) + x_{i}) = n_{i}.
+			\upsilon_{\fp_{i}}(x) = \upsilon_{\fp_{i}}((x - x_{i}) + x_{i}) = \min(\v_{\fp_{i}}(x - x_i), \v_{\fp_i}(x_i)) = \min(n_i, n_i + 1) = n_{i}.
 		\]
 	\end{proof}
 
@@ -63,7 +69,7 @@
 			yJ = \prod_{i = 1}^{\ell} \fq_{i}^{-r_{i}} \cdot \prod_{j = 1}^{r} \fr_{j}^{\ell_{i}}, \text{ где } \ell_i \ge 0, \ r_i \ge 0.
 		\]
 
-		Выберем $\widetilde{y} \in \cO_{K}\colon \upsilon_{\fq_{i}}(\widetilde{y}) = r_i, \ \upsilon_{\fp_{i}}(\widetilde{y}) = 0$, тогда ясно, что $y \widetilde{y} J$~--- целый идеал, который не делится на $\fp_{i}$, следовательно он взаимнопрост с $I$, что и требовалось.
+		По лемме~\ref{hw_4_task_3} $\widetilde{y} \in \cO_{K}\colon \upsilon_{\fq_{i}}(\widetilde{y}) = r_i, \ \upsilon_{\fp_{i}}(\widetilde{y}) = 0$, тогда ясно, что $y \widetilde{y} J$~--- целый идеал, который не делится на $\fp_{i}$, следовательно он взаимнопрост с $I$, что и требовалось.
 	\end{proof}
 
 	\begin{theorem} [Задача 7 из ДЗ~\ref{hw_4}]

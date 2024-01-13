@@ -14,21 +14,21 @@
 			$\disc(\alpha_1, \ldots, \alpha_n) = \lr*{\det(\sigma_{i}(\alpha_j)}^{2}$.	
 		\end{statement}
 		\begin{proof}
-			Положим $\sigma_{i}(\alpha_j) = A$ и рассмотрим $A^{t} A$, тогда 
+			Положим $(\sigma_{i}(\alpha_j))_{i,j = 1}^{n} = A$ и рассмотрим $A^{t} A$, тогда 
 			\[
-				(A^{t} A)_{i j} = \sum_{k = 1}^{n} \sigma(\alpha_i) \sigma_k(\alpha_j) = \sum_{k = 1}^{n} \sigma_{k}(\alpha_i \alpha_j) = \Tr_{K/F}(\alpha_i \alpha_j).
+				(A^{t} A)_{i j} = \sum_{k = 1}^{n} \sigma_{k}(\alpha_i) \sigma_k(\alpha_j) = \sum_{k = 1}^{n} \sigma_{k}(\alpha_i \alpha_j) = \Tr_{K/F}(\alpha_i \alpha_j).
 			\]
 		\end{proof}
 
-		Посмотрим теперь, как след меняется при линейном преобразовании. Пусть $(\beta_1, \ldots, \beta_n) = (\alpha_1, \ldots, \alpha_n)M, \ M \in M_{n}(F)$.
+		Посмотрим теперь, как дискриминант меняется при линейном преобразовании. Пусть $(\beta_1, \ldots, \beta_n) = (\alpha_1, \ldots, \alpha_n)M, \ M \in M_{n}(F)$.
 
 		\begin{statement}\label{disc_prop_2} 
-			$\disc(\alpha_1, \ldots, \alpha_n) = \disc(\beta_1, \ldots, \beta_n) \cdot \lr*{\det{M}}^{2}$.
+			$\disc(\beta_1, \ldots, \beta_n) = \disc(\alpha_1, \ldots, \alpha_n) \cdot \lr*{\det{M}}^{2}$.
 		\end{statement}
 		\begin{proof}
 			Действительно, это напрямую следует из предложения~\ref{disc_prop_1}:
 			\[
-			 	\disc(\beta_1, \ldots, \beta_n) = \det\lr*{\sigma_{i}(\alpha_{j})}^{2} = \det{\lr*{\sigma_{i}(\alpha_{j})}M}^2 = \disc(\beta_1, \ldots, \beta_n) \cdot \lr*{\det{M}}^{2}. 
+			 	\disc(\beta_1, \ldots, \beta_n) = \det\lr*{\sigma_{i}(\beta_{j})}^{2} = \det{\lr*{\sigma_{i}(\alpha_{j})M}}^2 = \disc(\alpha_1, \ldots, \alpha_n) \cdot \lr*{\det{M}}^{2}. 
 			 \] 
 		\end{proof}
 
@@ -36,11 +36,13 @@
 			$\disc(\alpha_1, \ldots, \alpha_n) = 0 \Leftrightarrow \alpha_1, \ldots, \alpha_n$~--- линейно зависимы. 
 		\end{statement}
 		\begin{proof}
-			Пусть $\alpha_1, \ldots, \alpha_n$~--- линейно зависимы, $e_1, \ldots, e_n$~--- базис $K/F$.
+			Пусть $\alpha_1, \ldots, \alpha_n$~--- линейно зависимы, $e_1, \ldots, e_n$~--- базис $K/F$. Тогда
 			\[
 				(\alpha_1, \ldots, \alpha_n) = (e_1, \ldots, e_n)M, \quad \det{M} = 0.
 			\]
-			Значит, по предложению~\ref{disc_prop_2} мы имеем $\disc(\alpha_1, \ldots, \alpha_n) = 0$. Теперь докажем в обратную сторону. 
+			Значит, по предложению~\ref{disc_prop_2} мы имеем $\disc(\alpha_1, \ldots, \alpha_n) = 0$. 
+
+			Теперь докажем в обратную сторону. 
 			Предположим, что $\alpha_1, \ldots, \alpha_n$~--- линейно независимы, но $\disc(\alpha_1, \ldots, \alpha_n) = \det\lr*{\Tr_{K/F}(\alpha_i \alpha_j)} = 0$. Рассмотрим систему линейных уравнений 
 			\[
 				\Tr_{K/F}\lr*{(x_1 \alpha_1 + \ldots + x_n \alpha_n)\alpha_j} = 0, \ldots 1 \le j \le n.
@@ -66,7 +68,7 @@
 			Теперь рассмотрим $a = x_1 \omega_1 + \ldots + x_n \omega_n, \ x_i \in \Z$. Поделим с остатком: $x_1 = a_{11}q + r, \ 0 \le r  < a_{11}$, и рассмотрим $x_{1} \omega_{1} + \ldots + x_n \omega_n - q(a_{11}\omega_1 + \ldots + a_{1n}\omega_n) = r\omega_1 + x_{2}'\omega_{2} + \ldots$.  Так как мы вычли из $a$ элемент из $B$, класс $\overline{a} \in A/B$ не изменился, а старшим коэффициентом стал $r$, лежащий в нужном диапазоне. Продолжая в том же духе, мы полчми, что все коэффициенты лежат в нужном диапазоне. 
 		\end{proof}
 
-		Как мы помним, $\cO_{K}$~--- свободная абелева группа ранга $n = [K : \Q]$ и $\cO_{K} = \bigoplus_{i = 1}^{n} \Z \omega_{i}$, а  базис $(\omega_{1}, \ldots, \omega_{n})$ мы называем \emph{целым базисом}.
+		Как мы помним из теоремы~\ref{integral_basis_O_K}, $\cO_{K}$~--- конечнопорожденная свободная абелева группа ранга $n = [K : \Q]$ и $\cO_{K} = \bigoplus_{i = 1}^{n} \Z \omega_{i}$, где $\{ \omega_i \}$~--- целый базис. 
 
 		\begin{definition} 
 			Пусть $K/\Q$~--- расширение степени $n$,  $\cO_{K} = \bigoplus_{i = 1}^{n} \Z \omega_{i}$. Тогда 
@@ -88,7 +90,11 @@
 			\]
 		\end{remark}
 
-		Пусть $K = \Q(\theta)$, $\theta \in \cO_{K}$, положим $\ind(\theta) = [\cO_{K} : \Z[\theta]] = \left\lvert \cO_{K}/\Z[\theta] \right\rvert$. 
+		\begin{definition}[Индекс целого алгебраического числа] 
+			Пусть $K = \Q(\theta)$, $\theta \in \cO_{K}$, положим $\ind(\theta) = [\cO_{K} : \Z[\theta]] = \left\lvert \cO_{K}/\Z[\theta] \right\rvert$. 	
+		\end{definition}
+
+		
 
 		\begin{statement}\label{dic_and_ind} 
 			В описанной выше сиутации $\disc(1, \theta, \ldots, \theta^{n - 1}) = \ind(\theta)^{2} \cdot \disc(K)$.
@@ -98,7 +104,7 @@
 			\[
 				(1, \theta, \ldots, \theta^{n - 1}) = (\omega_{1}, \ldots, \omega_{n})M \implies \disc(1, \ldots, \theta^{n - 1}) = \disc(K) \lr*{\det{M}}^{2}.
 			\]
-			Нетрудно заметить, что по лемме~\ref{free_abelian_groups_prop} мы имеем $\left\lvert \det{M} \right\rvert = \ind(\theta)$.
+			Нетрудно заметить, что по лемме~\ref{free_abelian_groups_prop} для $\Z[\theta] = B \subset A = \cO_{K}$ мы имеем $\left\lvert \det{M} \right\rvert = \ind(\theta)$.
 			
 		\end{proof}
 
@@ -130,7 +136,7 @@
 
 				\item Пусть $I \subset \cO_{K}$~--- идеал, $J$~--- дробный идеал. Докажите, что $\exists x \in K^{*}\colon x J + I = \cO_{K}$.
 
-				\item Докажите, что любой дробный идеалпорождается двумя элементами. 
+				\item Докажите, что любой дробный идеал порождается двумя элементами. 
 			\end{enumerate}
 
 			Приведём сейчас другое, конструктивное доказательство того, что $\cO_{K}$~--- конечнопорожденная абелева группа. 
@@ -147,8 +153,8 @@
 
 			Перейдём к набору $(\sum \{ a_i \}\omega_{i}, \omega_{2}, \ldots, \omega_{n})$. Покажем, что модуль его дискриминанта уменьшился. Действительно, 
 			\[
-				(\sum \{ a_i \}\omega_{i}, \omega_{2}, \ldots, \omega_{n}) = (\omega_{1}, \ldots, \omega_{n}) \cdot \begin{pmatrix} \{ a_{1}\} & \ldots & \ldots & \ldots \\ \{ a_{2}\} & 1 & \ldots & \ldots \\ \vdots & \vdots & \ddots & \vdots \\ \{ a_n\} & \ldots & \ldots & 1 \end{pmatrix}.
+				(\sum \{ a_i \}\omega_{i}, \omega_{2}, \ldots, \omega_{n}) = (\omega_{1}, \ldots, \omega_{n}) \cdot \begin{pmatrix} \{ a_{1}\} & 0 & \ldots & 0 \\ \{ a_{2}\} & 1 & \ldots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ \{ a_n\} & 0 & \ldots & 1 \end{pmatrix}.
 			\]
-			а определитель матрицы, написаной справа равен $\{ a_1 \} \le 1$.
+			а определитель матрицы, написаной справа равен $\{ a_1 \} \le 1$ (так как матрица нижнетреугольная).
 		\end{homework}
 	\end{definition}

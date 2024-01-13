@@ -1,0 +1,266 @@
+	
+	\subsection{``Last Fermat's theorem'' для $n = 3$.}
+
+	Все мы знаем следующее (важное для истории математики) утверждение: 
+
+	\begin{theorem}[Last Fermat's theorem] 
+		Для любого натурального $n > 2$ уравнение 
+		\[
+		 	x^n + y^n = z^n
+		 \] 
+		 не имеет решений над $\Z$.
+	\end{theorem}
+
+	В случае $n = 2$ решения есть и мы даже можем выписать их явно, проделаем это.
+	\[
+		x^2 + y^2 = z^2 \implies y^2 = (z - x)(z + x)
+	\]
+
+	 Ясно, что с самого начала можно полагать $x, y, z$ попарно взаимно простыми. Предположим, что $2 \mid y, \ 2\not\ \mid x$. Тогда мы можем переписать уравнение как 
+	\[
+		\lr*{\frac{y}{2}}^2 = \frac{z - x}{2} \cdot \frac{z + x}{2}
+ 	\]
+ 	Заметим, что $(z, x) = 1 \implies (z - x, z + x) = 1$, откуда 
+ 	\[
+ 		\frac{z - x}{2} = b^2, \quad \frac{z + x}{2} = a^2 \implies \begin{cases} z = a^2 + b^2, \\ x = a^2 - b^2 \\ y = 2ab, \end{cases} 0 < b < a, \ (b, a) = 1. 
+ 	\]
+
+ 	Также есть элементарное решение в случае $n = 4$. 
+
+ 	\begin{statement} 
+ 		Уравнение $x^4 + y^4 = z^2$ не имеет нетривиальных решений.
+ 	\end{statement}
+ 	\begin{proof}
+ 		Предположим противное и рассмотрим нетривиальное решение $(x, y, z)$. В частности, это пифагорова тройка, откуда, как мы уже поняли выше 
+ 		\[
+ 			x^2 = 2ab, \quad y^2 = a^2 - b^2, \quad z = a^2 + b^2, \ (a, b) = 1.
+ 		\]
+
+ 		Рассмотрим решение с минимальным $|z|$. Заметим, что 
+ 		\[
+ 			x^2 \divby 2 \implies x^2 \divby 4 \implies 2ab \divby 4 \implies ab \divby 2 
+ 		\]
+ 		Если $b \notdivby 2$, то $a \divby 2$ а тогда $y^2 \equiv 0 - 1 \equiv 3 \pmod{4}$, чего быть не может. Тогда 
+ 		\[
+ 			\begin{cases} y^2 + b^2 = a^2 \\ b \divby 2 \end{cases} \implies \begin{cases} b = 2 u v \\ a = u^2 + v^2 \\ y = u^2 - v^2 \end{cases}, (u, v) = 1.
+ 		\]
+ 		\[
+ 			x^2 = 2ab = 4uv(u^2 + v^2) \implies \lr*{\frac{x}{2}}^2 = uv (u^2 + v^2) \implies u = s^2m \quad v = t^2, \quad u^2 + v^2 = r^2, 
+ 		\]
+ 		Отсюда получаем $s^4 + t^4 = r^2$, $|r| < |z|$, что даёт нам протворечие. 
+
+ 	\end{proof}
+
+ 	Ясно, что из этого следует, что уравнение $x^4 + y^4 = z^4$ не имеет нетривиальных корней над $\Z$.
+
+ 	Разберёмся теперь с большой теоремой Ферма в случае $n = 3$. Доказательство мы будем проводить в два этапа. Сначала докажем такую вспомогательную лемму: 
+ 	
+ 	\begin{lemma}\label{lemma_LFT_3} 
+ 		Пусть $a, b \in \Z$~--- такие, что 
+ 		\begin{itemize}
+ 			\item $(a, b) = 1$. 
+ 			\item $a \not\equiv b \pmod{2}$
+ 			\item $\Nm(a + b \sqrt{-3}) = a^2 + 3b^3$~--- полный куб. 
+ 		\end{itemize}
+
+ 		Тогда существуют $s, t \in \Z$ такие, что 
+ 		\[
+ 			\begin{cases} 
+ 				a = s^3 - 9s t^2 \\ b = 3t(s^2 - t^2).
+ 			\end{cases}
+ 		\]
+ 	\end{lemma}
+ 	\begin{proof} Рассмотрим кольцо целых $\cO_{K}$ для поля $K = \Q(\sqrt{-3})$. 
+
+ 		\bf{Шаг 1:} найдём группу обратимых элементов $\cO_{K}^{*}$:\\
+
+ 		Пусть $\xi$~--- первообразный корень шестой степени из единицы, 
+ 		\[
+			\xi = \frac{-1 + \sqrt{-3}}{2}.
+ 		\]	
+
+ 		Тогда $\pm \xi^i, \ i = 0, 1, 2$~--- обратимые. Докажем, что других обратимых элеемнтов нет.  Пусть $u \in \cO_{K}^{*}$, тогда $u = a + b\xi, \ a, b \in \Z$. Тогда, так как $u$ обратим, $uv = 1$ для некоторого $v$. Но тогда $\Nm(u)\Nm(v) = 1$, откуда $\Nm(u)$ обратима в $\Z$, а так как она неотрицательна, $\Nm(u) = 1$. Тогда 
+ 		\[
+ 			\Nm(u) = (a + b \xi)(a + b\overline{\xi}) = a^2 + ab + b^2 = 1 \implies (2a + b)^2 + 3b^2 = 4. 
+ 		\]
+ 		\begin{enumerate}
+ 			\item Пусть $b = 0$. Тогда $2a = \pm 2 \implies a = \pm 1 \implies u = \pm 1$. 
+
+ 			\item  $b = 1 \implies 2a - 1 = \pm 1$, откуда $a = 0$ или $a = 1$ и, в этом случае, $u = - 1 + \xi = \xi^2$, \ либо $u = \xi$.
+
+ 			\item $b = -1 \implies 2a - 1 = \pm 1 \implies a = 1$ или $a = 0$, откуда $u = 1 + \xi = -\xi^2$, или $u = -\xi$. 			
+ 		\end{enumerate}
+
+
+ 		\bf{Шаг 2:} докажем, что $(a + b\sqrt{-3}, a - b \sqrt{-3}) = (1)$.
+
+ 		Пусть $a \divby 3$, тогда $x^3 = a^2 + 3b^2 \divby 3 \implies x \divby 3$, откуда $a^2 + 3b^2 = x^3 \divby 27$, а значит, 
+ 		\[
+ 			3\lr*{\frac{a}{3}} ^2 + b^2 \divby 3 \implies b \divby 3,
+ 		\]
+ 		что противоречит тому, что $(a, b) = 1$. Значит, $a \notdivby 3$. 
+
+ 		Предположим, что для некоторого $\alpha \in \cO_{K}$ 
+ 		\[
+ 			\begin{cases} a + b\sqrt{-3} \divby \alpha \\ a - b\sqrt{-3} \divby \alpha \end{cases} \implies \begin{cases} 2a \divby \alpha \\ 2b\sqrt{-3} \divby \alpha \end{cases} \implies \begin{cases} \Nm(2a) \divby \Nm(2\alpha) \\ \Nm(2b\sqrt{-3}) \divby \Nm(\alpha) \end{cases} \implies \begin{cases} 4a^2 \divby \Nm(\alpha) \\ 12b^2 \divby \Nm(\alpha) \end{cases},
+ 		\]
+ 		а так как $a \notdivby 3$, из этого следует, что $4a^2 \divby \Nm(\alpha)$ и $4b^2 \divby \Nm(\alpha)$, что даёт нам, что $4 \divby \Nm(\alpha)$ (так как $(a, b) = 1$)
+
+ 		Переберём теперь варианты (помня, что мы ищем $\alpha\colon \Nm(\alpha) > 1)$: 
+ 		\begin{enumerate}
+ 			\item Пусть $\Nm(\alpha) = 2$. Пусть $\alpha = c + d\omega$, тогда 
+ 			\[
+ 				4\Nm(\alpha) = 4(c^2 + cd + d^2) = (2c + d)^2 + 3d^2 = 8,
+ 			\]
+ 			а это уравнение не имеет решений в целых числах. 
+
+ 			\item Пусть $\Nm(\alpha) = 4, \alpha = c + d \omega$. Тогда 
+ 			\[
+ 				4\Nm(\alpha) = (2c + d)^2 + 3d^2 = 16.
+ 			\]
+
+ 			Пусть $d = 0$, тогла $c = \pm 2$, откуда $\alpha = \pm 2$, но тогда $a + b\sqrt{-3} \divby 2$, а это возожно только когда $a$ и $b$ одной четности. 
+
+ 			Пусть $d = 2$, тогда $c = 0$, то есть $\alpha = 2\omega$, откуда снова $a + b \sqrt{-3} \divby 2$.
+
+ 			И аналогично, когда $d = -2$, так как в этом слуачае $c = 0$ или $c = 2$, то есть либо $\alpha = -2\omega$, либо $\alpha = 2 - 2\omega$, откуда снова $a + b \sqrt{-3} \divby 2$. 
+ 		\end{enumerate}
+
+ 		\bf{Шаг 3:} 
+ 		Таким образом, так как $a^2 + 3b^2 = (a + b\sqrt{-3})(a - b\sqrt{-3})$~--- полный куб, а так как $(a + b\sqrt{-3}, a - b\sqrt{-3}) = 1$, мы получаем, что с точностью до домножения на обратимый $a + b\sqrt{-3}$ и $a - b\sqrt{-3}$~--- кубы. Именно чтоб разобраться шаг с домножением на обратимый, мы делали шаг 1. То есть, 
+
+ 		\[
+ 			(\pm \xi)^{i}(a + b \sqrt{-3}) = (s + t\sqrt{-3})^3, \quad s + t\sqrt{-3} \in \cO_{K}. 
+ 		\]
+
+ 		Пусть $i \neq 0$, тогда 
+ 		\[
+ 			(a + b\sqrt{-3}) \cdot \xi^{i} = (a + b\sqrt{-3}) \cdot \frac{1 \pm \sqrt{-3}}{2} = \frac{a \pm 3b}{2} + \frac{a \pm b}{2}\sqrt{-3}.
+ 		\]
+ 		Тогда $s$ и $t$ оба полуцелые, то есть 
+ 		\[
+ 		 	(a + b\sqrt{-3})(\pm \xi^{i}) = \lr*{\frac{c + d\sqrt{-3}}{2}}^{3} = \frac{(c^3 - 9 c d^2) + (3c^2 d - 3d^3) \sqrt{-3}}{8}, \quad c, d \notdivby 2.
+ 		 \] 
+ 		 Посмотрим на числитель по модулю 8. Так как $c, d \equiv 1 \pmod{2}$, $c^2 \equiv d^2 \equiv 1 \pmod{8}$, а тогда
+ 		 \[
+ 		 	c^3 - 9c^2 d \equiv c^3 - cd^2 \equiv c(c^2 - d^2) \equiv 0 \pmod{8}.
+ 		 \]
+ 		 \[
+ 		 	3c^2 d - 3d^3 = 3d(c^2 - d^2) \equiv 3d(1 - 1) \equiv 0 \pmod{8}.
+ 		 \]
+
+ 		 Таким образом, $a + b \sqrt{-3} = (s + t\sqrt{-3})^3$, но $s$ и $t$ могут быть полуцелые. 
+
+ 		 \bf{Шаг 4:} Пусть $c = \frac{2k + 1}{2}, \ d = \frac{2\ell + 1}{2}$, тогда, так как 
+
+ 		 \[
+ 			\lr*{\frac{-1 \pm \sqrt{-3}}{2}}^{3} = 1 \implies (c + d\sqrt{-3})^3 = \lr*{(c + d\sqrt{-3}) \cdot \frac{-1 \pm \sqrt{-3}}{2}}^3 
+	 	\]	
+	 	Вычисляя $(c + d\sqrt{-3}) \cdot \frac{-1 \pm \sqrt{-3}}{2}$, легко убедиться, что знак всегда можно подобрать так, чтоб $c, d \in \Z$.
+ 	\end{proof}
+
+ 	При помощи этой леммы уже совсем несложно доказать большую теоерму ферма для $n = 3$. Рассмотрим уравнение 
+ 	\[
+ 		x^3 + y^3 = z^3, \quad (x, y) = 1, \ (x, z) = 1, \ (y, z) = 1. 
+ 	\]
+ 	Не умаляя общности, также можно полагать $x \divby 2$, $y \notdivby 2, \ z \notdivby 2$. Выберем решение с минимальным $|x|$. Сделаем такую замену: 
+ 	\[
+ 		y = p - q, \quad z = p + q, \ p, q \in \Z, \ (p, q) = 1, \ p \not\equiv_{2} q. 
+ 	\]
+ 	Тогда, подставляя это в уравнение, мы имеем 
+ 	\[
+ 		x^3 = (p + q)^3 - (p - q)^3 = 2q(q^2 + 3p^2).
+ 	\]
+ 	Так как $x \divby 2$, $2q(q^2 + 3p^2) \equiv 0 \pmod{8}$, откуда $q \equiv 0 \pmod{4}$. Значит, 
+ 	\[
+ 		\lr*{\frac{x}{2}}^{3} = \frac{q}{4} \lr*{q^2 + 3p^2}.
+ 	\]
+
+ 	$\mathbf{\RNum{1}}$. Предположим, что $q \notdivby 3$. Тогда 
+ 	\[
+ 		\lr*{\frac{q}{4}, q^2 + 3p^2} = 1 \implies q^2 + 3p^2 = t^3.
+ 	\]
+ 	Соответсвенно, мы попадаем в условие леммы~\ref{lemma_LFT_3}:
+ 	\[
+ 		\begin{cases} q^2 + 3p^2 = t^3 \\ p \not\equiv q \pmod{2} \\ (p, q) = 1 \end{cases} \underbrace{\implies}_{\bf{Л.}~\ref{lemma_LFT_3}} \begin{cases} q = s^3 - 9st^2 \\ p = 3t(s^2 - t^2) \end{cases}
+ 	\]
+
+ 	С другой стороны, $q/4$~--- тоже куб, а тогда 
+ 	\[
+ 		2q = 2s(s - 3t)(s + 3t) \text{~---  тоже куб.}
+ 	\]
+
+ 	Так как $q \notdivby 3$, $s \notdivby 3$. Кроме того, $s - 3t \notdivby 2 \implies (s, s - 3t) = (s, s + 3t) = (s + 3t, s - 3t) = 1$, то есть мы имеем 
+ 	\[
+ 		\begin{cases} 2s = x_1^3 \\ 3t - s = y_1^3 \\ 3t + s = z_1^3 \implies x_1^3 + y_1^3 = z_1^3.\end{cases}
+ 	\]	
+ 		$|x_1|^3 = |2s| \le |2q| < |x|^3$, то есть мы получили решение с меньшим модулем $x$. 
+
+ 	$\mathbf{\RNum{2}}$. Пусть $q \divby 3, \ q = 3r$. Тогда 
+ 	\[
+ 		\lr*{\frac{x}{2}}^3 = \frac{q}{4}(q^4 + 3p^2) = \frac{3r}{4}\lr*{9r^2 + 3p^2} = \frac{9r}{4} (3r^2 + p^2).
+ 	\]
+ 	Так как сомножители взаимнопросты, каждый из является кубом. Опять применим лемму~\ref{lemma_LFT_3}:
+
+ 	\[
+ 		\begin{cases} p = s(s^2 - 9t^2) \\ r = 3t(s^2 - t^2) \end{cases}.
+ 	\]
+ 	С другой стороны, $9r/4$~--- тоже куб, то есть
+ 	\[
+ 		\ell^3 = \frac{9r}{4} = \frac{27t}{4}(s^2 - t^) \implies 2t(t + s)(s - t) \text{~--- куб}.
+ 	\]
+ 	Опять же, так как $(2t, t + s) = (s - t, t + s) = (2t, s - t) = 1$, откуда 
+ 	\[
+ 		\begin{cases} 2t = x_1^3 \\ s - t = y_1^3 \\ s + t = z_1^3 \end{cases},
+ 	\]
+ 	и опять же, $|x_1|^3 < |2t| < |r| < |q| < |x|^3$, то есть мы снова получили решение с меньшим $|x|$.
+
+ 	\subsection{Целозамкнутость кольца $\cO_{K}$}
+
+ 	\begin{definition} 
+ 		Пусть $f \in \Z[x]$. Тогда \emph{содержание} $f = a_n x^n + \ldots + a_0$~--- это $(a_0, \ldots, a_n) \eqdef \cont(f)$.
+ 	\end{definition}
+ 	\begin{remark}
+ 		Как мы помним, $\cong(f g) = \cont(f)\cont(g)$.
+ 	\end{remark}
+
+ 	\begin{theorem} 
+ 		Пусть $\alpha$~--- целое алгебраическое число. Тогда минимальный многочлен $\alpha$ имеет целые коэффициенты. 
+ 	\end{theorem}
+ 	\begin{proof}
+ 		Пусть $\alpha \in \cO_{K}$, а $f$~--- минимальный многочлен $\alpha$, $p$~--- унитарный многочлен с целыми коэффициентами, аннулирующий $\alpha$. Тогда $p \divby f$, то есть существует $g(x) \in \Q[x]\colon p(x) = f(x) g(x)$. 
+
+ 		Ясно, что существуют $r_1, r_2 \in \Q$ такие, что $\widetilde{f}(x) = r_1 f(x) \in \Z[x]$ и $\widetilde{g}(x) = r_2 g(x) \in \Z[x]$, причем $\cont(\widetilde{f}) = \cont(\widetilde{g}) = 1$. Тогда старший коэффициент $r_1 r_2 f(x) g(x) = r_1 r_2 p(x)$  равен $r_1 r_2$, откуда $r_1 r_2 \in \Z$. 
+
+ 		\[
+ 			r_1 r_2 \cont(r_1 r_2 p(x)) = \cont(\widetilde{f}(x) \cont(\widetilde{g}(x))) = 1 \implies r_1 r_2 = \pm 1. 
+ 		\]
+ 		Изменяя знак, можем добиться, чтоб $r_1 r_2 = 1$.  
+
+ 		Тогда старший коэффициент $p(x) = r_1 r_2 p(x) = \widetilde{f}(x) \widetilde{g}(x)$ равен е1, откуда старшие коэффициенты $\widetilde{f}$ и $\widetilde{g}$ равны  $\pm 1$. Опять же, меняя знак, можно считать, что старший коэффициент $\widetilde{f}(x)$ равен 1. 
+
+ 		$\widetilde{f}(x) = r_1 f(x)$, а старшие коэффциенты $f$ и $\widetilde{f}$ равны, откуда $\widetilde{f}(x) = f(x)$, то есть $f(x) \in \Z[x]$.
+ 	\end{proof}
+
+ 	\begin{definition} 
+ 		Пусть $A$~--- область целостности, $K$~--- поле частных $A$. Пусть $\alpha \in K, \ \alpha^n + a_{n - 1}\alpha^{n - 1} + \ldots + a_0 = 0$. Если из этого следует, что $\alpha \in A$, то кольцо $A$ называют \emph{целозамкнутым}. 
+ 	\end{definition}
+
+ 	\begin{example}
+ 		$\Z$~--- целозамкнуто. 
+ 	\end{example}
+
+ 	\begin{theorem} 
+ 		Пусть $K/\Q$~--- конечное расширение. Тогда кольцо $\cO_{K}$ целозамкнуто. 
+ 	\end{theorem}
+ 	\begin{proof}
+ 		Пусть $\alpha \in K$, $\alpha^n + a_{n - 1}\alpha^{n - 1} + \ldots + a_0 = 0$, $a_i \in \cO_{K}$. Покажем, что $\Z[\alpha]$~--- конечнопорожденная абелева группа. 
+
+ 		В самом деле, 
+ 		\[
+ 			\Z[\alpha] \le \Z[\alpha, a_0, \ldots, a_{n - 1}] = \langle \alpha^m a_0^{k_0} \ldots a_{n - 1}^{k_{n - 1}}\ \vert \ m < n, \ k_i < n_i \rangle, 
+ 		\]
+ 		где $n_i$~--- степень унитарного многочлена с корнем $a_i$.
+ 	\end{proof}
+
+
