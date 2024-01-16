@@ -5,19 +5,19 @@
 	\begin{lemma}\label{ind_and_p}
 		Следующие условия равносильны:
 		\begin{enumerate}
-			\item $p \not\ \mid \ind(\theta)$.
-			\item $\Z[\theta]/(p) \to \cO_{K}/(p)$~--- изоморфизм.
+			\item $p \not\ \mid \ind(\theta) = |\cO_{K}/\Z[\theta]|$.
+			\item $\Z[\theta]/p\Z[\theta] \to \cO_{K}/p\cO_{K}$~--- изоморфизм.
 		\end{enumerate}
 	\end{lemma}
 
 	\begin{proof}
-		Это я допишу с записи. 
+		\textcolor{red}{Дописать! Не очень сложно. Но, надо аккуратнее. }
 	\end{proof}
 
 	\begin{theorem}[Куммер]\label{Kummer_theorem} 
-		Пусть $K = \Q(\theta)$, $\theta \in \cO_{K}$, а $p$~--- такое простое число, что $p \not \ \mid \ind(\theta)$. Пусть $f$~--- минимальный многочлен $\theta$, причем над полем $\Z/p\Z$ его редукция раскладывается в неприводимыке, как 
+		Пусть $K = \Q(\theta)$, $\theta \in \cO_{K}$, а $p$~--- такое простое число, что $p \not \ \mid \ind(\theta)$. Пусть $f$~--- минимальный многочлен $\theta$, причем над полем $\Z/p\Z$ его редукция $\overline{f}$ раскладывается в непривыодимые, как 
 		\[
-			\overline{f} = \prod_{i} \overline{g_i}^{a_i} \in \F_{p}[t], \ \deg{g_i} = d_i, \ g_i \text{~--- унитальные.}
+			\overline{f} = \prod_{i} \overline{g_i}^{a_i} \in \F_{p}[t], \ \deg{g_i} = d_i, \ g_i \text{~--- унитарные.}
 		\]
 
 		Тогда:
@@ -29,27 +29,28 @@
 		\end{enumerate}
  	\end{theorem}
  	\begin{proof}
- 		Во-первых, покажем, что $\fp_i$ максимальны. Для этого достаточно проверить, что фактор~--- поле. Дейстивтельно, это простое вычисление: 
+ 		\bf{\RNum{1}.} Покажем, что $\fp_i$ максимальны. Для этого достаточно проверить, что фактор~--- поле. Дейстивтельно, это простое вычисление: 
  		\[
- 			\cO_{K}/\fp_{i} = \cO_{K}/(g_i(\theta), p) = \Z[\theta]/(g_i(\theta), p) \cong \Z[t]/(f(t), p, g_i(t)) \cong \F_{p}[t]/\overline{g_i},
+ 			\cO_{K}/\fp_{i} = \cO_{K}/(g_i(\theta), p) \underbrace{=}_{\bf{Л.}~\ref{ind_and_p}.} \Z[\theta]/(g_i(\theta), p) \cong \Z[t]/(f(t), p, g_i(t)) \cong \F_{p}[t]/\overline{g_i},
  		\]
  		которое является полем, так как многочлен $g_i$ неприводим над $\F_{p}$. 
 
- 		Теперь покажем, что $\fp_i \neq \fp_j$ при $i \neq j$. Предположим противное. Тогда 
+ 		\bf{\RNum{2}.} Теперь покажем, что $\fp_i \neq \fp_j$ при $i \neq j$. Предположим противное. Тогда 
  		\[
  			\fp_i = \fp_j = (g_i(\theta), p, g_j(\theta)).
  		\]
 
- 		Но, $\overline{g_i}$ и $\overline{g_j}$~---- различные неприводимые многлчлены над $\F_p$, а мы можем линейно представить их НОД: 
+ 		Но, $\overline{g_i}$ и $\overline{g_j}$~--- различные неприводимые многлчлены из $\F_p[t]$, а мы можем линейно представить их НОД: 
  		\[
- 			\exists \overline{h_i}, \overline{h_j}\colon \overline{h_i} \overline{g_i} + \overline{h_j} \overline{g_j} = \overline{1} \implies h_i g_i + h_j + g_j = 1 + p q(t) \in \Z[t].
+ 			\exists \overline{h_i}, \overline{h_j}\colon \overline{h_i} \overline{g_i} + \overline{h_j} \overline{g_j} = \overline{1} \implies h_i g_i + h_j g_j = 1 + p \cdot q(t) \in \Z[t].
  		\]
- 		Подставляя в последнее равенство $\theta$, мы получаем, что $1 \in (g_i(\theta), g_j(\theta), p) = \fp_i = \fp_j$, что противоречит тому, что $\fp_i$ и $\fp_{j}$~--- в частнсоти, собственные идеалы. 
+ 		Подставляя в последнее равенство $\theta$, мы получаем, что $1 \in (g_i(\theta), g_j(\theta), p) = \fp_i = \fp_j$, что противоречит тому, что $\fp_i$ и $\fp_{j}$ максимальны. 
 
- 		Теперь провреим, что $d_i$~--- степень инерции. Действительно, 
+ 		\bf{\RNum{3}.} Теперь провреим, что $d_i$~--- степень инерции. Действительно, 
  		\[
- 			\cO_{K}/\fp_i \cong \F_{p}[t]/(\overline{g_i}) \implies \left\lvert \cO_{K}/\fp_i \right\rvert = d_i.
+ 			\cO_{K}/\fp_i \cong \F_{p}[t]/(\overline{g_i}) \implies \left\lvert \cO_{K}/\fp_i \right\rvert = p^{d_i},
  		\]
+ 		так как $\F_{p}[t]/(\overline{g_i})$~--- расширение $\F_{p}$ степени $d_i$ (так как многочлен $g_i$ неприводим). 
 
  		Из условия теоремы мы знаем, что 
  		\[
@@ -60,12 +61,10 @@
  		\[
  			p\cO_{K} \subset \fq \implies \prod \fp_i^{a_i} \subset \fq \implies \fp_i \subset \fq \implies \fp_i  = \fq.
  		\]
- 		Значит, $\prod \fp_i^{a_i} = (p)I$. Из этого следует, что $a_i \ge e_i$. Остается заметить, что 
+ 		Значит, $\prod \fp_i^{a_i} = p\cO_{K} \cdot I$. Из этого следует, что $a_i \ge e_i$. Остается заметить, что 
  		\[
- 			\sum a_i e_i = n, \text{ но } \sum a_i e_i \ge \sum e_i d_i = n \implies a_i = e_i \ \forall i.
+ 			\sum a_i d_i = n, \quad a_i \ge e_i \implies a_i = e_i \forall n. 
  		\]
-
-
  	\end{proof}
 
  	Имеет смысл разобрать полезный частный случай этой теоремы: когда  все $a_i$ равны $1$. 
@@ -80,7 +79,12 @@
  	\end{theorem}
 
  	\begin{proof}
- 		Рассмотрим идеалы $(p, g_i(\theta)) \subset \cO_{K}$. Пусть $I = (p, g_i(\theta)) = I \subset \Z[\theta]$~--- идеал. Покажем, что $I\cO_{K} \neq \cO_{K}$. Предположим противное и выберем в $\cO_{K}$ целый базис $\omega_1, \ldots, \omega_n$. Тогда мы можем записать каждый элемент базиса с коэффициентами из идеала: 
+ 		 Пусть $I = (p, g_i(\theta)) = I \lei \Z[\theta]$~--- идеал. По тем же соображениям, что и в предыдущей теореме, $I \in \Specm(\Z[\theta])$:
+ 		 \[
+ 		 	\Z[\theta]/(g_i(\theta), p) \cong \Z[t]/(f(t), p, g_i(t)) \cong \F_{p}[t]/\overline{g_i}.
+ 		 \]
+
+ 		  Покажем, что $I\cO_{K} \neq \cO_{K}$. Предположим противное и выберем в $\cO_{K}$ целый базис $\omega_1, \ldots, \omega_n$. Тогда мы можем записать каждый элемент базиса с коэффициентами из идеала: 
  		\[
  			\omega_i = \sum a_{i j} \omega_{j}
  		\]
@@ -88,9 +92,9 @@
  		\[
  			\lr*{E - A} \cdot \begin{pmatrix} \omega_1 \\ \omega_2 \\ \vdots \\ \omega_n \end{pmatrix} = \begin{pmatrix} 0\\ 0  \\ \vdots \\ 0\end{pmatrix}
  		\]
- 		В таком случае $\det{(E - A)} = 0$, из чего следует, что $1 \in I$, а это даёт нам противоречие.
+ 		В таком случае $\det{(E - A)} = 0$, из чего следует, что $1 \in I$ (так как $\det(E - a) \in 1 + I$), что противоречит тому, что $I \in \Specm(\Z[\theta])$.
 
- 		Значит, он содержится в некотром максимальном идеале, $(p, g_i(\theta)) \subset \fp_i \subset \cO_{K}$. Теперь нам достаточно показать, что (по лемме \ref{ind_and_p})
+ 		Тогда $I\cO_{K}$~--- собственный идеал в $\cO_{K}$, а значит, содержится в некотром максимальном идеале, $(p, g_i(\theta)) \subset \fp_i \subset \cO_{K}$. Теперь нам достаточно показать, что (по лемме \ref{ind_and_p})
  		\[
  		 	\Z[\theta]/(p) \cong \cO_{K}/(p).
  		 \] 
@@ -106,40 +110,61 @@
  		 \]
  		 то есть мы нашли нильпотентный элемент. С другой стороны, 
  		 \[
- 		 	\Z[\theta]/(p) \cong \F_{p}[t]/\lr*{\overline{f}}, 
+ 		 	\Z[\theta]/(p) \cong \F_{p}[t]/\lr*{\overline{f}} \cong \bigoplus \F_{p}[t]/(\overline{g_i}), 
  		 \]
- 		 а так как $f$ свободно от квадратов; то, что написано справа~--- прямое произведение полей. Значит, $\overline{\alpha} = 0$  и ядро тривиально. 
+ 		 а то, что написано справа~--- прямое произведение полей. Значит, $\overline{\alpha} = 0$  и ядро тривиально. 
  	\end{proof}
 
- 	\begin{example}
- 		Посмотрим на конкретное применение теоремы Куммера. Пусть $p \not \ \mid m, \ K = \Q(\zeta_m)$.
+ 	\noindent\bf{Ветвление при круговом расширении}
 
- 		Как мы знаем, минимальный многочлен первообразного корня степени $m$~--- это круговой многочлен $\Phi_{m}$, $\deg{\Phi_{m}} = \varphi(m)$. Нетрудно заметить, что $\Phi_{m} \not \ \mid x^m - 1$. Заметим, что $\overline{x^m - 1} \in \F_{p}[x]$ имеет попарно различные корни (так как он взимнопрост со своей производной), то есть свободен от квадратов. Тогда $\Phi_{m}$ также свободен от квадратов, а по теореме~\ref{Criterion_for_Kummer} это даёт нам, что $p \not \ \mid \ind\lr*{\theta}$, а это уже даёт нам применять теорему Куммера. Разложим его в неприводимые множители 
- 		\[
- 			\overline{\Phi_{m}} = \overline{g_1} \cdot \ldots \cdot \overline{g_k}, \ \overline{g_i} \text{~--- попарно различны}.
- 		\]
+ 	Оказывается, теорема Куммера~\ref{Kummer_theorem} позволяет полностью исследовать ветвление при круговом расширении. 
 
- 		Кроме того, как мы знаем,
+ 	Пусть $p$~--- простое число, $K = \Q(\zeta_m)$ и $m \notdivby p$. Как мы знаем, минимальный многочлен $\zeta_m$~--- это круговой многочлен $\Phi_m$. Ясно, что 
+ 	\[
+ 		x^m - 1 \divby \Phi_m,
+ 	\]
+ 	так как $\Phi_m$~--- минимальный. С другой стороны, многочлен $\overline{x^m - 1}$ имеет $m$ попарно различных корней в $\F_{p}^{alg}$, так как он взаимнопрост со своей производной:
+ 	\[
+ 		(x^m - 1, (x^m - 1)') = (x^m - 1, m x^{m - 1}) = 1.
+ 	\]
+ 	Но тогда, так как $x^m - 1 \divby \Phi_m$,
+ 	\[
+ 		\overline{\Phi_m} = \overline{g_1} \cdot \ldots \overline{g_n},
+ 	\]
+ 	где $\overline{g_i}$~--- попарно различные и неприводимые. Тогда по теореме~\ref{Criterion_for_Kummer} $p \not \ \mid \ind(\zeta_m)$, то есть мы можем применить теорему Куммера~\ref{Kummer_theorem}:
+ 	\[
+ 	 	p\cO_{K} = \fp_{1} \cdot \ldots \fp_{k}, \quad \fp_{i} = (p, g_i(\zeta_m)). 
+ 	 \] 
 
- 		\[
- 			\fp \cO_{K} = \fp_1 \fp_2 \cdot \ldots \cdot \fp_{k}, \quad \fp_{i} = (p, g_{i}(\theta)).
- 		\]
- 		Так как $K/\Q$~---расширение Галуа, нам достаточно найти хоть какую-нибудь степень инерции. 
+ 	 С другой стороны, так как $\Q(\zeta_m)/\Q$~--- расширение Галуа, все степени инерции равны. Значит, достаточно вычислить хотя бы одну. 
 
- 		\begin{statement} 
- 			Степень инерции идеалов $\fp_i$ есть минимальное число $f$ такое, что $m \mid p^f - 1 $.
- 		\end{statement}
- 		\begin{proof}
- 			Как мы знаем, корни $\overline{x^m - 1}$ образубт циклическую группу. Пусть $\theta$~--- образующая этой группы, $\theta \in \F_{p}^{alg}$. 
+ 	 \begin{statement} 
+ 	 	Степени инерции $f$ идеалов $\fp_i$~--- это минимальные такие $f$, что $(p^{f} - 1) \divby m$. 
+ 	 \end{statement}
+ 	 \begin{proof}
+ 	 	Корни многочлена $\overline{x^m - 1}$  образуют циклическую группу, так как это подгруппа в мультипликативной группе конечного расширения $\F_{p}$. Пусть $\theta$~--- образующая этой группы, $\theta \in \F_{p}^{alg}$. 
 
- 		\[
- 			x^m - 1 = \Phi_{m}(x) \cdot \
- 		\]
+ 	 	\[
+ 	 		x^m - 1 = \Phi_m(x) \cdot \prod_{k \mid m, k \neq m} \Phi_k(x) \implies \overline{x^m - 1} = \overline{\Phi_m(x)} \cdot \prod_{k \mid m, k \neq m} \overline{\Phi_k(x)}. 
+ 	 	\]
+ 	 	Пусть $\Phi_k(\theta) = 0$, тогда так как $x^k - 1 \divby \Phi_k$, $\theta^k - 1 = 0$, откуда $k \divby m$ (так как $\theta$~--- образующая циклической группы из $m$ элементов). Значит, $\overline{\Phi_m} = 0$. 
 
- 		\textcolor{red}{Доказательство утверждения надо бы переписать!!!!}
+ 	 	Не умаляя общности, пусть $\overline{g_{1}}(\theta) = 0$. Тогда 
+ 	 	\[
+ 	 		\{ 1, \theta, \ldots, \theta^{m - 1} \} = \langle \theta \rangle \le \lr*{\F_{p}[x]/(g_1)}^{*}.
+ 	 	\]
+ 	 	Тогда, если $\deg{g_1} = f_1$, мы имеем 
+ 	 	\[
+ 	 		\left\lvert \lr*{\F_{p}[x]/(g_1)}^{*} \right\rvert = p^{f_1} - 1, \quad \langle \theta \rangle \le lr*{\F_{p}[x]/(g_1)}^{*} \implies p^{f_1} - 1 \divby m,
+ 	 	\]
+ 	 	откуда $f_1 \ge f$.  Теперь докажем, что $f_1 \le f$. Действительно, 
+ 	 	\[
+ 	 		\begin{cases} \theta^m = 1 \\ m \mid p^{f} - 1 \end{cases} \implies \theta^{p^{f} - 1} = 1 \implies \theta^{p^f} = \theta.
+ 	 	\]
+ 	 	Значит, $\theta \in \F_{p^{f}} \implies \F_{p}[x]/(g_1) = \F_{p}[\theta] \le \F_{p^{f}}$, откуда $p^{f} \divby p^{f_1} \implies f_1 \le f$.    
+ 	 \end{proof}
 
- 		Отсюда мы получаем, что $\overline{g_1(\theta)} = 0$.	
- 		\end{proof}
+ 	
 
  		\begin{homework}
  			Задачи:
@@ -163,4 +188,4 @@
  		\end{homework}
 
  		
- 	\end{example}
+ 	

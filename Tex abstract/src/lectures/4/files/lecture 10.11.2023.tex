@@ -3,13 +3,10 @@
 
 	Мы можем полагать, что показатель $n$~--- простое число, а также рассматривать уравнение в виде 
 	\begin{equation}
-		x^p + y^p + z^p = 0, \quad (x, y = z) = 1. \label{1_st_Last_Fermat's_Theorem}
+		x^p + y^p + z^p = 0, \quad (x, y, z) = 1. \label{1_st_Last_Fermat's_Theorem}
 	\end{equation}
 	
-
-	\begin{theorem}[Первый случай Большой теоремы Ферма]
-		Уравнение~\ref{1_st_Last_Fermat's_Theorem} не имеет целых решений, если $p \not \mid xyz$.
-	\end{theorem}
+	\emph{Первым случаем} Большой теоремы Ферма называют доказательство большой теоремы ферма в предположениии $p \not \ \mid xyz$.  
 
 	\begin{theorem}[Софи Жермен] 
 		Если простое число $p$ таково, что $2p + 1 = q$~--- простое число, то имеет место первый случай Большой теоремы Ферма. 
@@ -17,38 +14,56 @@
 	\begin{proof}
 		Перепишем уравнение в виде 
 		\[ 
-			y^p + z^p = (-x)^p \Leftrightarrow (y + z)(y^{p - 1} + y^{p - 2}z + \ldots + z^{p - 1}) = (-x)^{p}.
+			y^p + z^p = (-x)^p \Leftrightarrow (y + z)(y^{p - 1} - y^{p - 2}z + \ldots - y z^{p - 1} + z^{p - 1}) = (-x)^{p}.
 		\]
 
-		Покажем, что $(y + z, y^{p - 1} + y^{p - 2}z + \ldots + z^{p - 1}) = 1$. Пусть $r$~--- простое ($r \neq p$) и такое, что $r \mid y + z, \ r \mid y^{p - 1} + y^{p - 2}z + \ldots + z^{p - 1}$. Тогда 
+		Покажем, что $(y + z, y^{p - 1} - y^{p - 2}z + \ldots + z^{p - 1}) = 1$. Пусть $r$~--- простое ($r \neq p$) и такое, что $r \mid y + z, \ r \mid y^{p - 1} + y^{p - 2}z + \ldots + z^{p - 1}$. Тогда 
 		\[
-			y \equiv -z \pmod{r}, \quad py^{p - 1} \equiv 0 \pmod{r} \implies py^{p - 1}\equiv 0 \pmod{r},
+			y \equiv -z \pmod{r} \implies y^{p - 1} - y^{p - 2}z + \ldots - y z^{p - 1} + z^{p - 1} \equiv p y^{p - 1} \pmod{r} \implies y \divby r \implies z \divby r,
 		\]
-		что противоречит взаимной простоте. Тогда мы имеем 
+		что противоречит  тому, что $(y, z) = 1$. 
+		
 		\[
 			\begin{cases} 
 				y + z = A^p \\
-				y^{p - 1} + y^{p - 2}z + \ldots + z^{p - 1} = T^p
+				y^{p - 1} - y^{p - 2}z + \ldots - y z^{p - 1} + z^{p - 1} = T^p
 			\end{cases}
 		\]
 
-		Так как наше условие симметрично относительно переменных, $x + y = B^p, \ x + z = C^p$, откуда 
+		Так как наше условие симметрично относительно переменных, $x + y = B^p, \ x + z = C^p$. Теперь заметим, что по условию 
 		\begin{equation}
-				x^{\frac{q - 1}{2}} + y^{\frac{q - 1}{2}} + z^{\frac{q - 1}{2}} = 0. \label{ferm_2}
+				x^p + y^p + z^p = 0 \Leftrightarrow x^{\frac{q - 1}{2}} + y^{\frac{q - 1}{2}} + z^{\frac{q - 1}{2}} = 0. \label{ferm_2}, \quad p = \frac{q - 1}{2}.
 		\end{equation}
 
-		Заметим, что если $q \not \mid x$,  то по малой теореме Ферма:
+		Заметим, что если $q \not \ \mid x$,  то по малой теореме Ферма:
 		\[
 				x^{q - 1} \equiv 1 \pmod{q} \implies x^{\frac{q - 1}{2}} \equiv \pm 1 \pmod{q}.
 			\]	
-		Ясно, что отсюдо следует протвиоерчие~\eqref{ferm_2}. Значит, $q \mid xyz$.  Не умаляя общности, $q \ \mid x$. Тогда 
+		Отсюда ясно, что не может быть такого, что $q \not \ \mid x, \ q \not \ \mid y, \ q \not \ \mid z$, так как иначе~\ref{ferm_2} выполняться не может.  Значит, $q \mid xyz$.  Не умаляя общности, пусть $q \ \mid x$. Тогда 
 		\[
-			2x = B^p + C^p - A^p = B^{\frac{q - 1}{2}} + C^{\frac{q - 1}{2}} - A^{\frac{q - 1}{2}} \ \vdots \ q.
+			2x = B^p + C^p - A^p = B^{\frac{q - 1}{2}} + C^{\frac{q - 1}{2}} - A^{\frac{q - 1}{2}} \equiv 0 \pmod{p}.
 		\]
 
-		Заметим, что $q \not \ \mid B, \ q \not\  \mid C$, значит $q \not \ \mid BC \implies q \mid A$. Тогда $q \mid y + z$.  
+		Отсюда ясно, что по аналогичным соображениям не может быть такого, что $ABC \notdivby q$. С другой стороны, если $B \divby q$, то $B^p \divby q$, а тогда 
+		\[
+			\begin{cases} x + y = B^p \divby q \\ x \divby q \end{cases}  \implies y \divby q,
+		\]
+		что противоречит $(x, z) = 1$. По аналогичным причинам $q \not \ \mid C$. Тогда $A \divby q$, откуда $y + z = A^p \divby q$, откуда $T^p \equiv py^{p - 1} \pmod{q}$. С другой стороны, так как $(A, T) = 1$, как мы показали выше, $T \notdivby q$, а тогда по малой теореме Ферма 
+		\begin{equation}
+			T^{\frac{q - 1}{2}} \equiv \pm 1 \pmod{q} \implies p y^{p - 1} \equiv \pm 1 \pmod{q}.   \label{ferm_3}
+		\end{equation}
+		
+		А так как $x \divby q$, $B^{\frac{q - 1}{2}} = B^p = x + y \equiv y \pmod{q}$, но тогда так как $B \notdivby q$, по малой теореме Ферма
+		\[
+			y \equiv B^{\frac{q - 1}{2}} \equiv \pm 1 \pmod{q}.  
+		\]
+		Подставляя это в~\ref{ferm_3}, получаем, что
+		\[
+			p y^{p - 1} \equiv p (\pm 1)^{p - 1} \equiv p \equiv \pm 1 \pmod{q},
+		\]
+		что даёт нам противоречие, так как $q = 2p + 1$. 
 
-		Заметим, что  $T^p \equiv py^{p - 1} \pmod{q}$. Так как $(A, T) = 1$, $q \not\  \mid T$. Тогда $T^{\frac{q - 1}{2}} \equiv py^{p - 1} \pmod{q}$, тогда по малой теореме Ферма $\pm 1 = p y^{p - 1} \pmod{q}$.  Так как $q \mid x$,  $B^p = x + y \equiv y \pmod{q}$. Значит, 
+		 Так как $(A, T) = 1$, $q \not\  \mid T$. Тогда $T^{\frac{q - 1}{2}} \equiv py^{p - 1} \pmod{q}$, тогда по малой теореме Ферма $\pm 1 = p y^{p - 1} \pmod{q}$.  Так как $q \mid x$,  $B^p = x + y \equiv y \pmod{q}$. Значит, 
 		\[
 			y \equiv B^{\frac{q - 1}{2}} \equiv \pm 1 \pmod {1}, \text{ так как } q \not \ \mid B.
 		\]
@@ -61,16 +76,19 @@
 		Получите элементарное доказательство случая $p = 5$ в первом случае большой теоремы Ферма. 
 	\end{homework}
 
-	Как мы знаем, если мы рассматриваем расширение $K = \Q(\zeta_m)$ над $\Q$ и простое число $q \not \mid m$, число $q$ не равзетвлено. 
+	Рассмотрим $K = \Q(\zeta_m)$ над $\Q$. Мы доказывали, что если $q$ простое и $q \not \ \mid m$, то оно неравзетвлено, то есть 
+	\[
+		q\cO_{K} = \fp_1 \cdot \fp_2 \cdot \ldots \cdot \fp_k.
+	\]
 
-	В частности для $m = p$~--- простого, $q \neq p \implies q$ неразветвлено в $\Q(\zeta_p)$.
+	В частности, если $m = p$~--- простое, то $q \not \ \mid p$ и это будет выполнено. А вот $p$ будет полностью разветвлено в $\Q(\zeta_p)$. Убедимся в этом:
 
 	\begin{statement}\label{stm:11} 
 		Простое число $p$ полностью разветвлено в $\Q(\zeta_{p})$.
 	\end{statement}
 	\begin{proof}
-		\[
-	 	x^p - 1 = (x - 1)(x - \zeta)(x - \zeta^2)\ldots(x - \zeta^{p - 1})
+		\[ 
+	 	x^p - 1 = (x - 1)(x - \zeta)(x - \zeta^2)\ldots(x - \zeta^{p - 1}) = (x - 1)(x^{p - 1} + \ldots + x + 1). 
 	 \] 
 	 \[
 	 	x^{p - 1} + \ldots + x + 1 = (x - \zeta)(x - \zeta^2)\ldots(x - \zeta^{p - 1})
@@ -78,32 +96,45 @@
 
  	 Подставим $x = 1$ и от числового равенства перейдём к равенству идеалов: 
  	 \[
- 	 	p = ((1 - \zeta))((1 - \zeta^2))\ldots((1 - \zeta^{p - 1})),
+ 	 	p\cO_{K} = ( 1 - \zeta )( 1 - \zeta^2 )\ldots( 1 - \zeta^{p - 1} ).
  	 \]
- 	 отсюда, так как $\zeta = \lr*{\zeta^i}^j$, все идеалы в правой части совпадают, а значит, $(p) = ((1 - \zeta))^{p - 1}$, а это означает, что $p$ полностью разветвлено. Действительно, пусть 
+ 	 Ясно, что $1 - \zeta^j \divby 1 - \zeta$, а так как $\exists i \colon (\zeta^j)^i = \zeta$, $1 - \zeta \divby 1 - \zeta^j$, то есть все идеалы в правой части совпадают и мы имеем 
  	 \[
- 	 	1 - \zeta = \fp_{1}\fp_{2} \ldots \fp_{k} \implies (1 - \zeta)^{p - 1} = \fp_{1}^{p - 1}\fp_{2}^{p - 1} \ldots \fp_{k}^{p - 1},
+ 	 	p\cO_{K} = ((1 - \zeta))^{p - 1}.
  	 \]
- 	 из чего следует, что степень ветвления каждого $\fp_i$ хотя бы $p - 1$. С другой стороны, $\sum e_j f_j = p - 1$, то есть $(p) = \fp^{p - 1}$.
+
+ 	  Покажем теперь, что $(1 - \zeta)$~--- простой идеал. Действительно, пусть 
+ 	 \[
+ 	 	(1 - \zeta) = \fp_{1}\fp_{2} \ldots \fp_{k} \implies p\cO_{K} = ((1 - \zeta))^{p - 1} = \fp_{1}^{p - 1}\fp_{2}^{p - 1} \ldots \fp_{k}^{p - 1},
+ 	 \]
+ 	 откуда индекс ветвления $e_i \ge p - 1$, но с другой стороны, $e f k = [K : \Q] = p - 1$ (так как у нас расширение Галуа), откуда ясно, что 
+ 	 \[
+ 	 	p\cO_{K} = ((1 - \zeta))^{p - 1} = \fp^{p - 1}, \quad \fp \in \Specm(\cO_{K}). 
+ 	 \]
 	\end{proof}
 
-	\begin{lemma} 
+	\begin{lemma}\label{lemma:13} 
 		Пусть $p$~--- простое число, не равное двум. Множество корней из единицы\footnote{не обязательно степени $p$} в поле $\Q(\zeta_{p})$ равно $\{ \pm \zeta_{p}^{i} \}.$
 	\end{lemma}
 	\begin{proof}
-		Возьмем $\zeta_n \in \Q(\zeta_{p})$. Предположим, что $n \equiv 0 \pmod{4}$. Тогда $i = \zeta_{4} \in \Q(\zeta_{p})$. Заметим, что $2i = (1 + i)^2$ а значит, $(2) = ((1 + i))^2$. Значит, двойка разветвлена в $\Q(\zeta_{p})$ (а это противоречит предыдущему утверждению). Значит $n \not\equiv 0 \pmod{4}$. 
+		Возьмем $\zeta_n \in \Q(\zeta_{p})$. 
 
-		Теперь рассмотрим случай  $n = 2n_{0}$, $n \equiv 1 \pmod{2}$. Тогда $\{\zeta^{i}_{n}\} = \{ \pm \zeta_{n_0}^{i}\}$ и нам достаточно рассматривать $n_0$. Предположим, что существует простое $p' \neq p \colon p \ \mid \ n_0$. Тогда $\zeta_{p'} \in \Q(\zeta_{p})$, но $\zeta_{p'} \in \Q(\zeta_{p'})$, а так как $p' \mid n_0$, $\Q(\zeta_{p'}) \subset \Q(\zeta_{n_0}) \subset \Q(\zeta_{p})$. Простое число $p'$ будет полностью разветвлено в $\Q(\zeta_{p'})$, а значит, оно будет полностью разветвлено и $\Q(\zeta_{p})$, но это противоречит утверждению~\ref{stm:11}.
-		
+		\bf{1)}. Предположим, что $n \equiv 0 \pmod{4}$. Тогда $i = \zeta_{4} \in \Q(\zeta_{p})$. Заметим, что $2i = (1 + i)^2$ а значит, $(2) = ((1 + i))^2$, то есть двойка разветвлена в $\Q(\zeta_{p})$ (а это противоречит предыдущему утверждению). Значит $n \not\equiv 0 \pmod{4}$. 
 
-		Значит, $n_0 = p^a$, а тогда $\zeta_{p^{a}} \in \Q(\zeta_{p})$. Но это приводит нас к тому, что $n_0 = p$, ведь 
+		\bf{2)}. Теперь рассмотрим случай  $n = 2n_{0}$, $n$~--- нечётное. Тогда $\zeta^{i}_{n} = \pm \zeta_{n_0}^{i}$ и нам достаточно рассматривать $n_0$. Пусть у $n_0$ есть какие-то простые делители, кроме $p$, например, $p'$. Тогда, так как $n_0 \divby p'$, 
 		\[
-			[\Q(\zeta_{p^{a}}) : \Q] = p^{a} - p^{a - 1} \le [\Q(\zeta_{p}) : \Q] = p - 1 \implies a - 1 \implies n_0 = p 
+			\Q(\zeta_{p'}) \le \Q(\zeta_{n_0}) \le \Q(\zeta_{p}).
+		\]
+		Но тогда по предложению~\ref{stm:11} $p'$ будет полность разветвлено в $\Q(\zeta_{p'})$ и при этом, так как $p' \not \ \mid p$, неразветлвено в $\Q(\zeta_{p})$, что даёт нам противоречие. 
+		
+		\bf{3)}. Значит, $n_0 = p^a$, а тогда $\zeta_{p^{a}} \in \Q(\zeta_{p})$, то есть $\Q(\zeta_{p^{a}}) \le \Q(\zeta_{p})$. С другой стороны, тогда 
+		\[
+			[\Q(\zeta_{p^{a}}) : \Q] = p^{a} - p^{a - 1} \le [\Q(\zeta_{p}) : \Q] = p - 1 \implies a = 1 \implies n_0 = p.
 		\]
 	\end{proof}
 
 	\begin{lemma}\label{lemma:14}
-		Пусть $K/\Q$~--- конечное расширение, $\sigma_i \colon K \to \Q^{alg}$~--- все вложения ($1 \le i \le n$, $n = [K : \Q]$). Предположим, что $\alpha \in \cO_{K}$ и $\forall i \ |\sigma_{i}\alpha| = 1$. Тогда $\alpha$ является корнем из единицы какой-то степени. \footnote{Обратное утверждение очевидно.}
+		Пусть $K/\Q$~--- конечное расширение, $\sigma_i \colon K \to \Q^{alg}$~--- все вложения ($1 \le i \le n$, $n = [K : \Q]$). Предположим, что $\alpha \in \cO_{K}$ и $\forall i \ |\sigma_{i}\alpha| \le 1$. Тогда $\alpha$ является корнем из единицы какой-то степени. \footnote{Обратное утверждение очевидно.}
  	\end{lemma}
  	\begin{proof}
  		Выпишем многочлен с целыми коэффициентами, корнем которого является $\alpha$:
@@ -113,114 +144,152 @@
  		В силу предположения теоремы, его коэффиценты ограничены, так как они являются симметрическими функциями от $\sigma_{i}\alpha$. Заметим теперь, что из условия следует, что $|\sigma_{i}(\alpha^k)| \le 1$, а значит, для $\alpha^k$ мы также получим многочлен с ограниченными коэффициентами. Заметим, что $k$~--- произвольное натуральное, а значит, мы получаем бесконечное число $\alpha^k$, которые являются корнями коненого набора многочленов над $\Z$ (так как коэффициенты  каждого мы можем ограничить одной и той же константой).  Значит, $\exists m, n \colon \alpha^m = \alpha^n$, что и даёт нам, что $\alpha$~--- корень из 1. 
  	\end{proof}
 
- 	\begin{lemma} 
- 		Пусть $u \in \cO_{K}^{*} = \Z[\zeta_{p}]$ для $K = \Q(\zeta_{p})$. Тогда $\exists s \colon u \zeta^{s} \in \R$.
+ 	\begin{lemma}\label{lemma:26} 
+ 		Пусть $u \in \cO_{K}^{*} = \Z[\zeta_{p}]$ для $K = \Q(\zeta_{p})$. Тогда $\exists s \colon u \zeta_{p}^{s} \in \R$.
 
  		\begin{proof}
- 			Рассомтрим $v = u / \overline{u}$ и возьмем $\rho \in \Gal\lr*{\Q(\zeta_{p})/\Q} \cong (\Z/p\Z)^{*}$. Тогда по лемме~\ref{lemma:14}:
+ 			Положим $\zeta = \zeta_{p}$. Рассомтрим $v = u / \overline{u}$ и возьмем $\rho \in \Gal\lr*{\Q(\zeta_{p})/\Q} \cong (\Z/p\Z)^{*}$. Тогда по лемме~\ref{lemma:14}:
  			\[
- 				\rho(v) = \frac{\rho(u)}{\rho(\overline{u})}  = \frac{\rho(u)}{\overline{\rho(u)}}	 \implies |\rho(v)| = 1 \implies v = \pm \zeta_{p}^{n}.
-		 	\] 	
+ 				\rho(v) = \frac{\rho(u)}{\rho(\overline{u})}  =\footnote{Так как сопряжение~--- тоже автоморфизм, а группа Галуа абелева, $\rho(\overline{x}) = \overline{\rho(x)}$} \frac{\rho(u)}{\overline{\rho(u)}}	 \implies |\rho(v)| = 1.
+		 	\]
+		 	Значит, по лемме~\ref{lemma:14} $v$~--- является корнем из единицы какой-то степени, а тогда по лемме~\ref{lemma:13} $v = \pm \zeta^{n}$.
 
-		 	Рассмотрим $\lambda = 1 - \zeta$, тогда 
+
+		 	Положми $\lambda = 1 - \zeta$, тогда 
 		 	\[
 		 		\rho(\zeta) \equiv \zeta^k \equiv \zeta \pmod{\lambda} \implies \rho(\zeta^i) \equiv \zeta^i \pmod{\lambda},
 		 	\]
-		 	а так как $\cO_{K} = \Z[\zeta_{p}]$, мы имеем такое сравнение для всеё элементов $\cO_{K}$. В частности, из этого следует, что $\rho(u) \equiv u \pmod{\lambda}$. В частности, мы можем положить $\rho(\cdot) = \overline{\cdot}$ и отсюда получить, что $\overline{u} \equiv u \pmod{\lambda}$. Из этого следует, что 
-		 	\begin{multline*}
-		 		\pm \zeta^{n}_{p} \overline{u} \equiv u \equiv \overline{u} \pmod{\lambda}, \text{пусть } -\zeta^{n}_{p}u \equiv u \pmod{\lambda}, \\ -\zeta^{n}_{p}\overline{u} \equiv \overline{u} \pmod{\lambda} \implies -u \equiv u \pmod{\lambda} \implies 2u \equiv 0 \pmod{\lambda},
-		 	\end{multline*}
-		 	но если $2u \ \vdots \  (1 - \zeta)$, то так как $u$ обратим, $2 \ \vdots \ (1 - \zeta)$.  Но, если $2 \in (1 - \zeta)$, то $2^{p - 1} \in ((1 - \zeta))^{p - 1} = (p)$. Значит, знак минус невозможен и реализуется случай 
+		 	а так как $\cO_{K} = \Z[\zeta_{p}]$, мы имеем такое сравнение для всех элементов $\cO_{K}$. В частности, из этого следует, что $\rho(u) \equiv u \pmod{\lambda}$. В частности, мы можем положить $\rho(x) = \overline{x}$ и отсюда получить, что $\overline{u} \equiv u \pmod{\lambda}$. Так как $v = u/\overline{u}$, а $v = \pm \zeta^n$, то есть $u = \pm \zeta^n \overline{u}$, мы имеем
 		 	\[
-		 		\zeta^n_{p} \overline{u} \equiv \overline{u} \equiv u \pmod{\lambda}. 
+		 		\pm \zeta^n = \overline{u} \equiv u \pmod{\lambda}.
 		 	\]
-		 	Так как $u - v \overline{u}$, $u = \zeta^{n}_{p} \overline{u}$, тогда $u \zeta_{p}^{s} = \zeta_{p}^{n + s}\overline{u}$. Найдём такое $s$, что $\overline{\zeta_{p}^{n + s} \overline{u}} = u$. То есть, такое $s$, что $\overline{\zeta^{n + s}} = \zeta^{s} \implies 2s + n \equiv 0 \pmod{p}$, что вполне возможно реализовать. 
+		 	Предположим, что реализуется знак минус. Тогда, так как $\zeta^n \equiv 1 \pmod{\lambda}$, отсюда мы получаем
+		 	\[
+		 		- \overline{u} \equiv \overline{u} \pmod{\lambda} \implies 2 \overline{u} \equiv 0 \pmod{\lambda},
+		 	\]
+		 	а так как $\overline{u}$ обратим, отсюда $2 \divby \lambda = 1 - \zeta$. Но тогда $2^{p - 1} \divby (1 - \zeta)^{p - 1}$, а как мы уже видели в предложении~\ref{stm:11}, $((1 - \zeta)^{p - 1}) = p\cO_{K}$, то есть $2^{p - 1} \divby p$,  что даёт нам противоречие.  
+
+			Значит, знак минус невозможен и реализуется случай 
+		 	\[
+		 		\zeta^n \overline{u}  \equiv \overline{u} \equiv u \pmod{\lambda}. 
+		 	\]
+		 	Тогда $\zeta^n \overline{u} = u$, значит $u \zeta^s = \zeta^{n + s}\overline{u}$. Попробуем подобрать такое $s$, что 
+		 	\[
+		 		u \zeta^{s} = \overline{\zeta^{n + s}\overline{u}} \implies \overline{\zeta^{n + s}} = \zeta^{s} \implies 2s + n \equiv 0 \pmod{p},
+		 	\]
+		 	и достаточно взять $s \equiv -n/2\pmod{p}$.
+		 	
  		\end{proof}
  	\end{lemma}
 
  	\begin{lemma}\label{lemma:15}
  		Пусть $x^p + y^p = z^p, \ p \not \ \mid xyz, \ (x, y, z) = 1$, разложим левую часть в линейные множители:
  	\[
- 		(x + y)(x + \zeta y)\ldots(x + \zeta^{p - 1}y)
+ 		x^p + y^p = (x + y)(x + \zeta y)\ldots(x + \zeta^{p - 1}y). 
  	\]
- 	Тогда  эти сомножители взаимнопросты. 	
+ 	Тогда сомножители в правой части равенства попарно взаимнопросты. 
  	\end{lemma}
- 	
-
  	\begin{proof}
- 		Предположим противное, тогда $x + \zeta^i y, \ x + \zeta^{j} y \in \fq$ для некоторых $i, j$. Тогда $\zeta^i(1 - \zeta^{j - i}) y \in \fq$, но $((1 - \zeta^{j - i}))^{p - 1} = (p)$ и если $\fq \neq (1 - \zeta)$, мы получаем, что $y \in \fq$, но тогда и $x \in \fq$, а это противоречит взаимной простоте $x$ и $y$. Если же $\fq = (1 - \zeta)$, мы получаем, что $x + y = x + \zeta^{i}y + (y - \zeta^{i})y \in \fq$, откуда следует, что $z \in \fq$, а значит, $z^{p - 1} \ \vdots p$, а этого не может быть по предположению. 
+ 		Предположим противное, тогда $x + \zeta^i y, \ x + \zeta^{j} y \in \fq$ для некоторых $i, j$. Тогда 
+ 		\[
+ 			(x + \zeta^i y) - (x + \zeta^{j} y) = \zeta^i(1 - \zeta^{j - i})y \in \fq.
+ 		\]
+ 		\begin{enumerate}
+ 			\item Если $y \in \fq$, то, так как $1 + \zeta^i y \in \fq$, мы имеем $x \in \fq$, но по условию $(x, y) = (1)$.
+
+ 			\item Если $(1 - \zeta^{j - i}) \in \fq $, то $1 - \zeta \in \fq$, а так как $(1 - \zeta) \in \Specm(\cO_{K})$ (что мы доказывали в~\ref{stm:11}), $\fq = (1 - \zeta)$. Но тогда $x + y \in \fq \implies z^p \in \fq \implies z \in \fq$. Тогда 
+ 			\[
+ 				(z)^{p - 1} \divby \fq^{p - 1} = ((1 - \zeta))^{p - 1} = (p) \implies z \divby p,
+ 			\]
+ 			что даёт нам противоречие. 
+ 		\end{enumerate}
  	\end{proof}
 
-
+ 	Сейчас, пользуясь всей подготовкой выше, мы докажем первый случай большой теоремы Ферма для регулярных простых. 
  	\begin{theorem} 
- 		Пусть $p \not \ \mid |\Cl(\Q_{\zeta_{p}})|$\footnote{такие простые числа называются регуярными}. Тогда имеет место первый случай Великой теоремы Ферма.  
+ 		Пусть $p \not \ \mid |\Class(\Q\lr*{\zeta_{p}})$\footnote{такие простые числа называются \emph{регулярными}}. Тогда имеет место первый случай Великой теоремы Ферма.  
  	\end{theorem}
  	\begin{proof}
  		Пусть $x^p + y^p = z^p$, разложим левую часть на множители: 
  		\[
- 			\prod_{i = 0}^{p - 1} (x + \zeta^{i}y) = z^p,
+ 			\prod_{i = 0}^{p - 1} (x + \zeta^{i}y) = z^p.
  		\]
- 		а так как все сомножители в левой части равенства взаимнопросты по лемме~\ref{lemma:15}. Значит, все они являются $p$-ми степенями, в частности для $i = 1$. То есть 
+ 		Так как все сомножители в левой части равенства взаимнопросты по лемме~\ref{lemma:15}, все они являются $p$-ми степенями, в частности для $i = 1$. То есть 
  		\[
  			(x + \zeta y) = I^{p},
  		\]
- 		значит $I$ находится в $p$-кручении $\Cl(\Q_{\zeta_{p}})$, но так как $p$ не делит порядок группы классов, оно тривиально, значит  $I$--- главный, то есть  $I = (\alpha)$.  Значит,
+ 		значит $I$ находится в $p$-кручении $\Class(\Q_{\zeta_{p}})$. Но так как $p$ не делит порядок группы классов, оно тривиально, значит  $I$--- главный, то есть  $I = (\alpha)$ для некоторого $\alpha$.  Значит,
 
  		\[
- 			(x + \zeta y) = (\alpha^p) \implies x + \zeta y = \varepsilon \alpha^p, \ \varepsilon \in \Z[\zeta]^{*}, \ \varepsilon = \zeta^s u \implies x + \zeta y = \zeta^s u \alpha^p.
+ 			(x + \zeta y) = (\alpha^p) \implies x + \zeta y = \varepsilon \alpha^p, \ \text{ где }\varepsilon \in \Z[\zeta]^{*}, 
+ 		\]
+ 		Тогда по лемме~\ref{lemma:26} мы имеем 
+ 		\[
+ 			  x + \zeta y = \zeta^s u \alpha^p, \quad u \in \R.
  		\]
 
- 		С другой стороны, $\alpha = a_0 + a_1 \zeta_{p} + \ldots + a_{p - 2}\zeta^{p - 2}$. Тогда 
+ 		С другой стороны, $\alpha = a_0 + a_1 \zeta + \ldots + a_{p - 2}\zeta^{p - 2}, \ a_i \in \Z$. Тогда 
  		\[
  		 	\alpha^p \equiv \underbrace{a_0^p + a_1^p + \ldots + a_{p - 2}^{p}}_{\eqdef n} \pmod{p}.
  		 \] 
 
  		 Тогда $x + \zeta y \equiv \zeta^s u n \pmod{p}$. Переходя в этом сравнении к сопряженным, мы получаем 
  		 \[
- 		 	x + \zeta y \equiv \zeta^s u n \pmod{p}, \quad x + \zeta^{-1}y \equiv \zeta^{-s} \overline{u} n = \zeta^{-s} u n \pmod{p}, \text{ так как } u \in \R.
+ 		 	\overline{x + \zeta y} = x + \zeta^{-1}y \equiv \zeta^{-s}\overline{u}n = \zeta^{-s}un \pmod{p} \implies \zeta^{s}(x + \zeta^{-1}y) \equiv un \pmod{p}.
  		 \]
-
- 		 Отсюда мы получаем, что $\zeta^{-s}(x + \zeta y) \equiv \zeta^{s} (x + \zeta^{-1}y)\pmod{p}$. Значит, $x + \zeta y - \zeta^{2s} x - \zeta^{2s - 1}y \in p\Z[\zeta]$. Теперь рассмотрим несколько случаев: 
+ 		 \[
+ 		 	\begin{cases} \zeta^{-s}(x + \zeta y) \equiv u n \pmod{p} \\ \zeta^{s}(x + \zeta^{-1}y) \equiv un \pmod{p} \end{cases} \implies \zeta^{-s}(x + \zeta y) \equiv \zeta^{s}(x + \zeta^{-1}y) \pmod{p} 
+ 		 \]
+ 		 \[
+ 		 	x + \zeta y \equiv \zeta^{2s}(x + \zeta^{-1}y) \pmod{p} \implies x + \zeta y - \zeta^{2s} x - \zeta^{2s - 1}y \in p\Z[\zeta]
+ 		 \]
+ 		 
+ 		 Теперь рассмотрим несколько случаев: 
 
  		 \begin{enumerate}
- 		 	\item Элементы $S = \{ 1, \zeta, \zeta^{2s}, \zeta^{2s - 1}\}$~--- попарно различны. 
+ 		 	\item Элементы $S = \{ 1, \zeta, \zeta^{2s}, \zeta^{2s - 1}\}$ попарно различны. 
  		 	\begin{enumerate}
  		 		\item Если $\zeta^{p - 1} \notin S$, то $p \mid x, p \mid y$. 
 
- 		 		\item Если $\zeta^{p - 1} \in S$, то $p = 2s - 1$ и тогда $s \ \vdots p $, а значит $(\zeta - \zeta^{-1})y \in p\Z[\zeta]$ откуда следует, что $p \mid 1 - \zeta^2$, что даёт нам противоречие. 
+ 		 		\item Если $\zeta^{p - 1} = \zeta^{2s - 1}$, то $s \divby p$, а значит $(\zeta - \zeta^{-1})y \in p\Z[\zeta]$ откуда следует, что $p \mid 1 - \zeta^2$, что даёт нам противоречие. 
 
- 		 		\item Если $\zeta^{p - 1} = -(1 + \zeta + \ldots + \zeta^{p - 2})= \zeta^{2s}$, то $x + \zeta y - \zeta^{-1}x - \zeta^{-2}y \in \Z[\zeta]$, а тогда 
+ 		 		\item Если $\zeta^{p - 1} = -(1 + \zeta + \ldots + \zeta^{p - 2})= \zeta^{2s}$, а тогда 
  		 		\[
- 		 			x + \zeta y + ((1 + \zeta + \ldots + \zeta^{p - 2}))x - \zeta^{p - 2}y \ \vdots \ p \implies x + y \ \vdots \  p \implies z \ \vdots \ p,
+ 		 			x + \zeta y + ((1 + \zeta + \ldots + \zeta^{p - 2}))x - \zeta^{p - 2}y = 2x + \zeta(x + y) + x\zeta^2 + \ldots + x\zeta^{p - 3}  + (x - y)\zeta^{p - 2} \implies 2x \divby p,
  		 		\]
  		 		что даёт нам противоречие. 
  		 	\end{enumerate}
 
  		 	\item Некоторые из этих степеней совпадают. 
  		 		\begin{enumerate}
- 		 			\item $\zeta^{2s} = 1$. В этом случае $(\zeta - \zeta^{-1})y \ \vdots \ p$,  а мы уже видели, что это невозможно. 
+ 		 			\item $\zeta^{2s} = 1$. В этом случае $s \divby p$, а как мы уже видели, это влечёт $(\zeta - \zeta^{-1})y \ \divby \ p$, что невозможно. 
 
- 		 			\item $\zeta^{2s - 1} = 1$.  В этом случае $x - y + \zeta y - \zeta x \ \vdots \ p \implies (x - y)(1 - \zeta) \ \vdots \ p \implies x - y \ \vdots \ p$, то есть $x \equiv y \pmod{p}$. Исходное уравнение мы можем записать в виде 
+ 		 			\item $\zeta^{2s - 1} = 1$.  В этом случае $x - y + \zeta y - \zeta x \divby p \implies (x - y)(1 - \zeta) \divby  p \implies x - y \divby  p$, то есть $x \equiv y \pmod{p}$. Исходное уравнение мы можем записать в виде 
  		 			\[
  		 				z^p + (-y)^p = x^p,
  		 			\]
- 		 			и рассуждая аналогично, мы можем получить, что $z \equiv - y \pmod{p}$. Тогда 
+ 		 			и рассуждая аналогично, мы можем получить, что $(y + z) \divby p, \ (x + z) \divby p$. Тогда 
  		 			\[
- 		 				x^p + x^p \equiv (-x)^{p} \pmod{p} \implies 3x^{-} \equiv 0 \pmod{p}.
+ 		 				0 \equiv x^p + y^p - z^p \equiv x + y - z \equiv 3x \pmod{p},
  		 			\]
- 		 			Значит, либо $p = 3$ (в этом случае мы полностью разобрали вообще всю теорему Ферма), либо $p \mid x$, что даёт нам противоречие. 
- 		 			
+ 		 			откуда либо $p = 3$ (а в этом случае мы Большую теорему Ферма доказали), либо $p \mid x$, что даёт нам противоречие. 
+ 		
 
- 		 			\item $\zeta = \zeta^{2s - 2}$. Тогда $x - \zeta^2 x \ \vdots \ p$, откуда следует, что $1 - \zeta^2 \ \vdots \ p$, а это, как мы уже видели, противоречие. 
+ 		 			\item $\zeta = \zeta^{2s - 1}$. Тогда $x - \zeta^2 x \divby p$, откуда следует, что $1 - \zeta^2 \divby p$, а это, как мы уже видели, противоречие. 
  		 		\end{enumerate}
  		 \end{enumerate}
+ 		 \end{proof}
 
  		 Дадим теперь хороший критерий для проверки условия теоремы. Этот критерий мы дадим без доказательства, так как он доказывается методами аналитической теории чисел. 
 
- 		 Как мы помним, числа Бернулли можно начинать через экспоненциальную производящую функцию: 
- 		 \[
- 		 	\frac{t}{e^t - 1} = \sum_{m = 0}^{\infty} B_{m} \frac{t^m}{m!}.
- 		 \]
+ 		 \begin{definition} 
+ 		 	Рассмотрим экспоненцальную прозводящую функцию 
+ 		 	\[
+ 		 		\frac{t}{e^t - 1} = \sum_{m = 0}^{\infty} B_{m} \frac{t^m}{m!},
+ 		 	\]
+ 		 	тогда 
+ 		 \end{definition}
+ 		 
  		 Подставим $-t$:
  		 \[
  		 	\frac{-t}{\frac{1}{e^{t}} - 1} = \frac{t e^{t}}{e^{t} - 1} = \frac{t(e^t - 1) + t}{e^t - 1} = t + \frac{t}{e^t - 1}.
@@ -230,28 +299,42 @@
  		 \[
  		 	m > 1, \ m \equiv_{2} 1 \implies B_m = -B_m \implies B_m = 0.
  		 \]
- 		 \[
- 		 	-(n + 1)B_n = \binom{n + 1}{n - 1} B_{n - 1} + \ldots + \binom{n + 1}{k}B_{k} + \ldots + \binom{n + 1}{1} B_{1} + 1. 
- 		 \]
- 		 Так как все нечётные коэффициенты равны нулю, авторы часто используют обозначение $B_n$ для $2n$-го числа Бернулли. Например, известно, что 
+ 		 \begin{remark}
+ 		 	Так как все нечётные коэффициенты равны нулю, авторы часто используют обозначение $B_n$ для $2n$-го числа Бернулли. Например, известно, что 
  		 \[
  		 	B_{n} = -n \zeta(1 - n), n > 1.
  		 \]
+ 		 \end{remark}
+ 		 Также отсюда мы имеем такую формулу: 
+ 		 \begin{statement} 
+ 		 	\[
+ 		 	-(n + 1)B_n = \binom{n + 1}{n - 1} B_{n - 1} + \ldots + \binom{n + 1}{k}B_{k} + \ldots + \binom{n + 1}{1} B_{1} + 1. 
+ 		 \]	
+ 		 \end{statement}
+ 		 \begin{corollary}
+ 		 	Знаменатели $B_{2}, B_{4}, \ldots, B_{p - 3}$ не делятся на $p$.
+ 		 \end{corollary}
+ 		 \begin{proof}
+ 		 	Докажем это утверждение по индукци, база очевидна, докажем переход. 
+ 		 	\[
+ 		 		\v_{p}\lr*{\binom{n + 1}{n - 1} B_{n - 1} + \ldots + \binom{n + 1}{k}B_{k} + \ldots + \binom{n + 1}{1} B_{1} + 1} \ge 0 \implies \v_{p}((n + 1)B_{n}) \ge 0 \implies \v_{p}(B_n) \ge 0.
+ 		 	\]
+ 		 \end{proof}
 
+ 		 Так вот, нам числа Бернулли полезны, так как справедлива такая теорема:
  		 \begin{theorem} 
  		 	Простое число $p$~--- регулярно тогда и только тогда, когда числители всех чисел Бернулли $B_{2}, B_{3}, \ldots, B_{p - 3}$ не делятся на $p$.
  		 \end{theorem}
-
- 		 Из этого рекуррентного соотношения следует, что знаменатели $B_n$ не делятся на $p$ при $n \le p - 3$ , так как 
- 		 \[
- 		 	\upsilon_{p}((n + 1)B_n) \ge 0 \implies \upsilon_{p}(B_n) \ge 0.
- 		 \]
+ 		 
 
  		 \begin{example}
- 		 	Например, таким образом нетрудно показать, что число 7 является регулярным. 
+ 		 	Например, таким образом нетрудно показать, что число 7 является регулярным. Действительно, 
+ 		 	\[
+ 		 		\overline{B_0} = 1, \ \overline{B_1} = \overline{3}, \ -3\overline{B_2} = 3 \overline{B_1} + \overline{1} = \overline{10} \implies \overline{B_3} = -\frac{\overline{10}}{\overline{3}} = -\overline{1}, \ \overline{B_3} = 0, \ \overline{B_4} = 10\overline{B_2} + 5 \cdot \overline{3} + 1 = -\overline{1} \implies \overline{B_4} = \frac{\overline{1}}{\overline{5}} = \overline{3}. 
+ 		 	\]
  		 \end{example}
 
- 	\end{proof}
+ 	
 
  	Теперь, немного отвлечёмся и приведём алгоритм построение целого базиса.
 

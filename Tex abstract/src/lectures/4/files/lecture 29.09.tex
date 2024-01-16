@@ -157,3 +157,40 @@
 			\]
 			а определитель матрицы, написаной справа равен $\{ a_1 \} \le 1$ (так как матрица нижнетреугольная).
 		\end{homework}
+
+		\begin{theorem} 
+			Пусть $p$~--- простое, а $K = \Q\lr*{\sqrt[p]{1}}$. Тогда $\cO_{K} = \Z[\zeta]$, где $\zeta^p = 1$.
+		\end{theorem}
+		\begin{proof}
+			Вычислим сначала $\disc(1, \zeta, \ldots, \zeta^{p - 2}) = \det\lr*{\Tr(\zeta^{i + j})}_{i, j = 1}^{n}$. Ясно, что для каждого $i = 2, \ldots, p - 2$ найдётся единственный $j = 2, \ldots, p - 2$ такой, что $i + j \equiv 0 \pmod{p}$\footnote{Действительно, это $p - i$.}. Значит, в каждом столбце, кроме второго, будет стоять элемент $\Tr(\zeta^0) = \Tr(1) = [K : \Q] = p - 1$, причем ровно один раз (и аналогичное верно для строк).
+
+			Минимальным многочленом для $\zeta$ является 
+			\[
+			  	\frac{t^p - 1}{t - 1} = 1 + \ldots + t^{p - 1},
+			  \]  
+			  откуда $\Tr(\zeta^{k}) = 0, k = 1, \ldots, p - 2$. Значит, нам нужно вычислить вот такой определитель: 
+			  \[
+			  	\det\begin{pmatrix} p - 1 & -1 & -1 & \ldots & - 1 \\ 
+			  						-1    & -1 & -1 & \ldots &  -1 \\ 
+			  						\vdots & \vdots & \vdots & \ldots & \vdots \\
+			  						-1 & -1 & p - 1 & \ldots & -1  \end{pmatrix}.
+			  \]
+			\[
+			  	\begin{pmatrix} p - 1 & -1 & -1 & \ldots & - 1 \\ 
+			  						-1    & -1 & -1 & \ldots &  -1 \\ 
+			  						\vdots & \vdots & \vdots & \ldots & \vdots \\
+			  						-1 & -1 & p - 1 & \ldots & -1  \end{pmatrix} \sim \begin{pmatrix} p  & 0 & 0 & \ldots & 0 \\ 
+			  						-1    & -1 & -1 & \ldots &  -1 \\ 
+			  						\vdots & \vdots & \vdots & \ldots & \vdots \\
+			  						0 & 0 & p  & \ldots & 0  \end{pmatrix}	\sim \begin{pmatrix} p  & 0 & 0 & \ldots & 0 \\ 
+			  						0    & -1 & 0 & \ldots &  0 \\ 
+			  						\vdots & \vdots & \vdots & \ldots & \vdots \\
+			  						0 & 0 & p  & \ldots & 0  \end{pmatrix}
+			 \]  
+			 Отсюда уже ясно, что $\disc(1, \zeta, \ldots, \zeta^{p - 2}) = (-1)^{\frac{p - 1}{2}} p^{p - 2}$. 
+
+			 Теперь воспользуемся одной из домашних задач. Заметим, что в нашем случае совершенно ясно, что минимальный многочлен $\zeta$ Эйзенштейнов, а тогда $\ind(\zeta) \notdivby p$. С другой стороны, по предложению~\ref{dic_and_ind} $\ind(\zeta) \mid \disc(1, \zeta, \ldots, \zeta^{p - 2}) (-1)^{\frac{p - 1}{2}} p^{p - 2}$. Значит, $\ind(\theta) = 1$ то есть 
+			 \[
+			 	|\cO_{K}/\Z[\theta]| = 1 \implies \cO_{K} = \Z[\theta].
+			 \]
+		\end{proof}	 

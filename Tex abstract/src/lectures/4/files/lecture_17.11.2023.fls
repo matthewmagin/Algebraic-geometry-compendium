@@ -1,0 +1,6 @@
+PWD /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files
+INPUT /usr/local/texlive/2020/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files/lecture 17.11.2023.tex
+OUTPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/4/files/lecture_17.11.2023.log
