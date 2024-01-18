@@ -1,7 +1,7 @@
 	
 	\subsection{Мультипликативная группа кольца целых числового поля}
 
-	Пусть числа $s$ и $t$, связанные с количеством вложений числового поля $K \to \Q^{alg}$ определены как в \hyperlink{real_and_complex_inclusions}{}. Сегодня мы докажем, что мультипликативная группа кольца целых числового поля имеет вид 
+	Пусть числа $s$ и $t$, связанные с количеством вложений числового поля $K \to \Q^{alg}$ определены как в \hyperlink{real_and_complex_inclusions}{}. В этом параграфе мы докажем, что мультипликативная группа кольца целых числового поля имеет вид 
 	\[
 		\cO_{K}^{*} \cong \mu \oplus \Z^{s + t - 1},
 	\]
@@ -25,7 +25,7 @@
 		Если же $d < 0$, то вполне ясно, что $s = 0, \ t = 1 \implies s + t - 1 = 0$, откуда следует, что $\cO_{K}^{*} = \mu$, откуда, в частности, следует, что уравнение~\eqref{Pell_equation} имеет конечно число решение.
 	\end{example}
 
-	\begin{theorem}[Дирихле, о единицах, \emph{слабая форма}] 
+	\begin{theorem}[Дирихле, о единицах, \emph{слабая форма}]\label{Weak_dirichlet_theorem} 
 		Мультипликативная группа кольца целых $\cO_{K}$ числового поля $K$ имеет вид 
 		\[
 			\cO_{K}^* \cong \mu \oplus \Z^m, \text{ где } m \le s + t - 1.
@@ -37,13 +37,13 @@
 			\ell(\alpha) = \lr*{\log|\sigma_1\alpha|, \log|\sigma_2\alpha|, \ldots, \log|\sigma_s\alpha|, \log|\sigma_{s + 1}\alpha|^2, \ldots, \log|\sigma_{s + t}\alpha|^2}.
 		\]
 		Заметим, что это гомомомрфизм групп, $\ell(\alpha\beta) = \ell(\alpha) + \ell(\beta)$.
-		Рассмотрим сужение $\ell\colon \cO_{K}^* \to \R^{s + t}$. Посчитаем ядро этого отображения: 
+		Рассмотрим сужение $\ell\colon \cO_{K}^* \to \R^{s + t}$ (чтоб не перегружать обозначения, с этого момента мы называем сужение той же буквой $\ell$). Посчитаем ядро этого отображения: 
 		\[
-			\alpha \in \Ker{\ell} \Leftrightarrow |\sigma_i \alpha| = 1 \implies \Ker{\ell} = \mu.
+			\alpha \in \Ker{\ell} \Leftrightarrow \forall i = 1, \ldots, s + t \quad |\sigma_i \alpha| = 1 \underbrace{\implies}_{\text{\bf{Л.}~\ref{lemma:14}}} \Ker{\ell} = \mu.
 		\]
-		Для $\alpha \in \cO_{K}$ мы знаем, что $\Nm(\alpha) = \pm 1$, откуда
+		Теперь посчитаем $\Im{\ell}, \ \ell \colon \cO_{K}^{*} \to \R$. Пусть $\alpha \in \cO_{K}^{*}$, тогда мы знаем, что $\Nm(\alpha) = \pm 1$, откуда
 		\[
-			\log|\sigma_1\alpha| + \ldots + \log{|\sigma_{s + 1}\alpha|} + \log{|\overline{\sigma}_{s + 1}\alpha|} + \ldots = \log{|\Nm(\alpha)|} = 0,
+			\log{|\Nm(\alpha)|} = \log|\sigma_1\alpha| + \ldots + \log{|\sigma_{s + 1}\alpha|} + \log{|\overline{\sigma}_{s + 1}\alpha|} + \ldots  = 0,
 		\]
 		что даёт нам, что образы всех обратимых элементов лежат в гиперплоскости 
 		\[
@@ -51,19 +51,35 @@
 		\]
 
 		\begin{lemma} 
-			$\Im{\ell}$~--- решётка\footnote{ранга $s + t - 1$.} в $\R^{s + t}$.
+			$\Im{\ell}$~--- решётка в $\R^{s + t}$.
 		\end{lemma}
 		\begin{proof}
-			Надо проверить, что $\Im{\ell}$~--- это дискретная подгруппа в $\R^{s +t}$ (то, что это подгруппа~--- очевидно). Возьмём $r > 0$ и рассмотрим $\alpha$ такие, что все координаты не превосходят $r$. Нам надо показать, что таких $\alpha$ конечное число. 
+			Надо проверить, что $\Im{\ell}$~--- это дискретная подгруппа в $\R^{s +t}$ (то, что это подгруппа~--- очевидно). Иными словами, нам надо показать, что в любом ограниченном множестве содержится конечное число точек из $\Im{\ell}$. Ясно, что это достаточно проверять для шаров, рассмотрим шар $\overline{B}_{r}(0)$.  
 
-			Ясно, что неравенства $\log|\sigma_{j}\alpha| \le r \ \forall j$ означают, что $|\sigma_{j}\alpha| \le e^{r} \ \forall j = 1, \ldots, s$ и $|\sigma_{j}\alpha| < e^{\frac{r}{2}} \ \forall j = s + 1,\ldots, s + t$, откуда мы имеем $-e^{r} \le \sigma_{j}\alpha \le e^{r}$ при $1 \le j \le s$ и $-e^{\frac{r}{2}} \le \Re(\sigma_j\alpha) \text{ или } \Im(\sigma_j\alpha) \le e^{\frac{r}{2}}$ при $s + 1 \le j \le s + t$, а таких конечное число, так как мы это уже показывали вот \hyperlink{phi_from_this}{тут}. 
+			Ясно, что неравенства
+			\[
+				\log|\sigma_{j}\alpha| \le r \ \forall j \Leftrightarrow |\sigma_{j}\alpha| \le e^{r} \ \forall j = 1, \ldots, s, \quad |\sigma_{j}\alpha| < e^{\frac{r}{2}} \ \forall j = s + 1,\ldots, s + t.
+			\]
+			Нетрудно заметить, что из этих неравенств следуют неравенства на мнимую и вещественную часть координат $s + 1, \ldots, s + t$, то есть мы имеем
+			\[
+				|\sigma_{j}\alpha| \le e^{r} \ \forall j = 1, \ldots, s, \quad |\Im\sigma_{j}\alpha| \le  e^{\frac{r}{2}}, \ |\Re\sigma_{j}\alpha| \le  e^{\frac{r}{2}} \ \forall j = s + 1,\ldots, s + t.
+			\]
+			Но, в предыдущем параграфе мы уже рассматривали отображение $\varphi$
+			\[	  	
+				\varphi(\alpha) = (\sigma_1(\alpha), \sigma_2(\alpha), \ldots, \sigma_s(\alpha), \Re(\sigma_{s + 1}(\alpha)), \Im(\sigma_{s + 1}(\alpha)),  \ldots, \Re(\sigma_{s + t}(\alpha)), \Im(\sigma_{s + t}(\alpha))) \in \R^n,
+			\]
+			и доказывали, что $\Im{\varphi}$~--- решётка. Тогда по предложению~\ref{finite_points_of_lattice} в шаре $\overline{B}_{e^{r}}$  лежит лишь конечное число точек из образа $\varphi$, но тогда, по отмеченному выше, там будет лежать лишь конечное число точек из $\Im{\ell}$, а тогда по предложению~\ref{discrete_subgroup_is_lattice} $\Im{\ell}$~--- решётка. 
 		\end{proof}
 
-		Значит, мы имеем расщепимую короткую точную последовательность 
+		Значит, $\Im{\ell}$ порождён $m$ линейно-независимыми в $\R^{s + t}$ векторами и  $\Im{\ell} \cong \Z^{m}$. С другой стороны, так как $\Im{\ell}$ лежит в гиперплоскости, $m \le s + t - 1$.  Тогда у нас есть короткая точная последовательность 
 		\[
-			0 \to \mu \to \cO_{K}^* \to \Z^m \to 0,
-		\]
-		откуда $\cO_{K}^* \cong \mu \oplus \Z^m$, где $m \le s + t - 1$, что и требовалось.
+		 	0 \to \Ker{\ell} \hookrightarrow \cO_{K}^{*} \xrightarrow{\ell} \Im{\ell} \to 0.
+		 \] 
+		 Как мы уже выяснили выше, $\Ker{\ell} \cong \mu,$ а $\Im{\ell} \cong \Z^{m}, m \le s + t - 1$, а значит 
+		 \[
+		 	0 \to \mu \hookrightarrow \cO_{K}^{*}  \xrightarrow{\ell} \Z^{m} \to 0, \quad m \le s + t - 1. 
+		 \]
+		 откуда $\cO_{K}^{*} \cong \mu \oplus \Z^{m}, \quad m \le s + t - 1$. 
 	\end{proof}
 
 	Даже слабая форма теоремы Дирихле о единицах позволяет успешно вычислять мультипликативные группы колец целых числовых полей. 
@@ -83,7 +99,7 @@
 	\end{statement}
 		
 	\begin{proof}
-		\bf{\textcolor{red}{Дописать! Тут было много всякой мути.}}
+		\bf{\textcolor{red}{Этот пример со всеми сопуствующими вычислениями будет добавлен несколько позже, приношу извинения. }}
 	\end{proof}
 
 	\begin{homework}
@@ -94,7 +110,7 @@
 
 		Рассмотрим $K_1 = \Q(\theta), \ \theta^3 - 18\theta - 6 = 0$, $K_2 = K(\xi), \ \xi^3 - 36\xi - 78 = 0$, $K_3 = \theta^3 - 54\theta - 150 = 0$.
 
-		\item Тут была еще задача, её надо с фотки переписать. 
+		\item \textcolor{red}{Тут была еще задача, её надо с фотки переписать.} 
 	\end{itemize}
 	\end{homework}
 
