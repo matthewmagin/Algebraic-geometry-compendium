@@ -345,7 +345,7 @@
 		Для квадратичной формы $a_1 x_1^2 + \ldots + a_n x_n^2$ в этом параграфе мы будем использовать более удобное обозначение $\langle a_1, \ldots, a_n \rangle$.
 	\end{remark}
 
-	\begin{statement}\label{guilbert_simbol_norm} 
+	\begin{statement}\label{hilbert_simbol_norm} 
 		Форма $\langle 1, -a, - b \rangle$ изотропна\footnote{Из определения ясно, что это равносильно тому, что $(a, b)_p = 1$. } тогда и только тогда, когда $b = \Nm_{\Q_{p}(\sqrt{a})/\Q_{p}}(\alpha)$ для некоторого $\alpha \in \Q_{p}(\sqrt{a})$.
 	\end{statement}
 	\begin{proof}
@@ -380,19 +380,19 @@
 	 	В частности, $\forall a \in \Q_{p}^{*} \ (a, 1 - a)_{p} = 1$.
 	\end{remark}
 
-	\begin{statement}\label{gilb_mult} 
+	\begin{statement}\label{hilb_mult} 
 		Символ Гильберта мультипликативен, то есть $(a_1 a_2, b)_p = (a_1, b)_p \cdot (a_2, b)_p$.
 	\end{statement}
 	\begin{proof}
 		\begin{enumerate}
-			\item Если $(a_1, b)_p = 1$ и $(a_2, b)_p = 1$, то по предложению~\ref{guilbert_simbol_norm}
+			\item Если $(a_1, b)_p = 1$ и $(a_2, b)_p = 1$, то по предложению~\ref{hilbert_simbol_norm}
 			\[
 				a_1 = \Nm_{\Q_{p}(\sqrt{b})/\Q_{p}}(\alpha_1), \quad a_2 = \Nm_{\Q_{p}(\sqrt{b})/\Q_{p}}(\alpha_2), \ \alpha_1, \alpha_2 \in \Q_{p}(\sqrt{b}) \implies 
 			\]
 			\[
 				\implies a_1 a_2 =   \Nm_{\Q_{p}(\sqrt{b})/\Q_{p}}(\alpha_1) \Nm_{\Q_{p}(\sqrt{b})/\Q_{p}}(\alpha_2) = \Nm_{\Q_{p}(\sqrt{b})/\Q_{p}}(\alpha_1 \alpha_2),
 			\]
-			а тогда, опять же, по предложению~\ref{guilbert_simbol_norm} $(a_1 a_2, b)_{p} = 1$.
+			а тогда, опять же, по предложению~\ref{hilbert_simbol_norm} $(a_1 a_2, b)_{p} = 1$.
 
 			\item Пусть $(a_1, b)_{p} = 1, \ (a_{2}, b)_{p} = -1$ (или наоборот). Тогда если $(a_1 a_2, b)_{p} = 1$, то по первому пункту 
 			\[
@@ -404,7 +404,7 @@
 			 \[
 			  	|\Nm_{b}/\Q_{p}^{*2}| = 2, \ |\Q_{p}^{*}/\Nm_{b}| = 2.
 			  \] 
-			  Тогда, так как $(a_1, b)_{p} = 1, \ (a_{2}, b)_{p} = -1$, по предложению~\ref{guilbert_simbol_norm} мы имеем $a_1, a_2 \in \Q_{p}^{*} \setminus \Nm_{b}$, а тогда $a_1 a_2 \in \Nm_{b}$ и по предложению~\ref{guilbert_simbol_norm} $(a_1 a_2, b)_{p} = 1$. 
+			  Тогда, так как $(a_1, b)_{p} = 1, \ (a_{2}, b)_{p} = -1$, по предложению~\ref{hilbert_simbol_norm} мы имеем $a_1, a_2 \in \Q_{p}^{*} \setminus \Nm_{b}$, а тогда $a_1 a_2 \in \Nm_{b}$ и по предложению~\ref{hilbert_simbol_norm} $(a_1 a_2, b)_{p} = 1$. 
 			  \item Теперь пусть $p = 2$ и $(a_1, b)_{p} = 1, \ (a_{2}, b)_{p} = -1$. Тогда по предложению~\ref{squares_of_Q_2} достаточно рассматривать $a_1, a_2, b \in \{ 1, 3, 5, 7, 2, 6, 10, 14 \}$. На этих элементах символ гильберта можно просто вычислить: 
 			  \begin{table}
 			    \centering
@@ -420,7 +420,7 @@
 			         $2 \cdot 7$ & $+$ & $+$ & $-$ & $-$ & $+$ & $+$ & $-$ & $-$\\ 
 			    \end{tabular}
 			    \caption{Значения символа Гильберта на $\Q_{2}^{*}/\Q_{2}^{*2}$.}
-			    \label{tab:guilbert_Q_2}
+			    \label{tab:hilbert_Q_2}
 			\end{table}
 
 		\end{enumerate}
@@ -431,13 +431,13 @@
 		\end{remark}
 
 		\begin{remark}
-			Очевидно, что символ Гильберта симметричен, то есть $(a, b)_{p} = (b, a)_{p}$. Тогда из предложения~\ref{gilb_mult} следует, что 
+			Очевидно, что символ Гильберта симметричен, то есть $(a, b)_{p} = (b, a)_{p}$. Тогда из предложения~\ref{hilb_mult} следует, что 
 			\[
 				(a, b_{1} b_{2})_{p} = (a, b_{1})_{p} \cdot (a, b_{2})_{p}.
 			\]
 		\end{remark}
 
-		\begin{statement}\label{calc_guilb} 
+		\begin{statement}\label{calc_hilb} 
 			Пусть $p$~--- нечетное простое, $\varepsilon, \varepsilon_1, \varepsilon_2 \in \Z_{p}^{*}$. Тогда справедливы следующие свойства символа Гильберта: 
 			\begin{enumerate}
 				\item $(p, \varepsilon)_{p} = \lr*{\frac{\varepsilon}{p}}$.
@@ -450,10 +450,43 @@
 			\end{enumerate}
 		\end{statement}
 		\begin{proof}
-			Доказательство этого предложения остается в качестве упражнения.
+			Пусть $p \neq 2$, докажем второе свойство. Рассмотрим форму 
+			\[
+				f(x, y, z) = x^2 - \varepsilon_1 y^2 - \varepsilon_2 z^2. 
+			\]
+			Так как $\varepsilon_1 \notdivby p, \varepsilon_2 \notdivby p$, по теореме Шевалле сравнение 
+			\[
+				x^2 - \varepsilon_1 y^2 - \varepsilon_2 z^2 \equiv 0 \pmod{p}
+			\]
+			имеет ненулевое (в $\Z/p\Z$) решение, пусть оно $(x_0, y_0, z_0)$. Тогда 
+			\[
+				f(x_0, y_0, z_0) \equiv 0 \pmod{p}, \quad \frac{\partial f}{\partial x_1}(x_0, y_0, z_0) = 2x_0 \notdivby p,
+			\]
+			а значит, по лемме Гензеля~\ref{Henzel_lemma}, форма $x^2 - \varepsilon_1 y^2 - \varepsilon_2 z^2$ изотропна. 
+
+			Докажем теперь первое свойство. Пусть $\lr*{\frac{\varepsilon}{p}} = 1$, то есть $\varepsilon = \theta^2$. Так как символ Гильберта не именяется при домножении на квадраты, в этом случае $(p, \varepsilon)_{p} = (p, 1)_{p}$. Рассмотрим форму 
+			\[
+				f(x, y, z) = x^2 - py^2 - z^2.
+			\]
+			\[
+				f(1, 1, 1) \equiv 0 \pmod{p}, \quad \frac{\partial f}{\partial x}(1, 1, 1) = 1 \notdivby p, 
+			\] 
+			а значит, по лемме Гензеля она анизотропна, то есть $(p, 1)_{p} = 1$. 
+
+			Теперь, предположим, что $(p, \varepsilon)_{p} = 1$. Тогда существуют $x_0, y_0, z_0 \in \Q_{p}$ такие, что 
+			\[
+				x_0^2 - py_0^2 - z_0^2  = 0.
+			\]
+			Ясно, что мы можем полагать, что $x_0, y_0, z_0 \in \Z_{p}$. Выберем корень с минимальным $\min(\v_{p}(x_0), \v_{p}(y_0), \v_{p}(z_0))$. Если $z_0$ не делится на $p$, то $z_0 \in \Z_{p}^{*}$ и 
+			\[
+				\varepsilon \equiv \lr*{\frac{x_0}{z_0}}^2 \pmod{p} \implies \lr*{\frac{\varepsilon}{p}} = 1.
+			\]
+			Если же $z_0 \divby p$, то так как $x_0^2 - \varepsilon z_0^2 = py_0^2$, видно, что мы можем сделать спуск. 
+
+
 		\end{proof}
 
-		\begin{theorem}[Закон взаимности для символа Гильберта] 
+		\begin{theorem}[Закон взаимности для символа Гильберта]\label{Hilbert_reciprocity} 
 			Пусть $a, b \in \Q^{*}$, тогда 
 			\[
 				\prod_{p \in \mathbb{P} \cup \{ \infty \}} (a, b)_{p} = 1,
@@ -474,7 +507,7 @@
 				\item $a = p, \ b = q$, где $p, q \in \mathbb{P} \setminus \{ 2 \}$ и $p \neq q$.
 			\end{enumerate}
 			Проверим, например, формулу в случае 5. Если  $r \in \mathbb{P} \setminus \{ 2, p, q \}$, то ясно, что $(p, q)_{r} = 1$ (так как в этом случае $p, q \in \Z_{r}^{*}$). 
-			Рассмотрим остальные случаи. По предложению~\ref{calc_guilb}:
+			Рассмотрим остальные случаи. По предложению~\ref{calc_hilb}:
 			\[
 				(p, q)_{p} = \lr*{\frac{q}{p}}, \quad (p, q)_{q} = \lr*{\frac{p}{q}}, \quad (p, q)_{2} = (-1)^{\frac{(p - 1)(q - 1)}{4}}.
 			\]

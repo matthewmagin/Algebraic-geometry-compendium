@@ -194,3 +194,40 @@
 			 	|\cO_{K}/\Z[\theta]| = 1 \implies \cO_{K} = \Z[\theta].
 			 \]
 		\end{proof}	 
+
+		\begin{theorem}[Д/З №7, задача 2] 
+			Пусть $K = \Q\lr*{\sqrt[n]{1}}$, то $\cO_{K} = \Z[\zeta]$, где  $\zeta^{p^n} = 1$
+		\end{theorem}
+		\begin{proof}
+			В доказательстве первообразный корень степени $m$ мы будем обозначать, как $\zeta_{m}$.
+			Воспользуемся задачей 4 Д/З №5, то есть вот таким фактом 
+			\begin{lemma} 
+				Пусть $K/F$~--- конечное сепарабельное расширение, $K = F(\theta)$, $[K : F] = n$. Докажите, что 
+			\[
+				\disc(1, \theta, \theta^2, \ldots, \theta^{n - 1}) = \prod_{i \neq j} (\sigma_{i}(\theta) - \sigma_{j}(\theta)) = \Nm_{K/F}(f'(\theta)), \text{ где }
+			\]
+			$f$~--- минимальный многочлен $\theta$.
+			\end{lemma}
+
+			Минимальный многочлен $\zeta_{p^n}$~--- это
+			\[
+				\Phi_{p^n}(x) = \frac{x^{p^n} - 1}{x^{p^{n - 1}} - 1}, \quad \disc(1, \zeta_{p^n}, \ldots, \zeta_{p^n}^{\varphi(p^n) - 1}).
+			\]
+			Значит, нам надо вычислить норму числа 
+			\[
+				\Phi'_{p^n}(\zeta_{p^n}) = \frac{p^n \zeta_{p^n}^{p^n - 1}}{\zeta_{p^n}^{p^{n - 1}} - 1} = \frac{p^n \zeta_{p^n}^{-1}}{\zeta_{p^n}^{p^{n - 1}} - 1} = \frac{p^n \zeta_{p^n}^{-1}}{\zeta_{p} - 1}.
+			\]
+			так как $\zeta_{p^n}^{p^{n - 1}} = \zeta_{p}$. Теперь, так как $p^n \in \Q$, а $[\Q(\zeta_{p^n}) : \Q] = p^n - p^{n - 1}$, мы имеем
+			\[
+				\Nm_{\Q(\zeta_{p^n})/\Q}(p^n\zeta^{-1}) = p^{n (p^n - p^{n - 1})}.
+			\]
+			Так как $\Nm_{\Q(\zeta_p)/\Q}(\zeta_p - 1) = p$. Тогда мы можем вычислить норму телескопически. Так как $\zeta_p - 1 \in \Q(\zeta_p)$, а $[\Q(\zeta_{p^n}) : \Q(\zeta_p)] = p^{n - 1}$, мы имеем
+			\[
+				\Nm_{\Q(\zeta_{p^n})/\Q}(\zeta_{p} - 1) = \Nm_{\Q(\zeta_p)/\Q}\lr*{\Nm_{\Q(\zeta_{p^n}/\Q(\zeta_p)}(\zeta_{p - 1})} = \Nm_{\Q(\zeta_p)/\Q}(\zeta_{p} - 1)^{p^{n - 1} } = \lr*{\Nm_{\Q(\zeta_p)/\Q}(\zeta_{p} - 1)}^{p^{n - 1}}   = p^{p^{n - 1}}. 
+			\]
+			Таким образом, мы наконец получаем, что 
+			\[
+				\Nm_{\Q(\zeta_{p^n})/\Q}\lr*{\frac{p^n \zeta_{p^n}^{-1}}{\zeta_{p} - 1}} = \frac{p^{n (p^n - p^{n - 1})}}{p^{p^{n} - 1}} = p^{p^{n - 1}(np - n - 1)}.
+			\]
+			
+		\end{proof}	
