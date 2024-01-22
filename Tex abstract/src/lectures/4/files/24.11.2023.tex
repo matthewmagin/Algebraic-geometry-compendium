@@ -88,18 +88,66 @@
 		Из~\ref{hw:10} мы знаем, что в $K = \Q(\theta)$, где $\theta^3 = 6$ мы имеем
 		\[ \frac{1}{1 - 6 \theta + 3\theta^2} = 109 + 60\theta + 33\theta^2 \]
 
-		В данном случае $s = 1, t = 1 \implies s + t - 1 = 1$, откуда $m = 1$, так как ясно, что $m \le 1$, так как если $m = 0$, то никаких обратимых элементов, кроме $\mu$ в $\cO_{K}$ нет, а из корней из единицы в этом кольце есть только $\pm 1$, так как  если $\Q(\zeta_n) \subset \Q(\sqrt[3]{6})$, то $\varphi(n) = 1$ или $2$ (но $\pm 1$ там всё-таки лежит, откуда $n = 2$). Таким образом, мы имеем 
+		В данном случае $s = 1, t = 1 \implies s + t - 1 = 1$, откуда $m = 1$, так как ясно, что $m \le 1$, так как если $m = 0$, то никаких обратимых элементов, кроме $\mu$ в $\cO_{K}$ нет, а из корней из единицы в этом кольце есть только $\pm 1$, так как  если $\Q(\zeta_n) \subset \Q(\sqrt[3]{6})$, то $\varphi(n) = 2$. Таким образом, мы имеем 
 		\[
 			\cO_{K}^* \cong \mu_{2} \oplus \Z.
 		\]
 	\end{example}
 
 	\begin{statement} 
-		Элемент $1 - 6\theta + 3\theta^2$~--- основная единица в $\cO_{K}^*$.
+		Элемент $\varepsilon = 1 - 6\theta + 3\theta^2$~--- основная единица в $\cO_{K}^*$.
 	\end{statement}
 		
 	\begin{proof}
-		\bf{\textcolor{red}{Этот пример со всеми сопуствующими вычислениями будет добавлен несколько позже, приношу извинения. }}
+		Во-первых, как мы уже отметили выше, этот элемент обратим и его обратный~--- это $109 + 60\theta + 33\theta^2$. 
+
+		Предположим, что основная единица~--- это $\alpha$, тогда, так как $\mu_2 = \{ \pm 1 \}$ 
+		\[
+			1 - 6\theta + 3 \theta^2 = \pm \alpha^d, \quad d \ge 2.
+		\]
+		Пусть $\omega^3 = 1$, тогда все вложения $K \to \Q^{alg}$~--- это 
+		\[
+			\theta \mapsto \theta, \quad \theta \mapsto \omega \cdot \theta, \quad \omega^2 \cdot \theta.
+		\]
+		Рассмотрим $\varepsilon'$ и $\varepsilon''$~--- образы $\varepsilon$ при комплексных вложениях, 
+		\[
+			\varepsilon' = 1 - 6\theta \omega + 3 \theta^2 \omega^2, \quad \varepsilon'' = 1 - 6\theta \omega^2 + 3\theta^2 \omega, \ \varepsilon' = \overline{\varepsilon''}. 
+		\]
+
+		Заметим, что тогда, по определению нормы:
+		\[
+			\pm 1 = \Nm(\varepsilon) = \varepsilon \cdot \varepsilon' \cdot \varepsilon''.
+		\]
+		\[
+			\begin{cases} |\varepsilon'| = |\varepsilon''| \\ |\varepsilon \varepsilon' \varepsilon''| = 1  \end{cases} \implies |\varepsilon'| = |\varepsilon''| = \sqrt{|\varepsilon|^{-1}} = \sqrt{|109 + 60\theta + 33\theta^2|} < \sqrt{109 + 60 \cdot 2 + 33 \cdot 4} = \sqrt{361} = \sqrt{19}.
+		\]
+		Запишем $\alpha$ в виде $\alpha = x + y\theta + z\theta^2, \ x, y, z \in \Z$ и рассмотрим его образы при комплексных вложениях: 
+		\[
+			\alpha' = x + y\theta\omega + z\theta^2\omega^2, \quad \alpha'' = x + y\theta \omega^2 + z \theta^2 \omega. 
+		\]
+		Так как $1 + \omega + \omega^2 = 0$, мы имеем 
+		\[
+			y\theta = \frac{\alpha + \alpha''\omega + \alpha'\omega^2}{3}, \quad z \theta^2 = \frac{\alpha + \alpha' \omega + \alpha'' \omega^2}{3}.
+		\]
+		Теперь заметим, что $|\varepsilon| = |\alpha|^d$, откуда $|\alpha| = |\varepsilon|^{\frac{1}{d}}$. Тогда 
+		\[
+			|\alpha'| \le |\varepsilon'|^{\frac{1}{d}} \le \sqrt{|\varepsilon'|} < \sqrt{19}, \quad |\alpha''| \le |\varepsilon''|^{\frac{1}{d}} \le \sqrt{|\varepsilon''|} < \sqrt{19},
+		\]
+		так как $d \ge 2$. Оценим теперь $|y|$. Заметим, что $|\alpha| = |\varepsilon|^{\frac{1}{d}} < 1$\footnote{в том, что $|\varepsilon| < 1$ легко убедиться непосредственно.}, откуда 
+		\[
+			|y| = \frac{|\alpha + \alpha'' \omega + \alpha' \omega^2|}{3|\theta|} \le \frac{|\alpha + \sqrt{19}|}{3|\theta|} < \frac{1 + \sqrt{19}}{3|\theta|} < 2.
+		\]
+
+		Абсолютно аналогичным образом мы получаем, что 
+		\[
+			|z| < \frac{9,8}{3|\theta|^2} < 1.
+		\]
+
+		Так как $z \in \Z$, отсюда следует, что $z = 0$. Значит, $\alpha = x + \theta y$, $|y| < 2$. Как мы помним, 
+		\[
+			\pm 1 = \Nm(\alpha) = x^3 + 6y^3 \implies x^3 \equiv \pm 1 \pmod{3} \implies x \equiv \pm 1 \pod{3} \equiv x^3 \equiv \pm 1 \pmod{9},
+		\]
+		а тогда $y \divby 9$ и отсюда $y = 0$, но тогда $\alpha = x \in \Z$, что даёт нам противоречие. 
 	\end{proof}
 
 	\begin{homework}

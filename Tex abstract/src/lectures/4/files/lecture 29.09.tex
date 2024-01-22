@@ -202,12 +202,56 @@
 			В доказательстве первообразный корень степени $m$ мы будем обозначать, как $\zeta_{m}$.
 			Воспользуемся задачей 4 Д/З №5, то есть вот таким фактом 
 			\begin{lemma} 
-				Пусть $K/F$~--- конечное сепарабельное расширение, $K = F(\theta)$, $[K : F] = n$. Докажите, что 
+				Пусть $K/\Q$~--- конечное сепарабельное расширение, $K = \Q(\theta), \ \theta \in \cO_{K}$, $[K : \Q] = n$. Тогда
 			\[
-				\disc(1, \theta, \theta^2, \ldots, \theta^{n - 1}) = \prod_{i \neq j} (\sigma_{i}(\theta) - \sigma_{j}(\theta)) = \Nm_{K/F}(f'(\theta)), \text{ где }
+				\disc(1, \theta, \theta^2, \ldots, \theta^{n - 1}) = \prod_{i \neq j} (\sigma_{i}(\theta) - \sigma_{j}(\theta)) = (-1)^{\frac{n(n - 1)}{2}} \Nm_{K/F}(f'(\theta)), \text{ где }
 			\]
 			$f$~--- минимальный многочлен $\theta$.
 			\end{lemma}
+			\begin{proof}[Доказательство леммы]
+				Ясно, что если $\sigma_i, \ i = 1, \ldots, n$~--- все вложения 
+				\[
+					f(t) = \prod_{i = 1}^{n}(t - \sigma_i \theta).
+				\]
+				С другой стороны, мы знаем, что 
+				\[
+					\disc(1, \theta, \ldots, \theta^{n - 1}) = \det(\sigma_i(\theta^{j - 1}))^2. 
+				\]
+				Так как $\sigma_{i}(\theta^{j - 1}) = \sigma_{i}(\theta)^{j - 1}$, матрица в правой части равенства представляет из себя матрицу Вандермонда, а тогда
+				\[
+					\det\begin{pmatrix} 1 & \sigma_1(\theta) & \ldots & \sigma_1(\theta)^{n - 1} \\ 1 & \sigma_2(\theta) & \ldots & \sigma_2(\theta)^{n - 1} \\ \vdots & \vdots & \ddots &  \vdots \\ 1 & \sigma_n(\theta) & \ldots & \sigma_n(\theta)^{n - 1} \end{pmatrix} = \prod_{i < j}(\sigma_j(\theta) - \sigma_i(\theta)). 
+				\]
+				Возводя в квадрат, получаем 
+				\[
+					\disc(1, \theta, \ldots, \theta^{n - 1}) = \prod_{i < j}(\sigma_j(\theta) - \sigma_i(\theta))^2. 
+				\]
+				Теперь продифференцируем $f$:
+				\[
+					f(t) = \prod_{i = 1}^{n}(t - \sigma_i \theta) \implies f'(\sigma_i(\theta)) = \prod_{j \neq i} (\sigma_j(\theta) - \sigma_i(\theta)). 
+				\]
+				Перемножим эти равенства по $i = 1, \ldots, n$:
+				\[
+					\prod_{i = 1}^{n} f'(\sigma_i(\theta)) = \prod_{i = 1}^{n}\prod_{j \neq i} (\sigma_j(\theta) - \sigma_i(\theta)). 
+				\]
+				Перепишем правую часть равенства, объединяя 
+				\[
+					(\sigma_j(\theta) - \sigma_i(\theta)) \text{ и } (\sigma_i(\theta) - \sigma_j(\theta)) \rightsquigarrow -(\sigma_j(\theta) - \sigma_i(\theta))^2.
+				\]
+				Так как пар, где $i < j$ всего $\binom{n}{2} = \frac{n(n - 1)}{2}$, мы получаем 
+				\[
+					\prod_{i = 1}^{n}\prod_{j \neq i} (\sigma_j(\theta) - \sigma_i(\theta)) = (-1)^{\frac{n(n - 1)}{2}} \prod_{i < j}\lr*{\sigma_j(\theta) - \sigma_i(\theta)}^2
+				\]
+				и отсюда мы имеем 
+				\[
+					\prod_{i < j}\lr*{\sigma_j(\theta) - \sigma_i(\theta)}^2 = (-1)^{\frac{n(n - 1)}{2}}  \prod_{i = 1}^{n} f'(\sigma_i(\theta)).
+				\]
+				Остаётся заметить, что так как $\sigma_i$~--- гомоморфизмы, а $f'$~--- многочлен, мы имеем 
+				\[
+					\prod_{i = 1}^{n} f'(\sigma_i(\theta)) = \prod_{i = 1}^{n} \sigma_i(f'(\theta)) = \Nm_{K/\Q}(f'(\theta)),
+				\]
+				что завершает доказательство. 
+
+			\end{proof}
 
 			Минимальный многочлен $\zeta_{p^n}$~--- это
 			\[

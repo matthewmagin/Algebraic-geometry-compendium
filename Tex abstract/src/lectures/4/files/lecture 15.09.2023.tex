@@ -224,7 +224,7 @@
  		Как мы помним, $\cong(f g) = \cont(f)\cont(g)$.
  	\end{remark}
 
- 	\begin{theorem} 
+ 	\begin{theorem}\label{minimal_polynomial} 
  		Пусть $\alpha$~--- целое алгебраическое число. Тогда минимальный многочлен $\alpha$ имеет целые коэффициенты. 
  	\end{theorem}
  	\begin{proof}
@@ -263,4 +263,42 @@
  		где $n_i$~--- степень унитарного многочлена с корнем $a_i$.
  	\end{proof}
 
+ 	\subsection{Кольцо целых алгебраических чисел для квадратичного расщирения}
 
+	Мы уже смотрели на некоторые примеры колец целых для квадратичных расширений. Сейчас мы докажем теорему, полностью описывающую их. 
+
+	\begin{theorem} 
+		Пусть $K = \Q(\sqrt{d})$, где $d \in \Z$, и $d$ свободно от квадратов. Тогда  
+		\[
+		  		\cO_{K} \cong \begin{cases} \Z[\sqrt{d}], \ d \not\equiv 1 \pmod{4} \\ \Z\left[ \frac{1 + \sqrt{d}}{2} \right] \end{cases}.
+		  	\]  	
+	\end{theorem}
+	\begin{proof}
+		Во-первых, при $d \equiv 1 \pmod{4}$ число $\theta = \frac{1 + \sqrt{d}}{2} $ действительно является целым алгебраическим, так как 
+		\[
+			(t - \theta)(t - \overline{\theta}) = t^2 - (\theta + \overline{\theta}) + \theta \overline{\theta} = t^2 - t - \frac{d - 1}{4} \in \Z[t]. 
+		\]
+		Теперь возьмём $\alpha = x + y\sqrt{d} \in \cO_{K}, \ x, y \in \Q$. Посмотрим на минимальный многочлен $\alpha$: 
+		\[
+			(t - \theta)(t - \overline{\theta}) = t^2 - (\theta + \overline{\theta}) + \theta \overline{\theta} = t^2 - 2xt + x^2 - dy^2.
+		\]
+		По теореме~\ref{minimal_polynomial}, он имеет целые коэффициенты, откуда $2x \in \Z$ и $x^2 - dy^2 \in \Z$. Рассмотрим теперь два случая: 
+
+		\begin{itemize}
+			\item Если $2x$~--- четное, то $x \in \Z$ и тогда $dy^2 \in \Z$, а так как $d$ свободно от квадратов, $y \in \Z$. Тогда $\alpha \in \Z[\sqrt{d}]$. 
+
+			\item Если $2x$~--- нечётно, то полагая $2x = x'$, мы понимаем, что 
+			\[
+				n = x^2 - dy^2 = \frac{x'^2}{4} - dy^2 \in \Z \implies 4n = x'^2 - d(2y)^2 \in \Z.	
+			\]
+			Отсюда $d(2y)^2 \in \Z$, а так как $d$ свободно от квадратов, отсюда $2y \in \Z$. 
+			\[
+				d(2y)^2 \equiv x'^2 \equiv 1 \pmod{4}, 
+			\]
+			Так как $x'$~--- нечётно. Значит, $y' = 2y$ и $d$ нечётные. Но тогда $y'^2 \equiv 1 \pmod{4}$, откуда $d \equiv 1 \pmod{4}$ (и это значит, что это возможно лишь в этом случае). Тогда мы получаем, что 
+			\[
+			 	\alpha = x + y\sqrt{d} = \frac{x'}{2} + \frac{y'}{2}\sqrt{d} = \frac{x' - y'}{2} + y' \frac{1 + \sqrt{d}}{2} \in \Z\left[ \frac{1 + \sqrt{d}}{2} \right],
+			 \] 
+			 так как $x', y'$~--- нечётные. 
+		\end{itemize}
+	\end{proof}
