@@ -11,7 +11,18 @@
 	\end{lemma}
 
 	\begin{proof}
-		\textcolor{red}{Дописать! Не очень сложно. Но, надо аккуратнее. }
+		Сначала докажем $(2) \implies (1)$. Так как у нас есть изоморфизм $\Z[\theta]/p\Z[\theta] \cong \cO_{K}/p\cO_{K}$, мы имеем 
+		\[
+			(\cO_k/\Z[\theta])/p(\cO_k/\Z[\theta]) = 0 \implies \cO_k/\Z[\theta] = p\cO_k/\Z[\theta],
+		\]
+		отукда, так как $|\cO_K/\Z[\theta]| < \infty$, в $\cO_K/\Z[\theta]$ нет элементов $p$-кручения, то есть $p \not \ \mid |\cO_K/\Z[\theta]| = \ind(\theta)$. 
+
+		Теперь докажем $(1) \implies (2)$. Так как $\cO_K/\Z[\theta]$ не имеет $p$-кручения, $\cO_k/\Z[\theta] = p \cO_k/\Z[\theta]$ (у гомоморфизма факторизации тривиальное ядро). Но тогда 
+		отображение $\Z[\theta]/(p) \to \cO_K/(p)$~--- эпиморфизм (так как $(\cO_K/(p))/(\Z[\theta]/(p)) \cong (\cO_K/\Z[\theta])/(p) \cong 0$). Но тогда это эпиморфизм векторных пространств над $\F_{p}$ одинаковой размерности (в самом деле, $\Z[\theta] \cong \Z^{n}$ и $\cO_K \cong \Z^n$, где $n = [K : \Q]$). Тогда 
+		\[
+			\Z[\theta]/(p) \cong \F_{p}^{n} \cong \cO_{K}/(p),
+		\]
+		как векторные пространства, значит, у нас есть и изоморфизм. 
 	\end{proof}
 
 	\begin{theorem}[Куммер]\label{Kummer_theorem} 
