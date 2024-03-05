@@ -6,6 +6,9 @@ Properties:
 Theorems:
 1. ht(p) + dim(B/p) -- 2.lec, 10
 
+Lemma's:
+1. 4_lemma_1 -- 4.lec, 45
+
 Definitions:
 1. morphism -- 2.lec, 167
 2. rat_relation -- 2.lec, 179

@@ -48,34 +48,35 @@
 \contentsline {subsection}{\numberline {4.2}Разложение в неприводимые компоненты}{94}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Размерность}{95}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Квазиаффинные многообразия, регулярные функции, морфизмы. }{97}{subsection.4.4}%
-\contentsline {section}{\numberline {5.}Основы теории гомологий}{104}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Симплициальные гомологии}{104}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Сигнулярные гомологии}{106}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Немного гомологической алгеры}{107}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Гомотопическая инвариантность гомологий}{108}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Относительные гомологии и гомологически точная последовательность пары}{110}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Пары Боруска}{112}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Относительные гомологии как абсолютные (факторизация)}{113}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Вырезание}{116}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Точная последовательность Майера-Вьеториса}{117}{subsection.5.9}%
-\contentsline {subsection}{\numberline {5.10}Гомологии сфер}{117}{subsection.5.10}%
-\contentsline {subsection}{\numberline {5.11}Гомологии букета и надстройки}{118}{subsection.5.11}%
-\contentsline {subsection}{\numberline {5.12}Гомологии с коэффициентами}{119}{subsection.5.12}%
-\contentsline {subsection}{\numberline {5.13}Приложения теории гомологий}{119}{subsection.5.13}%
-\contentsline {subsection}{\numberline {5.14}Симплициальные комплексы}{120}{subsection.5.14}%
-\contentsline {subsection}{\numberline {5.15}Эквивалентность симплициальных и сингулярных гомологий}{120}{subsection.5.15}%
-\contentsline {subsection}{\numberline {5.16}Степень отображения}{121}{subsection.5.16}%
-\contentsline {subsection}{\numberline {5.17}Клеточные гомологии}{123}{subsection.5.17}%
-\contentsline {subsection}{\numberline {5.18}Гомологии поверхностей}{126}{subsection.5.18}%
-\contentsline {subsection}{\numberline {5.19}Пространства Мура}{127}{subsection.5.19}%
-\contentsline {subsection}{\numberline {5.20}Теорема о вложении дисков и сфер}{127}{subsection.5.20}%
-\contentsline {subsection}{\numberline {5.21}Когомологии}{128}{subsection.5.21}%
-\contentsline {subsection}{\numberline {5.22}Формула универсальных коэффициентов для когомологий}{129}{subsection.5.22}%
-\contentsline {subsection}{\numberline {5.23}Умножение в когомологиях}{131}{subsection.5.23}%
-\contentsline {section}{\numberline {6.}Комплексная алгебраическая геометрия}{133}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Комплексные многообразия}{133}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Векторные рассоления}{135}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Подмногообразия и аналитические подмножества}{137}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Когомологии де Рама и Дольбо}{138}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Пучки и когомологии}{140}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Дивизоры и линейные расслоения}{140}{subsection.6.6}%
+\contentsline {subsection}{\numberline {4.5}Проективные многообразия}{105}{subsection.4.5}%
+\contentsline {section}{\numberline {5.}Основы теории гомологий}{106}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Симплициальные гомологии}{106}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Сигнулярные гомологии}{108}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Немного гомологической алгеры}{109}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Гомотопическая инвариантность гомологий}{110}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Относительные гомологии и гомологически точная последовательность пары}{112}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Пары Боруска}{114}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Относительные гомологии как абсолютные (факторизация)}{115}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Вырезание}{118}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Точная последовательность Майера-Вьеториса}{119}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Гомологии сфер}{119}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Гомологии букета и надстройки}{120}{subsection.5.11}%
+\contentsline {subsection}{\numberline {5.12}Гомологии с коэффициентами}{121}{subsection.5.12}%
+\contentsline {subsection}{\numberline {5.13}Приложения теории гомологий}{121}{subsection.5.13}%
+\contentsline {subsection}{\numberline {5.14}Симплициальные комплексы}{122}{subsection.5.14}%
+\contentsline {subsection}{\numberline {5.15}Эквивалентность симплициальных и сингулярных гомологий}{122}{subsection.5.15}%
+\contentsline {subsection}{\numberline {5.16}Степень отображения}{123}{subsection.5.16}%
+\contentsline {subsection}{\numberline {5.17}Клеточные гомологии}{125}{subsection.5.17}%
+\contentsline {subsection}{\numberline {5.18}Гомологии поверхностей}{128}{subsection.5.18}%
+\contentsline {subsection}{\numberline {5.19}Пространства Мура}{129}{subsection.5.19}%
+\contentsline {subsection}{\numberline {5.20}Теорема о вложении дисков и сфер}{129}{subsection.5.20}%
+\contentsline {subsection}{\numberline {5.21}Когомологии}{130}{subsection.5.21}%
+\contentsline {subsection}{\numberline {5.22}Формула универсальных коэффициентов для когомологий}{131}{subsection.5.22}%
+\contentsline {subsection}{\numberline {5.23}Умножение в когомологиях}{133}{subsection.5.23}%
+\contentsline {section}{\numberline {6.}Комплексная алгебраическая геометрия}{135}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Комплексные многообразия}{135}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Векторные рассоления}{137}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Подмногообразия и аналитические подмножества}{139}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Когомологии де Рама и Дольбо}{140}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Пучки и когомологии}{142}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Дивизоры и линейные расслоения}{142}{subsection.6.6}%
