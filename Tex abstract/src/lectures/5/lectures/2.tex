@@ -1,0 +1,196 @@
+
+	\begin{remark}
+		Размерность аффинного многообразия равна размерности его координатного кольца. 
+	\end{remark}
+
+	\begin{definition} 
+		\emph{Аффинная алгебра}~--- это координатное кольцо некотрого аффинног многообразия. 
+	\end{definition}
+
+	\begin{theorem}\label{ht(p) + dim(B/p)} 
+		Пусть $B$~--- целостная аффинная алгебра над $\Bbbk$ (или, что эквивалентно, конечно-порожденная целостная $\Bbbk$-алгебра), а $\fp \in \Spec{B}$. Тогда 
+		\[
+			\Ht{\fp} + \dim{B/\fp} = \dim{B}.
+		\]
+	\end{theorem}
+	\begin{proof}
+		Будем вести индукцию по $\dim{B}$. База~--- $\dim{B} = 0$ очевидна. 
+
+		\RNum{1.} Пусть $B = \Bbbk[x_1, \ldots, x_n], \ \dim{B} = n$. Возьмём $\fp \in \Spec{B}$, $\Ht{\fp} = m$, то есть 
+		\[
+			0 \subset \fp_1 \subset \fp_2 \subset \ldots \subset \fp_m = \fp.
+		\]
+		Тогда $\Ht{\fp_1} = 1$, но тогда идеал $\fp_1$~--- главный, т.е. $\fp_1 = (q)$. В самом деле, иначе мы можем взять образующую, разложить её на неприводимые множители (кольцо многочленов факториально) и взять неприводимымй сомножитель, попадающий в $\fp_1$. Так мы получим простой идеал, меньший $\fp_1$ и придём к противоречию. 
+
+		Рассмотрим тогда $\fp/(q) \lei B/(q)$, $\fp/(q) \in \Spec{B/(q)}$. Так как $\dim{A/(q)} = \dim{B} - 1$, мы можем применить индукционное предположение: 
+		\[
+			\Ht{\fp/(q)} + \dim{B/\fp} = \dim{B} - 1. 
+		\]
+
+		Докажем, что $\Ht{\fp/(q)} = \Ht{\fp} - 1$. Очевидно, что $\Ht{\fp/(q)} \ge \Ht{\fp} - 1$. С другой стороны, если $\varphi\colon B \to B/(q)$, то если есть цепочка 
+		\[
+			0 \subset \fq_1 \subset \ldots \subset \fq_{s} = \fp/(q),
+		\]
+		то есть и цепочка для $\fp$:
+		\[
+			0 \subset (\fq) \subset \varphi^{-1}(0) \subset \varphi^{-1}(\fq_{1}) \subset \ldots \subset \varphi^{-1}(\fq_{s}) = \fp.
+		\]
+		\RNum{2.} Пусть $B$~--- произвольная конечнопорожденная целостная $\Bbbk$-алгебра. Вспомним теорему о спуске: 
+
+		\begin{theorem}[О спуске] 
+			Пусть $A \subset B$~--- целостные и $B/A$~--- цело. Пусть $\fq_{m} \in \Spec{B}, \ \fp_m \in \Spec{A}$~--- простые. Тогда для любой цепочки простых идеалов
+			\[
+				\fp_0 \subset \fp_1 \subset \ldots \subset \fp_m \subset A
+			\]
+			существует цепочка простых идеалов 
+			\[
+				\fq_0 \subset \fq_1 \subset \ldots \subset \fq_m \subset B\colon \fq_i \cap A = \fp_i.
+			\]
+		\end{theorem}
+
+		Так вот, по лемме Нётер о нормализации $B$~--- целое расширение $A = \Bbbk[x_1, \ldots, x_n]$, $\dim{B} = \dim{A}$. Тогда по теореме о спуске для $\fq \in \Spec{B}$ мы имеем $\Ht{\fq} \ge \Ht{\fq \cap A}$. Кроме того, расширение 
+		\[
+			A/\fq \cap A \hookrightarrow B/\fq
+		\]
+		тоже целое, откуда $\dim{A/\fq \cap A} = \dim{B/\fq}$.  Тогда мы имеем 
+		\[
+			\dim{B/\fq} + \Ht{\fq} \ge \Ht\lr*{\fq \cap A} + \dim\lr*{A/\fq \cap A}
+		\]
+		По пункту $\RNum{1}$, правая часть равна $\dim{A} = \dim{B}$, то есть мы показали, что 
+		\[
+			\dim{B/\fq} + \Ht{\fq} \ge \dim{B}.
+		\]
+		Но, неравенство в другую сторону очевидно.
+
+	\end{proof}
+
+	\begin{corollary}
+		Пусть $B$~--- целостная конечно-порожденная алгебра, $f \in B, \ f \neq 0$ и $f$ необратим. Пусть $\fp$~--- минимальный простой идеал, содержащий $f$. Тогда 
+		\[
+			\dim{B/\fp} = \dim{B} - 1.
+		\]
+	\end{corollary}
+	\begin{proof}
+		По теореме~\ref{ht(p) + dim(B/p)} мы имеем 
+		\[
+			\Ht{\fp} + \dim{B/\fp} = \dim{B}.
+		\]
+		Но, по теореме Крулля о главных идеалах (hauptidealsatz)~\ref{hauptidealsatz}, $\Ht{\fp} = 1$, откуда мы имеем нужное.  
+	\end{proof}
+
+	Переводя это на язык алгебраической геометрии, мы получаем:
+
+	\begin{statement}\label{dim{X} - m} 
+		Все неприводимые компоненты $V(I(X) + (f_1, \ldots, f_m))$ имеют размерность хотя бы $\dim{X} - m$.		
+	\end{statement}
+	
+	\begin{corollary}
+		Пусть $f_1, \ldots, f_m \in \Bbbk[x_1, \ldots, x_n], \ m < n$ и $f_1(0) = \ldots = f_m(0) = 0$. Тогда система 
+		\[
+			\begin{cases} 
+			f_1 = 0 \\ 
+			\vdots 
+			f_m = 0
+			\end{cases}
+		\]
+		имеет ненулевое решение. 
+	\end{corollary}
+
+	\subsection{Квазиаффинные многообразия, регулярные функции, морфизмы. }
+
+
+	\begin{definition} 
+		Будем говорить, что $X$~--- \emph{квазиаффинное многообразие}, если $X$~--- открытое подмножество аффинного многообразия. 
+	\end{definition}
+
+	\begin{definition} 
+		Пусть $X \subset \AA^{n}_{\Bbbk}$~--- квазиаффинное. Будем говорить, что отображение $f\colon X \to \Bbbk$~--- регулярное в точке $p$, если $\exists U \ni p$~--- открытое и такое, что 
+		\[
+			f\vert_{U} = \frac{g}{h}, \quad g, h \in \Bbbk[x_1, \ldots, x_n], \ h(x) \neq 0 \ \forall x \in U.
+		\]
+	\end{definition}
+
+	Регулярные функции на $X$ образуют кольцо, которое мы будем обозначать $\cO_{X}$. 
+
+	\begin{remark}
+		Например, все многочлены~--- регулярные функции. 
+	\end{remark}
+
+	\begin{theorem} 
+		Пусть $X$~--- аффинное многообразие. Тогда 
+		\[
+			\cO_{X} \cong \Bbbk[x_1, \ldots, x_n]/I(X).
+		\]
+	\end{theorem}
+	\begin{proof}
+		Ясно, что $\Bbbk[x_1, \ldots, x_n]/I(X) \subset \cO_{X}$. Рассмотрим $f \in \cO_{X}$. Для любой точки $x \in X$ существует $U_x$ и $p_x, q_x$ такие, что $q_x f = p_x$ в $U_x$ и $q_x$ не обращается в 0 на $U_x$. 
+
+		Так как $X \setminus U_x$ замкнуто, $X \setminus U_x = Z(\cA) \subset Z(I(X)) = X$, откуда $I(X) \subset \cA$. Тогда для $s \in \cA \setminus I(X)$ $s q_x f = sp_x$ на всём $X$ (так как на $U_x$ мы имеем это по условию, а на $X \setminus U_x$ мы имеем $s = 0$). При том мы потребуем, чтоб $s(x) \neq 0$ (так как иначе, если $\forall s \in \cA \setminus I(X) \ s(x) = 0$, то так как $\forall s \in I(X) \ s(x) = 0$ мы получим, что $\forall s \in \cA \ s(x) = 0$, откуда $x \in Z(\cA) = X \setminus U_x$, что даёт нам противоречие). 
+
+		То есть, для любой точки $x$ существуют $q_x', p_x'$ такие, что $q_x' f = p_x'$, $q_x'(x) \neq 0$. 
+
+		Пусть $\sum_{x \in X} (q_x') + I(X) \subset \fm$, тогда $\exists \mathrm{pt} \colon q_x'(\mathrm{pt}) = h(\mathrm{pt}) = 0 \  \forall h \in I(X)$. 
+
+		\begin{enumerate}
+			\item Если $\mathrm{pt} \in X$, то не может быть такого, что $\forall h \in I \ h(\mathrm{pt}) = 0$. 
+
+			\item Если $\mathrm{pt} \in X$, то $q'_{\mathrm{pt}}(\mathrm{pt}) \neq 0$. Тогда 
+			\[
+				\sum_{x \in X} (q'_{x}) + I(X) = (1) \implies \sum_{i = 1}^{N} \overline{\ell_{x_i}} \overline{q'_{x_i}} = \overline{1} \text{ на } X,
+			\]
+			откуда $\overline{f} = \sum_{i = 1}^{N} \overline{p_{x_i'}} \cdot \overline{\ell_{x_i'}}$.
+		\end{enumerate}
+	\end{proof}
+
+	\begin{statement} 
+		Регулярная функция $f\colon X \to \Bbbk = \AA^{1}_{\Bbbk}$ непрерывна в топологии Зарисского. 
+	\end{statement}
+	\begin{proof}
+		Докажем сначала такую лемму из общей топологии:
+		\begin{lemma} 
+			Пусть $X$~--- топологическое пространство, $T \subset X$, $X = \bigcup U_i$, причес $T \cap U_i$ замкнуто в $U_i$. Тогда $T$ замкнуто. 
+		\end{lemma}
+		\begin{proof}
+			\[
+				V = X \setminus T = \bigcup_{i} (U_i \setminus T) = \bigcup_{i} \underbrace{\lr*{U_i \setminus (T \cap U_i)}}_{\text{открытое}} .
+			\]
+		\end{proof}
+
+		Достаточно доказать, что $\forall a \in \Bbbk \ f^{-1}(a)$ замкнут. Для этого (по лемме выше) достаточно доказать, что $\forall x \in X \ f^{-1}(a) \cap U_x$ замкнуто, где 
+		$f(y) = p(y)/q(y)$ в $U_x$. 
+		\[
+			\frac{p(y)}{q(y)} = f(y) = a \Leftrightarrow p(y) - a q(y) = 0.
+		\]
+		Так как множество таких $y$ замкнуто в $X$, $f^{-1}(a) \cap U_x$ замкнуто в $U_x$.
+	\end{proof}
+
+	
+
+	\begin{definition}\label{morphism} 
+		Пусть $X, Y$~--- квазиаффинные многообразия, $\varphi\colon X \to Y$~--- \emph{морфизм}, если
+		\begin{enumerate}
+			\item $\varphi$ непрерывно. 
+			\item Пусть $U$~--- открытое подмножество $Y$, а $f$~--- регулярная функция на $U$. Тогда $\varphi^{*}(f)$~--- регулярная функция на $\varphi^{-1}(U).$
+		\end{enumerate}
+	\end{definition}
+
+	\begin{statement} 
+		Квазиаффинные многообразия (и морфизмы, определенные как в~\ref{morphism}) образуют категорию, которую мы будем обозначать $\qAff_{\Bbbk}$.
+	\end{statement}
+
+	\begin{definition}\label{rat_relation} 
+		Пусть $X$~--- неприводимое аффинное многообразие, $U, V$~--- непустые открытые подмножества, а $f$ и $g$~--- регулярные функции на $U$ и $V$ соотвественно. Тогда будем говорить, что $(U, f) \sim (V, g)$ если $f = g$ на $U \cap V$.
+	\end{definition}
+
+	\begin{statement} 
+		Определённое выше отношение является отношением эквивалентности.  
+	\end{statement}
+
+	\begin{definition}\label{rat_func} 
+		Класс эквивалентности по отношению~\ref{rat_relation} мы будем называть \emph{рациональной функцией}.  
+
+		\emph{Областью определения} рациональной функции называется объединение всех $U$ таких, что функция эквивалентна $(U, f)$ для некоторой $f$.
+	\end{definition}
+
+
+

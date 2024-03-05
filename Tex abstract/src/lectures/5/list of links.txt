@@ -1,4 +1,11 @@
 Properties: 
 
 1. ag_prop_1 -- 1.lec, 106 
-2. 
+2. dim{X} - m -- 2.lec, 83
+
+Theorems:
+1. ht(p) + dim(B/p) -- 2.lec, 10
+
+Definitions:
+1. morphism -- 2.lec, 167
+2. rat_relation -- 2.lec, 179

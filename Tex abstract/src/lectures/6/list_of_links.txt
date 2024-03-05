@@ -1,0 +1,18 @@
+Lemma's:
+
+1. ant_2_lemma_1 -- 1.lec,  111
+2. ant_2_lemma_2 --- 1.lec, 133
+3. ant_2_lemma_3 -- 1.lec, 143
+
+Propositions:
+
+1. ant_2_prop_1 -- 1.lec, 92
+2. 
+
+Theorem's:
+1. ant_2_thm_1 -- 1.lec, 179 -- approximation theorem 
+2. 
+
+Corollary's:
+1. ant_2_corol_1 -- 1.lec, 183
+2. ant_2_corol_2 -- 1. 196
