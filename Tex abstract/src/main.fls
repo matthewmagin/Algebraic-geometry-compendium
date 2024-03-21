@@ -455,6 +455,9 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
@@ -473,6 +476,8 @@ INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/3/commutative diagramms/GK.pdf
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/3/3.12.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/3/3.12.tex
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/euler/eufm5.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/libertinegc/LinLibertineTI-t2a.tfm
@@ -494,6 +499,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
@@ -540,6 +546,26 @@ INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/sr
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/6/2.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/6/3.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/6/3.tex
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/6/4.tex
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/6/4.tex
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_4.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_4.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_4.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_5.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_5.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_5.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_6.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_6.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_6.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_9.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_9.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_9.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_7.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_7.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_7.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_8.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_8.pdf
+INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/pictures/pic_8.pdf
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/lectures/1.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/lectures/1.tex
 INPUT /Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/lectures/5/lectures/2.tex
@@ -566,6 +592,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/libertinegc/LinLiberti
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/stmaryrd/stmary7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
@@ -680,6 +708,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
