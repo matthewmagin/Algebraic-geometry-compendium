@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.10)  17 MAR 2024 16:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.10)  30 JUN 2024 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,19 +6,20 @@ entering extended mode
 (./main.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
-\c@section=\count168
-\c@subsection=\count169
-\c@subsubsection=\count170
-\c@paragraph=\count171
-\c@subparagraph=\count172
-\c@figure=\count173
-\c@table=\count174
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
@@ -66,12 +67,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen144
 \cmidrulekern=\dimen145
 \defaultaddspace=\dimen146
-\@cmidla=\count175
-\@cmidlb=\count176
+\@cmidla=\count176
+\@cmidlb=\count177
 \@aboverulesep=\dimen147
 \@belowrulesep=\dimen148
-\@thisruleclass=\count177
-\@lastruleclass=\count178
+\@thisruleclass=\count178
+\@lastruleclass=\count179
 \@thisrulewidth=\dimen149
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -80,8 +81,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen150
 \enit@toks=\toks16
 \enit@inbox=\box45
-\enit@count@id=\count179
-\enitdp@description=\count180
+\enit@count@id=\count180
+\enitdp@description=\count181
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/03/22 3.42 The Babel package
@@ -94,12 +95,12 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/03/22 3.42 Babel common definitions
-\babel@savecnt=\count181
+\babel@savecnt=\count182
 \U@D=\dimen151
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count182
+\bbl@dirlevel=\count183
 )
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
@@ -348,7 +349,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks17
 \XKV@tempa@toks=\toks18
 )
-\XKV@depth=\count183
+\XKV@depth=\count184
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
@@ -403,13 +404,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count184
+\inf@bad=\count185
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count185
-\leftroot@=\count186
+\uproot@=\count186
+\leftroot@=\count187
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count187
-\DOTSCASE@=\count188
+\classnum@=\count188
+\DOTSCASE@=\count189
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -420,15 +421,15 @@ LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 \symOMLletters=\mathgroup5
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \symOMSletters=\mathgroup6
-\macc@depth=\count189
-\c@MaxMatrixCols=\count190
+\macc@depth=\count190
+\c@MaxMatrixCols=\count191
 \dotsspace@=\muskip16
-\c@parentequation=\count191
-\dspbrk@lvl=\count192
+\c@parentequation=\count192
+\dspbrk@lvl=\count193
 \tag@help=\toks20
-\row@=\count193
-\column@=\count194
-\maxfields@=\count195
+\row@=\count194
+\column@=\count195
+\maxfields@=\count196
 \andhelp@=\toks21
 \eqnshift@=\dimen155
 \alignsep@=\dimen156
@@ -472,15 +473,15 @@ Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count196
-\calc@Bcount=\count197
+\calc@Acount=\count197
+\calc@Bcount=\count198
 \calc@Adimen=\dimen161
 \calc@Bdimen=\dimen162
 \calc@Askip=\skip59
 \calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count198
+\calc@Ccount=\count199
 \calc@Cskip=\skip61
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -490,7 +491,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count199
+\g_MT_multlinerow_int=\count266
 \l_MT_multwidth_dim=\dimen163
 \origjot=\skip62
 \l_MT_shortvdotswithinadjustabove_dim=\dimen164
@@ -554,9 +555,9 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box49
 \AM@global@opts=\toks30
-\AM@pagecnt=\count266
+\AM@pagecnt=\count267
 \AM@toc@title=\toks31
-\c@AM@survey=\count267
+\c@AM@survey=\count268
 \AM@templatesizebox=\box50
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/transparent/transparent.sty
@@ -581,8 +582,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen179
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count268
-\c@continuedfloat=\count269
+\c@caption@flags=\count269
+\c@continuedfloat=\count270
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/epigraph/epigraph.sty
 Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
@@ -605,23 +606,23 @@ Package: expl3 2020-03-06 L3 programming layer (loader)
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count270
+\l__kernel_color_stack_int=\count271
 \l__pdf_internal_box=\box51
 )) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.s
 ty
 Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2020-03-06 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count271
-\g__xparse_grabber_int=\count272
-\l__xparse_m_args_int=\count273
-\l__xparse_v_nesting_int=\count274
+\l__xparse_current_arg_int=\count272
+\g__xparse_grabber_int=\count273
+\l__xparse_m_args_int=\count274
+\l__xparse_v_nesting_int=\count275
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.st
 y
 Package: xtemplate 2020-03-06 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen180
-\l__xtemplate_tmp_int=\count275
+\l__xtemplate_tmp_int=\count276
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip67
 )
@@ -645,14 +646,14 @@ Package: moresize 1999/07/26 v1.9 (more font sizes)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-\c@statement=\count276
-\c@corollary=\count277
-\c@theorem=\count278
-\c@definition=\count279
-\c@example=\count280
-\c@homework=\count281
-\c@antiexample=\count282
-\c@lemma=\count283
+\c@statement=\count277
+\c@corollary=\count278
+\c@theorem=\count279
+\c@definition=\count280
+\c@example=\count281
+\c@homework=\count282
+\c@antiexample=\count283
+\c@lemma=\count284
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -660,9 +661,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count284
-\Gm@cntv=\count285
-\c@Gm@tempcnt=\count286
+\Gm@cnth=\count285
+\Gm@cntv=\count286
+\c@Gm@tempcnt=\count287
 \Gm@bindingoffset=\dimen186
 \Gm@wd@mp=\dimen187
 \Gm@odd@mp=\dimen188
@@ -715,8 +716,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen194
-\Hy@linkcounter=\count287
-\Hy@pagecounter=\count288
+\Hy@linkcounter=\count288
+\Hy@pagecounter=\count289
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -730,7 +731,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count289
+\Hy@SavedSpaceFactor=\count290
 Package hyperref Info: Option `unicode' set `true' on input line 3502.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/puenc.def
@@ -747,7 +748,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count290
+\c@Hy@tempcnt=\count291
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip20
@@ -763,7 +764,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count291
+\Fld@menulength=\count292
 \Field@Width=\dimen196
 \Fld@charsize=\dimen197
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -775,9 +776,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6455.
 Package hyperref Info: PDF/A mode OFF on input line 6460.
 LaTeX Info: Redefining \ref on input line 6500.
 LaTeX Info: Redefining \pageref on input line 6504.
-\Hy@abspage=\count292
-\c@Item=\count293
-\c@Hfootnote=\count294
+\Hy@abspage=\count293
+\c@Item=\count294
+\c@Hfootnote=\count295
 )
 Package hyperref Info: Driver: hpdftex.
 
@@ -788,8 +789,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count295
-\c@bookmark@seq@number=\count296
+\Fld@listcount=\count296
+\c@bookmark@seq@number=\count297
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -802,7 +803,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip77
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 185.
+Package hyperref Info: Option `colorlinks' set `false' on input line 194.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/esint/esint.sty
 Package: esint 
 \symlargesymbolsA=\mathgroup11
@@ -856,14 +857,14 @@ ode.tex
 \pgf@yd=\dimen265
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
-\c@pgf@counta=\count297
-\c@pgf@countb=\count298
-\c@pgf@countc=\count299
-\c@pgf@countd=\count300
+\c@pgf@counta=\count298
+\c@pgf@countb=\count299
+\c@pgf@countc=\count300
+\c@pgf@countd=\count301
 \t@pgf@toka=\toks37
 \t@pgf@tokb=\toks38
 \t@pgf@tokc=\toks39
-\pgf@sys@id@count=\count301
+\pgf@sys@id@count=\count302
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
@@ -881,8 +882,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count302
-\pgfsyssoftpath@bigbuffer@items=\count303
+\pgfsyssoftpath@smallbuffer@items=\count303
+\pgfsyssoftpath@bigbuffer@items=\count304
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -895,7 +896,7 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen266
-\pgfmath@count=\count304
+\pgfmath@count=\count305
 \pgfmath@box=\box55
 \pgfmath@toks=\toks40
 \pgfmath@stack@operand=\toks41
@@ -920,7 +921,7 @@ code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count305
+\c@pgfmathroundto@lastzeros=\count306
 )) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -958,7 +959,7 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count306
+\pgf@picture@serial@count=\count307
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -993,8 +994,8 @@ File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 e.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen290
-\pgf@sys@shading@range@num=\count307
-\pgf@shadingcount=\count308
+\pgf@sys@shading@range@num=\count308
+\pgf@shadingcount=\count309
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -1061,7 +1062,7 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count309
+\pgf@plot@mark@count=\count310
 \pgfplotmarksize=\dimen295
 )
 \tikz@lastx=\dimen296
@@ -1076,19 +1077,19 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@figbox@bg=\box62
 \tikz@tempbox=\box63
 \tikz@tempbox@bg=\box64
-\tikztreelevel=\count310
-\tikznumberofchildren=\count311
-\tikznumberofcurrentchild=\count312
-\tikz@fig@count=\count313
+\tikztreelevel=\count311
+\tikznumberofchildren=\count312
+\tikznumberofcurrentchild=\count313
+\tikz@fig@count=\count314
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count314
-\pgfmatrixcurrentcolumn=\count315
-\pgf@matrix@numberofcolumns=\count316
+\pgfmatrixcurrentrow=\count315
+\pgfmatrixcurrentcolumn=\count316
+\pgf@matrix@numberofcolumns=\count317
 )
-\tikz@expandcount=\count317
+\tikz@expandcount=\count318
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -1100,8 +1101,8 @@ File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \t@pgfplots@tokb=\toks46
 \t@pgfplots@tokc=\toks47
 \pgfplots@tmpa=\dimen304
-\c@pgfplots@coordindex=\count318
-\c@pgfplots@scanlineindex=\count319
+\c@pgfplots@coordindex=\count319
+\c@pgfplots@scanlineindex=\count320
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1119,13 +1120,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count320
+\c@pgfplotsarray@tmp=\count321
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count321
+\c@pgfplotstable@counta=\count322
 \t@pgfplotstable@a=\toks48
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -1138,7 +1139,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count322
+\c@pgfplotslibrarysurf@no=\count323
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1175,7 +1176,7 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen307
 \pgfdecoratedinputsegmentremainingdistance=\dimen308
 \pgf@decorate@distancetomove=\dimen309
-\pgf@decorate@repeatstate=\count323
+\pgf@decorate@repeatstate=\count324
 \pgfdecorationsegmentamplitude=\dimen310
 \pgfdecorationsegmentlength=\dimen311
 )
@@ -1189,7 +1190,7 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count324
+\pgfplots@numplots=\count325
 \pgfplots@xmin@reg=\dimen312
 \pgfplots@xmax@reg=\dimen313
 \pgfplots@ymin@reg=\dimen314
@@ -1223,12 +1224,12 @@ File: pgfmoduleanimations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysanimation
 s.code.tex
-\pgfsysanim@snap@count=\count325
+\pgfsysanim@snap@count=\count326
 \pgfsysanim@lasttime=\dimen318
 )
 \pgf@anim@dim=\dimen319
 )
-\tikz@anim@once@count=\count326
+\tikz@anim@once@count=\count327
 )
 (/usr/local/texlive/2020/texmf-dist/tex/generic/tikz-cd/tikzlibrarycd.code.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
@@ -1253,6 +1254,9 @@ LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 2
 (/usr/local/texlive/2020/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
+
+LaTeX Warning: Label `hw_1' multiply defined.
+
 
 LaTeX Warning: Label `hw:10' multiply defined.
 
@@ -1291,16 +1295,16 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 12.
  (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
+\scratchcounter=\count328
 \scratchdimen=\dimen324
 \scratchbox=\box66
-\nofMPsegments=\count328
-\nofMParguments=\count329
+\nofMPsegments=\count329
+\nofMParguments=\count330
 \everyMPshowfont=\toks49
-\MPscratchCnt=\count330
+\MPscratchCnt=\count331
 \MPscratchDim=\dimen325
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
 \everyMPtoPDFconversion=\toks50
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1321,8 +1325,8 @@ r Libertine T2A
 )
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 12.
-\c@mv@tabular=\count333
-\c@mv@boldtabular=\count334
+\c@mv@tabular=\count334
+\c@mv@boldtabular=\count335
 \AtBeginShipoutBox=\box67
  (/usr/local/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -1343,7 +1347,7 @@ Package caption Info: End \AtBeginDocument code.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
 * v-part:(T,H,B)=(71.13188pt, 717.00946pt, 56.9055pt)
 * \paperwidth=597.50787pt
@@ -1352,21 +1356,21 @@ Package caption Info: End \AtBeginDocument code.
 * \textheight=717.00946pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
-* \topmargin=-40.63809pt
+* \topmargin=-35.51189pt
 * \headheight=17.0pt
-* \headsep=25.0pt
+* \headsep=19.8738pt
 * \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
+* \footskip=27.46295pt
+* \marginparwidth=116.0pt
+* \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1381,7 +1385,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count335
+\c@section@level=\count336
 )
 LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
@@ -1394,82 +1398,124 @@ LaTeX Info: Redefining \nameref on input line 12.
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 
+(./title
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 15.
+(Font)              scaled to size 24.88pt on input line 5.
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 15.
-(./main.toc
+(Font)              scaled to size 24.88pt on input line 5.
+<covering.pdf, id=605, 421.10124pt x 597.50829pt>
+File: covering.pdf Graphic file (type pdf)
+<use covering.pdf>
+Package pdftex.def Info: covering.pdf  used on input line 9.
+(pdftex.def)             Requested size: 421.1002pt x 597.50682pt.
+ [1
+
+
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./cover
+ing.pdf>])
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 17.
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 2.
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 3
-.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+(Font)              scaled to size 14.4pt on input line 17.
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 20.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
+0.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Trying to load font information for OML+LinuxLibertineT-TLF
- on input line 3.
-LaTeX Font Info:    No file OMLLinuxLibertineT-TLF.fd. on input line 3.
+ on input line 20.
+LaTeX Font Info:    No file OMLLinuxLibertineT-TLF.fd. on input line 20.
 
 
 LaTeX Font Warning: Font shape `OML/LinuxLibertineT-TLF/m/up' undefined
-(Font)              using `OML/cmm/m/it' instead on input line 3.
+(Font)              using `OML/cmm/m/it' instead on input line 20.
 
 LaTeX Font Info:    Trying to load font information for OMS+LinuxLibertineT-TLF
- on input line 3.
-LaTeX Font Info:    No file OMSLinuxLibertineT-TLF.fd. on input line 3.
+ on input line 20.
+LaTeX Font Info:    No file OMSLinuxLibertineT-TLF.fd. on input line 20.
 
 LaTeX Font Warning: Font shape `OMS/LinuxLibertineT-TLF/m/up' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 3.
+(Font)              using `OMS/cmsy/m/n' instead on input line 20.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for PD1+LinuxLibertineT-TLF
- on input line 3.
-LaTeX Font Info:    No file PD1LinuxLibertineT-TLF.fd. on input line 3.
+ on input line 20.
+LaTeX Font Info:    No file PD1LinuxLibertineT-TLF.fd. on input line 20.
 
 
 LaTeX Font Warning: Font shape `PD1/LinuxLibertineT-TLF/m/up' undefined
-(Font)              using `PD1/pdf/m/n' instead on input line 3.
+(Font)              using `PD1/pdf/m/n' instead on input line 20.
 
 LaTeX Font Info:    Trying to load font information for PU+LinuxLibertineT-TLF 
-on input line 3.
-LaTeX Font Info:    No file PULinuxLibertineT-TLF.fd. on input line 3.
+on input line 20.
+LaTeX Font Info:    No file PULinuxLibertineT-TLF.fd. on input line 20.
 
 LaTeX Font Warning: Font shape `PU/LinuxLibertineT-TLF/m/up' undefined
-(Font)              using `PU/pdf/m/n' instead on input line 3.
+(Font)              using `PU/pdf/m/n' instead on input line 20.
 
-LaTeX Font Info:    Trying to load font information for U+esint on input line 3
-.
+LaTeX Font Info:    Trying to load font information for U+esint on input line 2
+0.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
-) [1{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+) [2] (./main.toc
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 2.
 
-])
+[3
+
+]
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 67.
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 67.
+ [4] [5])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-
-(./lectures/3/3.1.tex
-LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 2.
+ [6]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 1.
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 5.
+(Font)              scaled to size 20.74pt on input line 31.
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 5.
- [2]
+(Font)              scaled to size 20.74pt on input line 31.
+(./lectures/0/0.1.tex
 LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 96.
-LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 96.
-LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 99.
+(Font)              scaled to size 12.0pt on input line 1.
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1.
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 4.
+ [7
+
+]
+<lectures/0/pictures/pic_1.pdf, id=1003, 115.02002pt x 93.97575pt>
+File: lectures/0/pictures/pic_1.pdf Graphic file (type pdf)
+<use lectures/0/pictures/pic_1.pdf>
+Package pdftex.def Info: lectures/0/pictures/pic_1.pdf  used on input line 53.
+(pdftex.def)             Requested size: 80.51346pt x 65.78256pt.
+<lectures/0/pictures/pic_2.pdf, id=1005, 80.44365pt x 72.91553pt>
+File: lectures/0/pictures/pic_2.pdf Graphic file (type pdf)
+<use lectures/0/pictures/pic_2.pdf>
+Package pdftex.def Info: lectures/0/pictures/pic_2.pdf  used on input line 91.
+(pdftex.def)             Requested size: 80.44344pt x 72.91533pt.
+ [8 <./lectures/0/pictures/pic_1.pdf> <./lectures/0/pictures/pic_2.pdf
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/pic_2.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>]
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 106.
+ on input line 128.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.
 fd
@@ -1477,31 +1523,788 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 106.
- [3]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 157
-.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
+(Font)              scaled to size 10.95pt on input line 128.
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 133.
+ [9]) (./lectures/0/0.2.tex
+LaTeX Font Info:    Trying to load font information for U+euf on input line 29.
+
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-[4]) (./lectures/3/3.2.tex [5]) (./lectures/3/3.3.tex [6] [7])
-(./lectures/3/3.4.tex
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_1.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_1.pdf, id=1032, 250.47577pt x 71.11569pt>
+File: lectures/0/pictures/cd_1.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_1.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_1.pdf  used on input line 33.
+(pdftex.def)             Requested size: 250.47514pt x 71.11551pt.
+[10 <./lectures/0/pictures/cd_1.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_2.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_2.pdf, id=1071, 191.53558pt x 71.738pt>
+File: lectures/0/pictures/cd_2.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_2.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_2.pdf  used on input line 54.
+(pdftex.def)             Requested size: 191.5351pt x 71.73782pt.
+
+Overfull \hbox (27.69499pt too wide) in paragraph at lines 95--97
+[][]\T2A/LinuxLibertineT-TLF/b/n/10.95 Определение 6. []\T2A/LinuxLibertineT-TL
+F/m/n/10.95 Пусть $\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF
+/m/up/10.95 C[]; @\PU/LinuxLibertineT-TLF/m/up/10.95 )\OML/LinuxLibertineT-TLF/
+m/up/10.95 ; \PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/
+10.95 D[]; ^^N\PU/LinuxLibertineT-TLF/m/up/10.95 ) \OMS/LinuxLibertineT-TLF/m/u
+p/10.95 2 \U/euf/m/n/10.95 Ch$ \T2A/LinuxLibertineT-TLF/m/n/10.95 --- два цеп-н
+ых ком-плек-са. Их мор-физ-мы $\OML/LinuxLibertineT-TLF/m/up/10.95 f; g \OMS/Li
+nuxLibertineT-TLF/m/up/10.95 2 [][]\PU/LinuxLibertineT-TLF/m/up/10.95 ((\OML/Li
+nuxLibertineT-TLF/m/up/10.95 C[]; @\PU/LinuxLibertineT-TLF/m/up/10.95 )\OML/Lin
+uxLibertineT-TLF/m/up/10.95 ; \PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLib
+ertineT-TLF/m/up/10.95 D[]; ^^N\PU/LinuxLibertineT-TLF/m/up/10.95 ))$
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_3.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_3.pdf, id=1072, 250.47577pt x 71.11569pt>
+File: lectures/0/pictures/cd_3.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_3.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_3.pdf  used on input line 99.
+(pdftex.def)             Requested size: 250.47514pt x 71.11551pt.
+[11 <./lectures/0/pictures/cd_2.pdf>]) (./lectures/0/0.3.tex [12 <./lectures/0/
+pictures/cd_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_4.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_4.pdf, id=1119, 222.963pt x 71.738pt>
+File: lectures/0/pictures/cd_4.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_4.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_4.pdf  used on input line 6.
+(pdftex.def)             Requested size: 222.96245pt x 71.73782pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_5.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_5.pdf, id=1120, 274.36502pt x 71.738pt>
+File: lectures/0/pictures/cd_5.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_5.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_5.pdf  used on input line 24.
+(pdftex.def)             Requested size: 274.36433pt x 71.73782pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_6.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_6.pdf, id=1121, 335.40306pt x 165.45815pt>
+File: lectures/0/pictures/cd_6.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_6.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_6.pdf  used on input line 42.
+(pdftex.def)             Requested size: 335.40224pt x 165.45772pt.
+[13 <./lectures/0/pictures/cd_4.pdf> <./lectures/0/pictures/cd_5.pdf>]
+<lectures/0/pictures/pic_3.pdf, id=1162, 158.22755pt x 128.78412pt>
+File: lectures/0/pictures/pic_3.pdf Graphic file (type pdf)
+<use lectures/0/pictures/pic_3.pdf>
+Package pdftex.def Info: lectures/0/pictures/pic_3.pdf  used on input line 70.
+(pdftex.def)             Requested size: 158.22716pt x 128.78378pt.
+ [14 <./lectures/0/pictures/cd_6.pdf> <./lectures/0/pictures/pic_3.pdf>]
+<lectures/0/pictures/pic_4.pdf, id=1183, 212.78654pt x 156.64812pt>
+File: lectures/0/pictures/pic_4.pdf Graphic file (type pdf)
+<use lectures/0/pictures/pic_4.pdf>
+Package pdftex.def Info: lectures/0/pictures/pic_4.pdf  used on input line 144.
+
+(pdftex.def)             Requested size: 148.94955pt x 109.65292pt.
+ [15] [16 <./lectures/0/pictures/pic_4.pdf>]
+Overfull \hbox (18.34819pt too wide) in paragraph at lines 217--220
+[]\T2A/LinuxLibertineT-TLF/m/it/10.95 Барицентрическое под-раз-би-е-ние (под-ра
+з-де-ле-ние) \T2A/LinuxLibertineT-TLF/m/n/10.95 сим-плек-са $\PU/LinuxLibertine
+T-TLF/m/up/10.95 [\OML/LinuxLibertineT-TLF/m/up/10.95 v[]; [] ; v[]\PU/LinuxLib
+ertineT-TLF/m/up/10.95 ]$ \T2A/LinuxLibertineT-TLF/m/n/10.95 --- это раз-би-е-н
+ие сим-плек-са $\PU/LinuxLibertineT-TLF/m/up/10.95 [\OML/LinuxLibertineT-TLF/m/
+up/10.95 v[]; [] ; v[]\PU/LinuxLibertineT-TLF/m/up/10.95 ]$
+ []
+
+) (./lectures/0/0.4.tex [17]
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_7.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_7.pdf, id=1220, 222.76224pt x 61.64029pt>
+File: lectures/0/pictures/cd_7.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_7.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_7.pdf  used on input line 69.
+(pdftex.def)             Requested size: 222.76169pt x 61.64014pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_8.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_8.pdf, id=1221, 357.74654pt x 67.64272pt>
+File: lectures/0/pictures/cd_8.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_8.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_8.pdf  used on input line 86.
+(pdftex.def)             Requested size: 357.74567pt x 67.64253pt.
+[18 <./lectures/0/pictures/cd_7.pdf> <./lectures/0/pictures/cd_8.pdf>])
+(./lectures/0/0.5.tex [19]
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 67.
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 6.0pt on input line 67.
+ [20]
+<lectures/0/pictures/pic_5.svg.png, id=1275, 1927.2pt x 1927.2pt>
+File: lectures/0/pictures/pic_5.svg.png Graphic file (type png)
+<use lectures/0/pictures/pic_5.svg.png>
+Package pdftex.def Info: lectures/0/pictures/pic_5.svg.png  used on input line 
+98.
+(pdftex.def)             Requested size: 96.36565pt x 96.36565pt.
+ [21 <./lectures/0/pictures/pic_5.svg.png>])
+(./lectures/0/0.6.tex [22]
+Overfull \hbox (17.01726pt too wide) in paragraph at lines 66--68
+\T2A/LinuxLibertineT-TLF/m/n/10.95 Теперь за-ме-тим, что ес-ли грань, ко-то-рую
+ мы вы-ки-ну-ли, мы обо-зна-чим за $\PU/LinuxLibertineT-TLF/m/up/10.95 ^^A[]$\T
+2A/LinuxLibertineT-TLF/m/n/10.95 , то $\OML/LinuxLibertineT-TLF/m/up/10.95 H[][
+][] [] H[][][]$\T2A/LinuxLibertineT-TLF/m/n/10.95 . 
+ []
+
+[23]
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_9.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_9.pdf, id=1303, 382.2782pt x 72.46071pt>
+File: lectures/0/pictures/cd_9.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_9.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_9.pdf  used on input line 97.
+(pdftex.def)             Requested size: 382.27725pt x 72.46053pt.
+[24 <./lectures/0/pictures/cd_9.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_10.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_10.pdf, id=1323, 360.80797pt x 111.06494pt>
+File: lectures/0/pictures/cd_10.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_10.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_10.pdf  used on input line 158.
+
+(pdftex.def)             Requested size: 360.80708pt x 111.06467pt.
+[25]
+Overfull \hbox (25.98517pt too wide) in paragraph at lines 174--177
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 По тео-ре-ме о вы-ра-зе-нии []8[], груп-па
+ $\OML/LinuxLibertineT-TLF/m/up/10.95 H[][][]$ \T2A/LinuxLibertineT-TLF/m/n/10.
+95 --- пря-мая сум-ма групп $\OML/LinuxLibertineT-TLF/m/up/10.95 H[][][]$\T2A/L
+inuxLibertineT-TLF/m/n/10.95 ,
+ []
+
+) (./lectures/0/0.7.tex [26 <./lectures/0/pictures/cd_10.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_11.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_11.pdf, id=1371, 446.60852pt x 221.12613pt>
+File: lectures/0/pictures/cd_11.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_11.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_11.pdf  used on input line 38.
+(pdftex.def)             Requested size: 446.60742pt x 221.12558pt.
+[27 <./lectures/0/pictures/cd_11.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_12.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_12.pdf, id=1403, 418.72435pt x 120.8214pt>
+File: lectures/0/pictures/cd_12.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_12.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_12.pdf  used on input line 104.
+
+(pdftex.def)             Requested size: 418.72331pt x 120.82109pt.
+<lectures/0/pictures/pic_5.pdf, id=1404, 124.16022pt x 116.6397pt>
+File: lectures/0/pictures/pic_5.pdf Graphic file (type pdf)
+<use lectures/0/pictures/pic_5.pdf>
+Package pdftex.def Info: lectures/0/pictures/pic_5.pdf  used on input line 135.
+
+(pdftex.def)             Requested size: 124.1599pt x 116.6394pt.
+[28 <./lectures/0/pictures/cd_12.pdf>] [29 <./lectures/0/pictures/pic_5.pdf>])
+(./lectures/0/0.9.tex [30] [31]
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_13.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_13.pdf, id=1452, 248.4984pt x 63.9991pt>
+File: lectures/0/pictures/cd_13.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_13.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_13.pdf  used on input line 86.
+(pdftex.def)             Requested size: 248.49777pt x 63.99893pt.
+[32] [33 <./lectures/0/pictures/cd_13.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_14.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/0/pictures/cd_14.pdf, id=1482, 403.13612pt x 68.84721pt>
+File: lectures/0/pictures/cd_14.pdf Graphic file (type pdf)
+<use lectures/0/pictures/cd_14.pdf>
+Package pdftex.def Info: lectures/0/pictures/cd_14.pdf  used on input line 165.
+
+(pdftex.def)             Requested size: 403.13513pt x 68.84703pt.
+[34 <./lectures/0/pictures/cd_14.pdf>]) (./lectures/7/1.tex
+Overfull \hbox (18.50172pt too wide) in paragraph at lines 14--15
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 Соотвественно, каж-дой точ-ке $\OML/LinuxL
+ibertineT-TLF/m/up/10.95 x$ $![]$ \T2A/LinuxLibertineT-TLF/m/n/10.95 --- про-ст
+о эле-мент $\U/msb/m/n/10.95 R$\T2A/LinuxLibertineT-TLF/m/n/10.95 -векторного п
+ро-стран-ства, на-тя-ну-то-го на $\PU/LinuxLibertineT-TLF/m/up/10.95 d\OML/Linu
+xLibertineT-TLF/m/up/10.95 x[]; [] ; \PU/LinuxLibertineT-TLF/m/up/10.95 d\OML/L
+inuxLibertineT-TLF/m/up/10.95 x[]$\T2A/LinuxLibertineT-TLF/m/n/10.95 .
+ []
+
+[35] [36]
+<lectures/7/pictures/Stonks_formula.pdf, id=1516, 845.0471pt x 1195.01462pt>
+File: lectures/7/pictures/Stonks_formula.pdf Graphic file (type pdf)
+<use lectures/7/pictures/Stonks_formula.pdf>
+Package pdftex.def Info: lectures/7/pictures/Stonks_formula.pdf  used on input 
+line 134.
+(pdftex.def)             Requested size: 464.77734pt x 657.26007pt.
+
+Underfull \vbox (badness 2229) has occurred while \output is active []
+
+ [37]
+[38 <./lectures/7/pictures/Stonks_formula.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_1.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_1.pdf, id=2007, 304.22658pt x 90.45795pt>
+File: lectures/7/pictures/cd_1.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_1.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_1.pdf  used on input line 167.
+(pdftex.def)             Requested size: 304.22583pt x 90.4577pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_44.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_44.pdf, id=2008, 640.69362pt x 103.36618pt>
+File: lectures/7/pictures/cd_44.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_44.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_44.pdf  used on input line 173.
+
+(pdftex.def)             Requested size: 512.5556pt x 82.69304pt.
+
+Overfull \hbox (0.40598pt too wide) in paragraph at lines 173--174
+ [] 
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_45.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_45.pdf, id=2009, 377.17912pt x 103.36618pt>
+File: lectures/7/pictures/cd_45.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_45.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_45.pdf  used on input line 180.
+
+(pdftex.def)             Requested size: 377.1782pt x 103.36592pt.
+[39 <./lectures/7/pictures/cd_1.pdf> <./lectures/7/pictures/cd_44.pdf> <./lectu
+res/7/pictures/cd_45.pdf>]) (./lectures/7/2.tex
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_2.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_2.pdf, id=2058, 248.89989pt x 69.55988pt>
+File: lectures/7/pictures/cd_2.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_2.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_2.pdf  used on input line 43.
+(pdftex.def)             Requested size: 248.89926pt x 69.5597pt.
+<lectures/7/pictures/line_de_Rham.pdf, id=2059, 844.83629pt x 277.7298pt>
+File: lectures/7/pictures/line_de_Rham.pdf Graphic file (type pdf)
+<use lectures/7/pictures/line_de_Rham.pdf>
+Package pdftex.def Info: lectures/7/pictures/line_de_Rham.pdf  used on input li
+ne 62.
+(pdftex.def)             Requested size: 506.90569pt x 166.63916pt.
+[40 <./lectures/7/pictures/cd_2.pdf>]
+<lectures/7/pictures/line_de_Rham_2.pdf, id=2079, 821.142pt x 584.66483pt>
+File: lectures/7/pictures/line_de_Rham_2.pdf Graphic file (type pdf)
+<use lectures/7/pictures/line_de_Rham_2.pdf>
+Package pdftex.def Info: lectures/7/pictures/line_de_Rham_2.pdf  used on input 
+line 67.
+(pdftex.def)             Requested size: 492.68901pt x 350.8016pt.
+ [41 <./lectures/7/pictures/line_de_Rham.pdf> <./lectures/7/pictures/line_de_Rh
+am_2.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_3.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_3.pdf, id=2643, 93.61977pt x 95.90831pt>
+File: lectures/7/pictures/cd_3.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_3.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_3.pdf  used on input line 91.
+(pdftex.def)             Requested size: 93.61952pt x 95.90807pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+[42 <./lectures/7/pictures/cd_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_4.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_4.pdf, id=2659, 410.32297pt x 95.90831pt>
+File: lectures/7/pictures/cd_4.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_4.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_4.pdf  used on input line 143.
+(pdftex.def)             Requested size: 410.32195pt x 95.90807pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_5.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_5.pdf, id=2660, 300.45247pt x 41.34447pt>
+File: lectures/7/pictures/cd_5.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_5.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_5.pdf  used on input line 148.
+(pdftex.def)             Requested size: 300.45174pt x 41.34435pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_6.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_6.pdf, id=2661, 356.54202pt x 32.41109pt>
+File: lectures/7/pictures/cd_6.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_6.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_6.pdf  used on input line 153.
+(pdftex.def)             Requested size: 356.54115pt x 32.411pt.
+
+Overfull \hbox (9.62251pt too wide) in paragraph at lines 170--171
+\T2A/LinuxLibertineT-TLF/m/n/10.95 ре-се-че-нии, из них мож-но скле-ить од-ну н
+а $\OML/LinuxLibertineT-TLF/m/up/10.95 M$ \T2A/LinuxLibertineT-TLF/m/n/10.95 (э
+то до-ка-зы-ва-ет вклю-че-ние $[][][] \OMS/LinuxLibertineT-TLF/m/up/10.95 ^^Z
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_8.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_8.pdf, id=2662, 511.39056pt x 70.27254pt>
+File: lectures/7/pictures/cd_8.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_8.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_8.pdf  used on input line 189.
+(pdftex.def)             Requested size: 511.38931pt x 70.27235pt.
+[43 <./lectures/7/pictures/cd_4.pdf> <./lectures/7/pictures/cd_5.pdf> <./lectur
+es/7/pictures/cd_6.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_7.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_7.pdf, id=2715, 445.665pt x 167.33517pt>
+File: lectures/7/pictures/cd_7.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_7.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_7.pdf  used on input line 197.
+(pdftex.def)             Requested size: 445.66391pt x 167.33475pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_9.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_9.pdf, id=2716, 161.97513pt x 25.49525pt>
+File: lectures/7/pictures/cd_9.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_9.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_9.pdf  used on input line 219.
+(pdftex.def)             Requested size: 161.97473pt x 25.49518pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_10.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_10.pdf, id=2717, 382.2581pt x 32.41109pt>
+File: lectures/7/pictures/cd_10.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_10.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_10.pdf  used on input line 224.
+
+(pdftex.def)             Requested size: 382.25716pt x 32.411pt.
+
+Overfull \hbox (2.09964pt too wide) in paragraph at lines 231--232
+\T2A/LinuxLibertineT-TLF/m/n/10.95 Го-мо-мор-физм $\PU/LinuxLibertineT-TLF/m/up
+/10.95 
+[](\OML/LinuxLibertineT-TLF/m/up/10.95 M\PU/LinuxLibertineT-TLF/m/up/10.95 ) \O
+MS/LinuxLibertineT-TLF/m/up/10.95   \PU/LinuxLibertineT-TLF/m/up/10.95 
+[](\OML/LinuxLibertineT-TLF/m/up/10.95 U\PU/LinuxLibertineT-TLF/m/up/10.95 ) \O
+MS/LinuxLibertineT-TLF/m/up/10.95 ^^H \PU/LinuxLibertineT-TLF/m/up/10.95 
+[](\OML/LinuxLibertineT-TLF/m/up/10.95 V\PU/LinuxLibertineT-TLF/m/up/10.95 )$ \
+T2A/LinuxLibertineT-TLF/m/n/10.95 сюръ-ек-ти-вен, так как про-об-ра-зом фор-мы 
+$\OML/LinuxLibertineT-TLF/m/up/10.95 !$ \T2A/LinuxLibertineT-TLF/m/n/10.95 яв-л
+я-ет-ся па-ра $\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/u
+p/10.95 ^^Z[]!; ^^Z[]!\PU/LinuxLibertineT-TLF/m/up/10.95 )$
+ []
+
+[44 <./lectures/7/pictures/cd_8.pdf> <./lectures/7/pictures/cd_7.pdf> <./lectur
+es/7/pictures/cd_9.pdf> <./lectures/7/pictures/cd_10.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_11.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_11.pdf, id=2769, 504.12338pt x 128.03835pt>
+File: lectures/7/pictures/cd_11.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_11.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_11.pdf  used on input line 247.
+
+(pdftex.def)             Requested size: 504.12215pt x 128.03802pt.
+) (./lectures/7/3.tex
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_12.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_12.pdf, id=2770, 192.6899pt x 99.50174pt>
+File: lectures/7/pictures/cd_12.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_12.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_12.pdf  used on input line 10.
+(pdftex.def)             Requested size: 192.6894pt x 99.5015pt.
+[45 <./lectures/7/pictures/cd_11.pdf> <./lectures/7/pictures/cd_12.pdf>]
+[46]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_13.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_13.pdf, id=2811, 55.5676pt x 81.38405pt>
+File: lectures/7/pictures/cd_13.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_13.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_13.pdf  used on input line 95.
+(pdftex.def)             Requested size: 55.56744pt x 81.38383pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_14.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_14.pdf, id=2812, 126.57288pt x 82.96999pt>
+File: lectures/7/pictures/cd_14.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_14.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_14.pdf  used on input line 119.
+
+(pdftex.def)             Requested size: 126.57256pt x 82.96977pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_15.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_15.pdf, id=2813, 455.21068pt x 98.35747pt>
+File: lectures/7/pictures/cd_15.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_15.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_15.pdf  used on input line 142.
+
+(pdftex.def)             Requested size: 455.20956pt x 98.35721pt.
+[47 <./lectures/7/pictures/cd_13.pdf> <./lectures/7/pictures/cd_14.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_16.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_16.pdf, id=2843, 269.03511pt x 98.35747pt>
+File: lectures/7/pictures/cd_16.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_16.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_16.pdf  used on input line 148.
+
+(pdftex.def)             Requested size: 269.03444pt x 98.35721pt.
+[48 <./lectures/7/pictures/cd_15.pdf> <./lectures/7/pictures/cd_16.pdf>]
+[49]) (./lectures/7/4.tex
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_17.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_17.pdf, id=2879, 354.8758pt x 87.64745pt>
+File: lectures/7/pictures/cd_17.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_17.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_17.pdf  used on input line 29.
+(pdftex.def)             Requested size: 354.87492pt x 87.64722pt.
+[50]
+Overfull \hbox (20.2024pt too wide) in paragraph at lines 36--37
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 Положим $\OML/LinuxLibertineT-TLF/m/up/10.
+95 U \PU/LinuxLibertineT-TLF/m/up/10.95 = \OML/LinuxLibertineT-TLF/m/up/10.95 U
+[];  V \PU/LinuxLibertineT-TLF/m/up/10.95 = \OML/LinuxLibertineT-TLF/m/up/10.95
+ U[] \OMS/LinuxLibertineT-TLF/m/up/10.95 [ \OML/LinuxLibertineT-TLF/m/up/10.95 
+U[] \OMS/LinuxLibertineT-TLF/m/up/10.95 [ [] [ \OML/LinuxLibertineT-TLF/m/up/10
+.95 U[]$\T2A/LinuxLibertineT-TLF/m/n/10.95 . То-гда по ин-дук-ци-он-но-му пред-
+по-ло-же-нию $\OML/LinuxLibertineT-TLF/m/up/10.95 H[]\PU/LinuxLibertineT-TLF/m/
+up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 U\PU/LinuxLibertineT-TLF/m/up/10.
+95 )\OML/LinuxLibertineT-TLF/m/up/10.95 ;  H[]\PU/LinuxLibertineT-TLF/m/up/10.9
+5 (\OML/LinuxLibertineT-TLF/m/up/10.95 V\PU/LinuxLibertineT-TLF/m/up/10.95 )\OM
+L/LinuxLibertineT-TLF/m/up/10.95 ;  H[]\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML
+/LinuxLibertineT-TLF/m/up/10.95 U \OMS/LinuxLibertineT-TLF/m/up/10.95 \
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_18.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_18.pdf, id=2886, 317.0244pt x 91.47174pt>
+File: lectures/7/pictures/cd_18.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_18.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_18.pdf  used on input line 76.
+(pdftex.def)             Requested size: 317.02362pt x 91.47151pt.
+[51 <./lectures/7/pictures/cd_17.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_19.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_19.pdf, id=2909, 495.10974pt x 148.9866pt>
+File: lectures/7/pictures/cd_19.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_19.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_19.pdf  used on input line 86.
+(pdftex.def)             Requested size: 495.10854pt x 148.98624pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_20.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_20.pdf, id=2910, 469.74495pt x 69.46954pt>
+File: lectures/7/pictures/cd_20.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_20.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_20.pdf  used on input line 122.
+
+(pdftex.def)             Requested size: 469.74379pt x 69.46936pt.
+[52 <./lectures/7/pictures/cd_18.pdf> <./lectures/7/pictures/cd_19.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_21.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_21.pdf, id=2949, 370.54436pt x 28.95819pt>
+File: lectures/7/pictures/cd_21.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_21.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_21.pdf  used on input line 176.
+
+(pdftex.def)             Requested size: 370.54344pt x 28.95811pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_22.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_22.pdf, id=2950, 457.33862pt x 68.71672pt>
+File: lectures/7/pictures/cd_22.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_22.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_22.pdf  used on input line 182.
+
+(pdftex.def)             Requested size: 457.33751pt x 68.71654pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_23.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_23.pdf, id=2951, 509.28268pt x 113.3836pt>
+File: lectures/7/pictures/cd_23.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_23.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_23.pdf  used on input line 187.
+
+(pdftex.def)             Requested size: 509.28143pt x 113.38332pt.
+[53 <./lectures/7/pictures/cd_20.pdf> <./lectures/7/pictures/cd_21.pdf> <./lect
+ures/7/pictures/cd_22.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_24.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_24.pdf, id=2989, 569.40733pt x 90.45795pt>
+File: lectures/7/pictures/cd_24.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_24.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_24.pdf  used on input line 193.
+
+(pdftex.def)             Requested size: 540.9339pt x 85.93454pt.
+
+Overfull \hbox (28.78427pt too wide) in paragraph at lines 193--194
+ [] 
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_25.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_25.pdf, id=2990, 100.16422pt x 62.68419pt>
+File: lectures/7/pictures/cd_25.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_25.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_25.pdf  used on input line 197.
+
+(pdftex.def)             Requested size: 100.16396pt x 62.68402pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_26.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_26.pdf, id=2991, 332.03047pt x 90.45795pt>
+File: lectures/7/pictures/cd_26.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_26.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_26.pdf  used on input line 211.
+
+(pdftex.def)             Requested size: 332.02965pt x 90.4577pt.
+[54 <./lectures/7/pictures/cd_23.pdf> <./lectures/7/pictures/cd_24.pdf> <./lect
+ures/7/pictures/cd_25.pdf> <./lectures/7/pictures/cd_26.pdf>])
+(./lectures/7/5.tex [55] [56] [57]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_27.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_27.pdf, id=3072, 386.5642pt x 28.95819pt>
+File: lectures/7/pictures/cd_27.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_27.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_27.pdf  used on input line 176.
+
+(pdftex.def)             Requested size: 386.56323pt x 28.95811pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_28.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_28.pdf, id=3073, 531.46553pt x 69.50969pt>
+File: lectures/7/pictures/cd_28.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_28.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_28.pdf  used on input line 180.
+
+(pdftex.def)             Requested size: 531.46422pt x 69.5095pt.
+
+Overfull \hbox (19.31459pt too wide) in paragraph at lines 180--181
+ [] 
+ []
+
+[58 <./lectures/7/pictures/cd_27.pdf> <./lectures/7/pictures/cd_28.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_29.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_29.pdf, id=3106, 289.6421pt x 33.726pt>
+File: lectures/7/pictures/cd_29.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_29.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_29.pdf  used on input line 236.
+
+(pdftex.def)             Requested size: 289.64139pt x 33.7259pt.
+) (./lectures/7/6.tex
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_30.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_30.pdf, id=3107, 324.0406pt x 137.60408pt>
+File: lectures/7/pictures/cd_30.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_30.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_30.pdf  used on input line 16.
+(pdftex.def)             Requested size: 324.03981pt x 137.60374pt.
+[59 <./lectures/7/pictures/cd_29.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_31.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_31.pdf, id=3130, 256.43805pt x 86.31245pt>
+File: lectures/7/pictures/cd_31.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_31.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_31.pdf  used on input line 53.
+(pdftex.def)             Requested size: 256.43741pt x 86.31223pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_32.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_32.pdf, id=3131, 306.45491pt x 29.97197pt>
+File: lectures/7/pictures/cd_32.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_32.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_32.pdf  used on input line 58.
+(pdftex.def)             Requested size: 306.45415pt x 29.97188pt.
+[60 <./lectures/7/pictures/cd_30.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_33.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_33.pdf, id=3152, 433.97131pt x 48.81236pt>
+File: lectures/7/pictures/cd_33.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_33.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_33.pdf  used on input line 110.
+
+(pdftex.def)             Requested size: 433.97026pt x 48.81223pt.
+[61 <./lectures/7/pictures/cd_31.pdf> <./lectures/7/pictures/cd_32.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_34.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_34.pdf, id=3179, 518.66772pt x 48.81236pt>
+File: lectures/7/pictures/cd_34.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_34.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_34.pdf  used on input line 120.
+
+(pdftex.def)             Requested size: 518.66646pt x 48.81223pt.
+
+Overfull \hbox (6.51683pt too wide) in paragraph at lines 120--121
+ [] 
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_35.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_35.pdf, id=3180, 533.57344pt x 45.05833pt>
+File: lectures/7/pictures/cd_35.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_35.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_35.pdf  used on input line 157.
+
+(pdftex.def)             Requested size: 533.57213pt x 45.05821pt.
+
+Overfull \hbox (21.4225pt too wide) in paragraph at lines 157--158
+ [] 
+ []
+
+[62 <./lectures/7/pictures/cd_33.pdf> <./lectures/7/pictures/cd_34.pdf> <./lect
+ures/7/pictures/cd_35.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_36.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_36.pdf, id=3224, 203.20918pt x 129.39342pt>
+File: lectures/7/pictures/cd_36.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_36.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_36.pdf  used on input line 213.
+
+(pdftex.def)             Requested size: 203.20866pt x 129.39308pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_37.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_37.pdf, id=3225, 476.93181pt x 180.88579pt>
+File: lectures/7/pictures/cd_37.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_37.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_37.pdf  used on input line 218.
+
+(pdftex.def)             Requested size: 476.93063pt x 180.88533pt.
+[63 <./lectures/7/pictures/cd_36.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_38.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_38.pdf, id=3238, 476.93181pt x 255.0328pt>
+File: lectures/7/pictures/cd_38.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_38.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_38.pdf  used on input line 255.
+
+(pdftex.def)             Requested size: 476.93063pt x 255.03217pt.
+[64 <./lectures/7/pictures/cd_37.pdf>]
+Overfull \hbox (10.37933pt too wide) in paragraph at lines 268--269
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 Теперь за-ме-тим, что ес-ли и столб-цы рас
+-ши-рен-но-го ком-плек-са точ-ны, то "по-во-ро-том на $\OML/LinuxLibertineT-TLF
+/m/up/10.95 ^^Y=\PU/LinuxLibertineT-TLF/m/up/10.95 2$\T2A/LinuxLibertineT-TLF/m
+/n/10.95 "доказательства
+ []
+
+) (./lectures/7/7.tex [65 <./lectures/7/pictures/cd_38.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_39.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_39.pdf, id=3285, 131.91283pt x 70.08182pt>
+File: lectures/7/pictures/cd_39.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_39.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_39.pdf  used on input line 13.
+(pdftex.def)             Requested size: 131.91249pt x 70.08162pt.
+[66 <./lectures/7/pictures/cd_39.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_40.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_40.pdf, id=3308, 308.34196pt x 33.4851pt>
+File: lectures/7/pictures/cd_40.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_40.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_40.pdf  used on input line 73.
+(pdftex.def)             Requested size: 308.3412pt x 33.48502pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_41.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_41.pdf, id=3309, 390.63942pt x 45.56021pt>
+File: lectures/7/pictures/cd_41.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_41.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_41.pdf  used on input line 77.
+(pdftex.def)             Requested size: 390.63846pt x 45.56009pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_42.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_42.pdf, id=3310, 298.43495pt x 89.04266pt>
+File: lectures/7/pictures/cd_42.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_42.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_42.pdf  used on input line 129.
+
+(pdftex.def)             Requested size: 298.43422pt x 89.04243pt.
+[67 <./lectures/7/pictures/cd_40.pdf> <./lectures/7/pictures/cd_41.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/7/pictures/cd_43.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/7/pictures/cd_43.pdf, id=3336, 148.43456pt x 109.37863pt>
+File: lectures/7/pictures/cd_43.pdf Graphic file (type pdf)
+<use lectures/7/pictures/cd_43.pdf>
+Package pdftex.def Info: lectures/7/pictures/cd_43.pdf  used on input line 166.
+
+(pdftex.def)             Requested size: 148.43417pt x 109.37836pt.
+[68 <./lectures/7/pictures/cd_42.pdf> <./lectures/7/pictures/cd_43.pdf>])
+(./lectures/7/8.tex [69] [70]) [71] [72
+
+]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 2.
+(./lectures/3/3.1.tex [73] [74]) (./lectures/3/3.2.tex [75] [76])
+(./lectures/3/3.3.tex [77]) (./lectures/3/3.4.tex [78]
 
 pdfTeX warning: pdflatex (file ./lectures/3/commutative diagramms/GK.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/3/commutative diagramms/GK.pdf, id=506, 88.92221pt x 63.9991pt>
+<lectures/3/commutative diagramms/GK.pdf, id=3465, 88.92221pt x 63.9991pt>
 File: lectures/3/commutative diagramms/GK.pdf Graphic file (type pdf)
 <use lectures/3/commutative diagramms/GK.pdf>
 Package pdftex.def Info: lectures/3/commutative diagramms/GK.pdf  used on input
- line 25.
+ line 27.
 (pdftex.def)             Requested size: 88.92198pt x 63.99893pt.
-[8 <./lectures/3/commutative diagramms/GK.pdf>]) (./lectures/3/3.12.tex
-[9]
-LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 71.
-LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 71.
- [10]) (./lectures/3/3.13.tex [11]
+[79 <./lectures/3/commutative diagramms/GK.pdf>]) (./lectures/3/3.12.tex
+[80]) (./lectures/3/3.13.tex [81]
 Overfull \hbox (22.29865pt too wide) detected at line 33
 \OML/LinuxLibertineT-TLF/m/up/10.95 [] \PU/LinuxLibertineT-TLF/m/up/10.95 + []
 \OML/LinuxLibertineT-TLF/m/up/10.95 [] \PU/LinuxLibertineT-TLF/m/up/10.95 + []
@@ -1518,21 +2321,350 @@ nuxLibertineT-TLF/m/up/10.95 )[] + [] + \OML/LinuxLibertineT-TLF/m/up/10.95 d[]
  \PU/LinuxLibertineT-TLF/m/up/10.95 = 0
  []
 
-[12]) (./lectures/3/3.14.tex [13]
+[82]) (./lectures/3/3.14.tex [83]
 
 pdfTeX warning: pdflatex (file ./lectures/3/commutative diagramms/snake_2.pdf):
  PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/3/commutative diagramms/snake_2.pdf, id=594, 307.82002pt x 145.6642pt
->
+<lectures/3/commutative diagramms/snake_2.pdf, id=3537, 307.82002pt x 145.6642p
+t>
 File: lectures/3/commutative diagramms/snake_2.pdf Graphic file (type pdf)
 <use lectures/3/commutative diagramms/snake_2.pdf>
 Package pdftex.def Info: lectures/3/commutative diagramms/snake_2.pdf  used on 
 input line 66.
 (pdftex.def)             Requested size: 307.81927pt x 145.66383pt.
-[14 <./lectures/3/commutative diagramms/snake_2.pdf>]) [15]
+[84 <./lectures/3/commutative diagramms/snake_2.pdf>])
+(./lectures/5/lectures/1.tex [85] [86] [87] [88] [89]
+Overfull \hbox (28.53455pt too wide) in paragraph at lines 298--299
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 Замкнутые непри-во-ди-мые по-мно-же-ства $
+\OML/LinuxLibertineT-TLF/m/up/10.95 Y$ \T2A/LinuxLibertineT-TLF/m/n/10.95 со-от
+-вест-ву-ют про-стым иде-а-лам коль-ца $\U/msb/m/n/10.95 |\PU/LinuxLibertineT-T
+LF/m/up/10.95 [\OML/LinuxLibertineT-TLF/m/up/10.95 x[]; [] ; x[]\PU/LinuxLibert
+ineT-TLF/m/up/10.95 ]$\T2A/LinuxLibertineT-TLF/m/n/10.95 ,
+ []
+
+) (./lectures/5/lectures/2.tex [90] [91] [92] [93]
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 283.
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 6.0pt on input line 283.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 41.
+(hyperref)                removing `math shift' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathrel' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathchoice' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lower' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\p@' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vbox' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lineskiplimit' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\maxdimen' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lineskip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\p@' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\everycr' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tabskip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@skip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\halign' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lower' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\p@' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vbox' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lineskiplimit' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\maxdimen' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lineskip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\p@' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\everycr' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tabskip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@skip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\halign' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lower' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\p@' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vbox' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lineskiplimit' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\maxdimen' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lineskip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\p@' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\everycr' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tabskip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@skip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\halign' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lower' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\p@' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\vbox' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lineskiplimit' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\maxdimen' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lineskip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\p@' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\everycr' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\tabskip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@skip' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\halign' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Bbbk' on input line 283.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 283.
+
+[94]
+
+pdfTeX warning: pdflatex (file ./lectures/5/pictures/cd_2.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/5/pictures/cd_2.pdf, id=3692, 242.80711pt x 68.72676pt>
+File: lectures/5/pictures/cd_2.pdf Graphic file (type pdf)
+<use lectures/5/pictures/cd_2.pdf>
+Package pdftex.def Info: lectures/5/pictures/cd_2.pdf  used on input line 294.
+(pdftex.def)             Requested size: 242.80652pt x 68.72658pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/5/pictures/cd_3.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/5/pictures/cd_3.pdf, id=3693, 239.0531pt x 68.72676pt>
+File: lectures/5/pictures/cd_3.pdf Graphic file (type pdf)
+<use lectures/5/pictures/cd_3.pdf>
+Package pdftex.def Info: lectures/5/pictures/cd_3.pdf  used on input line 299.
+(pdftex.def)             Requested size: 239.0525pt x 68.72658pt.
+[95 <./lectures/5/pictures/cd_2.pdf> <./lectures/5/pictures/cd_3.pdf>])
+(./lectures/5/lectures/3.tex [96]
+
+pdfTeX warning: pdflatex (file ./lectures/5/pictures/cd_1.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/5/pictures/cd_1.pdf, id=3757, 203.11885pt x 92.68626pt>
+File: lectures/5/pictures/cd_1.pdf Graphic file (type pdf)
+<use lectures/5/pictures/cd_1.pdf>
+Package pdftex.def Info: lectures/5/pictures/cd_1.pdf  used on input line 97.
+(pdftex.def)             Requested size: 203.11833pt x 92.68602pt.
+[97] [98 <./lectures/5/pictures/cd_1.pdf>] [99]) (./lectures/5/lectures/4.tex
+Overfull \hbox (7.07722pt too wide) in paragraph at lines 18--20
+\T2A/LinuxLibertineT-TLF/m/n/10.95 Так $\OML/LinuxLibertineT-TLF/m/up/10.95 R[]
+$ \T2A/LinuxLibertineT-TLF/m/n/10.95 нј-те-ро-во (ло-ка-ли-за-ция нј-те-ро-ва к
+оль-ца нј-те-ро-ва), зна-чит иде-ал ко-неч-но-по-рож-дјн: $\U/euf/m/n/10.95 p\O
+ML/LinuxLibertineT-TLF/m/up/10.95 R[] \PU/LinuxLibertineT-TLF/m/up/10.95 = (\OM
+L/LinuxLibertineT-TLF/m/up/10.95 e[]; [] ; e[]\PU/LinuxLibertineT-TLF/m/up/10.9
+5 )$\T2A/LinuxLibertineT-TLF/m/n/10.95 .
+ []
+
+[100] [101] [102] [103]) (./lectures/5/lectures/5.tex [104]
+
+pdfTeX warning: pdflatex (file ./lectures/5/pictures/cd_4.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/5/pictures/cd_4.pdf, id=3859, 107.00978pt x 67.08061pt>
+File: lectures/5/pictures/cd_4.pdf Graphic file (type pdf)
+<use lectures/5/pictures/cd_4.pdf>
+Package pdftex.def Info: lectures/5/pictures/cd_4.pdf  used on input line 68.
+(pdftex.def)             Requested size: 107.0095pt x 67.08044pt.
+) (./lectures/5/lectures/7.tex
+
+LaTeX Warning: Reference `closed_image' on page 105 undefined on input line 1.
+
+[105 <./lectures/5/pictures/cd_4.pdf>]
+
+LaTeX Warning: Reference `closed_in_product' on page 106 undefined on input lin
+e 47.
+
+[106]
+
+LaTeX Warning: Reference `dir_prod' on page 107 undefined on input line 89.
+
+[107] [108] [109]) (./lectures/5/lectures/8.tex [110] [111] [112] [113])
+(./lectures/5/lectures/9.tex [114] [115] [116] [117]
+Overfull \hbox (5.86684pt too wide) in paragraph at lines 249--250
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 Таким об-ра-зом, как мы ви-дим, яд-ро по-с
+тро-ен-но-го вы-ше го-мо-мр-физ-ма три-ви-аль-но и $\OMS/LinuxLibertineT-TLF/m/
+up/10.95 O[] \OML/LinuxLibertineT-TLF/m/up/10.95 ,[]\OMS/LinuxLibertineT-TLF/m/
+up/10.95 ! \U/msb/m/n/10.95 |\PU/LinuxLibertineT-TLF/m/up/10.95 [[\OML/LinuxLib
+ertineT-TLF/m/up/10.95 x[]; [] ; x[]\PU/LinuxLibertineT-TLF/m/up/10.95 ]]$
+ []
+
+[118]
+LaTeX Font Info:    Trying to load font information for T2A+LinuxLibertineMonoT
+-TLF on input line 302.
+LaTeX Font Info:    No file T2ALinuxLibertineMonoT-TLF.fd. on input line 302.
+
+
+LaTeX Font Warning: Font shape `T2A/LinuxLibertineMonoT-TLF/m/n' undefined
+(Font)              using `T2A/cmr/m/n' instead on input line 302.
+
+[119]) (./lectures/5/lectures/10.tex [120]
+Overfull \hbox (21.62851pt too wide) in paragraph at lines 46--47
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 По лем-ме Нј-тер о нор-ма-ли-за-ции, $\OML
+/LinuxLibertineT-TLF/m/up/10.95 A$ \T2A/LinuxLibertineT-TLF/m/n/10.95 --- ко-не
+ч-ное рас-ши-ре-ние коль-ца мно-го-чле-нов $\U/msb/m/n/10.95 |\PU/LinuxLibertin
+eT-TLF/m/up/10.95 [\OML/LinuxLibertineT-TLF/m/up/10.95 x[]; [] ; x[]\PU/LinuxLi
+bertineT-TLF/m/up/10.95 ]$\T2A/LinuxLibertineT-TLF/m/n/10.95 .
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./lectures/5/pictures/cd_7.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/5/pictures/cd_7.pdf, id=4020, 57.16356pt x 97.6448pt>
+File: lectures/5/pictures/cd_7.pdf Graphic file (type pdf)
+<use lectures/5/pictures/cd_7.pdf>
+Package pdftex.def Info: lectures/5/pictures/cd_7.pdf  used on input line 64.
+(pdftex.def)             Requested size: 57.16339pt x 97.64456pt.
+[121 <./lectures/5/pictures/cd_7.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/5/pictures/cd_8.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/5/pictures/cd_8.pdf, id=4036, 78.2925pt x 99.07013pt>
+File: lectures/5/pictures/cd_8.pdf Graphic file (type pdf)
+<use lectures/5/pictures/cd_8.pdf>
+Package pdftex.def Info: lectures/5/pictures/cd_8.pdf  used on input line 71.
+(pdftex.def)             Requested size: 78.2923pt x 99.06987pt.
+[122 <./lectures/5/pictures/cd_8.pdf>]) (./lectures/5/lectures/11.tex [123]
+[124] [125] [126] [127] [128]) [129] (./lectures/1/1.tex [130] [131] [132])
+(./lectures/2/2.tex [133] [134]) (./lectures/2/2.2.tex [135]
+LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 88.
+ [136])
+(./lectures/2/2.3.tex [137]) [138]
+{\cyrillictext \CYRG \cyrl \cyra \cyrv \cyra } 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\uppercase' on input line 131.
 
 (./lectures/4/files/lecture 8.09.2023.tex
 Overfull \hbox (0.1608pt too wide) in paragraph at lines 22--23
@@ -1546,7 +2678,9 @@ OML/LinuxLibertineT-TLF/m/up/10.95 a[]; [] ; a[] \OMS/LinuxLibertineT-TLF/m/up/
 10.95 2
  []
 
-[16]
+[139
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 88.
@@ -1559,7 +2693,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 88.
 
-[17] [18]
+[140] [141]
 Overfull \hbox (15.27306pt too wide) detected at line 227
 [][]\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 a \
 PU/LinuxLibertineT-TLF/m/up/10.95 + \OML/LinuxLibertineT-TLF/m/up/10.95 b[]\PU/
@@ -1593,7 +2727,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 266.
 
-[19] [20]) (./lectures/4/files/lecture 15.09.2023.tex
+[142] [143]) (./lectures/4/files/lecture 15.09.2023.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
@@ -1602,12 +2736,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2.
 
-[21]
+[144]
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-[22] [23]
+[145] [146] [147]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 218.
@@ -1620,7 +2754,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 218.
 
-[24] [25]) (./lectures/4/files/lecture 22.09.2023.tex [26] [27] [28])
+[148]) (./lectures/4/files/lecture 22.09.2023.tex [149] [150] [151])
 (./lectures/4/files/lecture 29.09.tex
 Overfull \hbox (38.89767pt too wide) in paragraph at lines 45--47
 []\T2A/LinuxLibertineT-TLF/m/n/10.95 Теперь до-ка-жем в об-рат-ную сто-ро-ну. П
@@ -1630,7 +2764,7 @@ eT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 []; [] ; []\PU/LinuxLi
 bertineT-TLF/m/up/10.95 ) =
  []
 
-[29]
+[152] [153]
 Overfull \hbox (11.38297pt too wide) in paragraph at lines 128--130
 []\T2A/LinuxLibertineT-TLF/m/n/10.95 Рассмотрим $\OML/LinuxLibertineT-TLF/m/up/
 10.95 K \PU/LinuxLibertineT-TLF/m/up/10.95 = \U/msb/m/n/10.95 Q\PU/LinuxLiberti
@@ -1643,22 +2777,21 @@ m/up/10.95 ^^P; ^^P[]; [] ; ^^P[]\PU/LinuxLibertineT-TLF/m/up/10.95 )\OMS/Linux
 LibertineT-TLF/m/up/10.95 j \PU/LinuxLibertineT-TLF/m/up/10.95 =
  []
 
-[30] [31] [32]) (./lectures/4/files/lecture 6.10.2023.tex [33] [34]
+[154] [155]) (./lectures/4/files/lecture 6.10.2023.tex [156] [157] [158]
 Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
-[35]
+[159]
 Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
-[36]
 
 LaTeX Warning: Command \cyrh invalid in math mode on input line 220.
 
 Missing character: There is no х in font cmr10!
-) (./lectures/4/files/lecture 13.10.2023.tex [37] [38]
+[160]) (./lectures/4/files/lecture 13.10.2023.tex [161]
 Overfull \hbox (20.83643pt too wide) detected at line 89
 \U/euf/m/n/10.95 p[] \PU/LinuxLibertineT-TLF/m/up/10.95 = (2)\OML/LinuxLibertin
 eT-TLF/m/up/10.95 ;  \U/euf/m/n/10.95 p[] \PU/LinuxLibertineT-TLF/m/up/10.95 = 
@@ -1674,21 +2807,18 @@ m/n/10.95 p[]\PU/LinuxLibertineT-TLF/m/up/10.95 ]\OML/LinuxLibertineT-TLF/m/up/
 10.95 :
  []
 
-[39]) (./lectures/4/files/lecture 20.10.2023.tex [40] [41] [42] [43] [44])
-(./lectures/4/files/lecture 3.11.2023.tex [45]
+[162] [163]) (./lectures/4/files/lecture 20.10.2023.tex [164] [165] [166]
+[167]) (./lectures/4/files/lecture 3.11.2023.tex [168] [169]
 
 pdfTeX warning: pdflatex (file ./lectures/4/pictures/cd_1.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/4/pictures/cd_1.pdf, id=967, 145.00172pt x 62.85483pt>
+<lectures/4/pictures/cd_1.pdf, id=4536, 145.00172pt x 62.85483pt>
 File: lectures/4/pictures/cd_1.pdf Graphic file (type pdf)
 <use lectures/4/pictures/cd_1.pdf>
 Package pdftex.def Info: lectures/4/pictures/cd_1.pdf  used on input line 115.
 (pdftex.def)             Requested size: 145.00136pt x 62.85466pt.
-[46 <./lectures/4/pictures/cd_1.pdf>] [47])
-(./lectures/4/files/lecture 10.11.2023.tex [48] [49] [50]
-LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 210.
- [51] [52]
+[170 <./lectures/4/pictures/cd_1.pdf>])
+(./lectures/4/files/lecture 10.11.2023.tex [171] [172] [173] [174] [175]
 Overfull \hbox (6.90034pt too wide) detected at line 321
 \OML/LinuxLibertineT-TLF/m/up/10.95 ^^][][][] \OMS/LinuxLibertineT-TLF/m/up/10.
 95 ^^U \PU/LinuxLibertineT-TLF/m/up/10.95 0  =[]\OMS/LinuxLibertineT-TLF/m/up/1
@@ -1718,7 +2848,7 @@ OMS/LinuxLibertineT-TLF/m/up/10.95 ^^@[]  \PU/LinuxLibertineT-TLF/m/up/10.95 =[
  [] = []\OML/LinuxLibertineT-TLF/m/up/10.95 :
  []
 
-
+[176]
 Overfull \hbox (8.34232pt too wide) in paragraph at lines 361--363
 []\T2A/LinuxLibertineT-TLF/m/it/10.95 Hint: \T2A/LinuxLibertineT-TLF/m/n/10.95 
 Мож-но дей-ство-вать так: $[]\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibe
@@ -1728,26 +2858,27 @@ LibertineT-TLF/m/n/10.95 , и рас-кры-вая опре-де-ли-тель, мы по-лу-ча-ем $[]\PU
 U/LinuxLibertineT-TLF/m/up/10.95 ) =
  []
 
-) (./lectures/4/files/lecture 17.11.2023.tex [53] [54]
+) (./lectures/4/files/lecture 17.11.2023.tex [177]
 Overfull \hbox (1.4108pt too wide) in paragraph at lines 90--91
-[][]\T2A/LinuxLibertineT-TLF/b/n/10.95 Лемма 30 \T2A/LinuxLibertineT-TLF/m/n/10
+[][]\T2A/LinuxLibertineT-TLF/b/n/10.95 Лемма 62 \T2A/LinuxLibertineT-TLF/m/n/10
 .95 (Г. Мин-ков-ский, О вы-пук-лом те-ле)\T2A/LinuxLibertineT-TLF/b/n/10.95 . [
 ]\T2A/LinuxLibertineT-TLF/m/n/10.95 Пусть $\OML/LinuxLibertineT-TLF/m/up/10.95 
 T$ \T2A/LinuxLibertineT-TLF/m/n/10.95 --- огра-ни-чен-ное вы-пук-лое центрально
 -симметричное
  []
 
-[55]
+[178]
 Overfull \hbox (37.55556pt too wide) detected at line 131
 [][][] \PU/LinuxLibertineT-TLF/m/up/10.95 = [] [] [] = \OMS/LinuxLibertineT-TLF
 /m/up/10.95 ^^F[][]\OML/LinuxLibertineT-TLF/m/up/10.95 :
  []
 
-[56] [57] [58]) (./lectures/4/files/24.11.2023.tex
+[179] [180] [181]) (./lectures/4/files/24.11.2023.tex
 
 Package hyperref Warning: Suppressing empty link on input line 4.
 
-[59] [60]) (./lectures/4/lecture 1.12.2023.tex [61] [62] [63] [64]
+[182] [183] [184]) (./lectures/4/lecture 1.12.2023.tex [185] [186] [187]
+[188]
 Overfull \hbox (142.12466pt too wide) detected at line 222
 \OML/LinuxLibertineT-TLF/m/up/10.95 x[] \OMS/LinuxLibertineT-TLF/m/up/10.95 ^^@
  \PU/LinuxLibertineT-TLF/m/up/10.95 6 \OMS/LinuxLibertineT-TLF/m/up/10.95 ^^Q \
@@ -1773,7 +2904,7 @@ LF/m/up/10.95 + 1)([]5) \U/msa/m/n/10.95   \PU/LinuxLibertineT-TLF/m/up/10.95 5
 .95 + 1)\OML/LinuxLibertineT-TLF/m/up/10.95 :
  []
 
-[65]) (./lectures/4/files/lecture 8.12.2023.tex
+[189]) (./lectures/4/files/lecture 8.12.2023.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1782,7 +2913,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[66] [67] [68]
+[190] [191] [192]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 195.
@@ -1795,7 +2926,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 195.
 
-[69] [70] [71] [72]
+[193] [194] [195] [196]
 Overfull \hbox (5.26178pt too wide) in paragraph at lines 479--481
 \T2A/LinuxLibertineT-TLF/m/n/10.95 Ясно, что мы мо-жем по-ла-гать, что $\OML/Li
 nuxLibertineT-TLF/m/up/10.95 x[]; y[]; z[] \OMS/LinuxLibertineT-TLF/m/up/10.95 
@@ -1810,409 +2941,664 @@ nuxLibertineT-TLF/m/up/10.95 x[]; y[]; z[] \OMS/LinuxLibertineT-TLF/m/up/10.95
 
  []
 
-[73]) (./lectures/4/files/lecture 20.12.2023.tex [74] [75] [76] [77] [78])
+[197]) (./lectures/4/files/lecture 20.12.2023.tex [198] [199] [200] [201])
+(./lectures/6/lecture 1.tex [202] [203] [204] [205] [206])
+(./lectures/6/lecture 2.tex [207] [208]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_22.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_22.pdf, id=4960, 29.51025pt x 98.87941pt>
+File: lectures/6/pictures/cd_22.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_22.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_22.pdf  used on input line 134.
+
+(pdftex.def)             Requested size: 29.51016pt x 98.87915pt.
+[209 <./lectures/6/pictures/cd_22.pdf>] [210] [211])
+(./lectures/6/lecture 3.tex [212] [213] [214] [215]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_23.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_23.pdf, id=5032, 123.1802pt x 95.90831pt>
+File: lectures/6/pictures/cd_23.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_23.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_23.pdf  used on input line 263.
+
+(pdftex.def)             Requested size: 123.17989pt x 95.90807pt.
+) (./lectures/6/lecture 4.tex [216 <./lectures/6/pictures/cd_23.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_1.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_1.pdf, id=5042, 173.46808pt x 90.64867pt>
+File: lectures/6/pictures/cd_1.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_1.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_1.pdf  used on input line 38.
+(pdftex.def)             Requested size: 173.46765pt x 90.64844pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_2.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_2.pdf, id=5043, 136.12857pt x 93.90082pt>
+File: lectures/6/pictures/cd_2.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_2.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_2.pdf  used on input line 44.
+(pdftex.def)             Requested size: 136.12822pt x 93.90057pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_3.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_3.pdf, id=5044, 367.50299pt x 67.27132pt>
+File: lectures/6/pictures/cd_3.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_3.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_3.pdf  used on input line 59.
+(pdftex.def)             Requested size: 367.50208pt x 67.27113pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_4.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_4.pdf, id=5045, 189.47789pt x 88.27982pt>
+File: lectures/6/pictures/cd_4.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_4.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_4.pdf  used on input line 69.
+(pdftex.def)             Requested size: 189.47742pt x 88.27959pt.
+[217 <./lectures/6/pictures/cd_1.pdf> <./lectures/6/pictures/cd_2.pdf> <./lectu
+res/6/pictures/cd_3.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_5.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_5.pdf, id=5098, 189.47789pt x 88.27982pt>
+File: lectures/6/pictures/cd_5.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_5.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_5.pdf  used on input line 82.
+(pdftex.def)             Requested size: 189.47742pt x 88.27959pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_6.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_6.pdf, id=5099, 367.50299pt x 104.0688pt>
+File: lectures/6/pictures/cd_6.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_6.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_6.pdf  used on input line 114.
+(pdftex.def)             Requested size: 367.50208pt x 104.06854pt.
+[218 <./lectures/6/pictures/cd_4.pdf> <./lectures/6/pictures/cd_5.pdf> <./lectu
+res/6/pictures/cd_6.pdf>] [219]
+Overfull \hbox (3.13551pt too wide) in paragraph at lines 239--240
+[][]\T2A/LinuxLibertineT-TLF/b/n/10.95 Определение 143. []\T2A/LinuxLibertineT-
+TLF/m/n/10.95 Пусть $\OML/LinuxLibertineT-TLF/m/up/10.95 X$ \T2A/LinuxLibertine
+T-TLF/m/n/10.95 --- абе-ле-ва груп-па с три-ви-аль-ным дей-стви-ем $\OML/LinuxL
+ibertineT-TLF/m/up/10.95 G$\T2A/LinuxLibertineT-TLF/m/n/10.95 . То-гда мо-дуль 
+ви-да $[]\PU/LinuxLibertineT-TLF/m/up/10.95 (\U/msb/m/n/10.95 Z\PU/LinuxLiberti
+neT-TLF/m/up/10.95 [\OML/LinuxLibertineT-TLF/m/up/10.95 G\PU/LinuxLibertineT-TL
+F/m/up/10.95 ]\OML/LinuxLibertineT-TLF/m/up/10.95 ; X\PU/LinuxLibertineT-TLF/m/
+up/10.95 )$
+ []
+
+[220]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_21.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_21.pdf, id=5165, 375.001pt x 67.52226pt>
+File: lectures/6/pictures/cd_21.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_21.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_21.pdf  used on input line 256.
+
+(pdftex.def)             Requested size: 375.00008pt x 67.5221pt.
+
+Overfull \hbox (8.69028pt too wide) in paragraph at lines 268--270
+\T2A/LinuxLibertineT-TLF/m/n/10.95 где $\OML/LinuxLibertineT-TLF/m/up/10.95 A[]
+ \PU/LinuxLibertineT-TLF/m/up/10.95 = \OML/LinuxLibertineT-TLF/m/up/10.95 A[]=A
+$\T2A/LinuxLibertineT-TLF/m/n/10.95 . Ес-ли мы на-пи-шем длин-ную точ-ную по-сл
+е-до-ва-тель-ность ко-го-мо-ло-гий, то, так как $\OML/LinuxLibertineT-TLF/m/up/
+10.95 H[]\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.9
+5 G; A[]\PU/LinuxLibertineT-TLF/m/up/10.95 ) =
+ []
+
+) (./lectures/6/lecture 5.tex [221 <./lectures/6/pictures/cd_21.pdf>] [222]
+[223] [224]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_7.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_7.pdf, id=5197, 198.28076pt x 60.58635pt>
+File: lectures/6/pictures/cd_7.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_7.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_7.pdf  used on input line 244.
+(pdftex.def)             Requested size: 198.28027pt x 60.5862pt.
+[225 <./lectures/6/pictures/cd_7.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_49.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_49.pdf, id=5213, 319.01183pt x 32.41109pt>
+File: lectures/6/pictures/cd_49.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_49.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_49.pdf  used on input line 319.
+
+(pdftex.def)             Requested size: 319.01105pt x 32.411pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_50.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_50.pdf, id=5214, 375.6936pt x 28.95819pt>
+File: lectures/6/pictures/cd_50.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_50.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_50.pdf  used on input line 325.
+
+(pdftex.def)             Requested size: 375.69269pt x 28.95811pt.
+[226 <./lectures/6/pictures/cd_49.pdf> <./lectures/6/pictures/cd_50.pdf>])
+(./lectures/6/lecture 6.tex
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_20.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_20.pdf, id=5247, 334.09819pt x 148.31409pt>
+File: lectures/6/pictures/cd_20.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_20.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_20.pdf  used on input line 29.
+(pdftex.def)             Requested size: 334.09737pt x 148.31372pt.
+[227 <./lectures/6/pictures/cd_20.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_8.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_8.pdf, id=5265, 412.34048pt x 68.43567pt>
+File: lectures/6/pictures/cd_8.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_8.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_8.pdf  used on input line 97.
+(pdftex.def)             Requested size: 412.33946pt x 68.43549pt.
+[228 <./lectures/6/pictures/cd_8.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_9.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_9.pdf, id=5285, 225.09094pt x 69.80078pt>
+File: lectures/6/pictures/cd_9.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_9.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_9.pdf  used on input line 121.
+(pdftex.def)             Requested size: 225.09038pt x 69.8006pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_10.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_10.pdf, id=5286, 131.44106pt x 67.35162pt>
+File: lectures/6/pictures/cd_10.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_10.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_10.pdf  used on input line 171.
+
+(pdftex.def)             Requested size: 131.44072pt x 67.35144pt.
+[229 <./lectures/6/pictures/cd_9.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_11.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_11.pdf, id=5304, 121.50394pt x 88.1694pt>
+File: lectures/6/pictures/cd_11.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_11.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_11.pdf  used on input line 180.
+
+(pdftex.def)             Requested size: 121.50363pt x 88.16917pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_12.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_12.pdf, id=5305, 184.27846pt x 92.05391pt>
+File: lectures/6/pictures/cd_12.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_12.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_12.pdf  used on input line 212.
+
+(pdftex.def)             Requested size: 184.27798pt x 92.05367pt.
+[230 <./lectures/6/pictures/cd_10.pdf> <./lectures/6/pictures/cd_11.pdf> <./lec
+tures/6/pictures/cd_12.pdf>]
+Overfull \hbox (15.3551pt too wide) in paragraph at lines 262--264
+\T2A/LinuxLibertineT-TLF/m/n/10.95 Заметим, что $[][][] \PU/LinuxLibertineT-TLF
+/m/up/10.95 = [](\U/msb/m/n/10.95 Z\PU/LinuxLibertineT-TLF/m/up/10.95 [\OML/Lin
+uxLibertineT-TLF/m/up/10.95 G\PU/LinuxLibertineT-TLF/m/up/10.95 ]\OML/LinuxLibe
+rtineT-TLF/m/up/10.95 ; A\PU/LinuxLibertineT-TLF/m/up/10.95 )[] [] [](\U/msb/m/
+n/10.95 Z\PU/LinuxLibertineT-TLF/m/up/10.95 [\OML/LinuxLibertineT-TLF/m/up/10.9
+5 G=H\PU/LinuxLibertineT-TLF/m/up/10.95 ]\OML/LinuxLibertineT-TLF/m/up/10.95 ; 
+A\PU/LinuxLibertineT-TLF/m/up/10.95 )$\T2A/LinuxLibertineT-TLF/m/n/10.95 , от-к
+у-да сле-ду-ет, что $[][][]$ --- $\OML/LinuxLibertineT-TLF/m/up/10.95 H$\T2A/Li
+nuxLibertineT-TLF/m/n/10.95 -коиндуцированный
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_26.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_26.pdf, id=5333, 323.03685pt x 89.57465pt>
+File: lectures/6/pictures/cd_26.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_26.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_26.pdf  used on input line 271.
+
+(pdftex.def)             Requested size: 323.03604pt x 89.57442pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_13.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_13.pdf, id=5334, 255.23355pt x 69.35913pt>
+File: lectures/6/pictures/cd_13.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_13.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_13.pdf  used on input line 282.
+
+(pdftex.def)             Requested size: 255.23291pt x 69.35895pt.
+[231 <./lectures/6/pictures/cd_26.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_14.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_14.pdf, id=5352, 177.16188pt x 87.1255pt>
+File: lectures/6/pictures/cd_14.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_14.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_14.pdf  used on input line 299.
+
+(pdftex.def)             Requested size: 177.16144pt x 87.12527pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_15.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_15.pdf, id=5353, 181.96983pt x 92.05391pt>
+File: lectures/6/pictures/cd_15.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_15.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_15.pdf  used on input line 325.
+
+(pdftex.def)             Requested size: 181.96938pt x 92.05367pt.
+[232 <./lectures/6/pictures/cd_13.pdf> <./lectures/6/pictures/cd_14.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_16.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_16.pdf, id=5381, 263.8156pt x 92.05391pt>
+File: lectures/6/pictures/cd_16.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_16.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_16.pdf  used on input line 333.
+
+(pdftex.def)             Requested size: 263.81494pt x 92.05367pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_17.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_17.pdf, id=5382, 204.7951pt x 62.46336pt>
+File: lectures/6/pictures/cd_17.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_17.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_17.pdf  used on input line 339.
+
+(pdftex.def)             Requested size: 204.7946pt x 62.4632pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_18.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_18.pdf, id=5383, 414.86996pt x 90.07652pt>
+File: lectures/6/pictures/cd_18.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_18.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_18.pdf  used on input line 344.
+
+(pdftex.def)             Requested size: 414.86894pt x 90.0763pt.
+[233 <./lectures/6/pictures/cd_15.pdf> <./lectures/6/pictures/cd_16.pdf> <./lec
+tures/6/pictures/cd_17.pdf> <./lectures/6/pictures/cd_18.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_19.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_19.pdf, id=5438, 318.91145pt x 88.03891pt>
+File: lectures/6/pictures/cd_19.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_19.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_19.pdf  used on input line 387.
+
+(pdftex.def)             Requested size: 318.91066pt x 88.03868pt.
+[234 <./lectures/6/pictures/cd_19.pdf>]) (./lectures/6/lecture 7.tex [235]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 72.
+(hyperref)                removing `math shift' on input line 71.
 
-(./lectures/6/1.tex [79] [80] [81] [82]) (./lectures/6/2.tex [83] [84] [85]
-[86]) (./lectures/6/3.tex [87] [88] [89] [90]) (./lectures/6/4.tex
 
-pdfTeX warning: pdflatex (file ./lectures/5/pictures/pic_4.pdf): PDF inclusion:
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 71.
+
+[236]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_24.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/5/pictures/pic_4.pdf, id=1442, 123.1802pt x 95.90831pt>
-File: lectures/5/pictures/pic_4.pdf Graphic file (type pdf)
-<use lectures/5/pictures/pic_4.pdf>
-Package pdftex.def Info: lectures/5/pictures/pic_4.pdf  used on input line 37.
-(pdftex.def)             Requested size: 123.17989pt x 95.90807pt.
-[91]
+<lectures/6/pictures/cd_24.pdf, id=5472, 468.38991pt x 89.33376pt>
+File: lectures/6/pictures/cd_24.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_24.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_24.pdf  used on input line 105.
 
-pdfTeX warning: pdflatex (file ./lectures/5/pictures/pic_5.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/5/pictures/pic_5.pdf, id=1457, 263.74536pt x 64.60135pt>
-File: lectures/5/pictures/pic_5.pdf Graphic file (type pdf)
-<use lectures/5/pictures/pic_5.pdf>
-Package pdftex.def Info: lectures/5/pictures/pic_5.pdf  used on input line 80.
-(pdftex.def)             Requested size: 263.7447pt x 64.60118pt.
-
-
-pdfTeX warning: pdflatex (file ./lectures/5/pictures/pic_6.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/5/pictures/pic_6.pdf, id=1458, 121.50394pt x 64.54112pt>
-File: lectures/5/pictures/pic_6.pdf Graphic file (type pdf)
-<use lectures/5/pictures/pic_6.pdf>
-Package pdftex.def Info: lectures/5/pictures/pic_6.pdf  used on input line 85.
-(pdftex.def)             Requested size: 121.50363pt x 64.54095pt.
-[92 <./lectures/5/pictures/pic_4.pdf> <./lectures/5/pictures/pic_5.pdf> <./lect
-ures/5/pictures/pic_6.pdf>]
-
-pdfTeX warning: pdflatex (file ./lectures/5/pictures/pic_9.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/5/pictures/pic_9.pdf, id=1486, 263.74536pt x 67.38173pt>
-File: lectures/5/pictures/pic_9.pdf Graphic file (type pdf)
-<use lectures/5/pictures/pic_9.pdf>
-Package pdftex.def Info: lectures/5/pictures/pic_9.pdf  used on input line 95.
-(pdftex.def)             Requested size: 263.7447pt x 67.38155pt.
-
-
-pdfTeX warning: pdflatex (file ./lectures/5/pictures/pic_7.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/5/pictures/pic_7.pdf, id=1487, 133.25784pt x 64.60135pt>
-File: lectures/5/pictures/pic_7.pdf Graphic file (type pdf)
-<use lectures/5/pictures/pic_7.pdf>
-Package pdftex.def Info: lectures/5/pictures/pic_7.pdf  used on input line 109.
-
-(pdftex.def)             Requested size: 133.2575pt x 64.60118pt.
-
-
-pdfTeX warning: pdflatex (file ./lectures/5/pictures/pic_8.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/5/pictures/pic_8.pdf, id=1488, 133.25784pt x 64.60135pt>
-File: lectures/5/pictures/pic_8.pdf Graphic file (type pdf)
-<use lectures/5/pictures/pic_8.pdf>
-Package pdftex.def Info: lectures/5/pictures/pic_8.pdf  used on input line 118.
-
-(pdftex.def)             Requested size: 133.2575pt x 64.60118pt.
-[93 <./lectures/5/pictures/pic_9.pdf> <./lectures/5/pictures/pic_7.pdf> <./lect
-ures/5/pictures/pic_8.pdf>] [94]) (./lectures/5/lectures/1.tex [95] [96]
-[97] [98]) (./lectures/5/lectures/2.tex [99] [100] [101])
-(./lectures/5/lectures/3.tex [102]
-
-pdfTeX warning: pdflatex (file ./lectures/5/pictures/pic_1.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/5/pictures/pic_1.pdf, id=1647, 170.64754pt x 75.33144pt>
-File: lectures/5/pictures/pic_1.pdf Graphic file (type pdf)
-<use lectures/5/pictures/pic_1.pdf>
-Package pdftex.def Info: lectures/5/pictures/pic_1.pdf  used on input line 74.
-(pdftex.def)             Requested size: 170.64711pt x 75.33124pt.
-
-Overfull \hbox (1.57869pt too wide) in paragraph at lines 77--78
-[]\T2A/LinuxLibertineT-TLF/m/n/10.95 Горизонтальные стрел-ки по-лу-ча-ют-ся из 
-то-го, что $\OML/LinuxLibertineT-TLF/m/up/10.95 Y [] D[][]$ \T2A/LinuxLibertine
-T-TLF/m/n/10.95 по-сред-ством отоб-ра-же-ний $\PU/LinuxLibertineT-TLF/m/up/10.9
-5 (\OML/LinuxLibertineT-TLF/m/up/10.95 x[]; [] ; x[]; t\PU/LinuxLibertineT-TLF/
-m/up/10.95 ) \OMS/LinuxLibertineT-TLF/m/up/10.95 7!
- []
-
-[103 <./lectures/5/pictures/pic_1.pdf>]
-
-pdfTeX warning: pdflatex (file ./lectures/5/pictures/pic_2.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/5/pictures/pic_2.pdf, id=1668, 196.03238pt x 67.7732pt>
-File: lectures/5/pictures/pic_2.pdf Graphic file (type pdf)
-<use lectures/5/pictures/pic_2.pdf>
-Package pdftex.def Info: lectures/5/pictures/pic_2.pdf  used on input line 118.
-
-(pdftex.def)             Requested size: 196.03189pt x 67.77301pt.
-
-
-pdfTeX warning: pdflatex (file ./lectures/5/pictures/pic_3.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/5/pictures/pic_3.pdf, id=1669, 192.62967pt x 67.64272pt>
-File: lectures/5/pictures/pic_3.pdf Graphic file (type pdf)
-<use lectures/5/pictures/pic_3.pdf>
-Package pdftex.def Info: lectures/5/pictures/pic_3.pdf  used on input line 123.
-
-(pdftex.def)             Requested size: 192.62918pt x 67.64253pt.
-[104 <./lectures/5/pictures/pic_2.pdf> <./lectures/5/pictures/pic_3.pdf>]
-Overfull \hbox (0.87943pt too wide) in paragraph at lines 184--185
-[]\T2A/LinuxLibertineT-TLF/m/it/10.95 Замечание. []\T2A/LinuxLibertineT-TLF/m/n
-/10.95 Пусть $\OML/LinuxLibertineT-TLF/m/up/10.95 X \OMS/LinuxLibertineT-TLF/m/
-up/10.95 ^^Z \U/msb/m/n/10.95 A[]\OML/LinuxLibertineT-TLF/m/up/10.95 ;  Y \OMS/
-LinuxLibertineT-TLF/m/up/10.95 ^^Z \U/msb/m/n/10.95 A[]$ \T2A/LinuxLibertineT-T
-LF/m/n/10.95 --- аф-фин-ные мно-го-об-ра-зия. Пусть $\OML/LinuxLibertineT-TLF/m
-/up/10.95 X \PU/LinuxLibertineT-TLF/m/up/10.95 = \OML/LinuxLibertineT-TLF/m/up/
-10.95 Z\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 
-f[]; [] ; f[]\PU/LinuxLibertineT-TLF/m/up/10.95 )\OML/LinuxLibertineT-TLF/m/up/
-10.95 ;  Y \PU/LinuxLibertineT-TLF/m/up/10.95 = \OML/LinuxLibertineT-TLF/m/up/1
-0.95 Z\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 g
-[]; [] ; g[]\PU/LinuxLibertineT-TLF/m/up/10.95 )$\T2A/LinuxLibertineT-TLF/m/n/1
-0.95 ,
- []
-
-[105]) (./lectures/5/lectures/4.tex [106] [107] [108]) [109]
-(./lectures/0/0.1.tex
-<lectures/0/pictures/pic_1.pdf, id=1742, 115.02002pt x 93.97575pt>
-File: lectures/0/pictures/pic_1.pdf Graphic file (type pdf)
-<use lectures/0/pictures/pic_1.pdf>
-Package pdftex.def Info: lectures/0/pictures/pic_1.pdf  used on input line 53.
-(pdftex.def)             Requested size: 80.51346pt x 65.78256pt.
-LaTeX Font Info:    Font shape `T2A/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 54.
- [110]
-<lectures/0/pictures/pic_2.pdf, id=1752, 80.44365pt x 72.91553pt>
-File: lectures/0/pictures/pic_2.pdf Graphic file (type pdf)
-<use lectures/0/pictures/pic_2.pdf>
-Package pdftex.def Info: lectures/0/pictures/pic_2.pdf  used on input line 91.
-(pdftex.def)             Requested size: 80.44344pt x 72.91533pt.
- [111 <./lectures/0/pictures/pic_1.pdf> <./lectures/0/pictures/pic_2.pdf
-
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/pic_2.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->]) (./lectures/0/0.2.tex [112]
-
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_1.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_1.pdf, id=1778, 250.47577pt x 71.11569pt>
-File: lectures/0/pictures/cd_1.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_1.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_1.pdf  used on input line 33.
-(pdftex.def)             Requested size: 250.47514pt x 71.11551pt.
-
-
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_2.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_2.pdf, id=1779, 191.53558pt x 71.738pt>
-File: lectures/0/pictures/cd_2.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_2.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_2.pdf  used on input line 54.
-(pdftex.def)             Requested size: 191.5351pt x 71.73782pt.
-[113 <./lectures/0/pictures/cd_1.pdf>]
-Overfull \hbox (33.32329pt too wide) in paragraph at lines 95--97
-[][]\T2A/LinuxLibertineT-TLF/b/n/10.95 Определение 73. []\T2A/LinuxLibertineT-T
-LF/m/n/10.95 Пусть $\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TL
-F/m/up/10.95 C[]; @\PU/LinuxLibertineT-TLF/m/up/10.95 )\OML/LinuxLibertineT-TLF
-/m/up/10.95 ; \PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up
-/10.95 D[]; ^^N\PU/LinuxLibertineT-TLF/m/up/10.95 ) \OMS/LinuxLibertineT-TLF/m/
-up/10.95 2 \U/euf/m/n/10.95 Ch$ \T2A/LinuxLibertineT-TLF/m/n/10.95 --- два цеп-
-ных ком-плек-са. Их мор-физ-мы $\OML/LinuxLibertineT-TLF/m/up/10.95 f; g \OMS/L
-inuxLibertineT-TLF/m/up/10.95 2 [][]\PU/LinuxLibertineT-TLF/m/up/10.95 ((\OML/L
-inuxLibertineT-TLF/m/up/10.95 C[]; @\PU/LinuxLibertineT-TLF/m/up/10.95 )\OML/Li
-nuxLibertineT-TLF/m/up/10.95 ; \PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLi
-bertineT-TLF/m/up/10.95 D[]; ^^N\PU/LinuxLibertineT-TLF/m/up/10.95 ))$
+(pdftex.def)             Requested size: 468.38876pt x 89.33353pt.
+[237 <./lectures/6/pictures/cd_24.pdf>]
+Overfull \hbox (4.46484pt too wide) in paragraph at lines 170--171
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 Таким об-ра-зом, мы по-ка-за-ли, что наш к
+о-цикл яв-ля-ет-ся ко-гра-ни-цей и от-сю-да за-клю-ча-ем, что $[]\PU/LinuxLiber
+tineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 G; U[]\PU/LinuxLibert
+ineT-TLF/m/up/10.95 ) []
  []
 
 
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_3.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_3.pdf, id=1803, 250.47577pt x 71.11569pt>
-File: lectures/0/pictures/cd_3.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_3.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_3.pdf  used on input line 99.
-(pdftex.def)             Requested size: 250.47514pt x 71.11551pt.
-[114 <./lectures/0/pictures/cd_2.pdf> <./lectures/0/pictures/cd_3.pdf>])
-(./lectures/0/0.3.tex
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_25.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_25.pdf, id=5494, 501.21252pt x 69.99149pt>
+File: lectures/6/pictures/cd_25.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_25.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_25.pdf  used on input line 179.
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_4.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_4.pdf, id=1841, 222.963pt x 71.738pt>
-File: lectures/0/pictures/cd_4.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_4.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_4.pdf  used on input line 6.
-(pdftex.def)             Requested size: 222.96245pt x 71.73782pt.
-[115]
+(pdftex.def)             Requested size: 501.21129pt x 69.9913pt.
+[238 <./lectures/6/pictures/cd_25.pdf>]) (./lectures/6/lecture 8.tex [239]
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_5.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_5.pdf, id=1852, 274.36502pt x 71.738pt>
-File: lectures/0/pictures/cd_5.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_5.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_5.pdf  used on input line 24.
-(pdftex.def)             Requested size: 274.36433pt x 71.73782pt.
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_27.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_27.pdf, id=5526, 54.99547pt x 95.67744pt>
+File: lectures/6/pictures/cd_27.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_27.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_27.pdf  used on input line 54.
+(pdftex.def)             Requested size: 54.99533pt x 95.6772pt.
 
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_6.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_6.pdf, id=1853, 335.40306pt x 165.45815pt>
-File: lectures/0/pictures/cd_6.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_6.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_6.pdf  used on input line 42.
-(pdftex.def)             Requested size: 335.40224pt x 165.45772pt.
-[116 <./lectures/0/pictures/cd_4.pdf> <./lectures/0/pictures/cd_5.pdf>]
-<lectures/0/pictures/pic_3.pdf, id=1891, 158.22755pt x 128.78412pt>
-File: lectures/0/pictures/pic_3.pdf Graphic file (type pdf)
-<use lectures/0/pictures/pic_3.pdf>
-Package pdftex.def Info: lectures/0/pictures/pic_3.pdf  used on input line 70.
-(pdftex.def)             Requested size: 158.22716pt x 128.78378pt.
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_28.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_28.pdf, id=5527, 60.71684pt x 130.77858pt>
+File: lectures/6/pictures/cd_28.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_28.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_28.pdf  used on input line 61.
+(pdftex.def)             Requested size: 60.71667pt x 130.77824pt.
+[240 <./lectures/6/pictures/cd_27.pdf>] [241 <./lectures/6/pictures/cd_28.pdf>]
 
-[117 <./lectures/0/pictures/cd_6.pdf> <./lectures/0/pictures/pic_3.pdf>]
-<lectures/0/pictures/pic_4.pdf, id=1912, 212.78654pt x 156.64812pt>
-File: lectures/0/pictures/pic_4.pdf Graphic file (type pdf)
-<use lectures/0/pictures/pic_4.pdf>
-Package pdftex.def Info: lectures/0/pictures/pic_4.pdf  used on input line 144.
 
-(pdftex.def)             Requested size: 148.94955pt x 109.65292pt.
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_29.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_29.pdf, id=5555, 140.08334pt x 98.96974pt>
+File: lectures/6/pictures/cd_29.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_29.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_29.pdf  used on input line 152.
 
-[118] [119 <./lectures/0/pictures/pic_4.pdf>]
-Overfull \hbox (18.34819pt too wide) in paragraph at lines 217--220
-[]\T2A/LinuxLibertineT-TLF/m/it/10.95 Барицентрическое под-раз-би-е-ние (под-ра
-з-де-ле-ние) \T2A/LinuxLibertineT-TLF/m/n/10.95 сим-плек-са $\PU/LinuxLibertine
-T-TLF/m/up/10.95 [\OML/LinuxLibertineT-TLF/m/up/10.95 v[]; [] ; v[]\PU/LinuxLib
-ertineT-TLF/m/up/10.95 ]$ \T2A/LinuxLibertineT-TLF/m/n/10.95 --- это раз-би-е-н
-ие сим-плек-са $\PU/LinuxLibertineT-TLF/m/up/10.95 [\OML/LinuxLibertineT-TLF/m/
-up/10.95 v[]; [] ; v[]\PU/LinuxLibertineT-TLF/m/up/10.95 ]$
+(pdftex.def)             Requested size: 140.083pt x 98.96948pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_30.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_30.pdf, id=5556, 507.76701pt x 72.31015pt>
+File: lectures/6/pictures/cd_30.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_30.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_30.pdf  used on input line 158.
+
+(pdftex.def)             Requested size: 507.76578pt x 72.30997pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_31.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_31.pdf, id=5557, 95.85812pt x 98.96974pt>
+File: lectures/6/pictures/cd_31.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_31.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_31.pdf  used on input line 167.
+
+(pdftex.def)             Requested size: 95.85788pt x 98.96948pt.
+[242 <./lectures/6/pictures/cd_29.pdf> <./lectures/6/pictures/cd_30.pdf> <./lec
+tures/6/pictures/cd_31.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_32.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_32.pdf, id=5592, 523.25487pt x 182.06018pt>
+File: lectures/6/pictures/cd_32.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_32.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_32.pdf  used on input line 221.
+
+(pdftex.def)             Requested size: 523.25359pt x 182.05972pt.
+
+Overfull \hbox (11.10396pt too wide) in paragraph at lines 221--222
+ [] 
  []
 
-) (./lectures/0/0.4.tex [120]
+[243 <./lectures/6/pictures/cd_32.pdf>]) (./lectures/6/lecture 9.tex
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_7.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_7.pdf, id=1947, 222.76224pt x 61.64029pt>
-File: lectures/0/pictures/cd_7.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_7.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_7.pdf  used on input line 69.
-(pdftex.def)             Requested size: 222.76169pt x 61.64014pt.
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_33.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_33.pdf, id=5612, 432.27498pt x 109.6898pt>
+File: lectures/6/pictures/cd_33.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_33.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_33.pdf  used on input line 5.
+(pdftex.def)             Requested size: 432.27391pt x 109.68951pt.
 
-
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_8.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_8.pdf, id=1948, 357.74654pt x 67.64272pt>
-File: lectures/0/pictures/cd_8.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_8.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_8.pdf  used on input line 86.
-(pdftex.def)             Requested size: 357.74567pt x 67.64253pt.
-[121 <./lectures/0/pictures/cd_7.pdf> <./lectures/0/pictures/cd_8.pdf>])
-(./lectures/0/0.5.tex [122] [123]
-<lectures/0/pictures/pic_5.svg.png, id=2002, 1927.2pt x 1927.2pt>
-File: lectures/0/pictures/pic_5.svg.png Graphic file (type png)
-<use lectures/0/pictures/pic_5.svg.png>
-Package pdftex.def Info: lectures/0/pictures/pic_5.svg.png  used on input line 
-98.
-(pdftex.def)             Requested size: 96.36565pt x 96.36565pt.
- [124 <./lectures/0/pictures/pic_5.svg.png>])
-(./lectures/0/0.6.tex [125]
-Overfull \hbox (17.01726pt too wide) in paragraph at lines 66--68
-\T2A/LinuxLibertineT-TLF/m/n/10.95 Теперь за-ме-тим, что ес-ли грань, ко-то-рую
- мы вы-ки-ну-ли, мы обо-зна-чим за $\PU/LinuxLibertineT-TLF/m/up/10.95 ^^A[]$\T
-2A/LinuxLibertineT-TLF/m/n/10.95 , то $\OML/LinuxLibertineT-TLF/m/up/10.95 H[][
-][] [] H[][][]$\T2A/LinuxLibertineT-TLF/m/n/10.95 . 
+Overfull \hbox (7.78227pt too wide) in paragraph at lines 24--25
+[]\T2A/LinuxLibertineT-TLF/m/n/10.95 Рассмотрим сна-ча-ла от-дель-но слу-чай, к
+о-гда $\OML/LinuxLibertineT-TLF/m/up/10.95 n \OMS/LinuxLibertineT-TLF/m/up/10.9
+5 ^^U \PU/LinuxLibertineT-TLF/m/up/10.95 0$\T2A/LinuxLibertineT-TLF/m/n/10.95 .
+ То-гда (в си-лу то-го, что $\OML/LinuxLibertineT-TLF/m/up/10.95 H[]\PU/LinuxLi
+bertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 H; A\PU/LinuxLiber
+tineT-TLF/m/up/10.95 ) = [] = \OML/LinuxLibertineT-TLF/m/up/10.95 H[]\PU/LinuxL
+ibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 H; A\PU/LinuxLibe
+rtineT-TLF/m/up/10.95 ) =
  []
 
-[126]
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_9.pdf): PDF inclusion: 
-found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_9.pdf, id=2030, 382.2782pt x 72.46071pt>
-File: lectures/0/pictures/cd_9.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_9.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_9.pdf  used on input line 97.
-(pdftex.def)             Requested size: 382.27725pt x 72.46053pt.
-[127 <./lectures/0/pictures/cd_9.pdf>]
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_10.pdf): PDF inclusion:
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_34.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_10.pdf, id=2049, 360.80797pt x 111.06494pt>
-File: lectures/0/pictures/cd_10.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_10.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_10.pdf  used on input line 158.
+<lectures/6/pictures/cd_34.pdf, id=5613, 345.7417pt x 64.86234pt>
+File: lectures/6/pictures/cd_34.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_34.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_34.pdf  used on input line 26.
+(pdftex.def)             Requested size: 345.74084pt x 64.86215pt.
+[244 <./lectures/6/pictures/cd_33.pdf> <./lectures/6/pictures/cd_34.pdf>]
 
-(pdftex.def)             Requested size: 360.80708pt x 111.06467pt.
-[128]
-Overfull \hbox (31.0769pt too wide) in paragraph at lines 174--177
-[]\T2A/LinuxLibertineT-TLF/m/n/10.95 По тео-ре-ме о вы-ра-зе-нии []75[], груп-п
-а $\OML/LinuxLibertineT-TLF/m/up/10.95 H[][][]$ \T2A/LinuxLibertineT-TLF/m/n/10
-.95 --- пря-мая сум-ма групп $\OML/LinuxLibertineT-TLF/m/up/10.95 H[][][]$\T2A/
-LinuxLibertineT-TLF/m/n/10.95 ,
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_35.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_35.pdf, id=5647, 339.5586pt x 66.09694pt>
+File: lectures/6/pictures/cd_35.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_35.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_35.pdf  used on input line 47.
+(pdftex.def)             Requested size: 339.55775pt x 66.09677pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_36.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_36.pdf, id=5648, 187.37001pt x 41.63554pt>
+File: lectures/6/pictures/cd_36.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_36.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_36.pdf  used on input line 70.
+(pdftex.def)             Requested size: 187.36954pt x 41.63544pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_37.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_37.pdf, id=5649, 504.71559pt x 133.75972pt>
+File: lectures/6/pictures/cd_37.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_37.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_37.pdf  used on input line 90.
+(pdftex.def)             Requested size: 504.71436pt x 133.75937pt.
+[245 <./lectures/6/pictures/cd_35.pdf> <./lectures/6/pictures/cd_36.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_38.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_38.pdf, id=5682, 536.10284pt x 72.45067pt>
+File: lectures/6/pictures/cd_38.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_38.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_38.pdf  used on input line 120.
+
+(pdftex.def)             Requested size: 482.4881pt x 65.20497pt.
+
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_43.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_43.pdf, id=5683, 254.51085pt x 105.82536pt>
+File: lectures/6/pictures/cd_43.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_43.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_43.pdf  used on input line 132.
+
+(pdftex.def)             Requested size: 254.51021pt x 105.82509pt.
+[246 <./lectures/6/pictures/cd_37.pdf> <./lectures/6/pictures/cd_38.pdf> <./lec
+tures/6/pictures/cd_43.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_39.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_39.pdf, id=5744, 185.53314pt x 88.03891pt>
+File: lectures/6/pictures/cd_39.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_39.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_39.pdf  used on input line 162.
+
+(pdftex.def)             Requested size: 166.97827pt x 79.23427pt.
+) (./lectures/6/lecture 10.tex
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_40.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_40.pdf, id=5746, 474.35216pt x 145.65416pt>
+File: lectures/6/pictures/cd_40.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_40.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_40.pdf  used on input line 13.
+(pdftex.def)             Requested size: 474.35098pt x 145.6538pt.
+[247 <./lectures/6/pictures/cd_39.pdf>]
+Overfull \hbox (9.77927pt too wide) detected at line 19
+\OML/LinuxLibertineT-TLF/m/up/10.95 r\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/L
+inuxLibertineT-TLF/m/up/10.95 H[]H[]\PU/LinuxLibertineT-TLF/m/up/10.95 ) = \OML
+/LinuxLibertineT-TLF/m/up/10.95 r\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/Linux
+LibertineT-TLF/m/up/10.95 H[]\PU/LinuxLibertineT-TLF/m/up/10.95 )\OML/LinuxLibe
+rtineT-TLF/m/up/10.95 r\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT
+-TLF/m/up/10.95 H[]\PU/LinuxLibertineT-TLF/m/up/10.95 ) = \OML/LinuxLibertineT-
+TLF/m/up/10.95 N[]\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/
+m/up/10.95 L[]=N[]\PU/LinuxLibertineT-TLF/m/up/10.95 (\OML/LinuxLibertineT-TLF/
+m/up/10.95 L[]L[]\PU/LinuxLibertineT-TLF/m/up/10.95 )[]) \OMS/LinuxLibertineT-T
+LF/m/up/10.95 ^^A \OML/LinuxLibertineT-TLF/m/up/10.95 N[]\PU/LinuxLibertineT-TL
+F/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 L[]=N[]\PU/LinuxLibertineT-TL
+F/m/up/10.95 (\OML/LinuxLibertineT-TLF/m/up/10.95 L[]L[]\PU/LinuxLibertineT-TLF
+/m/up/10.95 )[]) = []
  []
 
-) (./lectures/0/0.7.tex [129 <./lectures/0/pictures/cd_10.pdf>]
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_11.pdf): PDF inclusion:
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_51.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_11.pdf, id=2094, 446.60852pt x 221.12613pt>
-File: lectures/0/pictures/cd_11.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_11.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_11.pdf  used on input line 38.
-(pdftex.def)             Requested size: 446.60742pt x 221.12558pt.
-[130 <./lectures/0/pictures/cd_11.pdf>]
+<lectures/6/pictures/cd_51.pdf, id=5771, 306.12369pt x 106.86926pt>
+File: lectures/6/pictures/cd_51.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_51.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_51.pdf  used on input line 59.
+(pdftex.def)             Requested size: 306.12292pt x 106.869pt.
+[248 <./lectures/6/pictures/cd_40.pdf>]
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_12.pdf): PDF inclusion:
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_41.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_12.pdf, id=2126, 418.72435pt x 120.8214pt>
-File: lectures/0/pictures/cd_12.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_12.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_12.pdf  used on input line 104.
+<lectures/6/pictures/cd_41.pdf, id=5802, 61.76074pt x 140.82613pt>
+File: lectures/6/pictures/cd_41.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_41.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_41.pdf  used on input line 81.
+(pdftex.def)             Requested size: 61.76057pt x 140.82578pt.
 
-(pdftex.def)             Requested size: 418.72331pt x 120.82109pt.
-<lectures/0/pictures/pic_5.pdf, id=2127, 124.16022pt x 116.6397pt>
-File: lectures/0/pictures/pic_5.pdf Graphic file (type pdf)
-<use lectures/0/pictures/pic_5.pdf>
-Package pdftex.def Info: lectures/0/pictures/pic_5.pdf  used on input line 135.
 
-(pdftex.def)             Requested size: 124.1599pt x 116.6394pt.
-[131 <./lectures/0/pictures/cd_12.pdf>] [132 <./lectures/0/pictures/pic_5.pdf>]
-[133]) (./lectures/0/0.9.tex [134]
-
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_13.pdf): PDF inclusion:
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_42.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_13.pdf, id=2176, 248.4984pt x 63.9991pt>
-File: lectures/0/pictures/cd_13.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_13.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_13.pdf  used on input line 86.
-(pdftex.def)             Requested size: 248.49777pt x 63.99893pt.
-[135] [136 <./lectures/0/pictures/cd_13.pdf>]
+<lectures/6/pictures/cd_42.pdf, id=5803, 283.6497pt x 115.22046pt>
+File: lectures/6/pictures/cd_42.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_42.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_42.pdf  used on input line 92.
+(pdftex.def)             Requested size: 283.649pt x 115.22015pt.
+[249 <./lectures/6/pictures/cd_51.pdf> <./lectures/6/pictures/cd_41.pdf>]
+[250 <./lectures/6/pictures/cd_42.pdf>] [251]) (./lectures/6/lecture 11.tex
+[252] [253] [254] [255]) (./lectures/6/lecture 12.tex [256]
 
-pdfTeX warning: pdflatex (file ./lectures/0/pictures/cd_14.pdf): PDF inclusion:
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_44.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<lectures/0/pictures/cd_14.pdf, id=2204, 403.13612pt x 68.84721pt>
-File: lectures/0/pictures/cd_14.pdf Graphic file (type pdf)
-<use lectures/0/pictures/cd_14.pdf>
-Package pdftex.def Info: lectures/0/pictures/cd_14.pdf  used on input line 165.
+<lectures/6/pictures/cd_44.pdf, id=5880, 64.60135pt x 137.32303pt>
+File: lectures/6/pictures/cd_44.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_44.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_44.pdf  used on input line 56.
+(pdftex.def)             Requested size: 64.60118pt x 137.32268pt.
 
-(pdftex.def)             Requested size: 403.13513pt x 68.84703pt.
-[137 <./lectures/0/pictures/cd_14.pdf>]) [138] (./lectures/1/1.tex [139]
-[140] [141]) (./lectures/2/2.tex [142] [143]) (./lectures/2/2.2.tex [144]
-[145]) (./lectures/2/2.3.tex [146]) [147]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_45.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_45.pdf, id=5882, 307.66943pt x 85.33882pt>
+File: lectures/6/pictures/cd_45.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_45.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_45.pdf  used on input line 71.
+(pdftex.def)             Requested size: 307.66867pt x 85.3386pt.
+[257 <./lectures/6/pictures/cd_44.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_47.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_47.pdf, id=5901, 137.98552pt x 105.32349pt>
+File: lectures/6/pictures/cd_47.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_47.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_47.pdf  used on input line 89.
+(pdftex.def)             Requested size: 137.98517pt x 105.32321pt.
+[258 <./lectures/6/pictures/cd_45.pdf> <./lectures/6/pictures/cd_47.pdf>]
+
+pdfTeX warning: pdflatex (file ./lectures/6/pictures/cd_48.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<lectures/6/pictures/cd_48.pdf, id=5934, 202.65712pt x 107.95331pt>
+File: lectures/6/pictures/cd_48.pdf Graphic file (type pdf)
+<use lectures/6/pictures/cd_48.pdf>
+Package pdftex.def Info: lectures/6/pictures/cd_48.pdf  used on input line 151.
+
+(pdftex.def)             Requested size: 202.65662pt x 107.95303pt.
+) [259 <./lectures/6/pictures/cd_48.pdf>] [260
+
+] [261]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3FFFB5E1F2177620FB1298E2A51B7FBE;25525.
+(rerunfilecheck)             Checksum: FE227EFC9667099A21FB9E22FD63AA9E;48199.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
  ) 
 Here is how much of TeX's memory you used:
- 40648 strings out of 480608
- 905323 string characters out of 5903630
- 1235265 words of memory out of 5000000
- 54766 multiletter control sequences out of 15000+600000
- 585155 words of font info for 129 fonts, out of 8000000 for 9000
+ 41874 strings out of 480608
+ 933639 string characters out of 5903630
+ 1233966 words of memory out of 5000000
+ 55425 multiletter control sequences out of 15000+600000
+ 590869 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,16n,138p,1270b,778s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
-}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertinegc/lib-t2a2.enc}{
-/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertinegc/lib-t2a1.enc}{/u
-sr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertinegc/lib-t2a.enc}</usr/
-local/texlive/2020/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.p
-fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/libertine/LinLibertin
-eTI.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.
+ 82i,16n,138p,1355b,806s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
+}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertinegc/lib-t2a2.enc}{/
+usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertinegc/lib-t2a.enc}{/usr
+/local/texlive/2020/texmf-dist/fonts/enc/dvips/libertinegc/lib-t2a1.enc}</usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pf
+b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/libertine/LinLibertine
+TI.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+0.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
+.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cm
+ex8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+2.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.
 pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pf
 b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></us
 r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
 local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
-ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2
-020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (147 pages, 1339653 bytes).
+cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/esint-type1/esint10.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (261 pages, 3264146 bytes).
 PDF statistics:
- 2579 PDF objects out of 2984 (max. 8388607)
- 2339 compressed objects within 24 object streams
- 870 named destinations out of 1000 (max. 500000)
- 829 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6347 PDF objects out of 7423 (max. 8388607)
+ 5373 compressed objects within 54 object streams
+ 1332 named destinations out of 1440 (max. 500000)
+ 1845 words of extra memory for PDF output out of 10000 (max. 10000000)
 

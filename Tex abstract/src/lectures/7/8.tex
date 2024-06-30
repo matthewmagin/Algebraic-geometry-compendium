@@ -1,0 +1,135 @@
+
+	
+	\subsection{Глобальная угловая форма, класс Эйлера, класс Тома}
+
+	В этом параграфе мы явно построим класс Тома ориентированного векторного расслоения $\pi\colon E \to M$ ранга 2 в терминах разбиения единицы на $M$ и функций перехода расслоения $E$. Пусть $E^0$~--- дополнение нулевого сечения. 
+
+	Пусть $\{ U_{\alpha} \}$~--- открытое покрытие $M$. Так как у нас есть Риманова метрика на $E$, на каждом $U_{\alpha}$ мы можем выбрать ортонормированное оснащение, рассмотреть в слое сферу и завести на $E^{0}_{U_{\alpha}}$ полярные координаты $r_{\alpha}$ и $\theta_{\alpha}$ (их всего две, так как слой плоскость). 
+
+	Если $x_1, \ldots, x_n$~--- координаты на $U_{\alpha}$, то $\pi^*,\ldots, \pi^*x_n, r_{\alpha}, \theta_{\alpha}$~--- координаты на $E^0\vert_{U_{\alpha}}$. 
+
+	На пересечениях $U_{\alpha} \cap U_{\beta}$ радиусы $r_{\alpha}$ и $r_{\beta}$ вообще говоря одинаковы, а вот угловые координаты $\theta_{\alpha}, \theta_{\beta}$ могут отличаться на кратное $2\pi$. 
+
+	Соответственно, определим $\varphi_{\alpha \beta}$ (с точностью до элемента $2\pi\Z$) как угол поворота в направлении против часовой стрелки\footnote{об этом мы можем говорить, так как у нас всё ориентированно} от $\alpha$-координатной системы к $\beta$-координатной системе 
+
+	\[
+		\varphi_{\alpha \beta}\colon U_{\alpha} \cap U_{\beta} \to [0, 2\pi], \quad \theta_{\beta} = \theta_{\alpha} + \pi^* \varphi_{\alpha \beta}.
+	\]
+
+	Заметим, что 
+
+	\[
+		\varphi_{\alpha \beta} + \varphi_{\beta \gamma} - \varphi_{\alpha \gamma} \in 2\pi\Z,
+	\]
+	то есть каждому тройному пересечению $U_{\alpha \beta \gamma}$ мы можем сопоставить целое число: 
+
+	\[
+		\varepsilon_{\alpha \beta \gamma} = \frac{1}{2\pi}(\varphi_{\alpha \beta } - \varphi_{\alpha \gamma} + \varphi_{\beta \gamma}) 
+	\]
+	и набор $\{ \varepsilon_{\alpha \beta \gamma} \}$ измеряет отклонение  $\varphi_{\alpha \beta}$ от 2-коцикла с смысле Чеха. Видно, что если они все равны нулю, то это Чеховский 2-коцикл (так как дифференциал в комплексе Чеха просто определялся таким образом). 
+
+	С другой стороны, 1-формы $\mathrm{d}\varphi_{\alpha \beta}$ уже являются коциклами, так как можно найти набор форм $\xi_{\alpha}$ на $U_{\alpha}$ , что 
+	\[
+		\frac{1}{2\pi} \varphi_{\alpha \beta} = \xi_{\beta} - \xi_{\alpha}. 
+	\]
+
+	Действительно, можно взять 
+	\[
+		\xi_{\alpha} = \frac{1}{2\pi} \sum_{\gamma} \rho_{\gamma} \mathrm{d} \varphi_{\gamma \alpha},
+	\]
+	где $\rho_{\gamma}$~--- разбиение единицы, подчиненное покрытию $\{ U_{\alpha} \}$ и тогда 
+	\[
+		\xi_{\beta} - \xi_{\alpha} = \frac{1}{2\pi} \sum_{\gamma} \rho_{\gamma} (\mathrm{d}\varphi_{\gamma \beta} - \mathrm{d}\varphi_{\gamma \alpha}) = \mathrm{d} \varphi_{\alpha \beta} \cdot \frac{1}{2\pi}\sum_{\gamma} \rho_{\gamma} 
+	\]
+
+	Соответственно, так как $\mathrm{d}^2 \varphi_{\alpha \beta} = 0$, мы имеем $\mathrm{d}\xi_{\alpha} = \mathrm{d}\xi_{\beta}$ на $U_{\alpha} \cap U_{\beta}$. Значит, формы $\mathrm{d}\xi_{\alpha}$ дают нам глобальную 2-форму $e$ на $M$. 
+	
+	\begin{definition} 
+		Когомологический класс формы $e = e(E) \in H^2(M)$ называют \emph{классом Эйлера} расслоения $E$. 
+	\end{definition}	
+
+	\begin{statement} 
+		Когомологический класс формы $e$ не зависит от выбора форм $\xi$ при построении. 
+	\end{statement}
+	\begin{proof}
+		
+		Пусть $\{ \widetilde{\xi_{\alpha}}\}$~--- другой такой набор, тогда 
+		\[
+			\frac{1}{2\pi} \mathrm{d}\varphi_{\alpha \beta} = \widetilde{\xi_{\beta}} - \widetilde{\xi_{\alpha}} = \xi_{\beta} - \xi_{\alpha},
+		\]
+		тогда $\widetilde{\xi}_{\beta} - \xi_{\beta} = \widetilde{\xi}_{\alpha} - \xi_{\alpha} = \xi$ является глобальной формой (так как согласована на всех пересечениях). Значит, $\mathrm{d}\widetilde{\xi_{\alpha}}$ и $\mathrm{d}\xi_{\alpha}$  отличаются на точную форму, как мы и хотели. 
+	\end{proof}
+
+	Теперь заметим, что 
+	\[
+		\begin{cases} \theta_{\beta} = \theta_{\alpha} + \pi^*\varphi_{\alpha \beta} \\ \frac{1}{2\pi} \varphi_{\alpha \beta} = \xi_{\beta} - \xi_{\alpha} \end{cases} \implies \frac{\mathrm{d}\theta_{\alpha}}{2\pi} - \pi^* \xi_{\alpha} = \frac{\mathrm{d}\theta_{\beta}}{2\pi} - \pi^* \xi_{\beta} \text{ на } E^0\vert_{U_{\alpha} \cap U_{\beta}},
+	\]
+	поэтому эти формы при слкейке дают глобальную 1-форму $\psi$ на $E^0$, сужение которой на каждый слой совпадает с угловой формой $\frac{1}{2\pi} \mathrm{d}\theta$. 
+
+	Вообще говоря, эта глобальная форма $\psi$ замкнутой не является: 
+	\[
+		\mathrm{d}\psi = \mathrm{d}\lr*{ \frac{\mathrm{d}\theta_{\alpha}}{2\pi} - \pi^*\xi_{\alpha}} = -\pi^*\mathrm{d}\xi_{\alpha} = -\pi^*\mathrm{d}\xi_{\beta} \implies \mathrm{d}\psi = -\pi^* e.
+	\]
+
+	Если $E$~--- тривиальное расслоение, то в качестве $\psi$ можно взять пуллбек формы $\frac{1}{2\pi} \mathrm{d}\theta$ при проекции 
+	\[
+		E^0 = M \times (\R^2 \setminus 0) \to (\R^2 \setminus 0),
+	\]
+	в этом случае $\psi$ замкнута и класс Эйлера равен нулю. 
+
+	\emph{В этом смысле класс Эйлера является мерой скрученности расслоения}.
+
+	\noindent\bf{Класс Эйлера в терминах функций перехода}
+
+	Еще класс Эйлера ориентированного векторного расслоения ранга 2 можно задать в терминах переходов. Пусть
+	\[
+		g_{\alpha \beta}\colon U_{\alpha} \cap U_{\beta} \to \mathrm{SO}(2) \cong S^1,
+	\]
+	 а  элементы группы $\mathrm{SO}(2)$ мы можем представлять как 
+	 \[
+	 	e^{i\theta} = \begin{pmatrix} \cos{\theta} & -\sin{\theta} \\ \sin{\theta} & \cos{\theta} \end{pmatrix}.
+	 \]
+
+	 Тогда угол между $\alpha$-координатной и $\beta$-координатной системой это в точности $\frac{1}{i} \log{Cg_{\alpha \beta}} $ (так как мы поворачиваем одну систему в другую, применяя $g_{\alpha \beta} = e^{i \theta}$).  Соответственно, 
+	 \[
+	 	\theta_{\alpha} - \theta_{\beta} = \pi^* \lr*{\frac{1}{i} \log{g_{\alpha \beta}}} \implies \pi^* \varphi_{\alpha \beta} = -\pi^* \lr*{\frac{1}{i}\log{g_{\alpha \beta}}}. 
+	 \]
+
+	 Так как $\pi^*$ инъективно, отсюда мы получаем 
+	 \[
+	 	\varphi_{\alpha \beta} = - \frac{1}{i} \log{g_{\alpha \beta}}. 
+	 \]
+
+	 Соотвественно, пусть $\{ \rho_{\gamma} \}$~---  разбиение единицы, подчиненное покрытию  $\{ U_{\gamma} \}$, тогда 
+	 \[
+	 	\xi_{\alpha} = \frac{1}{2\pi} \sum_{\gamma} \rho_{\gamma} \mathrm{d}\varphi_{\gamma \alpha} = -\frac{1}{2\pi i} \sum_{\gamma} \rho_{\gamma} \mathrm{d}\log{g_{\gamma \alpha}},
+	 \]
+	 откуда мы получаем вот такую замечательную формулу 
+	 \[
+	 	e(E) = -\frac{1}{2\pi i} \sum_{\gamma} \mathrm{d}\lr*{ \rho_{\gamma} \mathrm{d}\log{g_{\gamma \alpha}}} \text{ на } U_{\alpha}.
+	 \]
+
+	 Отсюда мы сразу получаем, что класс Эйлера характеристический: 
+
+	 \begin{statement} 
+	 	Пусть $f\colon N \to M$~--- гладкое отображение, а $E$~--- ориентированное векторное расслоение над $M$ ранга 2. Тогда 
+	 	\[
+	 		f^{*}(e(E)) = e(f^{*}(E)).
+	 	\]
+	 \end{statement}
+	 \begin{proof}
+	 	Действительно, функции перехода пуллбека расслоения $f^{*}(E)$ являются функции $f^*g_{\alpha \beta}$ это просто следует из формулы выше. 
+ 	 \end{proof}
+
+ 	 
+
+
+	 
+
+
+
+
+
+
+
+

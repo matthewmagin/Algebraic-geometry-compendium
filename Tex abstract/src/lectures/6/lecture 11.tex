@@ -1,0 +1,227 @@
+	
+	\section{Гауссовы суммы}
+
+	\subsection{Общие сведения}
+
+	\begin{definition} 
+		Пусть $p$~--- простое число. \emph{Мультипликативными характерами} группы $\F_p$ мы будем называть гомоморфизмы $\F_{p} \to \C^*$. 
+	\end{definition}
+
+	Если мы выбрали некоторый первообразный корень $\omega$, порождающий $\F_p^*$, то характер задаётся тем, в какой первообразынй корень из 1 переходит $\omega$. 
+
+	Через $\chi_0$ обозначим единичный характер, то есть такой, что $\chi(x) = 1 \ \forall x$. Пусть теперь $\chi$~-- произвольный характер,  $a \in \Z, a \notdivby p$, тогда определён $\chi(\overline{a})$. Доопределим его в нуле следующим образом: 
+	\[
+		\chi(\overline{0}) = \begin{cases} 0, & \chi \neq \chi_0 \\ 1, \chi = \chi_0 \end{cases}. 
+	\]
+	Теперь все наши характеры заданы на $\Z$ как $\chi(a) \eqdef \chi(\overline{a})$.
+
+	Отметим для начала несколько самых простых свойств: 
+
+	\begin{itemize}
+		\item $\chi(1) = 1$,
+		\item $\forall a \ \chi(a)$~--- корень $(p - 1)$-й степени из единицы, 
+		\item $\chi(a^{-1}) = \overline{\chi(a)}$.
+	\end{itemize}
+
+
+	\begin{definition} 
+		Пусть $\chi$~--- мультипликативный характер группы $\F_p$. \emph{Суммой Гаусса} соотвестувеющей характеру $\chi$ мы будем называть выражение вида 
+		\[
+			S(\chi, a) = \sum_{x = 0}^{p - 1} \chi(x) \zeta_p^{ax}. 
+		\]
+	\end{definition}
+
+	\begin{remark}
+		Видно, ччто $S(\chi, a)$ зависит лишь от $\chi$ и класса $\overline{a} \in \F_p$. 
+	\end{remark}
+
+	Сделаем сначала несколько наблюдений. 
+
+	\begin{statement} 
+		Для сумм Гаусса выполняется следующее соотношение 
+		\[
+		S(\chi, a) \cdot \chi(a) = \begin{cases} S(\chi, 1), & a \notdivby p, \ \chi \neq \chi_0 \\ 0, & a \notdivby p, \ \chi = \chi_0 \text{ или } a \divby p, \ \chi \neq \chi_0 \\ p, & a \divby p, \ \chi = \chi_0 \end{cases}.
+	\]
+	\end{statement}
+	
+	\begin{proof}
+		Действительно, если $\chi \neq \chi_0$ и $a \notdivby p$, то
+	\[
+		\chi(a)S(\chi, a) = \sum_{x = 0}^{p - 1}\chi(ax) \zeta^{ax} = \sum_{t = 0}^{p - 1} \chi(t) \zeta^{t} = S(\chi, t).
+	\]
+	Если же $a \notdivby p, \ \chi = \chi_0$, то 
+	\[
+		S(\chi_0, a) = \sum_{x = 0}^{p - 1} \zeta^{ax} =  0.
+	\]
+	И, если же $a \divby p$, то мы имеем 
+	\[
+		S(\chi, 0) = \sum_{x = 0}^{p - 1} \chi(x) = 0,
+	\]
+	так как если мы обозначим эту сумму за $T$ и выберем такое $B \in \F_{p}^*$, что $\chi(b) \neq 1$, мы получим 
+	\[
+		\chi(b) \cdot T = \chi(b) \sum_{x = 0}^{p - 1} \chi(x) = \sum_{x = 0}^{p - 1} \chi(b x) = \sum_{t = 0}^{p - 1} \chi(t) = T \implies T = 0.
+	\]
+	\end{proof}
+	
+	Теперь вычислим модуль Гауссовой суммы. Во-первых, сразу очевидно, что 
+	\[
+		S(\chi_0, 1) \cdot \overline{S(\chi_0, 1)} = 0. 
+	\]
+	Вычислим $\sum_{a = 0}^{p - 1} S(\chi, a) \overline{S(\chi, a)}$ двумя способами. Во-первых если $a \neq 0$, то заметим, что по предложению выше 
+	\[
+		S(\chi, a) \cdot \overline{S(\chi, a)} = \chi(a^{-1}) \cdot \chi(a) \cdot S(\chi, 1) \overline{S(\chi, 1)} = |S(\chi, 1)|^2.
+	\]
+	Тогда мы получаем, что 
+	\[
+		\sum_{a = 0}^{p - 1} S(\chi, a) \overline{S(\chi, a)} = (p - 1)|S(\chi, 1)|^2,
+	\]
+	так как $S(\chi, 0) = 0$. С другой стороны, 
+	\[
+		S(\chi, a) \cdot \overline{S(\chi, a)} = \sum_{x} \sum_{y} \chi(x) \overline{\chi(y)} \zeta^{ax - ay}.
+	\]
+
+	Теперь вспомним, что 
+	\[
+		\sum_{t = 0}^{p - 1} \zeta^{at} = \begin{cases} p, & a \equiv 0 \pmod{p} \\ 0, & \text{ иначе. } \end{cases} \implies \frac{1}{p} \sum_{t = 0}^{p - 1} \zeta^{t(x - y)} = \delta_{x y}.
+	\]
+	Отсюда получаем, что 
+	\[
+		\sum_{a = 0}^{p - 1} S(\chi, a) \cdot \overline{S(\chi, a)} = \sum_{x = 0}^{p - 1} \sum_{y = 0}^{p - 1} \chi(x) \overline{\chi(y)} \zeta^{ax - ay}  \delta_{x y} p = (p - 1)p.
+	\]
+	Отсюда мы получили, что $(p - 1)|S(\chi, 1)|^2 = (p - 1)p$, откуда 
+	\[
+		|S(\chi, 1)| = \sqrt{p} \implies |S(\chi, a)| = \sqrt{p}.
+	\]
+
+	\begin{example}
+		Рассмотрим теперь частный случай $p \neq 2$ и характеров 
+		\[
+			\chi(a) = \lr*{\frac{x}{a}}. 
+		\]
+		Тогда мы получаем, что 
+		\[
+			p = |S(\chi, 1)|^2 = \lr*{\sum_{x = 1}^{p - 1} \lr*{\frac{x}{p}}\zeta^x } \cdot \lr*{\sum_{y = 1}^{p - 1} \lr*{\frac{-y}{p}}\zeta^{-y} } = \lr*{\frac{-1}{p}} |S(\chi, 1)|^2.
+		\]
+		Соответственно, если $\lr*{\frac{-1}{p}} = 1$, то $\sqrt{p} \in \Q\lr*{\zeta_p}$. Если же $\lr*{\frac{-1}{p}} = -1$, то $\sqrt{-p} \in \Q(\zeta_p) \implies \sqrt{p} \in \Q(\zeta_{4p})$. 
+
+		Если же $p = 2$, то $2\sqrt{-1} = (1 + \sqrt{-1})^2 \implies \sqrt{2} \in \Q(\zeta_{8p})$.
+
+		Теперь рассмотрим произвольное натуральное $n$, разложим его в произведение простых: 
+		\[
+			n = p_1^{k_1} \cdot \ldots p_{s}^{k_s}, 
+		\]
+		а отсюда $\Q(\sqrt{n}) \subset \Q(\sqrt{p_1}, \ldots, \sqrt{p_s})$, а это расширение лежит в каком-то груговом расширении (по выкладке выше). 
+
+		С другой же стороны, если $\Q(\sqrt{p}) \subset \Q(\zeta_n)$, то $n \divby p$ (так как простое число $p$ будет разветвлено в $\Q(\sqrt{p})$, значит будет разветвлено и в $\Q(\zeta_n)$, но, как мы видели в первой части курса, такого не происходит при $n \notdivby p$). 
+	\end{example}
+
+	\subsection{Количество решений уравнений над конечным полем}
+
+	Пусть $F(x_1, \ldots, x_n) \in \Z[x_1, \ldots, x_n]$, $\zeta$~--- певообразные корень степени $p$ из единицы. Рассмотрим сумму 
+	\[
+		S = \sum_{(x_1, \ldots, x_n) \in \F_p^n} \sum_{x \in \F_p} \zeta^{x F(x_1, \ldots, x_n)}.
+	\]
+	Заметим, что 
+	\[
+		\sum_{x \in \F_p} \zeta^{x F(x_1, \ldots, x_n)} = \begin{cases} 0, & \text{ если } F(x_1, \ldots, x_n) \not\equiv 0 \pmod{p} \\ p, & \text{ если } F(x_1, \ldots, x_n) \not\equiv 0 \pmod{p} \end{cases}. 
+	\]
+	Соотвественно, отсюда получаем, что 
+
+	\[
+		S = \sum_{(x_1, \ldots, x_n) \in \F_p^n} \sum_{x \in \F_p} \zeta^{x F(x_1, \ldots, x_n)} = p \cdot N,
+	\]
+	где $N$~--- это количество решений уравнения $F(x_1, \ldots, x_n) = 0$ в $\F_{p}$.
+
+	Рассмотрим теперь случай, когда $F$ имеет диагональный вид: 
+	\[
+		F(x_1, \ldots, x_n) = a_1 x_1^{r_1} + \ldots + a_n x_n^{r_n}, \quad a_i \in \Z, \ a_i \not\equiv 0 \pmod{p}. 
+	\]
+	Посчитаем сумму $S$ вторым способом: 
+	\[
+		S = \sum_{(x, x_1, \ldots, x_n) \in \F_p^{n + 1}} \zeta^{x\lr*{a_1 x_1^{r_1} + \ldots + a_n x_n^{r_n}}} = p^n + \sum_{x \neq 0} \lr*{ \sum_{x_1 = 0}^{p - 1} \zeta^{x a_1 x_1^{r_1}} }\lr*{ \sum_{x_2 = 0}^{p - 1} \zeta^{x a_2 x_2^{r_2}} } \ldots \lr*{ \sum_{x_n = 0}^{p - 1} \zeta^{x a_n x_n^{r_n}} }
+	\]
+
+	Посмотрим на отдельные сомножители: 
+	\[
+		\sum_{y = 0}^{p - 1} \zeta^{y^{r}} = \sum_{z = 0}^{p - 1} m(z) \zeta^{z},
+	\]
+	где $m(z)$~--- число решений уравнения $y^r = z$ над полем $\F_p$ или же число решений сравнения 
+	\[
+		y^r = z \pmod{p}
+	\]
+	относительно $y$. Ясно, что $m(0) = 1$. Найдём $m(z)$ явно при $z \not\equiv 0 \pmod{p}$. Выберем первообразный корень $g$ по модулю $p$, то есть $\F_{p} = \langle g \rangle$ и пусть 
+	\[
+		x = g^k \pmod{p},
+	\]
+	где показатель $k$ определён одозначно (по модулю $p - 1$, естественно). Пусть также $y = g^{u} \pmod{p}$, тогда 
+	\[
+		y^r = z \pmod{p} \Leftrightarrow ru \equiv k \pmod{p - 1}.
+	\]
+
+	Это сравнение имеет $d = (r, p - 1)$ решений по $u$ или не имеет ни одного решения, в зависимости от того, делится $k$ на $d$ или нет: 
+	\[
+		m(z) = \begin{cases} d, & k \equiv 0 \pmod{d} \\ 0, & k \not\equiv 0 \pmod{d} \end{cases}.
+	\]
+
+	Но, в аналитическом смысле такая формула не слишком удобна. Получим другую. Выберем некоторый первообразный корень степени $d$ из единицы и обозначим его за $\varepsilon$. Рассмотрим характеры 
+	\[
+		\chi_{s}(z) = e^{k s}, \quad s = 0, \ldots, d - 1
+	\]
+	где число $k$ для $z$ определяется как выше. Или, эквивалентно можно говорить, что мы задали отображение. 
+	\[
+		\chi_s \colon \F_p^* = \langle g \rangle \to \mu_{d}, \quad g \mapsto \varepsilon^s.
+	\]
+	Тогда видим, что если $k \equiv 0 \pmod d$, то каким бы ни было $s = 0, \ldots, s - 1$, мы имеем $\varepsilon^{k s} = 1$ и 
+	\[
+		\sum_{s = 0}^{d - 1} \chi_s(z) = d.
+	\]
+	Если же $k \not\equiv 0 \pmod{d}$, то так как $\varepsilon$~--- первообразный корень, $\varepsilon^{k} \not \equiv 1$, а значит, 
+	\[
+		\sum_{s = 0}^{d - 1} \chi_s(z) = \sum_{s = 0}^{d - 1} \varepsilon^{ks} = \frac{\varepsilon^{kd} - 1}{\varepsilon^k - 1} = 0.
+	\]
+	Итак, мы получили, что 
+	\[
+		m(z) = \sum_{s = 0}^{d - 1} \chi_s(z).
+	\]
+
+	Тогда мы получили, что 
+	\[
+		\sum_{y = 0}^{p - 1} \zeta^{a y^{r}} = \sum_{z = 0}^{p - 1} m(z) \zeta^{a z} = 1 + \sum_{z = 0}^{p - 1} \sum_{s = 0}^{d - 1} \chi_s(z) = \sum_{s = 0}^{d - 1} S(\chi_s, a) = \sum_{s = 1}^{d - 1} S(\chi_s, a). 
+	\]
+
+	Тогда мы можем оценить модуль этой суммы: 
+	\[
+		\left\lvert \sum_{y = 0}^{p - 1} \zeta^{a y^{r}} \right\rvert \le  (d - 1) |S(\chi_s, a)| = (d - 1)\sqrt{p}.
+	\]
+	Применим это к замечательной формуле 
+	\[
+		S = \sum_{(x, x_1, \ldots, x_n) \in \F_p^{n + 1}} \zeta^{x\lr*{a_1 x_1^{r_1} + \ldots + a_n x_n^{r_n}}} = p^n + \sum_{x \neq 0} \lr*{ \sum_{x_1 = 0}^{p - 1} \zeta^{x a_1 x_1^{r_1}} }\lr*{ \sum_{x_2 = 0}^{p - 1} \zeta^{x a_2 x_2^{r_2}} } \ldots \lr*{ \sum_{x_n = 0}^{p - 1} \zeta^{x a_n x_n^{r_n}} }	
+	\]
+	\[
+		|S - p^n| \le (p - 1) \cdot p^{\frac{n}{2}} \cdot (d_1 - 1) \ldots (d_n - 1),
+	\]
+	где $d_i = (r_i, p_i - 1)$. 
+
+	Значит, мы получили такое неравенство для количества решений: 
+	\[
+		|N - p^{n - 1}| \le (p - 1) \cdot p^{\frac{n}{2} - 1} \cdot (d_1 - 1) \ldots (d_n - 1).
+	\]
+
+	
+
+ 
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+	
+

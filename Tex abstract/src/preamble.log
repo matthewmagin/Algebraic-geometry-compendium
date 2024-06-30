@@ -1,12 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.10)  6 OCT 2023 15:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.10)  9 APR 2024 14:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/
-preamble.tex"
-
-(/Users/user/Documents/GitHub/Algebraic-geometry-compendium/Tex abstract/src/pr
-eamble.tex
+**preamble.tex
+(./preamble.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06>
 
@@ -984,6 +981,26 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
 l.111 \DeclareMathOperator
+                          {\id}{id}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.111 \DeclareMathOperator{\id
+                              }{id}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.112 \DeclareMathOperator
                           {\exi}{exi}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -992,7 +1009,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.111 \DeclareMathOperator{\exi
+l.112 \DeclareMathOperator{\exi
                                }{exi}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1004,7 +1021,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no x in font nullfont!
 Missing character: There is no i in font nullfont!
 ! Undefined control sequence.
-l.112 \DeclareMathOperator
+l.113 \DeclareMathOperator
                           {\osc}{osc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1013,7 +1030,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.112 \DeclareMathOperator{\osc
+l.113 \DeclareMathOperator{\osc
                                }{osc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1025,7 +1042,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no c in font nullfont!
 ! Undefined control sequence.
-l.113 \DeclareMathOperator
+l.114 \DeclareMathOperator
                           {\num}{num}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1034,7 +1051,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.113 \DeclareMathOperator{\num
+l.114 \DeclareMathOperator{\num
                                }{num}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1046,7 +1063,29 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no m in font nullfont!
 ! Undefined control sequence.
-l.114 \DeclareMathOperator
+l.115 \DeclareMathOperator
+                          {\Char}{char}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.115 \DeclareMathOperator{\Char
+                                }{char}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+l.116 \DeclareMathOperator
                           {\card}{Card}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1055,7 +1094,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.114 \DeclareMathOperator{\card
+l.116 \DeclareMathOperator{\card
                                 }{Card}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1068,7 +1107,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.115 \DeclareMathOperator
+l.117 \DeclareMathOperator
                           {\sk}{sk}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1077,7 +1116,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.115 \DeclareMathOperator{\sk
+l.117 \DeclareMathOperator{\sk
                               }{sk}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1088,7 +1127,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no s in font nullfont!
 Missing character: There is no k in font nullfont!
 ! Undefined control sequence.
-l.116 \DeclareMathOperator
+l.118 \DeclareMathOperator
                           {\den}{den}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1097,7 +1136,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.116 \DeclareMathOperator{\den
+l.118 \DeclareMathOperator{\den
                                }{den}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1109,7 +1148,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.117 \DeclareMathOperator
+l.119 \DeclareMathOperator
                           {\essup}{essup}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1118,7 +1157,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.117 \DeclareMathOperator{\essup
+l.119 \DeclareMathOperator{\essup
                                  }{essup}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1132,7 +1171,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no p in font nullfont!
 ! Undefined control sequence.
-l.118 \DeclareMathOperator
+l.120 \DeclareMathOperator
                           {\ran}{ran}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1141,7 +1180,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.118 \DeclareMathOperator{\ran
+l.120 \DeclareMathOperator{\ran
                                }{ran}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1153,7 +1192,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.119 \DeclareMathOperator
+l.121 \DeclareMathOperator
                           {\rank}{rank}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1162,7 +1201,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.119 \DeclareMathOperator{\rank
+l.121 \DeclareMathOperator{\rank
                                 }{rank}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1175,7 +1214,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no k in font nullfont!
 ! Undefined control sequence.
-l.120 \DeclareMathOperator
+l.122 \DeclareMathOperator
                           {\dom}{dom}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1184,7 +1223,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.120 \DeclareMathOperator{\dom
+l.122 \DeclareMathOperator{\dom
                                }{dom}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1196,7 +1235,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no m in font nullfont!
 ! Undefined control sequence.
-l.121 \DeclareMathOperator
+l.123 \DeclareMathOperator
                           {\diam}{diam}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1205,7 +1244,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.121 \DeclareMathOperator{\diam
+l.123 \DeclareMathOperator{\diam
                                 }{diam}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1218,7 +1257,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no m in font nullfont!
 ! Undefined control sequence.
-l.122 \DeclareMathOperator
+l.124 \DeclareMathOperator
                           {\dist}{dist}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1227,7 +1266,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.122 \DeclareMathOperator{\dist
+l.124 \DeclareMathOperator{\dist
                                 }{dist}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1240,7 +1279,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.123 \DeclareMathOperator
+l.125 \DeclareMathOperator
                           {\disc}{disc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1249,7 +1288,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.123 \DeclareMathOperator{\disc
+l.125 \DeclareMathOperator{\disc
                                 }{disc}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1262,7 +1301,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no c in font nullfont!
 ! Undefined control sequence.
-l.124 \DeclareMathOperator
+l.126 \DeclareMathOperator
                           {\rad}{rad}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1271,7 +1310,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.124 \DeclareMathOperator{\rad
+l.126 \DeclareMathOperator{\rad
                                }{rad}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1283,7 +1322,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.125 \DeclareMathOperator
+l.127 \DeclareMathOperator
                           {\supp}{supp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1292,7 +1331,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.125 \DeclareMathOperator{\supp
+l.127 \DeclareMathOperator{\supp
                                 }{supp}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1305,12 +1344,12 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no p in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 109--126
+Overfull \hbox (20.0pt too wide) in paragraph at lines 109--128
 []
  []
 
 ! Undefined control sequence.
-l.127 \DeclareMathOperator
+l.129 \DeclareMathOperator
                           {\sign}{sign}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1319,7 +1358,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.127 \DeclareMathOperator{\sign
+l.129 \DeclareMathOperator{\sign
                                 }{sign}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1334,7 +1373,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.127 \DeclareMathOperator{\sign}{s
+l.129 \DeclareMathOperator{\sign}{s
                                    ign}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1344,7 +1383,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.128 \DeclareMathOperator
+l.130 \DeclareMathOperator
                           {\Int}{Int}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1353,7 +1392,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.128 \DeclareMathOperator{\Int
+l.130 \DeclareMathOperator{\Int
                                }{Int}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1365,7 +1404,7 @@ Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.129 \DeclareMathOperator
+l.131 \DeclareMathOperator
                           {\RelInt}{RelInt}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1374,7 +1413,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.129 \DeclareMathOperator{\RelInt
+l.131 \DeclareMathOperator{\RelInt
                                   }{RelInt}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1389,7 +1428,7 @@ Missing character: There is no I in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.130 \DeclareMathOperator
+l.132 \DeclareMathOperator
                           {\Cl}{Cl}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1398,7 +1437,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.130 \DeclareMathOperator{\Cl
+l.132 \DeclareMathOperator{\Cl
                               }{Cl}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1409,7 +1448,93 @@ and I'll forget about whatever was undefined.
 Missing character: There is no C in font nullfont!
 Missing character: There is no l in font nullfont!
 ! Undefined control sequence.
-l.131 \DeclareMathOperator
+l.133 \DeclareMathOperator
+                          {\Class}{\mathcal{C}\mathbf{\ell}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.133 \DeclareMathOperator{\Class
+                                 }{\mathcal{C}\mathbf{\ell}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \mathcal allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 \DeclareMathOperator{\Class}{\mathcal
+                                           {C}\mathbf{\ell}}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C in font nullfont!
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 ...Operator{\Class}{\mathcal{C}\mathbf{\ell}
+                                                  }
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.133 ...Operator{\Class}{\mathcal{C}\mathbf{\ell}
+                                                  }
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 133.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 133.
+! Extra }, or forgotten $.
+\select@group ...pandafter \non@alpherr \fi #1{#4}
+                                                  }
+l.133 ...Operator{\Class}{\mathcal{C}\mathbf{\ell}
+                                                  }
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\select@group ...andafter \non@alpherr \fi #1{#4}}
+                                                  
+l.133 ...Operator{\Class}{\mathcal{C}\mathbf{\ell}
+                                                  }
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.133 ...perator{\Class}{\mathcal{C}\mathbf{\ell}}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.134 \DeclareMathOperator
                           {\CW}{CW}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1418,7 +1543,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.131 \DeclareMathOperator{\CW
+l.134 \DeclareMathOperator{\CW
                               }{CW}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1426,10 +1551,26 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no C in font nullfont!
-Missing character: There is no W in font nullfont!
 ! Undefined control sequence.
-l.132 \DeclareMathOperator
+l.135 \DeclareMathOperator
+                          {\Ideals}{Ideals}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135 \DeclareMathOperator{\Ideals
+                                  }{Ideals}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.136 \DeclareMathOperator
                           {\pr}{pr}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1438,7 +1579,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.132 \DeclareMathOperator{\pr
+l.136 \DeclareMathOperator{\pr
                               }{pr}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1446,10 +1587,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no p in font nullfont!
-Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
-l.133 \DeclareMathOperator
+l.137 \DeclareMathOperator
                           {\ind}{ind}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1458,7 +1597,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.133 \DeclareMathOperator{\ind
+l.137 \DeclareMathOperator{\ind
                                }{ind}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1466,11 +1605,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.134 \DeclareMathOperator
+l.138 \DeclareMathOperator
                           {\Af}{Aff}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1479,7 +1615,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.134 \DeclareMathOperator{\Af
+l.138 \DeclareMathOperator{\Af
                               }{Aff}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1487,11 +1623,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no A in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no f in font nullfont!
 ! Undefined control sequence.
-l.135 \DeclareMathOperator
+l.139 \DeclareMathOperator
                           {\Aut}{Aut}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1500,7 +1633,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.135 \DeclareMathOperator{\Aut
+l.139 \DeclareMathOperator{\Aut
                                }{Aut}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1508,11 +1641,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no A in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.137 \DeclareMathOperator
+l.141 \DeclareMathOperator
                           {\Conv}{conv}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1521,7 +1651,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.137 \DeclareMathOperator{\Conv
+l.141 \DeclareMathOperator{\Conv
                                 }{conv}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1529,12 +1659,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no v in font nullfont!
 ! Undefined control sequence.
-l.138 \DeclareMathOperator
+l.142 \DeclareMathOperator
                           {\Fr}{Fr}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1543,7 +1669,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.138 \DeclareMathOperator{\Fr
+l.142 \DeclareMathOperator{\Fr
                               }{Fr}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1551,10 +1677,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no F in font nullfont!
-Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
-l.139 \DeclareMathOperator
+l.143 \DeclareMathOperator
                           {\Tr}{Tr}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1563,7 +1687,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.139 \DeclareMathOperator{\Tr
+l.143 \DeclareMathOperator{\Tr
                               }{Tr}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1571,10 +1695,26 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no T in font nullfont!
-Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
-l.140 \DeclareMathOperator
+l.144 \DeclareMathOperator
+                          {\Nm}{\mathrm{N}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.144 \DeclareMathOperator{\Nm
+                              }{\mathrm{N}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.145 \DeclareMathOperator
                           {\Span}{span}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1583,7 +1723,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.140 \DeclareMathOperator{\Span
+l.145 \DeclareMathOperator{\Span
                                 }{span}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1591,12 +1731,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no s in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.141 \DeclareMathOperator
+l.146 \DeclareMathOperator
                           {\Map}{Map}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1605,7 +1741,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.141 \DeclareMathOperator{\Map
+l.146 \DeclareMathOperator{\Map
                                }{Map}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1613,11 +1749,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no M in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
 ! Undefined control sequence.
-l.142 \DeclareMathOperator
+l.147 \DeclareMathOperator
                           {\Hom}{Hom}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1626,7 +1759,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.142 \DeclareMathOperator{\Hom
+l.147 \DeclareMathOperator{\Hom
                                }{Hom}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1634,11 +1767,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no H in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
 ! Undefined control sequence.
-l.143 \DeclareMathOperator
+l.148 \DeclareMathOperator
                           {\Ker}{Ker}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1647,7 +1777,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.143 \DeclareMathOperator{\Ker
+l.148 \DeclareMathOperator{\Ker
                                }{Ker}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1655,11 +1785,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no K in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
-l.144 \DeclareMathOperator
+l.149 \DeclareMathOperator
                           {\Ext}{Ext}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1668,7 +1795,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.144 \DeclareMathOperator{\Ext
+l.149 \DeclareMathOperator{\Ext
                                }{Ext}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1676,11 +1803,44 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no E in font nullfont!
-Missing character: There is no x in font nullfont!
-Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.145 \DeclareMathOperator
+l.150 \DeclareMathOperator
+                          {\Div}{Div}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.150 \DeclareMathOperator{\Div
+                               }{Div}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.151 \DeclareMathOperator
+                          {\NRad}{NRad}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.151 \DeclareMathOperator{\NRad
+                                }{NRad}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.152 \DeclareMathOperator
                           {\Coker}{Coker}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1689,7 +1849,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.145 \DeclareMathOperator{\Coker
+l.152 \DeclareMathOperator{\Coker
                                  }{Coker}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1697,13 +1857,26 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no C in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
 ! Undefined control sequence.
-l.146 \DeclareMathOperator
+l.153 \DeclareMathOperator
+                          {\Gal}{Gal}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.153 \DeclareMathOperator{\Gal
+                               }{Gal}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.154 \DeclareMathOperator
                           {\Specm}{Specm}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1712,7 +1885,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.146 \DeclareMathOperator{\Specm
+l.154 \DeclareMathOperator{\Specm
                                  }{Specm}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1720,13 +1893,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no S in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no m in font nullfont!
 ! Undefined control sequence.
-l.147 \DeclareMathOperator
+l.155 \DeclareMathOperator
                           {\Spec}{Spec}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1735,7 +1903,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.147 \DeclareMathOperator{\Spec
+l.155 \DeclareMathOperator{\Spec
                                 }{Spec}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1743,12 +1911,98 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no S in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no c in font nullfont!
 ! Undefined control sequence.
-l.148 \DeclareMathOperator
+l.156 \DeclareMathOperator
+                          {\Ht}{ht}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.156 \DeclareMathOperator{\Ht
+                              }{ht}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.157 \DeclareMathOperator
+                          {\End}{End}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.157 \DeclareMathOperator{\End
+                               }{End}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.158 \DeclareMathOperator
+                          {\Rad}{Rad}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.158 \DeclareMathOperator{\Rad
+                               }{Rad}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.159 \DeclareMathOperator
+                          {\Ann}{Ann}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.159 \DeclareMathOperator{\Ann
+                               }{Ann}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.160 \DeclareMathOperator
+                          {\Vol}{Vol}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.160 \DeclareMathOperator{\Vol
+                               }{Vol}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.161 \DeclareMathOperator
                           {\res}{res}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1757,7 +2011,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.148 \DeclareMathOperator{\res
+l.161 \DeclareMathOperator{\res
                                }{res}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1765,11 +2019,44 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.149 \DeclareMathOperator
+l.162 \DeclareMathOperator
+                          {\Gr}{Gr}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.162 \DeclareMathOperator{\Gr
+                              }{Gr}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.163 \DeclareMathOperator
+                          {\Bl}{Bl}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.163 \DeclareMathOperator{\Bl
+                              }{Bl}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.164 \DeclareMathOperator
                           {\mult}{mult}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1778,7 +2065,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.149 \DeclareMathOperator{\mult
+l.164 \DeclareMathOperator{\mult
                                 }{mult}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1786,12 +2073,26 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no m in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.150 \DeclareMathOperator
+l.165 \DeclareMathOperator
+                          {\cont}{cont}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.165 \DeclareMathOperator{\cont
+                                }{cont}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.166 \DeclareMathOperator
                           {\area}{area}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1800,7 +2101,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.150 \DeclareMathOperator{\area
+l.166 \DeclareMathOperator{\area
                                 }{area}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1808,12 +2109,28 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.167 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 129--167
+[]
+ []
+
+
+Overfull \hbox (584.29979pt too wide) in paragraph at lines 129--167
+\OML/cmm/m/it/10 `[][][][][][][][][][][][][][][][][][][]\OT1/cmr/m/n/10 N[][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][]$ 
+ []
+
 ! Undefined control sequence.
-l.151 \DeclarePairedDelimiter
+l.169 \DeclarePairedDelimiter
                              \lr{(}{)}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1822,7 +2139,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.151 \DeclarePairedDelimiter\lr
+l.169 \DeclarePairedDelimiter\lr
                                 {(}{)}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1830,10 +2147,22 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \DeclarePairedDelimiter\lr{(
+                                  }{)}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no ( in font nullfont!
 Missing character: There is no ) in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 127--160
+Overfull \hbox (20.0pt too wide) in paragraph at lines 169--178
 []
  []
 
@@ -1844,7 +2173,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 \usepackage{
+l.180 \usepackage{
                   xcolor} % цвета
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -1856,13 +2185,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.164 \usepackage[unicode, pdftex]{
+l.181 \usepackage[unicode, pdftex]{
                                    hyperref}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.165 \hypersetup
+l.182 \hypersetup
                  {%
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1877,7 +2206,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.166   c
+l.183   c
          olorlinks=false,
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1920,7 +2249,7 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 166--169
+Overfull \hbox (20.0pt too wide) in paragraph at lines 183--186
 []
  []
 
@@ -1931,7 +2260,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.177 \renewcommand{\C}
+l.194 \renewcommand{\C}
                        {\mathbb{C}} 				
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1943,7 +2272,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.252 \usepackage{
+l.273 \usepackage{
                   esint}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -1955,7 +2284,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.258 \usepackage{
+l.280 \usepackage{
                   pgfplots}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
@@ -1967,13 +2296,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.259 \usepackage{
+l.281 \usepackage{
                   tikz}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.260 \usetikzlibrary
+l.282 \usetikzlibrary
                      {3d,perspective}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1988,7 +2317,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.260 \usetikzlibrary{3
+l.282 \usetikzlibrary{3
                        d,perspective}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2008,7 +2337,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.261 \usetikzlibrary
+l.283 \usetikzlibrary
                      {animations}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2026,6 +2355,17 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.284 \usetikzlibrary
+                     {cd}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no d in font nullfont!
 
 ! LaTeX Error: \usepackage before \documentclass.
 
@@ -2033,25 +2373,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.262 \usepackage{
-                  tikz-cd}
-\usepackage may only appear in the document preamble, i.e.,
-between \documentclass and \begin{document}.
-
-
-! LaTeX Error: \usepackage before \documentclass.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.263 \usepackage{
+l.285 \usepackage{
                   mathtools}
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
 ! Undefined control sequence.
-l.264 \pgfplotsset
+l.286 \pgfplotsset
                   {width=6cm,compat=newest}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2083,23 +2411,23 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 260--265
+Overfull \hbox (20.0pt too wide) in paragraph at lines 282--287
 []
  []
 
 )
 ! Emergency stop.
-<*> ...y-compendium/Tex abstract/src/preamble.tex"
-                                                  
+<*> preamble.tex
+                
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 162 strings out of 480608
- 1528 string characters out of 5903630
- 239610 words of memory out of 5000000
- 16153 multiletter control sequences out of 15000+600000
+ 168 strings out of 480608
+ 1273 string characters out of 5903630
+ 240610 words of memory out of 5000000
+ 16161 multiletter control sequences out of 15000+600000
  532338 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 12i,0n,15p,209b,24s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19i,3n,16p,131b,123s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

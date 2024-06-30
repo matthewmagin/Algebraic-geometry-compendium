@@ -143,12 +143,19 @@
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\Nm}{\mathrm{N}}
 \DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\codim}{codim}
 \DeclareMathOperator{\Map}{Map}
 \DeclareMathOperator{\Hom}{Hom}
 \DeclareMathOperator{\Ker}{Ker}
 \DeclareMathOperator{\Ext}{Ext}
-\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\DIV}{Div}
+\DeclareMathOperator{\PDIV}{PDiv}
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\dR}{dR}
+\DeclareMathOperator{\rot}{rot}
 \DeclareMathOperator{\NRad}{NRad}
+\DeclareMathOperator{\Frac}{Frac}
 \DeclareMathOperator{\Coker}{Coker}
 \DeclareMathOperator{\Gal}{Gal}
 \DeclareMathOperator{\Specm}{Specm}
@@ -159,7 +166,9 @@
 \DeclareMathOperator{\Ann}{Ann}
 \DeclareMathOperator{\Vol}{Vol}
 \DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\cores}{cores}
 \DeclareMathOperator{\Gr}{Gr}
+\DeclareMathOperator{\Trdeg}{\mathrm{tr}.\mathrm{deg}}
 \DeclareMathOperator{\Bl}{Bl}
 \DeclareMathOperator{\mult}{mult}
 \DeclareMathOperator{\cont}{cont}
@@ -186,25 +195,26 @@
 
 % Буковы
 
-\newcommand{\N}{\mathbb{N}}			 		
-\newcommand{\Z}{\mathbb{Z}}			
-\newcommand{\Q}{\mathbb{Q}}		
-\newcommand{\R}{\mathbb{R}}	
+\newcommand{\N}{\mathbb{N}}                 
+\newcommand{\Z}{\mathbb{Z}}         
+\newcommand{\Q}{\mathbb{Q}}     
+\newcommand{\R}{\mathbb{R}} 
 \let\oldC\C
-\renewcommand{\C}{\mathbb{C}} 				
-\newcommand{\F}{\mathbb{F}}	
+\renewcommand{\C}{\mathbb{C}}               
+\newcommand{\F}{\mathbb{F}} 
+\newcommand{\bk}{\Bbbk} 
  
 \let\oldAA\AA
-\renewcommand{\AA}{\mathbb{A}}				
-\newcommand{\DD}{\mathbb{D}}  						
-\newcommand{\EE}{\mathbb{E}} 			
-\newcommand{\HH}{\mathbb{H}}					
-\newcommand{\KK}{\mathbb{K}} 					
-\newcommand{\OO}{\mathbb{O}} 		
-\newcommand{\PP}{\mathbb{P}}			
-\let\oldSS\SS		
-\renewcommand{\SS}{\mathbb{S}}						
-\newcommand{\TT}{\mathbb{T}} 			
+\renewcommand{\AA}{\mathbb{A}}              
+\newcommand{\DD}{\mathbb{D}}                        
+\newcommand{\EE}{\mathbb{E}}            
+\newcommand{\HH}{\mathbb{H}}                    
+\newcommand{\KK}{\mathbb{K}}                    
+\newcommand{\OO}{\mathbb{O}}        
+\newcommand{\PP}{\mathbb{P}}            
+\let\oldSS\SS       
+\renewcommand{\SS}{\mathbb{S}}                      
+\newcommand{\TT}{\mathbb{T}}            
 
 \newcommand{\cA}{\mathcal{A}}
 \newcommand{\cB}{\mathcal{B}}
@@ -232,11 +242,11 @@
 \newcommand{\cX}{\mathcal{X}}
 \newcommand{\cY}{\mathcal{Y}}
 \newcommand{\cZ}{\mathcal{Z}}
-			
+            
 \newcommand{\rD}{\mathrm{D}}
-\newcommand{\rK}{\mathrm{K}}			
+\newcommand{\rK}{\mathrm{K}}            
 \newcommand{\rP}{\mathrm{P}}
-\newcommand{\rT}{\mathrm{T}}			
+\newcommand{\rT}{\mathrm{T}}            
 
 \newcommand{\fA}{\mathfrak{A}}
 \newcommand{\fQ}{\mathfrak{Q}}
@@ -247,6 +257,8 @@
 \newcommand{\fL}{\mathfrak{L}}
 \newcommand{\fR}{\mathfrak{R}}
 \newcommand{\fP}{\mathfrak{P}}
+\newcommand{\fU}{\mathfrak{U}}
+\newcommand{\fV}{\mathfrak{V}}
 \newcommand{\fC}{\mathfrak{C}}
 \newcommand{\fX}{\mathfrak{X}}
 \newcommand{\fS}{\mathfrak{S}}
@@ -266,10 +278,13 @@
 \newcommand{\fa}{\mathfrak{a}}
 \newcommand{\fd}{\mathfrak{d}}
 \newcommand{\qAff}{\mathsf{qAff}}
+\newcommand{\qProj}{\mathsf{qProj}}
+\newcommand{\Project}{\mathsf{Proj}}
 \newcommand{\Aff}{\mathsf{Aff}}
 \newcommand{\Alg}{\mathsf{Alg}}
 \newcommand{\Set}{\mathsf{Set}}
 \newcommand{\Mod}{\mathsf{Mod}}
+\newcommand{\Grp}{\mathsf{Grp}}
 \usepackage{esint}
 \renewcommand{\v}{\upsilon}
 \newcommand{\vp}{\v_{p}}
@@ -286,6 +301,7 @@
 \pgfplotsset{width=6cm,compat=newest}
 
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
 
 
 
